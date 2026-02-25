@@ -1,0 +1,348 @@
+{
+  "DraugrRace": {
+    "Skyrim.esm:0x1FE80": {
+      "Male": {
+        "NPC R Calf [RClf]": [
+          {
+            "IDLimb": "Draugr - Male - Armored - R Calf"
+          }
+        ],
+        "NPC L Calf [LClf]": [
+          {
+            "IDLimb": "Draugr - Male - Armored - L Calf"
+          }
+        ]
+      }
+    },
+    "Skyrim.esm:0x1FE81|Skyrim.esm:0x1FE82|Skyrim.esm:0x1FE83|Skyrim.esm:0x1FE84": {
+      "Male": {
+        "NPC R Forearm [RLar]": [
+          {
+            "IDLimb": "Draugr - Male - Armored - R Forearm"
+          }
+        ],
+        "NPC L Forearm [LLar]": [
+          {
+            "IDLimb": "Draugr - Male - Armored - L Forearm"
+          }
+        ],
+        "NPC R Calf [RClf]": [
+          {
+            "IDLimb": "Draugr - Male - Armored - R Calf"
+          }
+        ],
+        "NPC L Calf [LClf]": [
+          {
+            "IDLimb": "Draugr - Male - Armored - L Calf"
+          }
+        ]
+      }
+    },
+    "Skyrim.esm:0x1FE80|Skyrim.esm:0x1FE81|Skyrim.esm:0x1FE82|Skyrim.esm:0x1FE83|Skyrim.esm:0x1FE84": {
+      "Female": {
+        "NPC R Calf [RClf]": [
+          {
+            "IDLimb": "Draugr - Female - ArmorLight - R Calf"
+          }
+        ],
+        "NPC L Calf [LClf]": [
+          {
+            "IDLimb": "Draugr - Female - ArmorLight - L Calf"
+          }
+        ]
+      }
+    },
+    "Skyrim.esm:0x1FE7E|Skyrim.esm:0x1FE7F|Skyrim.esm:0x1FE82|Skyrim.esm:0x1FE83": {
+      "Female": {
+        "NPC R Forearm [RLar]": [
+          {
+            "IDLimb": "Draugr - Female - ArmorLight - R Forearm"
+          }
+        ],
+        "NPC L Forearm [LLar]": [
+          {
+            "IDLimb": "Draugr - Female - ArmorLight - L Forearm"
+          }
+        ]
+      }
+    },
+    "Skyrim.esm:0x1FE80|Skyrim.esm:0x1FE81|Skyrim.esm:0x1FE84": {
+      "Female": {
+        "NPC R Forearm [RLar]": [
+          {
+            "IDLimb": "Draugr - Female - ArmorHeavy - R Forearm"
+          }
+        ],
+        "NPC L Forearm [LLar]": [
+          {
+            "IDLimb": "Draugr - Female - ArmorHeavy - L Forearm"
+          }
+        ]
+      }
+    },
+    "ANY": {
+      "Male": {
+        "NPC R Forearm [RLar]": [
+          {
+            "IDLimb": "Draugr - Male - Naked - R Forearm",
+			"Priority":-100
+          }
+        ],
+        "NPC L Forearm [LLar]": [
+          {
+            "IDLimb": "Draugr - Male - Naked - L Forearm",
+			"Priority":-100
+          }
+        ],
+        "NPC R Calf [RClf]": [
+          {
+            "IDLimb": "Draugr - Male - Naked - R Calf",
+			"Priority":-100
+          }
+        ],
+        "NPC L Calf [LClf]": [
+          {
+            "IDLimb": "Draugr - Male - Naked - L Calf",
+			"Priority":-100
+          }
+        ],
+        "NPC Neck [Neck]": [
+          {
+            "IDLimb": "Draugr - Male - Naked - Head BE1",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F6AD"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Naked - Head BE2",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F6AE"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Naked - Head HA1",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F6A8"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Naked - Head HA1 BE1",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F6B1"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Naked - Head HA1 BE2",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F6B2"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Naked - Head HA2",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F6AB"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Naked - Head HA2 BE1",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F838"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Naked - Head HA2 BE2",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F85E"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Armored - Head HE1",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x23BF0"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Armored - Head HE1 BE1",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F908"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Armored - Head HE1 BE2",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F9FC"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Armored - Head HE2",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x23BF1"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Armored - Head HE2 BE1",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1FB58"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Armored - Head HE2 BE2",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1FB5F"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Armored - Head HE3",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x23BF2"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Armored - Head HE3 BE1",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1FB60"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Armored - Head HE3 BE2",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1FB61"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Male - Naked - Head",
+			"Priority":-100
+          }
+        ]
+      },
+      "Female": {
+        "NPC R Forearm [RLar]": [
+          {
+            "IDLimb": "Draugr - Female - Naked - R Forearm",
+			"Priority":-100
+          }
+        ],
+        "NPC L Forearm [LLar]": [
+          {
+            "IDLimb": "Draugr - Female - Naked - L Forearm",
+			"Priority":-100
+          }
+        ],
+        "NPC R Calf [RClf]": [
+          {
+            "IDLimb": "Draugr - Female - Naked - R Calf",
+			"Priority":-100
+          }
+        ],
+        "NPC L Calf [LClf]": [
+          {
+            "IDLimb": "Draugr - Female - Naked - L Calf",
+			"Priority":-100
+          }
+        ],
+        "NPC Neck [Neck]": [
+          {
+            "IDLimb": "Draugr - Female - Naked - Head HA1",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F6A8"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Female - Naked - Head HA2",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x1F6AB"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Female - ArmorLight - Head HE1",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x23BF0"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Female - ArmorHeavy - Head HE2",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x23BF1"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Female - ArmorHeavy - Head HE3",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x23BF2"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Draugr - Female - Naked - Head",
+			"Priority":-100
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+bBookMenuPS = false
+bDialogueMenuPS = false
+bHUDMenuPS = false
+bItemCardPS = false
+bLockpickingMenuPS = false
+bRaceSexMenuPS = false
+bSleepWaitMenuPS = false
+bStartMenuPS = false
+bTextEntryPS = false
+bTrainingMenuPS = false
+bTutorialMenuPS = false

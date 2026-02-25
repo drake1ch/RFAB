@@ -1,0 +1,131 @@
+[]							 0
+[Escape]                     1  
+[1]                          2  
+[2]                          3  
+[3]                          4  
+[4]                          5  
+[5]                          6  
+[6]                          7  
+[7]                          8  
+[8]                          9  
+[9]                          10 
+[0]                          11 
+[Minus]                      12 
+[Equals]                     13 
+[Backspace]                  14 
+[Tab]                        15 
+[Q]                          16 
+[W]                          17 
+[E]                          18 
+[R]                          19 
+[T]                          20 
+[Y]                          21 
+[U]                          22 
+[I]                          23 
+[O]                          24 
+[P]                          25 
+[Left Bracket]               26 
+[Right Bracket]              27 
+[Enter]                      28 
+[Left Control]               29 
+[A]                          30 
+[S]                          31 
+[D]                          32 
+[F]                          33 
+[G]                          34 
+[H]                          35 
+[J]                          36 
+[K]                          37 
+[L]                          38 
+[Semicolon]                  39 
+[Apostrophe]                 40 
+[~ (Console)]                41 
+[Left Shift]                 42 
+[Back Slash]                 43 
+[Z]                          44 
+[X]                          45 
+[C]                          46 
+[V]                          47 
+[B]                          48 
+[N]                          49 
+[M]                          50 
+[Comma]                      51 
+[Period]                     52 
+[Forward Slash]              53 
+[Right Shift]                54 
+[NUM*]                       55 
+[Left Alt]                   56 
+[Spacebar]                   57 
+[Caps Lock]                  58 
+[F1]                         59 
+[F2]                         60 
+[F3]                         61 
+[F4]                         62 
+[F5]                         63 
+[F6]                         64 
+[F7]                         65 
+[F8]                         66 
+[F9]                         67 
+[F10]                        68 
+[Num Lock]                   69 
+[Scroll Lock]                70 
+[NUM7]                       71 
+[NUM8]                       72 
+[NUM9]                       73 
+[NUM-]                       74 
+[NUM4]                       75 
+[NUM5]                       76 
+[NUM6]                       77 
+[NUM+]                       78 
+[NUM1]                       79 
+[NUM2]                       80 
+[NUM3]                       81 
+[NUM0]                       82 
+[NUM.]                       83 
+[F11]                        87 
+[F12]                        88 
+[NUM Enter]                 156
+[Right Control]             157
+[NUM/]                      181
+[SysRq / PtrScr]            183
+[Right Alt]                 184
+[Pause]                     197
+[Home]                      199
+[Up Arrow]                  200
+[PgUp]                      201
+[Left Arrow]                203
+[Right Arrow]               205
+[End]                       207
+[Down Arrow]                208
+[PgDown]                    209
+[Insert]                    210
+[Delete]                    211
+[Left Mouse Button]         256
+[Right Mouse Button]        257
+[Middle/Wheel Mouse Button] 258
+[Mouse Button 3]            259
+[Mouse Button 4]            260
+[Mouse Button 5]            261
+[Mouse Button 6]            262
+[Mouse Button 7]            263
+[Mouse Wheel Up]            264
+[Mouse Wheel Down]          265
+
+Supported GamePad buttons:
+
+[DPAD_UP]        266
+[DPAD_DOWN]      267
+[DPAD_LEFT]      268
+[DPAD_RIGHT]     269
+[START]          270
+[BACK]           271
+[LEFT_THUMB]     272
+[RIGHT_THUMB]    273
+[LEFT_SHOULDER]  274
+[RIGHT_SHOULDER] 275
+[A]              276
+[B]              277
+[X]              278
+[Y]              279
+[LT]             280
+[RT]             281

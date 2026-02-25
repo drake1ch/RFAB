@@ -1,0 +1,441 @@
+########################################################################################################################
+# Some stuff related to shooting arrows.                                                                               #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+ArrowStuff.Enabled = False
+
+# Only apply this for the player character. Otherwise NPCs will also use this.
+ArrowStuff.OnlyPlayer = True
+
+# How many arrows to shoot at once. Setting this very high may screw up your savegame if you leave thousands of arrows
+# in the world.
+ArrowStuff.ArrowCount = 1
+
+# If this is set then the count is instead taken from the global value and not from above setting.
+ArrowStuff.ArrowCountGlobal = ""
+
+# If this is zero or higher then force this timer every time you fire an arrow. That means if you set here 3.5 it will
+# treat arrow fired as if you had drawn the bow for 3.5 seconds.
+ArrowStuff.ForceDrawTime = -1
+
+########################################################################################################################
+# Block eating or drinking in some cases.                                                                              #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+BlockPotionUse.Enabled = False
+
+# Don't allow using potions in combat.
+BlockPotionUse.BlockPotionInCombat = True
+
+# The message to show when trying to use potion in combat.
+BlockPotionUse.BlockPotionInCombatMsg = "You don't have time to drink potions right now!"
+
+# Don't allow using poisons in combat.
+BlockPotionUse.BlockPoisonInCombat = True
+
+# The message to show when trying to use poison in combat.
+BlockPotionUse.BlockPoisonInCombatMsg = "You don't have time to use poisons right now!"
+
+# Don't allow using food or drink in combat.
+BlockPotionUse.BlockFoodInCombat = True
+
+# The message to show when trying to use food or drink in combat.
+BlockPotionUse.BlockFoodInCombatMsg = "You don't have time to do that right now!"
+
+# If player has any magic effects with specified keywords then can't use potions. Separate keywords with space.
+BlockPotionUse.BlockPotionWhenMagicEffectKeyword = ""
+
+# The message to show when it failed that way.
+BlockPotionUse.BlockPotionWhenMagicEffectKeywordMsg = "You can't do that right now!"
+
+# If player has any magic effects with specified keywords then can't use poisons. Separate keywords with space.
+BlockPotionUse.BlockPoisonWhenMagicEffectKeyword = ""
+
+# The message to show when it failed that way.
+BlockPotionUse.BlockPoisonWhenMagicEffectKeywordMsg = "You can't do that right now!"
+
+# If player has any magic effects with specified keywords then can't use food or drink. Separate keywords with space.
+BlockPotionUse.BlockFoodWhenMagicEffectKeyword = ""
+
+# The message to show when it failed that way.
+BlockPotionUse.BlockFoodWhenMagicEffectKeywordMsg = "You can't do that right now!"
+
+# The spell to apply to player when they drink a potion.
+BlockPotionUse.AlwaysApplySpellOnPotionUse = ""
+
+# The spell to apply to player when they use a potion. This is applied to player and not item!
+BlockPotionUse.AlwaysApplySpellOnPoisonUse = ""
+
+# The spell to apply to player when they eat a food or drink a drink.
+BlockPotionUse.AlwaysApplySpellOnFoodUse = ""
+
+# The chance from 0 to 100 of not removing the potion from inventory when you drink one.
+BlockPotionUse.ChanceToNotRemovePotion = 0
+
+# The chance from 0 to 100 of not removing the poison from inventory when you use one.
+BlockPotionUse.ChanceToNotRemovePoison = 0
+
+# The chance from 0 to 100 of not removing the food from inventory when you consume one.
+BlockPotionUse.ChanceToNotRemoveFood = 0
+
+########################################################################################################################
+# Every unread book you read will increase learning speed of all skills. The multiplier is <Base + AmountFlat*Count +  #
+# (AmountExponent^Count - 1) * 100>%. Learning speed starts at <Base>% speed (if you have not read any books yet).     #
+# Base can be lower than 100 if you want. If <Notify> is set then display message when learning speed changes due to   #
+# having read a book.                                                                                                  #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+BookIncreasesLearnSpeed.Enabled = False
+BookIncreasesLearnSpeed.Base = 100
+BookIncreasesLearnSpeed.AmountFlat = 1
+BookIncreasesLearnSpeed.AmountExponent = 1
+BookIncreasesLearnSpeed.Notify = True
+BookIncreasesLearnSpeed.NotifyMessage = "Your learning speed is now %s."
+BookIncreasesLearnSpeed.IncludeNotes = False
+BookIncreasesLearnSpeed.IncludeJournals = False
+BookIncreasesLearnSpeed.IncludeNormalBooks = True
+BookIncreasesLearnSpeed.IncludeSkillBooks = True
+BookIncreasesLearnSpeed.IncludeSpellBooks = False
+BookIncreasesLearnSpeed.IncludeSpecialBooks = False
+
+########################################################################################################################
+# Allow unused training times per level to accumulate. For example if you can train 5 times per level and you didn't   #
+# train at all the last 3 levels you can now train 15 times at trainer.                                                #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+CumulativeTrainingTimesPerLevel.Enabled = True
+CumulativeTrainingTimesPerLevel.OverwriteTimesPerLevel = 1
+
+########################################################################################################################
+# Game will force restore HP/Magicka/Stamina in certain situations like when you level up or rest in a bed. This       #
+# option will allow you to skip that behavior and you don't get auto-healed and must heal on your own. Set 7 to        #
+# disable restoring health, magicka and stamina. Set 0 to allow restore everything. Flags: Health=1, Magicka=2,        #
+# Stamina=4                                                                                                            #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+DisableAutoFullHeal.Enabled = True
+DisableAutoFullHeal.DisableOnLevelup = 7
+DisableAutoFullHeal.DisableOnRest = 0
+
+########################################################################################################################
+# Make the wait/rest menu pass hours faster.                                                                           #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+FasterSleepwaitMenu.Enabled = False
+
+# How many seconds does it take to rest or wait 1 hour, default vanilla value is 1
+FasterSleepwaitMenu.SecondsPerHour = 0.5
+
+########################################################################################################################
+# Add an extra cost multiplier to impure potions (have both good and bad effects). This does not change experience     #
+# gain from crafting the potion.                                                                                       #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+ImpurePotionCostMultiplier.Enabled = False
+ImpurePotionCostMultiplier.CostMultiplier = 0.2
+
+########################################################################################################################
+# Change the cost multiplier (buy/sell value) of player created potions. For example 0.5 means all player created      #
+# potions are sold for 50% less gold. This does not affect the experience gained from crafting potions.                #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+PlayerCreatedPotionCostChange.Enabled = False
+PlayerCreatedPotionCostChange.CostMultiplier = 1
+
+########################################################################################################################
+# Makes player character look in the direction of camera. May have incompatibility with some other headtracking mods.  #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+PlayerHeadTracking.Enabled = False
+
+# If set to true then don't enable head track during crafting tables or other similar actions.
+PlayerHeadTracking.OnlyRegularThirdPerson = True
+PlayerHeadTracking.HorizontalMinAngle = 0
+PlayerHeadTracking.HorizontalMaxAngle = 95
+PlayerHeadTracking.VerticalMinAngle = 0
+PlayerHeadTracking.VerticalMaxAngle = 80
+
+# If this points to a global variable and the variable is set to 1 or higher then head tracking is disabled.
+PlayerHeadTracking.DisableGlobal = ""
+
+# If something goes really wrong and buggy with head tracking then enable this option. It will disable head tracking
+# but also attempt to fix the issues.
+PlayerHeadTracking.DisableAndFixMode = False
+
+# If camera is closer than this many units to head then stop headtracking (compatibility with IFPV).
+PlayerHeadTracking.IFPVCompatibilityDistance = 50
+
+########################################################################################################################
+# Adds various modifiers to spell costs.                                                                               #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+SpellCostChanges.Enabled = False
+
+# The cost changes only apply to player. If false then also applies to NPCs.
+SpellCostChanges.OnlyPlayer = True
+
+# Only modify cost of spells. If this is false it may also modify things like shout, enchantments, powers, and so on.
+# Recommended to set this to true.
+SpellCostChanges.OnlySpells = True
+
+# Cost multiplier when caster is in combat.
+SpellCostChanges.CombatMultiplier = 1
+
+# Cost multiplier when caster is moving quickly.
+SpellCostChanges.RunMultiplier = 1
+
+# Cost multiplier when caster is moving slowly.
+SpellCostChanges.WalkMultiplier = 1
+
+# Cost multiplier when caster is not moving.
+SpellCostChanges.IdleMultiplier = 1
+
+# Cost multiplier when caster is wearing heavy armor in body (main armor) slot.
+SpellCostChanges.HeavyArmorMultiplier = 2
+
+# Cost multiplier when caster is wearing light armor in body (main armor) slot.
+SpellCostChanges.LightArmorMultiplier = 1.5
+
+# Cost multiplier when caster is not wearing heavy or light armor in body (main armor) slot. This could be clothing or
+# naked.
+SpellCostChanges.NoneArmorMultiplier = 1
+
+# Cost multiplier when stamina is full. If stamina is somewhere in between the cost is scaled between these two
+# settings.
+SpellCostChanges.StaminaFullMultiplier = 1
+
+# Cost multiplier when stamina is empty. If stamina is somewhere in between the cost is scaled between these two
+# settings.
+SpellCostChanges.StaminaEmptyMultiplier = 1
+
+# If this points to a global variable then magicka cost is multiplied by this variable's value.
+SpellCostChanges.GlobalMultiplier = ""
+
+########################################################################################################################
+# Adds custom options to how stamina is handled.                                                                       #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+StaminaChanges.Enabled = False
+
+# Easy to way to enable or disable all the stamina run stuff.
+StaminaChanges.RunStuffEnabled = True
+
+# Running (not sprinting) uses this much stamina per second. While stamina is being used the stamina regeneration is
+# also blocked. If 0 then running does not use any stamina.
+StaminaChanges.RunningStamina = 1
+
+# Don't allow running to work if completely out of stamina. This will work same way as if you were over-encumbered.
+StaminaChanges.BlockRunningWhenNoStamina = True
+
+# Resume running again if stamina per cent has regenerated above this amount. Set 0 to disable.
+StaminaChanges.RunningResumePercent = 50
+
+# Minimum amount of time to delay stamina regeneration when running. Actual delay depends on how long player ran, max
+# is used when running for max-delay seconds or longer.
+StaminaChanges.RunningRegenDelayMin = 1
+
+# Maximum amount of time to delay stamina regeneration when running. Actual delay depends on how long player ran, max
+# is used when running for max-delay seconds or longer.
+StaminaChanges.RunningRegenDelayMax = 10
+
+# The time you must spend running to reach the max delay.
+StaminaChanges.RunningRegenDelayMaxTime = 20
+
+# Easy way to enable or disable all the jump stuff.
+StaminaChanges.JumpStuffEnabled = True
+
+# Jumping uses this much stamina.
+StaminaChanges.JumpingStamina = 20
+
+# Don't allow jumping to work when completely out of stamina.
+StaminaChanges.BlockJumpingWhenNoStamina = True
+
+# How long to delay stamina regeneration when jumping.
+StaminaChanges.JumpingRegenDelay = 10
+
+# Easy way to enable or disable all the sneak stuff.
+StaminaChanges.SneakStuffEnabled = True
+
+# How much stamina is used per second when you are sneaking and not moving.
+StaminaChanges.SneakIdleStamina = 0.2
+
+# How much stamina is used per second when you are sneaking and walking slowly.
+StaminaChanges.SneakWalkStamina = 0.5
+
+# How much stamina is used per second when you are sneaking and moving quickly.
+StaminaChanges.SneakRunStamina = 1
+
+# Don't allow sneaking at all when out of stamina.
+StaminaChanges.BlockSneakingWhenNoStamina = True
+
+# Don't allow stamina to regenerate in combat.
+StaminaChanges.BlockStaminaRegenInCombat = True
+
+# Don't allow magicka to regenerate in combat.
+StaminaChanges.BlockMagickaRegenInCombat = True
+
+# Easy way to enable or disable all the invis stuff.
+StaminaChanges.InvisStuffEnabled = True
+
+# How much magicka is used per second while invisibility spell is on.
+StaminaChanges.InvisIdleMagicka = 1
+
+# How much magicka is used per second while invisible and moving slowly.
+StaminaChanges.InvisWalkMagicka = 2
+
+# How much magicka is used per second while invisible and moving quickly.
+StaminaChanges.InvisRunMagicka = 5
+
+# Remove invisibility effects when out of magicka.
+StaminaChanges.InvisRemoveWhenOutOfMagicka = True
+
+# Easy way to enable or disable all the custom effect stuff.
+StaminaChanges.CustomEffectStuffEnabled = True
+
+# Keywords for custom magicka drain effect. These are keywords that must be on the magic effect itself.
+StaminaChanges.CustomEffectKeywords = ""
+
+# How much magicka is used per second while custom effect is on.
+StaminaChanges.CustomEffectIdleMagicka = 1
+
+# How much magicka is used per second while custom effect is on and moving slowly.
+StaminaChanges.CustomEffectWalkMagicka = 2
+
+# How much magicka is used per second while custom effect is on and running.
+StaminaChanges.CustomEffectRunMagicka = 5
+
+# Remove the custom effects with specified keywords when out of magicka.
+StaminaChanges.CustomEffectBlock = True
+
+# Easy way to enable or disable all the stoneflesh spell type effects.
+StaminaChanges.FleshEffectStuffEnabled = True
+
+# The keywords for stoneflesh type spells.
+StaminaChanges.FleshEffectKeywords = "MagicArmorSpell"
+
+# How much magicka to drain per damage taken. For example 0.5 means take 10 magicka for every 20 points of damage
+# taken.
+StaminaChanges.FleshEffectMagickaPerHurt = 1
+
+# Remove all stoneflesh type spells when out of magicka and taking damage?
+StaminaChanges.FleshEffectBlock = True
+
+# Disable all the stamina stuff from here.
+StaminaChanges.DisableStaminaStuff = False
+
+# Disable all the magicka stuff from here.
+StaminaChanges.DisableMagickaStuff = False
+
+########################################################################################################################
+# Settings related to making teammates undetectable.                                                                   #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+TeammateDetection.Enabled = False
+
+# Player teammates are undetectable by non-teammates when they are sneaking.
+TeammateDetection.TeammateUndetectableWhenSneaking = True
+
+# Player teammates are undetectable by non-teammates if they have invisibility spell on (regardless of if they are
+# sneaking).
+TeammateDetection.TeammateUndetectableWhenInvis = True
+
+# Player teammates become undetectable when they enter the bleedout animation. This will mean enemies stop caring
+# about them and move to other targets.
+TeammateDetection.TeammateUndetectableWhenBleedout = False
+
+# Player teammates become undetectable when they are following a specific command you gave them.
+TeammateDetection.TeammateUndetectableWhenFavor = False
+
+# All settings here require that player is not detected first. If player is detected then teammates won't be
+# undetectable in any way (unless the cheat mode is enabled).
+TeammateDetection.TeammateUndetectableIfPlayerIs = True
+
+# All settings here require that player and teammate are both not in combat (unless cheat mode is enabled or the
+# bleedout setting is triggered). If you want your teammates to be able to go undetectable in combat, such as by
+# drinking an invisibility potion then disable this option.
+TeammateDetection.TeammateUndetectableNoCombat = True
+
+# Player teammates are always undetectable no matter what. This is just a cheat.
+TeammateDetection.TeammateUndetectableCheat = False
+
+# If enabled then teammate can't detect anyone (and thus can't aggro) unless they have a weapon out first.
+TeammateDetection.TeammateRequiresWeaponOut = False
+
+# If enabled then teammate can't detect anyone (and thus can't aggro) if they are sneaking.
+TeammateDetection.TeammateRequiresNotSneaking = False
+
+# If set then anyone in this faction (rank >= 0) will be undetectable no matter what.
+TeammateDetection.UndetectableFaction = ""
+
+########################################################################################################################
+# Apply an extra multiplier to all training cost if enabled.                                                           #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+TrainingCostMultiplier.Enabled = False
+TrainingCostMultiplier.CostMultiplier = 1
+
+########################################################################################################################
+# If enabled then whenever you train at an NPC the gold you pay them always disappears instead of going to their       #
+# inventory.                                                                                                           #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+TrainingGoldDisappearsFromNPC.Enabled = False
+
+########################################################################################################################
+# If enabled and you train at an NPC or read skill book, then you will not gain any progress towards character level   #
+# up. Or you can set a custom rate for this, this is a multiplier so 1 is normal and 0.5 is half.                      #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+TrainingNoLevelProgress.Enabled = False
+TrainingNoLevelProgress.LevelXPMultiplier = 0
+
+########################################################################################################################
+# Make unread books glow so you can see them better. You can enter multiple effect shader forms in the effect fields   #
+# separated by ; symbol. If you do that then a random one will be chosen each time.                                    #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+UnreadBooksGlow.Enabled = False
+UnreadBooksGlow.NotesEffect = "69CE8:Skyrim.esm"
+UnreadBooksGlow.JournalsEffect = "69CE8:Skyrim.esm"
+UnreadBooksGlow.NormalBooksEffect = "69CE8:Skyrim.esm"
+UnreadBooksGlow.SpellBooksEffect = "69CE8:Skyrim.esm"
+UnreadBooksGlow.SkillBooksEffect = "69CE8:Skyrim.esm"
+UnreadBooksGlow.SpecialBooksEffect = "69CE8:Skyrim.esm"
+UnreadBooksGlow.NotesGlow = False
+UnreadBooksGlow.JournalsGlow = False
+UnreadBooksGlow.NormalBooksGlow = True
+UnreadBooksGlow.SpellBooksGlow = True
+UnreadBooksGlow.SkillBooksGlow = True
+UnreadBooksGlow.SpecialBooksGlow = False

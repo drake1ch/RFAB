@@ -1,0 +1,102 @@
+{
+  "Falmer - Male - Base data - L Calf": {
+    "RefNode": "NPC L Calf",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x855",
+    "Translation": {
+      "x": 0.550809,
+      "y": -3.351656,
+      "z": -33.664993
+    }
+  },
+  "Falmer - Male - Base data - R Calf": {
+    "RefNode": "NPC R Calf",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x855",
+    "Translation": {
+      "x": -0.577047,
+      "y": -3.283666,
+      "z": -34.045582
+    }
+  },
+  "Falmer - Male - Base data - L Forearm": {
+    "RefNode": "NPC L Forearm",
+	"BipedSlot": 33,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x855",
+    "Translation": {
+      "x": 0.480104,
+      "y": 0.158854,
+      "z": -26.686279
+    }
+  },
+  "Falmer - Male - Base data - R Forearm": {
+    "RefNode": "NPC R Forearm",
+	"BipedSlot": 33,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x855",
+    "Translation": {
+      "x": -0.481394,
+      "y": 0.155801,
+      "z": -26.670425
+    }
+  },
+  "Falmer - Male - Base data - Head": {
+    "RefNode": "NPC Head",
+	"BipedSlot": 31,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x855",
+    "Translation": {
+      "x": -0.012312,
+      "y": -3.804165,
+      "z": -6.433170
+    }
+  },
+  "Falmer - Female - Base data - L Calf": {
+    "RefNode": "NPC L Calf",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x855",
+    "Translation": {
+      "x": 0.689193,
+      "y": -3.393274,
+      "z": -34.420193
+    }
+  },
+  "Falmer - Female - Base data - R Calf": {
+    "RefNode": "NPC R Calf",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x855",
+    "Translation": {
+      "x": -0.695199,
+      "y": -3.391941,
+      "z": -34.420177
+    }
+  },
+  "Falmer - Female - Base data - L Forearm": {
+    "RefNode": "NPC L Forearm",
+	"BipedSlot": 33,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x855",
+    "Translation": {
+      "x": 0.734772,
+      "y": 0.206519,
+      "z": -28.253368
+    }
+  },
+  "Falmer - Female - Base data - R Forearm": {
+    "RefNode": "NPC R Forearm",
+	"BipedSlot": 33,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x855",
+    "Translation": {
+      "x": -0.738068,
+      "y": 0.205747,
+      "z": -28.239723
+    }
+  },
+  "Falmer - Female - Base data - Head": {
+    "RefNode": "NPC Head",
+	"BipedSlot": 31,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x855",
+    "Translation": {
+      "x": -0.044551,
+      "y": -1.642067,
+      "z": -8.483513
+    }
+  }
+}

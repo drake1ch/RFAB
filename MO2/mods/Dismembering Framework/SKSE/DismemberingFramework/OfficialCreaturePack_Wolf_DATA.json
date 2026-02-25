@@ -1,0 +1,112 @@
+{
+  "WolfRace": {
+    "Skyrim.esm:0xC02FB": {
+      "Male|Female": {
+        "Canine_Neck2": [
+          {
+            "IDLimb": "Wolf - Black - Head"
+          }
+        ],
+        "Canine_Tail1": [
+          {
+            "IDLimb": "Wolf - Black - Tail"
+          }
+        ],
+        "Canine_LBackLeg2": [
+          {
+            "IDLimb": "Wolf - Black - Back L Leg"
+          }
+        ],
+        "Canine_RBackLeg2": [
+          {
+            "IDLimb": "Wolf - Black - Back R Leg"
+          }
+        ],
+        "Canine_LFrontLeg2": [
+          {
+            "IDLimb": "Wolf - Black - Front L Leg"
+          }
+        ],
+        "Canine_RFrontLeg2": [
+          {
+            "IDLimb": "Wolf - Black - Front R Leg"
+          }
+        ]
+      }
+    },
+    "Skyrim.esm:0xC02F8": {
+      "Male|Female": {
+        "Canine_Neck2": [
+          {
+            "IDLimb": "Wolf - Red - Head"
+          }
+        ],
+        "Canine_Tail1": [
+          {
+            "IDLimb": "Wolf - Red - Tail"
+          }
+        ],
+        "Canine_LBackLeg2": [
+          {
+            "IDLimb": "Wolf - Red - Back L Leg"
+          }
+        ],
+        "Canine_RBackLeg2": [
+          {
+            "IDLimb": "Wolf - Red - Back R Leg"
+          }
+        ],
+        "Canine_LFrontLeg2": [
+          {
+            "IDLimb": "Wolf - Red - Front L Leg"
+          }
+        ],
+        "Canine_RFrontLeg2": [
+          {
+            "IDLimb": "Wolf - Red - Front R Leg"
+          }
+        ]
+      }
+    },
+    "ANY": {
+      "Male|Female": {
+        "Canine_Neck2": [
+          {
+            "IDLimb": "Wolf - Default - Head",
+			"Priority":-100
+          }
+        ],
+        "Canine_Tail1": [
+          {
+            "IDLimb": "Wolf - Default - Tail",
+			"Priority":-100
+          }
+        ],
+        "Canine_LBackLeg2": [
+          {
+            "IDLimb": "Wolf - Default - Back L Leg",
+			"Priority":-100
+          }
+        ],
+        "Canine_RBackLeg2": [
+          {
+            "IDLimb": "Wolf - Default - Back R Leg",
+			"Priority":-100
+          }
+        ],
+        "Canine_LFrontLeg2": [
+          {
+            "IDLimb": "Wolf - Default - Front L Leg",
+			"Priority":-100
+          }
+        ],
+        "Canine_RFrontLeg2": [
+          {
+            "IDLimb": "Wolf - Default - Front R Leg",
+			"Priority":-100
+          }
+        ]
+      }
+    }
+  }
+}

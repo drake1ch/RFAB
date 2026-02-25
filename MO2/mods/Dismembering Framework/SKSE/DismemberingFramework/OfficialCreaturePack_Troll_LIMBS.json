@@ -1,0 +1,162 @@
+{
+  "Troll - Black - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - Head",
+      "Troll - Actor addons data - Default - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8D3"
+  },
+  "Troll - Black - L Arm": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - L Arm",
+      "Troll - Actor addons data - Default - L Arm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8D6"
+  },
+  "Troll - Black - R Arm": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - R Arm",
+      "Troll - Actor addons data - Default - R Arm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8D7"
+  },
+  "Troll - Black - L Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - L Leg",
+      "Troll - Actor addons data - Default - L Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8D4"
+  },
+  "Troll - Black - R Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - R Leg",
+      "Troll - Actor addons data - Default - R Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8D5"
+  },
+  "Troll - White - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - Head",
+      "Troll - Actor addons data - Default - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8AB"
+  },
+  "Troll - White - L Arm": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - L Arm",
+      "Troll - Actor addons data - Default - L Arm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8AE"
+  },
+  "Troll - White - R Arm": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - R Arm",
+      "Troll - Actor addons data - Default - R Arm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8AF"
+  },
+  "Troll - White - L Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - L Leg",
+      "Troll - Actor addons data - Default - L Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8AC"
+  },
+  "Troll - White - R Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - R Leg",
+      "Troll - Actor addons data - Default - R Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8AD"
+  },
+  "Troll - BlackArmored - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - Head",
+      "Troll - Actor addons data - Default - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8B0"
+  },
+  "Troll - BlackArmored - L Arm": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - L Arm",
+      "Troll - Actor addons data - Default - L Arm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8B3"
+  },
+  "Troll - BlackArmored - R Arm": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - R Arm",
+      "Troll - Actor addons data - Default - R Arm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8B4"
+  },
+  "Troll - BlackArmored - L Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - L Leg",
+      "Troll - Actor addons data - Default - L Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8B1"
+  },
+  "Troll - BlackArmored - R Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - R Leg",
+      "Troll - Actor addons data - Default - R Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8B2"
+  },
+  "Troll - WhiteArmored - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - Head",
+      "Troll - Actor addons data - Default - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8B5"
+  },
+  "Troll - WhiteArmored - L Arm": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - L Arm",
+      "Troll - Actor addons data - Default - L Arm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8B8"
+  },
+  "Troll - WhiteArmored - R Arm": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - R Arm",
+      "Troll - Actor addons data - Default - R Arm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8B9"
+  },
+  "Troll - WhiteArmored - L Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - L Leg",
+      "Troll - Actor addons data - Default - L Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8B6"
+  },
+  "Troll - WhiteArmored - R Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Troll - Base data - R Leg",
+      "Troll - Actor addons data - Default - R Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8B7"
+  }
+}

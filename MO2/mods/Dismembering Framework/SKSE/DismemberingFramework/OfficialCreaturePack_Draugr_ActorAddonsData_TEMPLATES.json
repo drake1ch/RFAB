@@ -1,0 +1,42 @@
+{
+  "Draugr - Male - Actor addons data - L Calf": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x800",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x80A"
+  },
+  "Draugr - Male - Actor addons data - R Calf": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x801",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x80B"
+  },
+  "Draugr - Male - Actor addons data - L Forearm": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x802",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x80C"
+  },
+  "Draugr - Male - Actor addons data - R Forearm": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x803",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x80D"
+  },
+  "Draugr - Male - Actor addons data - Head": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x804",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x80F"
+  },
+  "Draugr - Female - Actor addons data - L Calf": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x800",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x80A"
+  },
+  "Draugr - Female - Actor addons data - R Calf": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x801",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x80B"
+  },
+  "Draugr - Female - Actor addons data - L Forearm": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x802",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x80C"
+  },
+  "Draugr - Female - Actor addons data - R Forearm": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x803",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x80D"
+  },
+  "Draugr - Female - Actor addons data - Head": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x804",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x80F"
+  }
+}

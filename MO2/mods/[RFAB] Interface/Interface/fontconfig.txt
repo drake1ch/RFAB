@@ -1,0 +1,50 @@
+﻿fontlib "Interface\fonts_ru.swf"
+fontlib "Interface\fonts_console.swf"
+fontlib "Interface\fonts_ru.swf"
+fontlib "Interface\fonts_console.swf"
+fontlib "Interface\fonts_consolas.swf"
+fontlib "Interface\fonts_fritzq.swf"
+fontlib "Interface\fonts_cclub.swf"
+
+; default "Futura Condensed test"
+map "$ListFont" = "fritzq" Normal
+
+; default "Arial"
+map "$ConsoleFont" = "consolas" Normal
+
+; default "Futura Condensed test"
+map "$StartMenuFont" = "fritzq" Normal
+
+; default "FuturaTCYLigCon"
+map "$DialogueFont" = "fritzq" Normal
+
+; default "FuturaTCYLigCon"
+map "$EverywhereFont" = "fritzq" Normal
+
+; default "FuturisXCondCTT"
+map "$EverywhereBoldFont" = "fritzq" Normal
+
+; default "Futura Condensed test"
+map "$EverywhereMediumFont" = "fritzq" Normal
+
+; default "SkyrimBooks_Gaelic"
+map "$SkyrimBooks" = "SkyrimBooks_Gaelic" Normal
+
+; default "SkyrimBooks_Handwritten_Bold"
+map "$HandwrittenFont" = "SkyrimBooks_Handwritten_Bold" Normal
+
+; default "SkyrimBooks_Handwritten_Bold"
+map "$HandwrittenBold" = "SkyrimBooks_Handwritten_Bold" Normal
+
+map "$DragonFont" = "Dragon_script" Normal
+map "$FalmerFont" = "Falmer" Normal
+map "$DwemerFont" = "Dwemer" Normal
+map "$DaedricFont" = "Daedric" Normal
+map "$MageScriptFont" = "Mage Script" Normal
+map "$SkyrimSymbolsFont" = "SkyrimSymbols" Normal
+map "$SkyrimBooks_UnreadableFont" = "SkyrimBooks_Unreadable" Normal
+map "$CClub_Font" = "Eurostile LT Cyr Std" Roman
+map "$CClub_Font_Bold" = "Eurostile LT Cyr Std" Demi
+map "ControllerButtons" = "Controller  Buttons" Normal
+map "ControllerButtonsInverted" = "Controller  Buttons inverted" Normal
+validNameChars "`1234567890-=~!@#$%^&*():_+QWERTYUIOP[]ASDFGHJKL;'ZXCVBNM,./qwertyuiop{}\asdfghjkl;'zxcvbnm<>?|ЎўЈ¤Ґ¦§Ё©Є«®Ї°Ііґ¶·ё№є»јЅѕїДАБВГЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэю я абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"

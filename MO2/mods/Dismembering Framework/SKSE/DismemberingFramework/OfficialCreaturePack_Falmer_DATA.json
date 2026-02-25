@@ -1,0 +1,165 @@
+{
+  "FalmerRace": {
+    "Skyrim.esm:0x50F30": {
+      "Male": {
+        "NPC R Forearm": [
+          {
+            "IDLimb": "Falmer - Male - Clothed - R Forearm"
+          }
+        ],
+        "NPC L Forearm": [
+          {
+            "IDLimb": "Falmer - Male - Clothed - L Forearm"
+          }
+        ]
+      }
+    },
+	"Skyrim.esm:0x50F32": {
+      "Male": {
+        "NPC R Forearm": [
+          {
+            "IDLimb": "Falmer - Male - Armored - R Forearm"
+          }
+        ],
+        "NPC L Forearm": [
+          {
+            "IDLimb": "Falmer - Male - Armored - L Forearm"
+          }
+        ]
+      }
+    },
+	"Skyrim.esm:0x50F34|Skyrim.esm:0x50F38": {
+      "Male": {
+        "NPC R Forearm": [
+          {
+            "IDLimb": "Falmer - Male - Clothed - R Forearm"
+          }
+        ],
+		"NPC R Calf": [
+          {
+            "IDLimb": "Falmer - Male - Armored - R Calf"
+          }
+        ],
+        "NPC L Calf": [
+          {
+            "IDLimb": "Falmer - Male - Armored - L Calf"
+          }
+        ]
+      }
+    },
+	"Skyrim.esm:0x50F36|Skyrim.esm:0x50F3A": {
+      "Male": {
+        "NPC R Forearm": [
+          {
+            "IDLimb": "Falmer - Male - Armored - R Forearm"
+          }
+        ],
+        "NPC L Forearm": [
+          {
+            "IDLimb": "Falmer - Male - Armored - L Forearm"
+          }
+        ],
+		"NPC R Calf": [
+          {
+            "IDLimb": "Falmer - Male - Armored - R Calf"
+          }
+        ],
+        "NPC L Calf": [
+          {
+            "IDLimb": "Falmer - Male - Armored - L Calf"
+          }
+        ]
+      }
+    },
+	"Dawnguard.esm:0x2848|Dawnguard.esm:0x284B": {
+      "Male|Female": {
+        "NPC R Forearm": [
+          {
+            "IDLimb": "Falmer - Female - Naked - R Forearm",
+			"Priority":-100
+          }
+        ],
+        "NPC L Forearm": [
+          {
+            "IDLimb": "Falmer - Female - Naked - L Forearm",
+			"Priority":-100
+          }
+        ],
+		"NPC R Calf": [
+          {
+            "IDLimb": "Falmer - Female - Naked - R Calf",
+			"Priority":-100
+          }
+        ],
+        "NPC L Calf": [
+          {
+            "IDLimb": "Falmer - Female - Naked - L Calf",
+			"Priority":-100
+          }
+        ]
+      }
+    },
+	"Dawnguard.esm:0x2848": {
+      "Male|Female": {
+        "NPC Neck": [
+          {
+            "IDLimb": "Falmer - Female - Naked - Head",
+			"Priority":-100
+          }
+        ]
+      }
+    },
+	"Dawnguard.esm:0x284B": {
+      "Male|Female": {
+        "NPC Neck": [
+          {
+            "IDLimb": "Falmer - Female - Naked - Head - Alt 01"
+          }
+        ]
+      }
+    },
+    "ANY": {
+      "Male": {
+        "NPC R Forearm": [
+          {
+            "IDLimb": "Falmer - Male - Naked - R Forearm",
+			"Priority":-100
+          }
+        ],
+        "NPC L Forearm": [
+          {
+            "IDLimb": "Falmer - Male - Naked - L Forearm",
+			"Priority":-100
+          }
+        ],
+        "NPC R Calf": [
+          {
+            "IDLimb": "Falmer - Male - Naked - R Calf",
+			"Priority":-100
+          }
+        ],
+        "NPC L Calf": [
+          {
+            "IDLimb": "Falmer - Male - Naked - L Calf",
+			"Priority":-100
+          }
+        ],
+        "NPC Neck": [
+          {
+            "IDLimb": "Falmer - Male - Armored - Head",
+            "Conditions": [
+              {
+                "Name": "IsEquipped",
+                "Item": "Skyrim.esm:0x52381"
+              }
+            ]
+          },
+          {
+            "IDLimb": "Falmer - Male - Naked - Head",
+			"Priority":-100
+          }
+        ]
+      }
+    }
+  }
+}

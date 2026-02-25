@@ -1,0 +1,34 @@
+########################################################################################################################
+#   New mover limit                                                                                                    #
+#                                                                                                                      #
+# Change maximum amount of actors whose movement can be updated at a time. Default engine value here is 128. Increase  #
+# if you still find floating NPCs.                                                                                     #
+#                                                                                                                      #
+#    Type: (int32)                                                                                                     #
+########################################################################################################################
+
+MoverLimit = 512
+
+########################################################################################################################
+#   Replaces static buffer of actors                                                                                   #
+#                                                                                                                      #
+# This is necessary to uncap morph limit properly and a few other things. Usually nearby actors are limited to 64,     #
+# anything after that gets a bit buggy due to them being excluded from a list that sorts nearby actors by distance.    #
+# They get put into a static buffer that is limited in size, this setting will replace that buffer with a much larger  #
+# one.                                                                                                                 #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+ReplaceStaticBuffer = True
+
+########################################################################################################################
+#   Morph update limit                                                                                                 #
+#                                                                                                                      #
+# Change maximum amount of actors whose facial morphs can be updated at a time. Default engine value here is 10. When  #
+# you hit that limit actors facial expressions/lips stop moving even when they are talking.                            #
+#                                                                                                                      #
+#    Type: (int32)                                                                                                     #
+########################################################################################################################
+
+MorphLimit = 128

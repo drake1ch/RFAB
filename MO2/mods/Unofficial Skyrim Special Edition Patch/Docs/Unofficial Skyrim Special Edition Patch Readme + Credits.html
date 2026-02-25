@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="skyrim,patch,community,elder scrolls,modding" />
+<meta name="description" content="A comprehensive bugfixing mod for The Elder Scrolls V: Skyrim - Special Edition, the goal of the Unofficial Skyrim Special Edition Patch (aka USSEP) is to eventually fix every bug with Skyrim and its DLCs not officially resolved by the developers to the limits of the Creation Kit and community-developed tools, in one easy-to-install package." />
+<meta name="robots" content="noodp" />
+
+<title>Unofficial Skyrim Special Edition Patch: Readme</title>
+
+<style type="text/css">
+body {
+background-color: #222222;
+color: #c0c0c0;
+}
+.h {
+text-decoration: underline;
+font-weight: bold;
+font-size: 150%;
+background-color: #161616;
+border: 1px solid #484848;
+padding:2px;
+}
+.m {
+text-align:center;
+background-color: #161616;
+border: 1px solid #484848;
+padding: 2px;
+}
+.attention {
+color: yellow;
+}
+a:link {
+color: #c0c0c0;
+font-weight: bold;
+}
+a:visited {
+color: #c0c0c0;
+}
+a:hover {
+color:white;
+}
+</style>
+
+</head>
+
+<body>
+<p class="m"><b style="font-size:32px">Unofficial Skyrim Special Edition Patch: Readme</b>
+<br>
+Version: 4.2.5b
+<br>
+By the Unofficial Patch Project Team</p>
+1. <a href="#des">What the Unofficial Skyrim Special Edition Patch Does</a>
+<br>2. <a href="#notes">Known Issues, Incompatibilities and Notes</a>
+<br>3. <a href="#install">Installation (Manual Version)</a>
+<br>4. <a href="#uninstall">Uninstalling (Manual Version)</a>
+<br>5. <a href="#cc">The Creation Club</a>
+<br>6. <a href="#dis">Disclaimer</a>
+<br>7. <a href="#perms">Permissions</a>
+<br>8. <a href="#credits">Credits</a>
+<br>9. <a href="https://www.afkmods.com/index.php?/topic/4680-frequently-asked-questions-bugs/">Frequently Asked Questions - BUGS</a>
+<br>10. <a href="https://www.afkmods.com/index.php?/topic/4679-frequently-asked-questions-about-the-project/">Frequently Asked Questions - About the Project</a>
+<br>11. <a href="https://www.afkmods.com/Unofficial Skyrim Special Edition Patch Version History.html">USSEP Version History</a>
+
+<p class="h"><a name="des">1. What the Unofficial Skyrim Special Edition Patch (USSEP) Does</a></p>
+This mod is a joint effort to fix the vast amount of bugs currently existing in Skyrim and its 3 official DLCs. If you're experiencing a bug with Skyrim or one of the DLCs and it isn't fixed by the USSEP yet please <a href="https://afktrack.afkmods.com/index.php?project=6">report the bug on the USSEP tracker</a> in as much detail as possible. Please search first to ensure you aren't posting something already there; with more than a thousand active entries currently it's very likely it already is! Thank you for any contributions! For details on what qualifies as a bug, and what you can do to report it, see our <a href="https://www.afkmods.com/index.php?/topic/4680-frequently-asked-questions-bugs/">Bug FAQ</a>.
+
+<br><br><span class="attention">Warning: Only use the Unofficial Skyrim Special Edition Patch with the latest release version of Skyrim Special Edition patched through Steam! Using it on an older version may cause bugs or things not to be fixed that were advertised as such!</span> It will of course be updated to match each official update, including having fixes removed that are included in official updates.
+
+<p class="h"><a name="notes">2. Known Issues, Incompatibilities and Notes</a></p>
+<ul>
+<li><b>A Mod Manager is recommended</b>: If you're reading this and you're new to using mods, it's recommended to use a mod manager such as <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6837">Wrye Bash</a> or <a href="https://www.nexusmods.com/about/vortex/">Vortex</a> to install and manage your mods. This will prevent problems of conflicts, leftover files after uninstallation and other issues. This is especially important with script files, since they are separate from the ESP they can overwrite other script files and thus override even if the mod is earlier-loaded, and remain behind still active if it's uninstalled. If you use many mods, it's also recommended to use <a href="https://loot.github.io/">LOOT</a> to prevent load order problems. You are strongly advised to avoid the use of Vortex as it does not support manual load order adjustments which are a critical element of modding Bethesda games.</li><br /><br />
+<li><b>Unable to progress through Blood on the Ice</b>: A commonly reported issue that comes up regularly is an issue where the interactible objects inside Hjerim don't let you click on them to investigate the crime properly. This is usually misattributed as a bug in the USSEP, but it's a conflict with the <a href="https://www.nexusmods.com/skyrimspecialedition/mods/10745">Thieves Guild For Good Guys</a> mod and is the result of that mod overriding several scripts involved in the MS11 quest that don't take our bug fixes into account.</li>
+</ul>
+
+<p class="h"><a name="install">3. Manual Installation</a></p>
+<b>1.)</b> Extract the contents of <b>Unofficial Skyrim Special Edition Patch.7z</b>, into your <b>Skyrim Special Edition\Data</b> folder. The default location is C:\Program files\Steam\Steamapps\common\skyrim special edition\data. There should be an ESP file, 2 BSA files, an INI file, a modgroups file, and the Bash Tags file in the BashTags folder under Data. It is <i>strongly</i> advised that you not have Steam installed in Program Files due to issues caused by Windows UAC permissions. Many 3rd party modding tools will not function correctly with Steam installed in the default location.
+
+<br><br><b>2.)</b> Launch the game. When the main menu comes up, click on "Mods".
+
+<br><br><b>3.)</b> Press "T" to go to the load order. In the menu that comes up, click on "Unofficial Skyrim Special Edition Patch.esp". A checkmark should appear next to it to indicate it's active.
+
+<br><br><b>4.)</b> Press "X" to enter the menu to reorder the plugins. Use the arrow keys to make sure "Unofficial Skyrim Special Edition Patch.esp" is at the very top of the list. Press "X" when you're done.
+
+<br><br><b>5.)</b> Press "Esc" until you get the prompt telling you that the game needs to reload its data. Once the menu is back, you may then load your existing saves or start a new game.
+
+<br><br><span class="attention">Do not clean the file with xEdit! We have already cleaned it.</span>
+
+<br><br>Your load order should start like this once it has been installed correctly:
+<ul>
+<li>Skyrim.esm</li>
+<li>Update.esm</li>
+<li>Dawnguard.esm</li>
+<li>HearthFires.esm</li>
+<li>Dragonborn.esm</li>
+<li>[Creation Club Content]</li>
+<li>Unofficial Skyrim Special Edition Patch.esp</li>
+<li>Garthand's Creation Club patches, for any CC DLCs you're using</li>
+<li>[Everything else you have installed]</li>
+</ul>
+
+<br>Please note that this load order should be set automatically by the game and will not be changeable at the user level, it is just listed here for completeness. Skyrim Special Edition will not deviate from this even if the plugins.txt file is edited manually.
+
+<br>The Unofficial High Resolution Patch is no longer required. Those fixes have been merged with USSEP since the hi-res DLC package was folded into the Special Edition update.
+
+<br><br><b>6.)</b> Click Play and enjoy your much-improved Skyrim Special Edition.
+
+<br><br>If you are having trouble with your mod manager recognizing the falsed flagged ESP file, you need to update it. Wrye Bash as of version 304.2 will support this, Nexus Mod Manager should have no trouble with versions 0.45 and higher.
+
+<br><br>The modgroups file is useful for doing conflict detection using xEdit and is explained in the <a href="https://tes5edit.github.io/docs/3-modgroups.html">Tome of xEdit</a>.
+
+<br><br><b><u>Upgrading</u></b>
+<br><br>If you are upgrading manually, simply install the new ESP, BSAs, and INI files into your Data folder. Otherwise consult the documentation for your preferred mod manager for how to update a package installation.
+
+<br><br>Once the updated files are installed, simply start the game as usual. USSEP will perform any necessary updates when the game first loads. You may see messages on screen for things that have been updated. You can resume play right away.
+
+<p class="h"><a name="uninstall">4. Uninstalling (Manual Version)</a></p>
+Due to the nature of Skyrim mods, especially those adding scripts, it is strongly discouraged to attempt uninstalling a mod from your active game. Any mod that is more than pure mesh or texture replacements has the possibility to leave behind permanent changes to your save that you may not want. This is not something modders can correct for. It is how the game was designed by Bethesda. No support will be provided for anyone who uninstalls this mod from an active game and continues on with that save. Even if that means you reinstalled the patch afterward.
+
+<br><br>If you insist on removing it for whatever reason, simply delete the ESP, BSAs, and INI and then load your game without them. You will get a missing content warning. Say yes, and continue playing.
+
+<p class="h"><a name="cc">5. The Creation Club</a></p>
+Are you using Creation Club DLCs? If so, you need to get Garthand's <a href="https://docs.google.com/document/d/1Sgiza2sIkM58kPN5ES1p1at_pQ0BtOwEPS153jtGKxU">Unofficial Skyrim Creation Club Content Patches</a> and install them alongside the USSEP. This will prevent errors induced by the CC DLCs making changes to the base game records that USSEP then overrides. Please refer all questions about these patches to Garthand on his threads. There are versions of each patch available for PC, XBox One, and PS4.
+
+<p class="h"><a name="dis">6. Disclaimer</a></p>
+The Unofficial Skyrim Special Edition Patch is provided free and "as is" for use at your own risk; the creators cannot be held responsible/liable for anything that happens while using it. It is recommended to only use the Unofficial Skyrim Special Edition Patch with the version of Skyrim Special Edition it was created for. This product is not created by, nor associated with, Bethesda Game Studios, Bethesda Softworks, Zenimax Media, nor any of their affiliates.
+
+<p class="h"><a name="perms">7. Permissions</a></p>
+The following terms of use must be adhered to with regard to the unofficial patches:
+<ul>
+<li>You may upload <u>unmodified</u> copies of the latest version of the patch to any website of your choosing so long as the documentation is retained as-is. All credits must be properly maintained, and you are responsible for making sure the updates are taken care of on the site it's uploaded to.</li>
+<li>Porting this mod for use on a game other than Skyrim Special Edition is strictly prohibited. Examples of "other games" include (but are not limited to) Skyrim VR, Skyrim Legendary Edition, etc.</li>
+<li>Porting this mod to a platform where modding is not officially supported or legally allowed is strictly prohibited. This includes, but is not limited to, Nintendo Switch, PS4, or other consoles.</li>
+<li>Translation of the unofficial patches into other languages is permitted so long as the English documentation is also included and all credits are properly maintained and all provisions of previous terms are adhered to.</li>
+<li>Assets such as mesh files (.nif), textures, scripts, audio files, and other things found in the BSA may be freely used as the basis for your own work in order to help prevent fixes from being lost due to work starting from broken vanilla assets instead.</li>
+<li>You are permitted to use the unofficial patches as master files in your own work for the purpose of ensuring that fixes are not lost. Please try to be sure any changes to things which have been fixed do not cause further problems as we will not be able to provide support under those conditions.</li>
+<li>You may also copy any needed fixes into your own work to use without the USSEP as a master so long as you agree to be responsible for any support issues that arise from doing so and that you will actively keep up with any needed changes in future updates.</li>
+<li>Altering fixes is specifically prohibited as this tends to lead to serious problems. If you think you've found an issue with a fix, please report it to us. Do not simply upload something that amounts to "this is the right way to do it" because more often than not, this turns out to be false and people mistakenly believe we are at fault when we are not aware of what's been done.</li>
+<li>The Unofficial Skyrim Special Edition Patch may not be included in any "mod packs" under any circumstances.</li>
+</ul>
+
+<p class="h"><a name="credits">8. Credits</a></p>
+A number of people throughout the years have helped this project to not only get off the ground, but to survive and be allowed to grow into what it is today. A HUGE thanks to the following people for their contributions to the unofficial patches:
+<br><br>
+<b>AndalayBay</b> - For having provided hosting for the project at Dark Creations, including use of the Bugzilla tracker, prior to acquiring our own on <a href="https://www.afkmods.com/">AFK Mods</a>.
+<br><b>Arthmoor</b> - For stepping in to take over the unofficial patch projects and coordinating the various community reports and submissions into the final products.
+<br><b>BlueDanieru</b> - For the Ancient Knowledge fix as well as several other minor fixes to other issues.
+<br><b>Brumbek</b> - For the fixed Thalmor Embassy building and entranceway.
+<br><b>MadCat221</b> - For fixes to several clothing and armor meshes.
+<br><b>Phitt</b> - For the fixed male Ebony Cuirass.
+<br><b>PrinceShroob</b> - For numerous fixes to quests, NPCs, items, audio splices, and more.
+<br><b>DayDreamer</b> - For help with porting the bug tracker over to Dark Creations and for help with fixing bugs.
+<br><b>Jackstarr</b> - For the audio fix correcting "Morang Tong" -> "Morag Tong".
+<br><b>alt3rn1ty</b> - For the replacement archery target, and reworking various old texture fixes for Skyrim SE in USSEP.
+<br><b>Wormheart</b> - For the mesh fixes on the large piece of Whiterun in front of Jorvaskr.
+<br><b>Nico coiN</b> - For supplying several patch fix ESPs which have made many placement fixes much easier to get done. Fix for moons showing up in the Soul Cairn, and several other things as well.
+<br><b>sialivi</b> - For numerous supplied fixes for Bethesda's placement errors and plenty of meshes too.
+<br><b>Hanaisse</b> - For help with plenty of mesh and texture errors.
+<br><b>Lorelai</b> - Also for help with plenty of mesh and texture errors as well as our shiny new USLEEP logo!
+<br><b>Euther</b> - For supplying the missing voice audio for Mirmulnir in the dragon attack on the western watchtower.
+<br><b>Hexaae</b> - Several fixes including some meshes, textures, and other errors fixed.
+<br><b>Sclerocephalus</b> - For the major overhaul that finally fixes all of the numerous bugs with the weapon and shield racks. Also for several mesh fixes provided.
+<br><b>SilentSpike</b> - Numerous placement and mesh fixes.
+<br><b>Tarshana</b> - Fixes for some meshes used in Whiterun and various dungeons.
+<br><b>Shank</b> - Missing scabbards for several weapons. Resources are provided with full permissions as stated on Nexus as of October 21, 2012.
+<br><b>Yuril</b> - Corrected textures for the Whiterun roofs. Resources are provided with full permissions as stated on Nexus as of October 21, 2012.
+<br><b>Daemonjax</b> - Whiterun + Solitude lighting fix. Resources are provided with full permissions granted as stated on Nexus as of November 15, 2012.
+<br><b>Braveheart101</b> - Wheat Height Fix. Resources are provided with full permissions granted as stated on Nexus as of November 16, 2012.
+<br><b>pseudobug</b> - <a href="https://www.nexusmods.com/skyrim/mods/6830">Vanilla Tweaks - Arrow Retrieval Fix</a>. Resources are provided with full permissions as of December 13, 2012.
+<br><b>Xanshio</b> - <a href="https://www.nexusmods.com/skyrim/mods/21570">Skyrim Extended Glow - Daedric Armor</a>. Boots, gauntlets, and shield used to fix the lack of glow on the Daedric armor pieces. Resources are provided with full permissions as of December 21, 2012.
+<br><b>ViperMkII</b> - <a href="https://www.nexusmods.com/skyrim/mods/24599">Dwarven War Axe Fix</a> that corrects not seeing equipped rings. Resources are provided with full permissions as of December 24, 2012.
+<br><b>Blacksupernova</b> - <a href="https://www.nexusmods.com/skyrim/mods/37514">Soul Trap Hit Effect Fix</a> that corrects the faulty soul trap visual effects mesh. Resources are provided with full permissions as of October 31, 2013.
+<br><b>testiger2</b> - <a href="https://www.nexusmods.com/skyrim/mods/45919">Sabre Cat Animation Fix</a> that corrects the faulty sabre cat idle animation. Resources are provided with full permissions as of October 31, 2013.
+<br><b>WilliamImm</b> - Fixes for the soul trap effects and projectiles.
+<br><b>Callak Skytower</b> - <a href="https://www.nexusmods.com/skyrim/mods/32949/">Argonian Sneak Tail Fix</a> to correct 3rd person PAINFUL looking Argonian tail twisting. Resources are provided with full permissions as of January 7, 2014.
+<br><b>egocarib</b> - Fixes for Azura's Black Star and regular black soul gems so they will be the only ones able to trap black souls.
+<br><b>mitchalek</b> - Animation file fix for dual wielded dagger attack speeds.
+<br><b>BlackPete</b> - Numerous text file fixes, as well as dogged pursuit of bugs and for providing the save files which got many of them fixed.
+<br><b>Shodan44</b> - <a href="https://www.nexusmods.com/skyrim/mods/7084/">Dragonplate Helmet Fix</a> which corrects the helmet fitting on several races. Masked versions are not included as those are not part of the vanilla set. Resources are provided with full permissions as of June 18, 2014.
+<br><b>Chilean Wolf</b> - <a href="https://www.nexusmods.com/skyrim/mods/22624/">Argonian Decapitation Fix</a>. Severed heads will now be fully visible. Resources are provided with full permissions as of June 18, 2014.
+<br><b>Wolf of the Azar</b> - <a href="https://www.nexusmods.com/skyrim/mods/56317">Khajiit Tail Lighting Fix</a>. Khajiit tails no longer lit wrong in shadows. Resources are provided with full permissions as of Sept 19, 2014.
+<br><b>SparrowPrince</b> - <a href="https://www.nexusmods.com/skyrim/mods/13268/">Ruffled Feather: Grassias Fixas</a>. Several Whiterun meshes have been used with permission as of May 17, 2015.
+<br><b>wyvern236</b> - For the solution to the Ariel's Bow script lag issue.
+<br><b>DMagnus</b> - Dragonbone arrow quiver fix.
+<br><b>Gerauld</b> from Wiwiland (French site) - Fixed Vampire Lord collision size.
+<br><b>lifestrock</b> - Fixes for the armor addon used by the Keepers in the Soul Cairn.
+<br><b>SoggyBobcat</b> - Miscellaneous item related fixes.
+<br><b>JKalenad</b> - The <a href="https://www.nexusmods.com/skyrim/mods/37052">Nordic Greatsword mesh fix</a>.
+<br><b>Langley</b> - <a href="https://www.nexusmods.com/skyrim/mods/26269/">Langleys Textures Workshop</a>. Meshes with UV errors used with permission as of December 29, 2015.
+<br><b>Adria</b> - <a href="https://www.nexusmods.com/skyrim/mods/69446/">Bookshelf Fix</a>. Scripts to fix the bookshelf issues.
+<br><b>HHaleyy</b> - <a href="https://www.nexusmods.com/skyrim/mods/76098/">Jump Sounds fix</a>. Fixes jumping sounds that should be heard from a distance. Used with permission as specified on July 30, 2016.
+<br><b>forum42087</b> - <a href="https://www.nexusmods.com/skyrim/mods/27418/">Skyrim Shadow Striping Fix</a>. Fixes shadow striping in a number of locations. Used with permission as of August 29, 2016.
+<br><b>Taka2nd</b> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6845/">Dragon Bleed Bug Fix</a>. Rewrites the wing bleeding script to eliminate Papyrus errors and reduce or eliminate stack dumps during dragon fights. Used with permission as of July 30, 2017.
+<br><b>esu_riddick</b> - <a href="https://www.nexusmods.com/skyrimspecialedition/mods/16846">Shadowcloak of Nocturnal Bug Fix</a>. Used with permission as of October 23, 2018.
+<br><b>SonicRay</b> - <a href="https://afktrack.afkmods.com/index.php?a=issues&i=29046">Night Eye Bugfix</a>.
+<br>
+<br>And finally a big thanks to everyone else who reported bugs, sent in save games, or helped provide plugins, meshes, and textures for various fixes.
+</body>
+</html>

@@ -1,0 +1,82 @@
+{
+  "Humanoid - Male - Actor addons data - L Calf": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x804",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80C"
+  },
+  "Humanoid - Male - Actor addons data - R Calf": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x806",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80D"
+  },
+  "Humanoid - Male - Actor addons data - L Forearm": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x808",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80E"
+  },
+  "Humanoid - Male - Actor addons data - R Forearm": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x80A",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80F"
+  },
+  "Humanoid - Male - Actor addons data - Khajiit - Tail": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x90B",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x9DC"
+  },
+  "Humanoid - Male - Actor addons data - Argonian - Tail": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x974",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x9DC"
+  },
+  "Humanoid - Male - Actor addons data - Afflicted - L Calf": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0xAE8",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80C"
+  },
+  "Humanoid - Male - Actor addons data - Afflicted - R Calf": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0xAE9",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80D"
+  },
+  "Humanoid - Male - Actor addons data - Afflicted - L Forearm": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0xAEA",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80E"
+  },
+  "Humanoid - Male - Actor addons data - Afflicted - R Forearm": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0xAEB",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80F"
+  },
+  "Humanoid - Female - Actor addons data - L Calf": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x804",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80C"
+  },
+  "Humanoid - Female - Actor addons data - R Calf": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x806",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80D"
+  },
+  "Humanoid - Female - Actor addons data - L Forearm": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x808",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80E"
+  },
+  "Humanoid - Female - Actor addons data - R Forearm": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x80A",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80F"
+  },
+  "Humanoid - Female - Actor addons data - Khajiit - Tail": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x90B",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x9DC"
+  },
+  "Humanoid - Female - Actor addons data - Argonian - Tail": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0x974",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x9DC"
+  },
+  "Humanoid - Female - Actor addons data - Afflicted - L Calf": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0xAE8",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80C"
+  },
+  "Humanoid - Female - Actor addons data - Afflicted - R Calf": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0xAE9",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80D"
+  },
+  "Humanoid - Female - Actor addons data - Afflicted - L Forearm": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0xAEA",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80E"
+  },
+  "Humanoid - Female - Actor addons data - Afflicted - R Forearm": {
+    "ActorArmorAddon": "DF - Official Humanoid Pack.esp:0xAEB",
+    "ActorArtObject": "DF - Official Humanoid Pack.esp:0x80F"
+  }
+}

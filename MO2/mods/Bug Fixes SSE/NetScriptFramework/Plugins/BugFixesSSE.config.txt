@@ -1,0 +1,36 @@
+########################################################################################################################
+# When an ablity/spell has been active for a very long time (70+ hours) it will stop updating conditions because the   #
+# elapsed time gets so big that it will have floating point inaccuracy when checking for frame time difference. This   #
+# fix will replace the check with its own timer system that will be completely accurate no matter how large the        #
+# elapsed duration is. It will also fix a problem where around every 10th or 20th second the game would skip the       #
+# conditions update because of reasons. The separate parameter ForceAccurateCheck will always use new system if True   #
+# and only use new system when the elapsed duration gets large enough if False. If you are experiencing stutters in    #
+# combat that you didn't have before you can disable this and see if that was the cause (if it was, please report it   #
+# on the mod page).                                                                                                    #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+FixAbilityConditionBug.Enabled = True
+
+FixAbilityConditionBug.ForceAccurateCheck = True
+
+########################################################################################################################
+# If you buy or sell a stack of items there is a bug where you only get enough speechcraft skill as if you bought or   #
+# sold one item of the stack. This fixes the bug so you correctly get the full amount of speechcraft skill as if you   #
+# had sold each item individually.                                                                                     #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+FixBuySellStackSpeechGain.Enabled = True
+
+########################################################################################################################
+# There is a bug where if an actor's speedmult actor value changes it does not immediately update the movement speed   #
+# until something happens that would recalculate the movement speed (sprint, walk, carry weight changes). This is a    #
+# problem because it stops things like slow poison or temporary movement speed buffs from working correctly.           #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+FixSpeedMultUpdate.Enabled = True

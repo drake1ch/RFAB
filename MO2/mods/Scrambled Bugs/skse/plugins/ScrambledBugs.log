@@ -1,0 +1,90 @@
+[2026-02-24 15:54:13] [Information] ScrambledBugs.cpp(49,28): Initializing...
+{
+	"fixes": {
+		"activateFurniture": true,
+		"actorValuePercentage": true,
+		"enchantmentCost": true,
+		"harvestedFlags": true,
+		"hitEffectRaceCondition": true,
+		"impactEffectCrash": true,
+		"killCamera": true,
+		"leftHandPowerAttacks": false,
+		"magicEffectFlags": false,
+		"modArmorWeightPerkEntryPoint": true,
+		"quickShot": true,
+		"quickShotPlaybackSpeed": 2.0,
+		"terrainDecals": false,
+		"trainingMenu": true,
+		"weaponCharge": true
+	},
+	"patches": {
+		"accumulatingMagnitude": true,
+		"alreadyCaughtPickpocketing": true,
+		"attachHitEffectArt": true,
+		"blackSoulGems": false,
+		"cloakHitEffects": true,
+		"equipBestAmmo": false,
+		"improveMultipleEnchantmentEffects": false,
+		"leveledCharacters": false,
+		"lockpickingExperience": false,
+		"pausedGameHitEffects": true,
+		"perkEntryPoints": {
+			"applyMultipleSpells": true,
+			"castSpells": true
+		},
+		"poisonResistance": false,
+		"powerAttackStamina": false,
+		"reflectDamage": true,
+		"scrollExperience": false,
+		"staffExperience": false,
+		"steepSlopes": false,
+		"teammateDifficulty": false,
+		"underfilledSoulGems": true
+	}
+}
+[2026-02-24 15:54:13] [Information] ScrambledBugs.cpp(217,28): Initialized.
+{
+	"fixes": {
+		"activateFurniture": true,
+		"actorValuePercentage": true,
+		"enchantmentCost": true,
+		"harvestedFlags": true,
+		"hitEffectRaceCondition": true,
+		"impactEffectCrash": true,
+		"killCamera": true,
+		"leftHandPowerAttacks": false,
+		"magicEffectFlags": false,
+		"modArmorWeightPerkEntryPoint": true,
+		"quickShot": true,
+		"quickShotPlaybackSpeed": 2.0,
+		"terrainDecals": false,
+		"trainingMenu": true,
+		"weaponCharge": true
+	},
+	"patches": {
+		"accumulatingMagnitude": true,
+		"alreadyCaughtPickpocketing": true,
+		"attachHitEffectArt": true,
+		"blackSoulGems": false,
+		"cloakHitEffects": true,
+		"equipBestAmmo": false,
+		"improveMultipleEnchantmentEffects": false,
+		"leveledCharacters": false,
+		"lockpickingExperience": false,
+		"pausedGameHitEffects": true,
+		"perkEntryPoints": {
+			"applyMultipleSpells": true,
+			"castSpells": true
+		},
+		"poisonResistance": false,
+		"powerAttackStamina": false,
+		"reflectDamage": true,
+		"scrollExperience": false,
+		"staffExperience": false,
+		"steepSlopes": false,
+		"teammateDifficulty": false,
+		"underfilledSoulGems": true
+	}
+}
+[2026-02-24 15:55:25] [Information] Serialization.cpp(129,29): Saving...
+[2026-02-24 15:55:25] [Information] Serialization.cpp(149,29): Saved.

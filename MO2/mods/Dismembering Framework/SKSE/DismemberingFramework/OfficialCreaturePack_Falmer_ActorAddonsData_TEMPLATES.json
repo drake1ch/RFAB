@@ -1,0 +1,42 @@
+{
+  "Falmer - Male - Actor addons data - L Calf": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x83A",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x850"
+  },
+  "Falmer - Male - Actor addons data - R Calf": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x83B",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x851"
+  },
+  "Falmer - Male - Actor addons data - L Forearm": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x83C",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x852"
+  },
+  "Falmer - Male - Actor addons data - R Forearm": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x83D",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x853"
+  },
+  "Falmer - Male - Actor addons data - Head": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x83E",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x854"
+  },
+  "Falmer - Female - Actor addons data - L Calf": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x856",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x850"
+  },
+  "Falmer - Female - Actor addons data - R Calf": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x857",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x851"
+  },
+  "Falmer - Female - Actor addons data - L Forearm": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x858",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x852"
+  },
+  "Falmer - Female - Actor addons data - R Forearm": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x859",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x853"
+  },
+  "Falmer - Female - Actor addons data - Head": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x85A",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x854"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "TrollRace": {
+    "ANY": {
+      "Male|Female": {
+        "NPC Neck [Neck]": [
+          {
+            "IDLimb": "Troll - Black - Head",
+			"Priority":-100
+          }
+        ],
+        "NPC L Forearm [LLar]": [
+          {
+            "IDLimb": "Troll - Black - L Arm",
+			"Priority":-100
+          }
+        ],
+        "NPC R Forearm [RLar]": [
+          {
+            "IDLimb": "Troll - Black - R Arm",
+			"Priority":-100
+          }
+        ],
+        "NPC L Calf [LClf]": [
+          {
+            "IDLimb": "Troll - Black - L Leg",
+			"Priority":-100
+          }
+        ],
+        "NPC R Calf [RClf]": [
+          {
+            "IDLimb": "Troll - Black - R Leg",
+			"Priority":-100
+          }
+        ]
+      }
+    }
+  },
+  "TrollFrostRace": {
+    "ANY": {
+      "Male|Female": {
+        "NPC Neck [Neck]": [
+          {
+            "IDLimb": "Troll - White - Head",
+			"Priority":-100
+          }
+        ],
+        "NPC L Forearm [LLar]": [
+          {
+            "IDLimb": "Troll - White - L Arm",
+			"Priority":-100
+          }
+        ],
+        "NPC R Forearm [RLar]": [
+          {
+            "IDLimb": "Troll - White - R Arm",
+			"Priority":-100
+          }
+        ],
+        "NPC L Calf [LClf]": [
+          {
+            "IDLimb": "Troll - White - L Leg",
+			"Priority":-100
+          }
+        ],
+        "NPC R Calf [RClf]": [
+          {
+            "IDLimb": "Troll - White - R Leg",
+			"Priority":-100
+          }
+        ]
+      }
+    }
+  },
+  "DLC1TrollRaceArmored": {
+    "ANY": {
+      "Male|Female": {
+        "NPC Neck [Neck]": [
+          {
+            "IDLimb": "Troll - BlackArmored - Head",
+			"Priority":-100
+          }
+        ],
+        "NPC L Forearm [LLar]": [
+          {
+            "IDLimb": "Troll - BlackArmored - L Arm",
+			"Priority":-100
+          }
+        ],
+        "NPC R Forearm [RLar]": [
+          {
+            "IDLimb": "Troll - BlackArmored - R Arm",
+			"Priority":-100
+          }
+        ],
+        "NPC L Calf [LClf]": [
+          {
+            "IDLimb": "Troll - BlackArmored - L Leg",
+			"Priority":-100
+          }
+        ],
+        "NPC R Calf [RClf]": [
+          {
+            "IDLimb": "Troll - BlackArmored - R Leg",
+			"Priority":-100
+          }
+        ]
+      }
+    }
+  },
+  "DLC1TrollFrostRaceArmored": {
+    "ANY": {
+      "Male|Female": {
+        "NPC Neck [Neck]": [
+          {
+            "IDLimb": "Troll - WhiteArmored - Head",
+			"Priority":-100
+          }
+        ],
+        "NPC L Forearm [LLar]": [
+          {
+            "IDLimb": "Troll - WhiteArmored - L Arm",
+			"Priority":-100
+          }
+        ],
+        "NPC R Forearm [RLar]": [
+          {
+            "IDLimb": "Troll - WhiteArmored - R Arm",
+			"Priority":-100
+          }
+        ],
+        "NPC L Calf [LClf]": [
+          {
+            "IDLimb": "Troll - WhiteArmored - L Leg",
+			"Priority":-100
+          }
+        ],
+        "NPC R Calf [RClf]": [
+          {
+            "IDLimb": "Troll - WhiteArmored - R Leg",
+			"Priority":-100
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+# Вариант 02. Шрифт Sovngarde Lite SSE CRF
+# Шрифты Sovngarde - Mist's Font Replacer Light для SSE с фиксами. Файл настроек шрифта для Skyrim SE. С комментариями. Кодировка этого файла UTF-8. Нормальный путь к моду на шрифты Data\Interface\
+
+# Загрузка библиотек со шрифтами. Вместо TTF Скайрим использует файлы SWF.
+
+# Библиотека с русскими шрифтами ванили. Шрифты без изменений
+fontlib "Interface\fonts_ru.swf"
+# Библиотека с русскими шрифтами ванили. Шрифты модифицированы (содержит CRF_Arial, CRF_SkyrimBooks_Gaelic, CRF_SkyrimBooks_Handwritten_Bold).
+fontlib "Interface\fonts_CRF_console.swf"
+
+# Библиотеки мода Sovngarde со шрифтами
+fontlib "Interface\fonts_CRF_SovngardeSSE.swf"
+fontlib "Interface\fonts_drukaatieburti.swf"
+fontlib "Interface\my_font.swf"
+
+# Шрифт консоли (мод).
+map "$ConsoleFont" = "SovngardeConsole" Normal
+
+# Шрифт начального меню игры (мод)
+map "$StartMenuFont" = "CRF_SovngardeL" Normal
+
+# Шрифт диалогов с NPC (мод)
+map "$DialogueFont" = "CRF_SovngardeL" Normal
+
+# Шрифт меню (мод)
+map "$EverywhereFont" = "CRF_SovngardeL" Normal
+
+# Шрифт параметров (жирный) (мод)
+map "$EverywhereBoldFont" = "CRF_SovngardeB" Normal
+
+# Шрифт основного текста (мод)
+map "$EverywhereMediumFont" = "My_Font" Normal
+
+# Шрифт обычных книг (мод)
+map "$SkyrimBooks" = "DrukaatieBurti" Normal
+
+# Рукописный шрифт - нормальный модифицированный. Добавлены буквы "ё", "Ё".
+map "$HandwrittenFont" = "CRF_SkyrimBooks_Handwritten_Bold" Normal
+
+# Рукописный шрифт - жирный.
+map "$HandwrittenBold" = "CRF_SkyrimBooks_Handwritten_Bold" Normal
+
+# Внутриигровой шрифт драконьего языка (ваниль). tiarum.com/wiki/Tes_Lore:Драконий_алфавит
+map "$DragonFont" = "Dragon_script" Normal
+
+# Внутриигровой шрифт фалмерских иероглифов (ваниль). tiarum.com/wiki/Tes_Lore:Фалмерский_алфавит
+map "$FalmerFont" = "Falmer" Normal
+
+# Внутриигровой шрифт двемерских иероглифов (ваниль). tiarum.com/wiki/Tes_Lore:Двемерский_алфавит
+map "$DwemerFont" = "Dwemer" Normal
+
+# Внутриигровой Данмерский, он же Даэдрический шрифт (ваниль). tiarum.com/wiki/Tes_Lore:Даэдрический_алфавит
+map "$DaedricFont" = "Daedric" Normal
+
+# Внутриигровой магический шрифт (ваниль). tiarum.com/wiki/Tes_Lore: Магический_алфавит
+map "$MageScriptFont" = "Mage_Script" Normal
+
+# Внутриигровой шрифт (ваниль)
+map "$SkyrimSymbolsFont" = "SkyrimSymbols" Normal
+
+# Внутриигровой шрифт нечитаемых книг (ваниль).
+map "$SkyrimBooks_UnreadableFont" = "SkyrimBooks_Unreadable" Normal
+
+# Таблица воспроизводимых символов
+validNameChars "`1234567890-=~!@#$%^&*():_+QWERTYUIOP[]ASDFGHJKL;'ZXCVBNM,./qwertyuiop{}\\asdfghjkl;'zxcvbnm<>?|ЎўЈ¤Ґ¦§Ё©Є«®Ї°Ііґ¶·ё№є»јЅѕїДАБВГЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэю я "

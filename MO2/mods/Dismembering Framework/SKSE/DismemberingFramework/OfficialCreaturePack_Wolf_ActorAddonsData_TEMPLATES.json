@@ -1,0 +1,74 @@
+{
+  "Wolf - Actor addons data - Default - Head": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x866",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87A"
+  },
+  "Wolf - Actor addons data - Default - Tail": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x873",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87B"
+  },
+  "Wolf - Actor addons data - Default - Back L Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x86D",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87C"
+  },
+  "Wolf - Actor addons data - Default - Back R Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x86E",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87D"
+  },
+  "Wolf - Actor addons data - Default - Front L Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x86B",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87E"
+  },
+  "Wolf - Actor addons data - Default - Front R Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x86C",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87F"
+  },
+  "Wolf - Actor addons data - Black - Head": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x890",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87A"
+  },
+  "Wolf - Actor addons data - Black - Tail": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x891",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87B"
+  },
+  "Wolf - Actor addons data - Black - Back L Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x88C",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87C"
+  },
+  "Wolf - Actor addons data - Black - Back R Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x88D",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87D"
+  },
+  "Wolf - Actor addons data - Black - Front L Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x88E",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87E"
+  },
+  "Wolf - Actor addons data - Black - Front R Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x88F",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87F"
+  },
+  "Wolf - Actor addons data - Red - Head": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x896",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87A"
+  },
+  "Wolf - Actor addons data - Red - Tail": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x897",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87B"
+  },
+  "Wolf - Actor addons data - Red - Back L Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x892",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87C"
+  },
+  "Wolf - Actor addons data - Red - Back R Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x893",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87D"
+  },
+  "Wolf - Actor addons data - Red - Front L Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x894",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87E"
+  },
+  "Wolf - Actor addons data - Red - Front R Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x895",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x87F"
+  }
+}

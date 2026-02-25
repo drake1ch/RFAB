@@ -1,0 +1,48 @@
+{
+  "Troll - Base data - Head": {
+    "RefNode": "NPC Head [Head]",
+    "CollisionNode": "NPC Head [Head]",
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x8AA",
+    "Translation": {
+      "x": 0.092380,
+      "y": -6.646830,
+      "z": -8.977442
+    }
+  },
+  "Troll - Base data - L Arm": {
+    "RefNode": "NPC L Forearm [LLar]",
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x8AA",
+    "Translation": {
+      "x": -0.923096,
+      "y": 0.379022,
+      "z": -33.463013
+    }
+  },
+  "Troll - Base data - R Arm": {
+    "RefNode": "NPC R Forearm [RLar]",
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x8AA",
+    "Translation": {
+      "x": 0.922944,
+      "y": 0.378610,
+      "z": -33.463051
+    }
+  },
+  "Troll - Base data - L Leg": {
+    "RefNode": "NPC L Calf [LClf]",
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x8AA",
+    "Translation": {
+      "x": -0.125339,
+      "y": -4.569324,
+      "z": -26.383017
+    }
+  },
+  "Troll - Base data - R Leg": {
+    "RefNode": "NPC R Calf [RClf]",
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x8AA",
+    "Translation": {
+      "x": 0.126325,
+      "y": -4.569605,
+      "z": -26.382944
+    }
+  }
+}

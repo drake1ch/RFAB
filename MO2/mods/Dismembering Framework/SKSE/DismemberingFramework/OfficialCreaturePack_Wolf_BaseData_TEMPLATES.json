@@ -1,0 +1,57 @@
+{
+  "Wolf - Base data - Head": {
+    "RefNode": "Canine_Head",
+    "CollisionNode": "Canine_Head",
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x8A4",
+    "Translation": {
+      "x": 0.001095,
+      "y": -1.821545,
+      "z": -9.334633
+    }
+  },
+  "Wolf - Base data - Tail": {
+    "RefNode": "Canine_Tail1",
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x8A4",
+    "Translation": {
+      "x": 0.000503,
+      "y": -1.673751,
+      "z": -27.857784
+    }
+  },
+  "Wolf - Base data - Back L Leg": {
+    "RefNode": "Canine_LBackLeg2",
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x8A4",
+    "Translation": {
+      "x": -0.413937,
+      "y": -9.657281,
+      "z": -26.129848
+    }
+  },
+  "Wolf - Base data - Back R Leg": {
+    "RefNode": "Canine_RBackLeg2",
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x8A4",
+    "Translation": {
+      "x": 0.655512,
+      "y": -9.657268,
+      "z": -26.124903
+    }
+  },
+  "Wolf - Base data - Front L Leg": {
+    "RefNode": "Canine_LFrontLeg2",
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x8A4",
+    "Translation": {
+      "x": -0.056672,
+      "y": -2.573017,
+      "z": -19.977814
+    }
+  },
+  "Wolf - Base data - Front R Leg": {
+    "RefNode": "Canine_RFrontLeg2",
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x8A4",
+    "Translation": {
+      "x": -0.056671,
+      "y": -2.573015,
+      "z": -19.977823
+    }
+  }
+}

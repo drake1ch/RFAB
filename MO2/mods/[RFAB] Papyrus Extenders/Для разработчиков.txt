@@ -1,0 +1,12 @@
+Включены следующие библиотеки и их версии:
+
+• powerofthree's Papyrus Extender | 11.12.2023
+• SkyPal                          | 11.05.2021
+• Dylbills Papyrus Functions      | 11.07.2023
+• SkyMessage                      | 26.01.2023
+• PapyrusUtil SE                  | 04.02.2020
+• Inventory Functions SE          | 24.12.2021
+• Paper                           | 16.10.2023
+• Papyrus Ini Manipulator         | 29.10.2023
+• ConsoleUtil                     | 15.10.2022
+• Extended Vanilla Menus          | 18.09.2023

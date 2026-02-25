@@ -1,0 +1,22 @@
+{
+  "Troll - Actor addons data - Default - Head": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x8C8",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x8A9"
+  },
+  "Troll - Actor addons data - Default - L Arm": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x8C6",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x8A7"
+  },
+  "Troll - Actor addons data - Default - R Arm": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x8C7",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x8A8"
+  },
+  "Troll - Actor addons data - Default - L Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x8C4",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x8A5"
+  },
+  "Troll - Actor addons data - Default - R Leg": {
+    "ActorArmorAddon": "DF - Official Creature Pack.esp:0x8C5",
+    "ActorArtObject": "DF - Official Creature Pack.esp:0x8A6"
+  }
+}

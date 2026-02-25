@@ -1,0 +1,146 @@
+{
+  "Wolf - Default - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Head",
+      "Wolf - Actor addons data - Default - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x867"
+  },
+  "Wolf - Default - Tail": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Tail",
+      "Wolf - Actor addons data - Default - Tail"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x875"
+  },
+  "Wolf - Default - Back L Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Back L Leg",
+      "Wolf - Actor addons data - Default - Back L Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x876"
+  },
+  "Wolf - Default - Back R Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Back R Leg",
+      "Wolf - Actor addons data - Default - Back R Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x877"
+  },
+  "Wolf - Default - Front L Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Front L Leg",
+      "Wolf - Actor addons data - Default - Front L Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x878"
+  },
+  "Wolf - Default - Front R Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Front R Leg",
+      "Wolf - Actor addons data - Default - Front R Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x879"
+  },
+  "Wolf - Black - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Head",
+      "Wolf - Actor addons data - Black - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x89C"
+  },
+  "Wolf - Black - Tail": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Tail",
+      "Wolf - Actor addons data - Black - Tail"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x89D"
+  },
+  "Wolf - Black - Back L Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Back L Leg",
+      "Wolf - Actor addons data - Black - Back L Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x898"
+  },
+  "Wolf - Black - Back R Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Back R Leg",
+      "Wolf - Actor addons data - Black - Back R Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x899"
+  },
+  "Wolf - Black - Front L Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Front L Leg",
+      "Wolf - Actor addons data - Black - Front L Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x89A"
+  },
+  "Wolf - Black - Front R Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Front R Leg",
+      "Wolf - Actor addons data - Black - Front R Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x89B"
+  },
+  "Wolf - Red - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Head",
+      "Wolf - Actor addons data - Red - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x89E"
+  },
+  "Wolf - Red - Tail": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Tail",
+      "Wolf - Actor addons data - Red - Tail"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8A3"
+  },
+  "Wolf - Red - Back L Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Back L Leg",
+      "Wolf - Actor addons data - Red - Back L Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x89F"
+  },
+  "Wolf - Red - Back R Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Back R Leg",
+      "Wolf - Actor addons data - Red - Back R Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8A0"
+  },
+  "Wolf - Red - Front L Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Front L Leg",
+      "Wolf - Actor addons data - Red - Front L Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8A1"
+  },
+  "Wolf - Red - Front R Leg": {
+    "Templates": [
+      "DF - Base data",
+      "Wolf - Base data - Front R Leg",
+      "Wolf - Actor addons data - Red - Front R Leg"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x8A2"
+  }
+}

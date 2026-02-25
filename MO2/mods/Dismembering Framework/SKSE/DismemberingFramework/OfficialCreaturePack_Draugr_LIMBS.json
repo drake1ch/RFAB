@@ -1,0 +1,356 @@
+{
+  "Draugr - Male - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - L Calf",
+      "Draugr - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x810"
+  },
+  "Draugr - Male - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - R Calf",
+      "Draugr - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x811"
+  },
+  "Draugr - Male - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - L Forearm",
+      "Draugr - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x812"
+  },
+  "Draugr - Male - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - R Forearm",
+      "Draugr - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x813"
+  },
+  "Draugr - Male - Naked - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x814"
+  },
+  "Draugr - Male - Naked - Head BE1": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x822"
+  },
+  "Draugr - Male - Naked - Head BE2": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x823"
+  },
+  "Draugr - Male - Naked - Head HA1": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x824"
+  },
+  "Draugr - Male - Naked - Head HA1 BE1": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x825"
+  },
+  "Draugr - Male - Naked - Head HA1 BE2": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x826"
+  },
+  "Draugr - Male - Naked - Head HA2": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x827"
+  },
+  "Draugr - Male - Naked - Head HA2 BE1": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x828"
+  },
+  "Draugr - Male - Naked - Head HA2 BE2": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x829"
+  },
+  "Draugr - Male - Armored - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - L Calf",
+      "Draugr - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x81E",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - R Calf",
+      "Draugr - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x81F",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - L Forearm",
+      "Draugr - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x820",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - R Forearm",
+      "Draugr - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x821",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - Head HE1": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x815",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - Head HE1 BE1": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x818",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - Head HE1 BE2": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x819",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - Head HE2": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x816",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - Head HE2 BE1": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x81A",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - Head HE2 BE2": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x81B",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - Head HE3": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x817",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - Head HE3 BE1": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x81C",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Male - Armored - Head HE3 BE2": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Male - Base data - Head",
+      "Draugr - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x81D",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Female - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - L Calf",
+      "Draugr - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x82A"
+  },
+  "Draugr - Female - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - R Calf",
+      "Draugr - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x82B"
+  },
+  "Draugr - Female - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - L Forearm",
+      "Draugr - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x82C"
+  },
+  "Draugr - Female - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - R Forearm",
+      "Draugr - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x82D"
+  },
+  "Draugr - Female - Naked - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - Head",
+      "Draugr - Female - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x82E"
+  },
+  "Draugr - Female - Naked - Head HA1": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - Head",
+      "Draugr - Female - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x82F"
+  },
+  "Draugr - Female - Naked - Head HA2": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - Head",
+      "Draugr - Female - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x830"
+  },
+  "Draugr - Female - ArmorLight - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - L Calf",
+      "Draugr - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x831"
+  },
+  "Draugr - Female - ArmorLight - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - R Calf",
+      "Draugr - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x832"
+  },
+  "Draugr - Female - ArmorLight - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - L Forearm",
+      "Draugr - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x833"
+  },
+  "Draugr - Female - ArmorLight - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - R Forearm",
+      "Draugr - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x834"
+  },
+  "Draugr - Female - ArmorLight - Head HE1": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - Head",
+      "Draugr - Female - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x835",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Female - ArmorHeavy - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - L Forearm",
+      "Draugr - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x836",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Female - ArmorHeavy - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - R Forearm",
+      "Draugr - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x837",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Female - ArmorHeavy - Head HE2": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - Head",
+      "Draugr - Female - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x838",
+	"TypeOverride": "Heavy"
+  },
+  "Draugr - Female - ArmorHeavy - Head HE3": {
+    "Templates": [
+      "DF - Base data",
+      "Draugr - Female - Base data - Head",
+      "Draugr - Female - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x839",
+	"TypeOverride": "Heavy"
+  }
+}

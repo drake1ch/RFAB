@@ -1,0 +1,7 @@
+Scriptname RFAB_BA_Quest_Goldurs extends Quest  
+
+ObjectReference Property FolgunthurMarker Auto
+ObjectReference Property GeirmundsHallMarker Auto
+ObjectReference Property SaarthalMarker Auto
+ObjectReference Property ReachwaterRockMarker Auto
+

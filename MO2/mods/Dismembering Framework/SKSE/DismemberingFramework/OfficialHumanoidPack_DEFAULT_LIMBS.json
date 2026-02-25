@@ -1,0 +1,875 @@
+{
+  "Humanoid - Base - Male - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x84E"
+  },
+  "Humanoid - Base - Male - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x84F"
+  },
+  "Humanoid - Base - Male - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x850"
+  },
+  "Humanoid - Base - Male - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x851"
+  },
+  "Humanoid - Base - Male - DefaultHeavy - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x84A"
+  },
+  "Humanoid - Base - Male - DefaultHeavy - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x84B"
+  },
+  "Humanoid - Base - Male - DefaultHeavy - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x84C"
+  },
+  "Humanoid - Base - Male - DefaultHeavy - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x84D"
+  },
+  "Humanoid - Base - Male - DefaultLight - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x852"
+  },
+  "Humanoid - Base - Male - DefaultLight - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x853"
+  },
+  "Humanoid - Base - Male - DefaultLight - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x854"
+  },
+  "Humanoid - Base - Male - DefaultLight - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x855"
+  },
+  "Humanoid - Base - Male - DefaultClothing - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x846"
+  },
+  "Humanoid - Base - Male - DefaultClothing - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x847"
+  },
+  "Humanoid - Base - Male - DefaultClothing - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x848"
+  },
+  "Humanoid - Base - Male - DefaultClothing - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x849"
+  },
+  "Humanoid - Argonian - Male - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x82E"
+  },
+  "Humanoid - Argonian - Male - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x82F"
+  },
+  "Humanoid - Argonian - Male - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x830"
+  },
+  "Humanoid - Argonian - Male - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x831"
+  },
+  "Humanoid - Argonian - Male - Naked - Tail": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - Tail",
+      "Humanoid - Male - Actor addons data - Argonian - Tail"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0xA43"
+  },
+  "Humanoid - Argonian - Male - DefaultHeavy - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x82A"
+  },
+  "Humanoid - Argonian - Male - DefaultHeavy - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x82B"
+  },
+  "Humanoid - Argonian - Male - DefaultHeavy - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x82C"
+  },
+  "Humanoid - Argonian - Male - DefaultHeavy - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x82D"
+  },
+  "Humanoid - Argonian - Male - DefaultLight - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x832"
+  },
+  "Humanoid - Argonian - Male - DefaultLight - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x833"
+  },
+  "Humanoid - Argonian - Male - DefaultLight - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x834"
+  },
+  "Humanoid - Argonian - Male - DefaultLight - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x835"
+  },
+  "Humanoid - Argonian - Male - DefaultClothing - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x826"
+  },
+  "Humanoid - Argonian - Male - DefaultClothing - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x827"
+  },
+  "Humanoid - Argonian - Male - DefaultClothing - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x828"
+  },
+  "Humanoid - Argonian - Male - DefaultClothing - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x829"
+  },
+  "Humanoid - Khajiit - Male - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x86E"
+  },
+  "Humanoid - Khajiit - Male - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x86F"
+  },
+  "Humanoid - Khajiit - Male - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x870"
+  },
+  "Humanoid - Khajiit - Male - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x871"
+  },
+  "Humanoid - Khajiit - Male - Naked - Tail": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - Tail",
+      "Humanoid - Male - Actor addons data - Khajiit - Tail"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x973"
+  },
+  "Humanoid - Khajiit - Male - DefaultHeavy - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x86A"
+  },
+  "Humanoid - Khajiit - Male - DefaultHeavy - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x86B"
+  },
+  "Humanoid - Khajiit - Male - DefaultHeavy - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x86C"
+  },
+  "Humanoid - Khajiit - Male - DefaultHeavy - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x86D"
+  },
+  "Humanoid - Khajiit - Male - DefaultLight - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x872"
+  },
+  "Humanoid - Khajiit - Male - DefaultLight - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x873"
+  },
+  "Humanoid - Khajiit - Male - DefaultLight - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x874"
+  },
+  "Humanoid - Khajiit - Male - DefaultLight - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x875"
+  },
+  "Humanoid - Khajiit - Male - DefaultClothing - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x866"
+  },
+  "Humanoid - Khajiit - Male - DefaultClothing - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x867"
+  },
+  "Humanoid - Khajiit - Male - DefaultClothing - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x868"
+  },
+  "Humanoid - Khajiit - Male - DefaultClothing - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x869"
+  },
+  "Humanoid - Afflicted - Male - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Calf",
+      "Humanoid - Male - Actor addons data - Afflicted - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x84E"
+  },
+  "Humanoid - Afflicted - Male - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Calf",
+      "Humanoid - Male - Actor addons data - Afflicted - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x84F"
+  },
+  "Humanoid - Afflicted - Male - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - L Forearm",
+      "Humanoid - Male - Actor addons data - Afflicted - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x850"
+  },
+  "Humanoid - Afflicted - Male - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Male - Base data - R Forearm",
+      "Humanoid - Male - Actor addons data - Afflicted - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x851"
+  },
+  "Humanoid - Base - Female - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x83E"
+  },
+  "Humanoid - Base - Female - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x83F"
+  },
+  "Humanoid - Base - Female - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x840"
+  },
+  "Humanoid - Base - Female - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x841"
+  },
+  "Humanoid - Base - Female - DefaultHeavy - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x83A"
+  },
+  "Humanoid - Base - Female - DefaultHeavy - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x83B"
+  },
+  "Humanoid - Base - Female - DefaultHeavy - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x83C"
+  },
+  "Humanoid - Base - Female - DefaultHeavy - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x83D"
+  },
+  "Humanoid - Base - Female - DefaultLight - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x842"
+  },
+  "Humanoid - Base - Female - DefaultLight - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x843"
+  },
+  "Humanoid - Base - Female - DefaultLight - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x844"
+  },
+  "Humanoid - Base - Female - DefaultLight - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x845"
+  },
+  "Humanoid - Base - Female - DefaultClothing - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x836"
+  },
+  "Humanoid - Base - Female - DefaultClothing - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x837"
+  },
+  "Humanoid - Base - Female - DefaultClothing - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x838"
+  },
+  "Humanoid - Base - Female - DefaultClothing - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x839"
+  },
+  "Humanoid - Argonian - Female - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x81E"
+  },
+  "Humanoid - Argonian - Female - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x81F"
+  },
+  "Humanoid - Argonian - Female - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x820"
+  },
+  "Humanoid - Argonian - Female - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x821"
+  },
+  "Humanoid - Argonian - Female - Naked - Tail": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - Tail",
+      "Humanoid - Female - Actor addons data - Argonian - Tail"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0xA44"
+  },
+  "Humanoid - Argonian - Female - DefaultHeavy - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x81A"
+  },
+  "Humanoid - Argonian - Female - DefaultHeavy - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x81B"
+  },
+  "Humanoid - Argonian - Female - DefaultHeavy - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x81C"
+  },
+  "Humanoid - Argonian - Female - DefaultHeavy - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x81D"
+  },
+  "Humanoid - Argonian - Female - DefaultLight - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x822"
+  },
+  "Humanoid - Argonian - Female - DefaultLight - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x823"
+  },
+  "Humanoid - Argonian - Female - DefaultLight - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x824"
+  },
+  "Humanoid - Argonian - Female - DefaultLight - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x825"
+  },
+  "Humanoid - Argonian - Female - DefaultClothing - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x816"
+  },
+  "Humanoid - Argonian - Female - DefaultClothing - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x817"
+  },
+  "Humanoid - Argonian - Female - DefaultClothing - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x818"
+  },
+  "Humanoid - Argonian - Female - DefaultClothing - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x819"
+  },
+  "Humanoid - Khajiit - Female - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x85E"
+  },
+  "Humanoid - Khajiit - Female - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x85F"
+  },
+  "Humanoid - Khajiit - Female - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x860"
+  },
+  "Humanoid - Khajiit - Female - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x861"
+  },
+  "Humanoid - Khajiit - Female - Naked - Tail": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - Tail",
+      "Humanoid - Female - Actor addons data - Khajiit - Tail"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0xAAB"
+  },
+  "Humanoid - Khajiit - Female - DefaultHeavy - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x85A"
+  },
+  "Humanoid - Khajiit - Female - DefaultHeavy - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x85B"
+  },
+  "Humanoid - Khajiit - Female - DefaultHeavy - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x85C"
+  },
+  "Humanoid - Khajiit - Female - DefaultHeavy - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x85D"
+  },
+  "Humanoid - Khajiit - Female - DefaultLight - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x862"
+  },
+  "Humanoid - Khajiit - Female - DefaultLight - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x863"
+  },
+  "Humanoid - Khajiit - Female - DefaultLight - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x864"
+  },
+  "Humanoid - Khajiit - Female - DefaultLight - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x865"
+  },
+  "Humanoid - Khajiit - Female - DefaultClothing - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x866"
+  },
+  "Humanoid - Khajiit - Female - DefaultClothing - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x867"
+  },
+  "Humanoid - Khajiit - Female - DefaultClothing - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x868"
+  },
+  "Humanoid - Khajiit - Female - DefaultClothing - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x869"
+  },
+  "Humanoid - Afflicted - Female - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Calf",
+      "Humanoid - Female - Actor addons data - Afflicted - L Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x84E"
+  },
+  "Humanoid - Afflicted - Female - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Calf",
+      "Humanoid - Female - Actor addons data - Afflicted - R Calf"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x84F"
+  },
+  "Humanoid - Afflicted - Female - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - L Forearm",
+      "Humanoid - Female - Actor addons data - Afflicted - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x850"
+  },
+  "Humanoid - Afflicted - Female - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Humanoid - Female - Base data - R Forearm",
+      "Humanoid - Female - Actor addons data - Afflicted - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Humanoid Pack.esp:0x851"
+  },
+  "Humanoid - Head": {
+    "Templates": [
+      "DF - Base data"
+    ],
+    "Method": "Decapitate",
+    "RefNode": "NPC Head [Head]",
+	"BipedSlot": 31,
+    "TargetEffectSpell": "DF - Official Humanoid Pack.esp:0x876"
+  }
+}

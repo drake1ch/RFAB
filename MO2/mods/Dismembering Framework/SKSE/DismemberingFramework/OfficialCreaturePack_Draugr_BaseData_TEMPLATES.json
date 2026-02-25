@@ -1,0 +1,102 @@
+{
+  "Draugr - Male - Base data - L Calf": {
+    "RefNode": "NPC L Calf [LClf]",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x80E",
+    "Translation": {
+      "x": -0.584993,
+      "y": 0.120326,
+      "z": -28.476742
+    }
+  },
+  "Draugr - Male - Base data - R Calf": {
+    "RefNode": "NPC R Calf [RClf]",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x80E",
+    "Translation": {
+      "x": 0.742442,
+      "y": 0.097730,
+      "z": -28.319687
+    }
+  },
+  "Draugr - Male - Base data - L Forearm": {
+    "RefNode": "NPC L Forearm [LLar]",
+	"BipedSlot": 33,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x80E",
+    "Translation": {
+      "x": 0.219028,
+      "y": -0.221731,
+      "z": -23.107445
+    }
+  },
+  "Draugr - Male - Base data - R Forearm": {
+    "RefNode": "NPC R Forearm [RLar]",
+	"BipedSlot": 33,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x80E",
+    "Translation": {
+      "x": -0.158203,
+      "y": -0.039956,
+      "z": -23.996305
+    }
+  },
+  "Draugr - Male - Base data - Head": {
+    "RefNode": "NPC Head [Head]",
+	"BipedSlot": 31,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x80E",
+    "Translation": {
+      "x": -0.015804,
+      "y": -2.032373,
+      "z": -2.783388
+    }
+  },
+  "Draugr - Female - Base data - L Calf": {
+    "RefNode": "NPC L Calf [LClf]",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x80E",
+    "Translation": {
+      "x": -0.426168,
+      "y": 0.951353,
+      "z": -26.121584
+    }
+  },
+  "Draugr - Female - Base data - R Calf": {
+    "RefNode": "NPC R Calf [RClf]",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x80E",
+    "Translation": {
+      "x": 0.799026,
+      "y": 0.974447,
+      "z": -25.975687
+    }
+  },
+  "Draugr - Female - Base data - L Forearm": {
+    "RefNode": "NPC L Forearm [LLar]",
+	"BipedSlot": 33,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x80E",
+    "Translation": {
+      "x": 0.749607,
+      "y": -1.021622,
+      "z": -23.751905
+    }
+  },
+  "Draugr - Female - Base data - R Forearm": {
+    "RefNode": "NPC R Forearm [RLar]",
+	"BipedSlot": 33,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x80E",
+    "Translation": {
+      "x": -0.562622,
+      "y": -0.333428,
+      "z": -23.595518
+    }
+  },
+  "Draugr - Female - Base data - Head": {
+    "RefNode": "NPC Head [Head]",
+	"BipedSlot": 31,
+	"LimbArtObject": "DF - Official Creature Pack.esp:0x80E",
+    "Translation": {
+      "x": 0.003374,
+      "y": -2.343956,
+      "z": -2.151762
+    }
+  }
+}

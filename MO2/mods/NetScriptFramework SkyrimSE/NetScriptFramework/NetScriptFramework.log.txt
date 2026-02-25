@@ -1,0 +1,18 @@
+[24 Feb 2026 15:54:09.776] Initializing framework version 15.
+[24 Feb 2026 15:54:09.778] Loaded configuration file.
+[24 Feb 2026 15:54:09.779] Preparing .NET code hooking.
+[24 Feb 2026 15:54:09.781] Loading game library.
+[24 Feb 2026 15:54:10.315] Loaded game library for `The Elder Scrolls V: Skyrim Special Edition` (18).
+[24 Feb 2026 15:54:10.315] Running game version is 1.5.97.0
+[24 Feb 2026 15:54:12.291] Loading plugins.
+[24 Feb 2026 15:54:12.291] Path to plugins: "Data\NetScriptFramework\Plugins".
+[24 Feb 2026 15:54:12.293] Checking file "ActorLimitPlugin.dll"...
+[24 Feb 2026 15:54:12.296] Plugin found and loaded.
+[24 Feb 2026 15:54:12.296] Checking file "BetterStealing.dll"...
+[24 Feb 2026 15:54:12.298] Plugin found and loaded.
+[24 Feb 2026 15:54:12.298] Checking file "BugFixesSSE.dll"...
+[24 Feb 2026 15:54:12.301] Plugin found and loaded.
+[24 Feb 2026 15:54:12.301] Checking file "GamePlayTweaks.dll"...
+[24 Feb 2026 15:54:12.303] Plugin found and loaded.
+[24 Feb 2026 15:54:12.333] Finished loading 4 plugins.
+[24 Feb 2026 15:54:12.333] Finished framework initialization.

@@ -1,0 +1,1018 @@
+{
+   "BretonRace|BretonRaceVampire|DarkElfRace|DarkElfRaceVampire|DremoraRace|ElderRace|ElderRaceVampire|HighElfRace|HighElfRaceVampire|ImperialRace|ImperialRaceVampire|NordRace|NordRaceVampire|OrcRace|OrcRaceVampire|RedguardRace|RedguardRaceVampire|WoodElfRace|WoodElfRaceVampire":{
+      "ANY":{
+         "Male":{
+            "NPC R Forearm [RLar]":[
+               {
+                  "IDLimb":"Humanoid - Base - Male - Iron - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - Stormcloaks - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - DefaultClothing - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - Naked - R Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Forearm [LLar]":[
+               {
+                  "IDLimb":"Humanoid - Base - Male - Iron - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - Stormcloaks - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - DefaultClothing - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - Naked - L Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC R Calf [RClf]":[
+               {
+                  "IDLimb":"Humanoid - Base - Male - Iron - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - Hide - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - DefaultClothing - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - Naked - R Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Calf [LClf]":[
+               {
+                  "IDLimb":"Humanoid - Base - Male - Iron - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - Hide - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - DefaultClothing - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Male - Naked - L Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC Neck [Neck]":[
+               {
+                  "IDLimb":"Humanoid - Head",
+                  "Priority":-100
+               }
+            ]
+         },
+         "Female":{
+            "NPC R Forearm [RLar]":[
+               {
+                  "IDLimb":"Humanoid - Base - Female - Iron - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - Stormcloaks - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - DefaultClothing - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - Naked - R Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Forearm [LLar]":[
+               {
+                  "IDLimb":"Humanoid - Base - Female - Iron - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - Stormcloaks - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - DefaultClothing - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - Naked - L Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC R Calf [RClf]":[
+               {
+                  "IDLimb":"Humanoid - Base - Female - Iron - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - Hide - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - DefaultClothing - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - Naked - R Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Calf [LClf]":[
+               {
+                  "IDLimb":"Humanoid - Base - Female - Iron - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - Hide - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - DefaultClothing - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Base - Female - Naked - L Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC Neck [Neck]":[
+               {
+                  "IDLimb":"Humanoid - Head",
+                  "Priority":-100
+               }
+            ]
+         }
+      }
+   },
+   "ArgonianRace|ArgonianRaceVampire":{
+      "ANY":{
+         "Male":{
+            "NPC R Forearm [RLar]":[
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Iron - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Stormcloaks - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - DefaultClothing - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Naked - R Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Forearm [LLar]":[
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Iron - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Stormcloaks - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - DefaultClothing - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Naked - L Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC R Calf [RClf]":[
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Iron - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Hide - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - DefaultClothing - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Naked - R Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Calf [LClf]":[
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Iron - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Hide - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - DefaultClothing - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Naked - L Calf",
+                  "Priority":-100
+               }
+            ],
+			"TailBone02":[
+               {
+                  "IDLimb":"Humanoid - Argonian - Male - Naked - Tail",
+                  "Priority":-100
+               }
+            ],
+            "NPC Neck [Neck]":[
+               {
+                  "IDLimb":"Humanoid - Head",
+                  "Priority":-100
+               }
+            ]
+         },
+         "Female":{
+            "NPC R Forearm [RLar]":[
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Iron - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Stormcloaks - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - DefaultClothing - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Naked - R Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Forearm [LLar]":[
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Iron - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Stormcloaks - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - DefaultClothing - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Naked - L Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC R Calf [RClf]":[
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Iron - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Hide - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - DefaultClothing - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Naked - R Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Calf [LClf]":[
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Iron - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Hide - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - DefaultClothing - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Naked - L Calf",
+                  "Priority":-100
+               }
+            ],
+			"TailBone02":[
+               {
+                  "IDLimb":"Humanoid - Argonian - Female - Naked - Tail",
+                  "Priority":-100
+               }
+            ],
+            "NPC Neck [Neck]":[
+               {
+                  "IDLimb":"Humanoid - Head",
+                  "Priority":-100
+               }
+            ]
+         }
+      }
+   },
+   "KhajiitRace|KhajiitRaceVampire":{
+      "ANY":{
+         "Male":{
+            "NPC R Forearm [RLar]":[
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Iron - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Stormcloaks - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - DefaultClothing - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Naked - R Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Forearm [LLar]":[
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Iron - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Stormcloaks - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - DefaultClothing - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Naked - L Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC R Calf [RClf]":[
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Iron - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Hide - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - DefaultClothing - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Naked - R Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Calf [LClf]":[
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Iron - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Hide - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - DefaultClothing - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Naked - L Calf",
+                  "Priority":-100
+               }
+            ],
+			"TailBone02":[
+               {
+                  "IDLimb":"Humanoid - Khajiit - Male - Naked - Tail",
+                  "Priority":-100
+               }
+            ],
+            "NPC Neck [Neck]":[
+               {
+                  "IDLimb":"Humanoid - Head",
+                  "Priority":-100
+               }
+            ]
+         },
+         "Female":{
+            "NPC R Forearm [RLar]":[
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Iron - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Stormcloaks - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - DefaultClothing - R Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Naked - R Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Forearm [LLar]":[
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Iron - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Stormcloaks - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - DefaultClothing - L Forearm",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Naked - L Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC R Calf [RClf]":[
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Iron - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Hide - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - DefaultClothing - R Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Naked - R Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Calf [LClf]":[
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Iron - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Heavy"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Hide - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Light"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - DefaultClothing - L Calf",
+                  "Conditions":[
+                     {
+                        "Name":"IsEquippedItemWeightClass",
+                        "Type":"Clothing"
+                     }
+                  ],
+                  "Priority":-90
+               },
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Naked - L Calf",
+                  "Priority":-100
+               }
+            ],
+			"TailBone02":[
+               {
+                  "IDLimb":"Humanoid - Khajiit - Female - Naked - Tail",
+                  "Priority":-100
+               }
+            ],
+            "NPC Neck [Neck]":[
+               {
+                  "IDLimb":"Humanoid - Head",
+                  "Priority":-100
+               }
+            ]
+         }
+      }
+   },
+   "DA13AfflictedRace":{
+      "ANY":{
+         "Male":{
+            "NPC R Forearm [RLar]":[
+               {
+                  "IDLimb":"Humanoid - Afflicted - Male - Naked - R Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Forearm [LLar]":[
+               {
+                  "IDLimb":"Humanoid - Afflicted - Male - Naked - L Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC R Calf [RClf]":[
+               {
+                  "IDLimb":"Humanoid - Afflicted - Male - Naked - R Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Calf [LClf]":[
+               {
+                  "IDLimb":"Humanoid - Afflicted - Male - Naked - L Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC Neck [Neck]":[
+               {
+                  "IDLimb":"Humanoid - Head",
+                  "Priority":-100
+               }
+            ]
+         },
+         "Female":{
+            "NPC R Forearm [RLar]":[
+               {
+                  "IDLimb":"Humanoid - Afflicted - Female - Naked - R Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Forearm [LLar]":[
+               {
+                  "IDLimb":"Humanoid - Afflicted - Female - Naked - L Forearm",
+                  "Priority":-100
+               }
+            ],
+            "NPC R Calf [RClf]":[
+               {
+                  "IDLimb":"Humanoid - Afflicted - Female - Naked - R Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC L Calf [LClf]":[
+               {
+                  "IDLimb":"Humanoid - Afflicted - Female - Naked - L Calf",
+                  "Priority":-100
+               }
+            ],
+            "NPC Neck [Neck]":[
+               {
+                  "IDLimb":"Humanoid - Head",
+                  "Priority":-100
+               }
+            ]
+         }
+      }
+   }
+}

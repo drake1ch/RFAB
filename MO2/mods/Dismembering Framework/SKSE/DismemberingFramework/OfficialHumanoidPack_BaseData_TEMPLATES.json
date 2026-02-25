@@ -1,0 +1,104 @@
+{
+  "Humanoid - Male - Base data - L Calf": {
+    "RefNode": "NPC L Calf [LClf]",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Humanoid Pack.esp:0x810",
+    "Translation": {
+      "x": -0.346705,
+      "y": -0.734917,
+      "z": -20.410435
+    }
+  },
+  "Humanoid - Male - Base data - R Calf": {
+    "RefNode": "NPC R Calf [RClf]",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Humanoid Pack.esp:0x810",
+    "Translation": {
+      "x": 0.349869,
+      "y": -0.737378,
+      "z": -20.410912
+    }
+  },
+  "Humanoid - Male - Base data - L Forearm": {
+    "RefNode": "NPC L Forearm [LLar]",
+	"BipedSlot": 33,
+    "CollisionNode": "NPC L Hand [LHnd]",
+	"LimbArtObject": "DF - Official Humanoid Pack.esp:0x810",
+    "Translation": {
+      "x": 0.678772,
+      "y": -0.970553,
+      "z": -13.375708
+    }
+  },
+  "Humanoid - Male - Base data - R Forearm": {
+    "RefNode": "NPC R Forearm [RLar]",
+	"BipedSlot": 33,
+    "CollisionNode": "NPC R Hand [RHnd]",
+	"LimbArtObject": "DF - Official Humanoid Pack.esp:0x810",
+    "Translation": {
+      "x": -0.681143,
+      "y": -0.9665,
+      "z": -13.366818
+    }
+  },
+  "Humanoid - Male - Base data - Tail": {
+    "RefNode": "TailBone02",
+	"BipedSlot": 40,
+	"LimbArtObject": "DF - Official Humanoid Pack.esp:0x810",
+    "Translation": {
+      "x": 0.000000,
+      "y": 1.750000,
+      "z": -28.500000
+    }
+  },
+  "Humanoid - Female - Base data - L Calf": {
+    "RefNode": "NPC L Calf [LClf]",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Humanoid Pack.esp:0x810",
+    "Translation": {
+      "x": -0.262361,
+      "y": -0.998514,
+      "z": -20.276134
+    }
+  },
+  "Humanoid - Female - Base data - R Calf": {
+    "RefNode": "NPC R Calf [RClf]",
+	"BipedSlot": 37,
+	"LimbArtObject": "DF - Official Humanoid Pack.esp:0x810",
+    "Translation": {
+      "x": 0.2652,
+      "y": -1.00219,
+      "z": -20.276245
+    }
+  },
+  "Humanoid - Female - Base data - L Forearm": {
+    "RefNode": "NPC L Forearm [LLar]",
+	"BipedSlot": 33,
+	"LimbArtObject": "DF - Official Humanoid Pack.esp:0x810",
+    "Translation": {
+      "x": 0.776127,
+      "y": -1.024684,
+      "z": -13.287365
+    }
+  },
+  "Humanoid - Female - Base data - R Forearm": {
+    "RefNode": "NPC R Forearm [RLar]",
+	"BipedSlot": 33,
+	"LimbArtObject": "DF - Official Humanoid Pack.esp:0x810",
+    "Translation": {
+      "x": -0.779755,
+      "y": -1.029914,
+      "z": -13.301589
+    }
+  },
+  "Humanoid - Female - Base data - Tail": {
+    "RefNode": "TailBone02",
+	"BipedSlot": 40,
+	"LimbArtObject": "DF - Official Humanoid Pack.esp:0x810",
+    "Translation": {
+      "x": 0.000000,
+      "y": 1.500000,
+      "z": -28.500000
+    }
+  }
+}

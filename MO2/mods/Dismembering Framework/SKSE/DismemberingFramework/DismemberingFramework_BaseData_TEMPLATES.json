@@ -1,0 +1,28 @@
+{
+  "DF - Base data": {
+    "PlayerEffectSpell": "Dismembering Framework.esm:0x809",
+	"DismemberingSFX": {
+      "OneHandSword": "Dismembering Framework.esm:0x819",
+      "OneHandSwordHeavy": "Dismembering Framework.esm:0x81A",
+      "TwoHandSword": "Dismembering Framework.esm:0x819",
+      "TwoHandSwordHeavy": "Dismembering Framework.esm:0x81A",
+      "OneHandAxe": "Dismembering Framework.esm:0x819",
+      "OneHandAxeHeavy": "Dismembering Framework.esm:0x81A",
+      "TwoHandAxe": "Dismembering Framework.esm:0x819",
+      "TwoHandAxeHeavy": "Dismembering Framework.esm:0x81A",
+      "OneHandMace": "Dismembering Framework.esm:0x815",
+      "OneHandMaceHeavy": "Dismembering Framework.esm:0x816",
+      "TwoHandMace": "Dismembering Framework.esm:0x815",
+      "TwoHandMaceHeavy": "Dismembering Framework.esm:0x816",
+      "HandToHand": "Dismembering Framework.esm:0x815",
+      "HandToHandHeavy": "Dismembering Framework.esm:0x816",
+      "Dagger": "Dismembering Framework.esm:0x819",
+      "DaggerHeavy": "Dismembering Framework.esm:0x81A",
+      "Ranged": "Dismembering Framework.esm:0x818",
+      "RangedHeavy": "Dismembering Framework.esm:0x818",
+      "Other": "Dismembering Framework.esm:0x815",
+      "OtherHeavy": "Dismembering Framework.esm:0x816",
+      "Parrying": "Dismembering Framework.esm:0x817"
+    }
+  }
+}

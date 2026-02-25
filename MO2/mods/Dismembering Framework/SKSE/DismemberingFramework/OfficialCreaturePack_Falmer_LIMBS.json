@@ -1,0 +1,146 @@
+{
+  "Falmer - Male - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - L Calf",
+      "Falmer - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x844"
+  },
+  "Falmer - Male - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - R Calf",
+      "Falmer - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x845"
+  },
+  "Falmer - Male - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - L Forearm",
+      "Falmer - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x846"
+  },
+  "Falmer - Male - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - R Forearm",
+      "Falmer - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x847"
+  },
+  "Falmer - Male - Naked - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - Head",
+      "Falmer - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x848"
+  },
+  "Falmer - Male - Clothed - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - L Forearm",
+      "Falmer - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x849"
+  },
+  "Falmer - Male - Clothed - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - R Forearm",
+      "Falmer - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x84A"
+  },
+  "Falmer - Male - Armored - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - L Calf",
+      "Falmer - Male - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x84B"
+  },
+  "Falmer - Male - Armored - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - R Calf",
+      "Falmer - Male - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x84C"
+  },
+  "Falmer - Male - Armored - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - L Forearm",
+      "Falmer - Male - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x84D"
+  },
+  "Falmer - Male - Armored - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - R Forearm",
+      "Falmer - Male - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x84E"
+  },
+  "Falmer - Male - Armored - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Male - Base data - Head",
+      "Falmer - Male - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x84F"
+  },
+  "Falmer - Female - Naked - L Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Female - Base data - L Calf",
+      "Falmer - Female - Actor addons data - L Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x860"
+  },
+  "Falmer - Female - Naked - R Calf": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Female - Base data - R Calf",
+      "Falmer - Female - Actor addons data - R Calf"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x861"
+  },
+  "Falmer - Female - Naked - L Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Female - Base data - L Forearm",
+      "Falmer - Female - Actor addons data - L Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x862"
+  },
+  "Falmer - Female - Naked - R Forearm": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Female - Base data - R Forearm",
+      "Falmer - Female - Actor addons data - R Forearm"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x863"
+  },
+  "Falmer - Female - Naked - Head": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Female - Base data - Head",
+      "Falmer - Female - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x864"
+  },
+  "Falmer - Female - Naked - Head - Alt 01": {
+    "Templates": [
+      "DF - Base data",
+      "Falmer - Female - Base data - Head",
+      "Falmer - Female - Actor addons data - Head"
+    ],
+    "LimbFormID": "DF - Official Creature Pack.esp:0x865"
+  }
+}
