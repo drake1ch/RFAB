@@ -19,7 +19,7 @@ attrib +h "%CACHE_DIR%" >nul 2>nul
 
 if not exist "%CACHE_REPO%\.git" (
   echo [1/4] Creating local update cache...
-  "%GIT_EXE%" clone --branch "%BRANCH%" "%REPO_URL%" "%CACHE_REPO%" || goto :fail
+  "%GIT_EXE%" -c credential.helper=manager clone --branch "%BRANCH%" "%REPO_URL%" "%CACHE_REPO%" || goto :fail
 ) else (
   echo [1/4] Update cache found.
 )
@@ -27,12 +27,13 @@ if not exist "%CACHE_REPO%\.git" (
 echo [2/4] Fetching latest changes...
 "%GIT_EXE%" -C "%CACHE_REPO%" remote set-url origin "%REPO_URL%" >nul 2>nul
 "%GIT_EXE%" -C "%CACHE_REPO%" config core.longpaths true >nul
-"%GIT_EXE%" -C "%CACHE_REPO%" fetch --prune origin "%BRANCH%" || goto :fail
-"%GIT_EXE%" -C "%CACHE_REPO%" checkout -q "%BRANCH%" >nul 2>nul
+"%GIT_EXE%" -C "%CACHE_REPO%" config credential.helper manager >nul
+"%GIT_EXE%" -c credential.helper=manager -C "%CACHE_REPO%" fetch --prune origin "%BRANCH%" || goto :fail
+"%GIT_EXE%" -c credential.helper=manager -C "%CACHE_REPO%" checkout -q "%BRANCH%" >nul 2>nul
 if errorlevel 1 (
-  "%GIT_EXE%" -C "%CACHE_REPO%" checkout -q -B "%BRANCH%" "origin/%BRANCH%" || goto :fail
+  "%GIT_EXE%" -c credential.helper=manager -C "%CACHE_REPO%" checkout -q -B "%BRANCH%" "origin/%BRANCH%" || goto :fail
 )
-"%GIT_EXE%" -C "%CACHE_REPO%" reset --hard "origin/%BRANCH%" || goto :fail
+"%GIT_EXE%" -c credential.helper=manager -C "%CACHE_REPO%" reset --hard "origin/%BRANCH%" || goto :fail
 
 echo [3/4] Applying update in "%BASE_DIR%"...
 "%GIT_EXE%" --git-dir="%CACHE_REPO%\.git" --work-tree="%BASE_DIR%" -c core.longpaths=true reset --hard "origin/%BRANCH%" || goto :fail
