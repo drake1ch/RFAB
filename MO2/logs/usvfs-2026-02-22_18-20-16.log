@@ -1,0 +1,1740 @@
+21:20:16.999 [I] usvfs dll 0.5.5.0 initialized in process 16144
+21:20:16.999 [D] remove from process 16144
+21:20:16.999 [I] create config in 16144
+21:20:16.999 [I] 0 processes
+21:20:16.999 [I] mod_organizer_instance_1 created in process 16144
+21:20:16.999 [I] attached to mod_organizer_instance_1 with 1 nodes, size 4,194,304 B
+21:20:16.999 [I] inv_mod_organizer_instance_1 created in process 16144
+21:20:16.999 [I] attached to inv_mod_organizer_instance_1 with 1 nodes, size 131,072 B
+21:20:16.999 [D] context current shm: mod_organizer_instance (now 2 connections)
+21:20:16.999 [D] clearing blacklist
+21:20:16.999 [D] blacklisting 'Chrome.exe'
+21:20:16.999 [D] blacklisting 'Firefox.exe'
+21:20:16.999 [D] blacklisting 'TSVNCache.exe'
+21:20:16.999 [D] blacklisting 'TGitCache.exe'
+21:20:16.999 [D] blacklisting 'Steam.exe'
+21:20:16.999 [D] blacklisting 'GameOverlayUI.exe'
+21:20:16.999 [D] blacklisting 'Discord.exe'
+21:20:16.999 [D] blacklisting 'GalaxyClient.exe'
+21:20:16.999 [D] blacklisting 'Spotify.exe'
+21:20:16.999 [D] clearing forced libraries
+21:21:29.129 [I] ran out of memory in tree mod_organizer_instance_1, will create another one
+21:21:29.129 [I] creating mod_organizer_instance_2
+21:21:29.129 [I] mod_organizer_instance_2 created, activating
+21:21:29.137 [I] will destroy mod_organizer_instance_1
+21:21:29.137 [I] tree mod_organizer_instance_2 size now 8,388,608 B
+21:21:29.137 [I] destroying mod_organizer_instance_1
+21:21:29.197 [I] ran out of memory in tree mod_organizer_instance_2, will create another one
+21:21:29.197 [I] creating mod_organizer_instance_3
+21:21:29.197 [I] mod_organizer_instance_3 created, activating
+21:21:29.215 [I] will destroy mod_organizer_instance_2
+21:21:29.215 [I] tree mod_organizer_instance_3 size now 16,777,216 B
+21:21:29.215 [I] destroying mod_organizer_instance_2
+21:21:29.266 [D] clearing forced libraries
+21:21:29.275 [I] injecting to process 3060 with different bitness
+21:21:29.275 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+21:21:29.317 [I] (proxy) instance: mod_organizer_instance
+21:21:29.318 [I] (proxy) exe: 
+21:21:29.318 [I] (proxy) pid: 3060
+21:21:29.318 [I] (proxy) size: 65536
+21:21:29.318 [I] (proxy) addr: 0x620000
+21:21:29.318 [I] (proxy) objs: 1
+21:21:29.318 [I] (proxy) injecting to process 3060 with same bitness
+21:21:29.318 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+21:21:29.318 [I] (proxy) injection to same bitness process 3060 successful
+21:21:29.320 [D] proxy run successful
+21:21:29.331 [I] usvfs dll 0.5.5.0 initialized in process 3060
+21:21:29.331 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:3060 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+21:21:29.331 [I] access existing config in 3060
+21:21:29.331 [I] 0 processes
+21:21:29.332 [I] mod_organizer_instance_3 opened in process 3060
+21:21:29.334 [I] attached to mod_organizer_instance_3 with 44891 nodes, size 16,777,216 B
+21:21:29.334 [I] inv_mod_organizer_instance_1 opened in process 3060
+21:21:29.334 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+21:21:29.334 [I] Process registered in shared process list : 3060
+21:21:29.334 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+21:21:29.334 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:21:29.334 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:21:29.334 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:21:29.334 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.334 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:21:29.334 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.335 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.335 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.335 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:21:29.335 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:21:29.335 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:21:29.335 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:21:29.335 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:21:29.335 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:21:29.335 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.335 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.335 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.335 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:21:29.335 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:21:29.335 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:21:29.335 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:21:29.335 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:21:29.335 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:21:29.335 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:21:29.335 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:21:29.335 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.335 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:21:29.335 [I] inithooks in process 3060 successful
+21:21:48.616 <3060:2908> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\SSEEdit Cache\103758D4_RFAB_esp_77BB35CF_g1252_t65001_l65001_russian.refcache, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\SSEEdit Cache\103758D4_RFAB_esp_77BB35CF_g1252_t65001_l65001_russian.refcache
+21:31:38.421 [I] releasing hook context
+21:31:38.421 [I] 2 users left
+21:35:11.206 [D] clearing forced libraries
+21:35:11.212 [I] injecting to process 16368 with different bitness
+21:35:11.212 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+21:35:11.248 [I] (proxy) instance: mod_organizer_instance
+21:35:11.249 [I] (proxy) exe: 
+21:35:11.249 [I] (proxy) pid: 16368
+21:35:11.249 [I] (proxy) size: 65536
+21:35:11.249 [I] (proxy) addr: 0x890000
+21:35:11.249 [I] (proxy) objs: 1
+21:35:11.249 [I] (proxy) injecting to process 16368 with same bitness
+21:35:11.249 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+21:35:11.249 [I] (proxy) injection to same bitness process 16368 successful
+21:35:11.250 [D] proxy run successful
+21:35:11.259 [I] usvfs dll 0.5.5.0 initialized in process 16368
+21:35:11.260 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:16368 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+21:35:11.260 [I] access existing config in 16368
+21:35:11.260 [I] 0 processes
+21:35:11.260 [I] mod_organizer_instance_3 opened in process 16368
+21:35:11.263 [I] attached to mod_organizer_instance_3 with 44895 nodes, size 16,777,216 B
+21:35:11.263 [I] inv_mod_organizer_instance_1 opened in process 16368
+21:35:11.263 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+21:35:11.263 [I] Process registered in shared process list : 16368
+21:35:11.263 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+21:35:11.263 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:35:11.263 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:35:11.263 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:35:11.263 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:35:11.263 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:35:11.263 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:35:11.263 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:35:11.263 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:35:11.263 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:35:11.263 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:35:11.263 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:35:11.263 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:35:11.263 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:35:11.263 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:35:11.263 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:35:11.263 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:35:11.263 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:35:11.263 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:35:11.263 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:35:11.263 [I] inithooks in process 16368 successful
+21:35:15.141 [E] thread 11316 never released the mutex
+21:36:20.006 <16368:15704> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_22_21_36_20, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_22_21_36_20
+21:36:24.257 [I] remove from tree RFAB.esp
+21:36:24.257 <16368:15704> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+21:36:24.257 <16368:15704> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+21:36:24.257 [I] remove from tree RFAB.esp.save.2026_02_22_21_36_20
+21:36:24.257 <16368:15704> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+21:36:24.490 [I] releasing hook context
+21:36:24.490 [I] 2 users left
+21:38:37.835 [D] clearing forced libraries
+21:38:37.841 [I] injecting to process 15820 with different bitness
+21:38:37.841 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+21:38:37.877 [I] (proxy) instance: mod_organizer_instance
+21:38:37.878 [I] (proxy) exe: 
+21:38:37.878 [I] (proxy) pid: 15820
+21:38:37.878 [I] (proxy) size: 65536
+21:38:37.878 [I] (proxy) addr: 0x9f0000
+21:38:37.878 [I] (proxy) objs: 1
+21:38:37.878 [I] (proxy) injecting to process 15820 with same bitness
+21:38:37.878 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+21:38:37.878 [I] (proxy) injection to same bitness process 15820 successful
+21:38:37.879 [D] proxy run successful
+21:38:37.888 [I] usvfs dll 0.5.5.0 initialized in process 15820
+21:38:37.888 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:15820 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+21:38:37.888 [I] access existing config in 15820
+21:38:37.888 [I] 0 processes
+21:38:37.888 [I] mod_organizer_instance_3 opened in process 15820
+21:38:37.891 [I] attached to mod_organizer_instance_3 with 44893 nodes, size 16,777,216 B
+21:38:37.891 [I] inv_mod_organizer_instance_1 opened in process 15820
+21:38:37.891 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+21:38:37.891 [I] Process registered in shared process list : 15820
+21:38:37.891 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+21:38:37.891 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.891 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.891 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.891 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.891 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.891 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.891 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.891 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.891 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.891 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.891 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.891 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.892 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:38:37.892 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:38:37.892 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:38:37.892 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.892 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:38:37.892 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.892 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.892 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.892 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:38:37.892 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:38:37.892 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:38:37.892 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:38:37.892 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:38:37.892 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+21:38:37.892 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.892 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.892 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.892 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:38:37.892 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:38:37.892 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:38:37.892 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:38:37.892 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:38:37.892 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:38:37.892 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:38:37.892 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+21:38:37.892 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.892 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+21:38:37.892 [I] inithooks in process 15820 successful
+21:38:54.731 <15820:13456> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\SSEEdit Cache\103758D4_RFAB_esp_AF779F45_g1252_t65001_l65001_russian.refcache, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\SSEEdit Cache\103758D4_RFAB_esp_AF779F45_g1252_t65001_l65001_russian.refcache
+22:05:41.765 <15820:10520> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_22_22_05_41, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_22_22_05_41
+22:05:45.315 [I] remove from tree RFAB.esp
+22:05:45.315 <15820:10520> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:05:45.315 <15820:10520> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:05:45.315 [I] remove from tree RFAB.esp.save.2026_02_22_22_05_41
+22:05:45.315 <15820:10520> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:05:45.544 [I] releasing hook context
+22:05:45.544 [I] 2 users left
+22:07:23.031 [D] clearing forced libraries
+22:07:23.038 [I] injecting to process 3184 with different bitness
+22:07:23.038 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+22:07:23.075 [I] (proxy) instance: mod_organizer_instance
+22:07:23.075 [I] (proxy) exe: 
+22:07:23.075 [I] (proxy) pid: 3184
+22:07:23.075 [I] (proxy) size: 65536
+22:07:23.075 [I] (proxy) addr: 0x2c20000
+22:07:23.075 [I] (proxy) objs: 1
+22:07:23.075 [I] (proxy) injecting to process 3184 with same bitness
+22:07:23.075 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+22:07:23.075 [I] (proxy) injection to same bitness process 3184 successful
+22:07:23.077 [D] proxy run successful
+22:07:23.086 [I] usvfs dll 0.5.5.0 initialized in process 3184
+22:07:23.086 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:3184 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:07:23.087 [I] access existing config in 3184
+22:07:23.087 [I] 0 processes
+22:07:23.087 [I] mod_organizer_instance_3 opened in process 3184
+22:07:23.089 [I] attached to mod_organizer_instance_3 with 44897 nodes, size 16,777,216 B
+22:07:23.089 [I] inv_mod_organizer_instance_1 opened in process 3184
+22:07:23.089 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:07:23.089 [I] Process registered in shared process list : 3184
+22:07:23.089 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:07:23.090 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:07:23.090 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:07:23.090 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:07:23.090 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:07:23.090 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:07:23.090 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:07:23.090 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:07:23.090 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:07:23.090 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:07:23.090 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:07:23.090 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:07:23.090 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:07:23.090 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:07:23.090 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:07:23.090 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:07:23.090 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:07:23.090 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:07:23.090 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:07:23.090 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:07:23.090 [I] inithooks in process 3184 successful
+22:07:27.074 [E] thread 8864 never released the mutex
+22:07:39.753 <3184:12452> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\SSEEdit Cache\103758D4_RFAB_esp_6E5F768B_g1252_t65001_l65001_russian.refcache, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\SSEEdit Cache\103758D4_RFAB_esp_6E5F768B_g1252_t65001_l65001_russian.refcache
+22:09:26.645 <3184:2424> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_22_22_09_26, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_22_22_09_26
+22:09:27.325 <3184:2424> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB Radiant Excluded Cells.esp.save.2026_02_22_22_09_26, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB Radiant Excluded Cells.esp.save.2026_02_22_22_09_26
+22:09:32.116 [I] remove from tree RFAB.esp
+22:09:32.116 <3184:2424> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:09:32.116 <3184:2424> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:09:32.116 [I] remove from tree RFAB.esp.save.2026_02_22_22_09_26
+22:09:32.116 <3184:2424> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:09:32.117 [I] remove from tree RFAB Radiant Excluded Cells.esp
+22:09:32.117 <3184:2424> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB Radiant Excluded Cells.esp
+22:09:32.117 <3184:2424> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB Radiant Excluded Cells.esp
+22:09:32.117 [I] remove from tree RFAB Radiant Excluded Cells.esp.save.2026_02_22_22_09_26
+22:09:32.117 <3184:2424> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB Radiant Excluded Cells.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB Radiant Excluded Cells.esp
+22:09:37.239 [I] releasing hook context
+22:09:37.239 [I] 2 users left
+22:11:37.382 [D] clearing forced libraries
+22:11:37.394 [I] injecting to process 16328 with same bitness
+22:11:37.394 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+22:11:37.394 [I] injection to same bitness process 16328 successful
+22:11:37.432 [I] usvfs dll 0.5.5.0 initialized in process 16328
+22:11:37.432 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\skse64_loader.exe:16328 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:11:37.432 [I] access existing config in 16328
+22:11:37.432 [I] 0 processes
+22:11:37.432 [I] mod_organizer_instance_3 opened in process 16328
+22:11:37.435 [I] attached to mod_organizer_instance_3 with 44897 nodes, size 16,777,216 B
+22:11:37.435 [I] inv_mod_organizer_instance_1 opened in process 16328
+22:11:37.435 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:11:37.435 [I] Process registered in shared process list : 16328
+22:11:37.435 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:11:37.435 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.435 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.435 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.435 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.435 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.435 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.435 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.435 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.435 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.435 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.435 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:11:37.435 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:11:37.435 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:11:37.435 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:11:37.435 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:11:37.435 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:11:37.435 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:11:37.435 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:11:37.435 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.435 [I] inithooks in process 16328 successful
+22:11:37.448 [I] injecting to process 1216 with same bitness
+22:11:37.448 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+22:11:37.448 [I] injection to same bitness process 1216 successful
+22:11:37.557 [I] releasing hook context
+22:11:37.557 [I] 2 users left
+22:11:37.557 [I] usvfs dll 0.5.5.0 initialized in process 1216
+22:11:37.557 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SkyrimSE.exe:1216 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:11:37.557 [I] access existing config in 1216
+22:11:37.557 [I] 0 processes
+22:11:37.557 [I] mod_organizer_instance_3 opened in process 1216
+22:11:37.560 [I] attached to mod_organizer_instance_3 with 44897 nodes, size 16,777,216 B
+22:11:37.560 [I] inv_mod_organizer_instance_1 opened in process 1216
+22:11:37.560 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:11:37.560 [I] Process registered in shared process list : 1216
+22:11:37.560 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:11:37.561 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.561 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.561 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.561 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.561 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.561 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.561 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.561 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.561 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.561 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:11:37.561 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] existing hook to 7fffb6c00ed6 in unknown
+22:11:37.561 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:11:37.561 [I] existing hook to 7fffb6c00fd6 in unknown
+22:11:37.561 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:11:37.561 [I] existing hook to 7fffb6c00f16 in unknown
+22:11:37.561 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:11:37.561 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:11:37.561 [I] existing hook to 7fffb6c00f56 in unknown
+22:11:37.561 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:11:37.561 [I] existing hook to 7fffb6c00f96 in unknown
+22:11:37.561 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:11:37.561 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:11:37.561 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:11:37.561 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:11:37.561 [I] inithooks in process 1216 successful
+22:11:48.687 [W] hook_FindFirstFileExW(): path 'Saves/' ends with slash, always fails
+22:14:01.077 [I] releasing hook context
+22:14:01.077 [I] 2 users left
+22:14:06.989 [D] clearing forced libraries
+22:14:06.995 [I] injecting to process 3560 with different bitness
+22:14:06.995 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+22:14:07.031 [I] (proxy) instance: mod_organizer_instance
+22:14:07.032 [I] (proxy) exe: 
+22:14:07.032 [I] (proxy) pid: 3560
+22:14:07.032 [I] (proxy) size: 65536
+22:14:07.032 [I] (proxy) addr: 0x790000
+22:14:07.032 [I] (proxy) objs: 1
+22:14:07.032 [I] (proxy) injecting to process 3560 with same bitness
+22:14:07.032 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+22:14:07.032 [I] (proxy) injection to same bitness process 3560 successful
+22:14:07.033 [D] proxy run successful
+22:14:07.043 [I] usvfs dll 0.5.5.0 initialized in process 3560
+22:14:07.043 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:3560 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:14:07.043 [I] access existing config in 3560
+22:14:07.043 [I] 0 processes
+22:14:07.044 [I] mod_organizer_instance_3 opened in process 3560
+22:14:07.047 [I] attached to mod_organizer_instance_3 with 44897 nodes, size 16,777,216 B
+22:14:07.047 [I] inv_mod_organizer_instance_1 opened in process 3560
+22:14:07.047 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:14:07.047 [I] Process registered in shared process list : 3560
+22:14:07.047 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:14:07.047 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:14:07.047 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:14:07.047 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:14:07.047 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:14:07.047 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:14:07.047 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:14:07.047 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:14:07.047 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:14:07.047 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:14:07.047 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:14:07.047 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:14:07.047 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:14:07.047 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:14:07.047 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:14:07.047 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:14:07.047 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:14:07.047 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:14:07.047 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:14:07.047 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:14:07.047 [I] inithooks in process 3560 successful
+22:14:23.822 <3560:17384> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\SSEEdit Cache\103758D4_RFAB_esp_E91CBDA4_g1252_t65001_l65001_russian.refcache, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\SSEEdit Cache\103758D4_RFAB_esp_E91CBDA4_g1252_t65001_l65001_russian.refcache
+22:16:59.245 <3560:4020> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_22_22_16_59, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_22_22_16_59
+22:23:39.093 <3560:4020> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_22_22_23_39, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_22_22_23_39
+22:25:25.947 [I] remove from tree RFAB.esp
+22:25:25.947 <3560:4020> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:25:25.947 <3560:4020> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:25:25.947 [I] remove from tree RFAB.esp.save.2026_02_22_22_16_59
+22:25:25.947 <3560:4020> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:25:25.949 [I] remove from tree RFAB.esp
+22:25:25.949 <3560:4020> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:25:25.949 <3560:4020> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:25:25.950 [I] remove from tree RFAB.esp.save.2026_02_22_22_23_39
+22:25:25.950 <3560:4020> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:25:26.222 [I] releasing hook context
+22:25:26.222 [I] 2 users left
+22:46:51.554 [D] clearing forced libraries
+22:46:51.558 [I] injecting to process 16000 with same bitness
+22:46:51.558 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+22:46:51.558 [I] injection to same bitness process 16000 successful
+22:46:51.599 [I] usvfs dll 0.5.5.0 initialized in process 16000
+22:46:51.599 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\skse64_loader.exe:16000 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:46:51.599 [I] access existing config in 16000
+22:46:51.599 [I] 0 processes
+22:46:51.599 [I] mod_organizer_instance_3 opened in process 16000
+22:46:51.602 [I] attached to mod_organizer_instance_3 with 44899 nodes, size 16,777,216 B
+22:46:51.602 [I] inv_mod_organizer_instance_1 opened in process 16000
+22:46:51.602 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:46:51.602 [I] Process registered in shared process list : 16000
+22:46:51.602 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:46:51.602 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.602 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.602 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.602 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.602 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.602 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.602 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.602 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.602 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.602 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.602 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:46:51.602 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:46:51.602 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:46:51.602 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:46:51.602 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:46:51.602 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:46:51.602 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:46:51.602 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:46:51.602 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.602 [I] inithooks in process 16000 successful
+22:46:51.607 [I] injecting to process 15064 with same bitness
+22:46:51.607 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+22:46:51.607 [I] injection to same bitness process 15064 successful
+22:46:51.693 [I] releasing hook context
+22:46:51.693 [I] 2 users left
+22:46:51.694 [I] usvfs dll 0.5.5.0 initialized in process 15064
+22:46:51.694 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SkyrimSE.exe:15064 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:46:51.694 [I] access existing config in 15064
+22:46:51.694 [I] 0 processes
+22:46:51.694 [I] mod_organizer_instance_3 opened in process 15064
+22:46:51.698 [I] attached to mod_organizer_instance_3 with 44899 nodes, size 16,777,216 B
+22:46:51.698 [I] inv_mod_organizer_instance_1 opened in process 15064
+22:46:51.698 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:46:51.698 [I] Process registered in shared process list : 15064
+22:46:51.698 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:46:51.698 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.698 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.698 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.698 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.698 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.698 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.698 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.698 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.698 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.698 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:46:51.698 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] existing hook to 7fffb6c00ed6 in unknown
+22:46:51.698 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:46:51.698 [I] existing hook to 7fffb6c00fd6 in unknown
+22:46:51.698 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:46:51.698 [I] existing hook to 7fffb6c00f16 in unknown
+22:46:51.698 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:46:51.698 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:46:51.698 [I] existing hook to 7fffb6c00f56 in unknown
+22:46:51.698 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:46:51.698 [I] existing hook to 7fffb6c00f96 in unknown
+22:46:51.698 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:46:51.698 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:46:51.698 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:46:51.698 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:46:51.698 [I] inithooks in process 15064 successful
+22:46:58.968 [W] hook_FindFirstFileExW(): path 'Saves/' ends with slash, always fails
+22:47:34.996 [D] clearing forced libraries
+22:47:35.001 [I] injecting to process 10264 with different bitness
+22:47:35.001 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+22:47:35.042 [I] (proxy) instance: mod_organizer_instance
+22:47:35.042 [I] (proxy) exe: 
+22:47:35.042 [I] (proxy) pid: 10264
+22:47:35.042 [I] (proxy) size: 65536
+22:47:35.042 [I] (proxy) addr: 0x810000
+22:47:35.042 [I] (proxy) objs: 1
+22:47:35.042 [I] (proxy) injecting to process 10264 with same bitness
+22:47:35.042 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+22:47:35.042 [I] (proxy) injection to same bitness process 10264 successful
+22:47:35.044 [D] proxy run successful
+22:47:35.055 [I] usvfs dll 0.5.5.0 initialized in process 10264
+22:47:35.055 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:10264 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:47:35.055 [I] access existing config in 10264
+22:47:35.055 [I] 1 processes
+22:47:35.055 [I] mod_organizer_instance_3 opened in process 10264
+22:47:35.058 [I] attached to mod_organizer_instance_3 with 44899 nodes, size 16,777,216 B
+22:47:35.058 [I] inv_mod_organizer_instance_1 opened in process 10264
+22:47:35.058 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:47:35.058 [I] Process registered in shared process list : 10264
+22:47:35.058 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:47:35.058 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.058 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:47:35.058 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:47:35.059 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:47:35.059 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.059 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:47:35.059 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.059 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.059 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.059 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:47:35.059 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:47:35.059 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:47:35.059 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:47:35.059 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:47:35.059 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:47:35.059 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.059 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.059 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.059 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:47:35.059 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:47:35.059 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:47:35.059 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:47:35.059 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:47:35.059 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:47:35.059 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:47:35.059 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:47:35.059 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.059 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:47:35.059 [I] inithooks in process 10264 successful
+22:47:51.676 <10264:15696> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\SSEEdit Cache\103758D4_RFAB_esp_541F6014_g1252_t65001_l65001_russian.refcache, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\SSEEdit Cache\103758D4_RFAB_esp_541F6014_g1252_t65001_l65001_russian.refcache
+22:50:31.467 [I] releasing hook context
+22:50:31.467 [I] 3 users left
+22:51:24.843 <10264:5556> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_22_22_51_24, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_22_22_51_24
+22:51:28.460 [I] remove from tree RFAB.esp
+22:51:28.460 <10264:5556> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:51:28.460 <10264:5556> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:51:28.460 [I] remove from tree RFAB.esp.save.2026_02_22_22_51_24
+22:51:28.460 <10264:5556> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:51:28.715 [I] releasing hook context
+22:51:28.715 [I] 2 users left
+22:51:31.613 [D] clearing forced libraries
+22:51:31.618 [I] injecting to process 11200 with same bitness
+22:51:31.618 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+22:51:31.618 [I] injection to same bitness process 11200 successful
+22:51:31.656 [I] usvfs dll 0.5.5.0 initialized in process 11200
+22:51:31.656 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\skse64_loader.exe:11200 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:51:31.657 [I] access existing config in 11200
+22:51:31.657 [I] 0 processes
+22:51:31.657 [I] mod_organizer_instance_3 opened in process 11200
+22:51:31.659 [I] attached to mod_organizer_instance_3 with 44901 nodes, size 16,777,216 B
+22:51:31.659 [I] inv_mod_organizer_instance_1 opened in process 11200
+22:51:31.659 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:51:31.659 [I] Process registered in shared process list : 11200
+22:51:31.659 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:51:31.659 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.659 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.660 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.660 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.660 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.660 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.660 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.660 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.660 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.660 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.660 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.660 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:51:31.660 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:51:31.660 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:51:31.660 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:51:31.660 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:51:31.660 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:51:31.660 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:51:31.660 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:51:31.660 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.660 [I] inithooks in process 11200 successful
+22:51:31.664 [I] injecting to process 9392 with same bitness
+22:51:31.664 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+22:51:31.664 [I] injection to same bitness process 9392 successful
+22:51:31.750 [I] releasing hook context
+22:51:31.750 [I] 2 users left
+22:51:31.750 [I] usvfs dll 0.5.5.0 initialized in process 9392
+22:51:31.750 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SkyrimSE.exe:9392 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:51:31.750 [I] access existing config in 9392
+22:51:31.750 [I] 0 processes
+22:51:31.751 [I] mod_organizer_instance_3 opened in process 9392
+22:51:31.754 [I] attached to mod_organizer_instance_3 with 44901 nodes, size 16,777,216 B
+22:51:31.754 [I] inv_mod_organizer_instance_1 opened in process 9392
+22:51:31.754 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:51:31.754 [I] Process registered in shared process list : 9392
+22:51:31.754 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:51:31.754 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.754 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.754 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.754 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.754 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.754 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.754 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.754 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.754 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.754 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.754 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.754 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.755 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.755 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.755 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.755 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.755 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.755 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.755 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.755 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.755 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.755 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.755 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.755 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.755 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.755 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:51:31.755 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.755 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.755 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.755 [I] existing hook to 7fffb6c00ed6 in unknown
+22:51:31.755 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:51:31.755 [I] existing hook to 7fffb6c00fd6 in unknown
+22:51:31.755 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:51:31.755 [I] existing hook to 7fffb6c00f16 in unknown
+22:51:31.755 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:51:31.755 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:51:31.755 [I] existing hook to 7fffb6c00f56 in unknown
+22:51:31.755 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:51:31.755 [I] existing hook to 7fffb6c00f96 in unknown
+22:51:31.755 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:51:31.755 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:51:31.755 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:51:31.755 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.755 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:51:31.755 [I] inithooks in process 9392 successful
+22:51:38.876 [W] hook_FindFirstFileExW(): path 'Saves/' ends with slash, always fails
+22:53:22.182 [D] clearing forced libraries
+22:53:22.188 [I] injecting to process 6460 with different bitness
+22:53:22.188 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+22:53:22.225 [I] (proxy) instance: mod_organizer_instance
+22:53:22.225 [I] (proxy) exe: 
+22:53:22.225 [I] (proxy) pid: 6460
+22:53:22.225 [I] (proxy) size: 65536
+22:53:22.225 [I] (proxy) addr: 0xa40000
+22:53:22.225 [I] (proxy) objs: 1
+22:53:22.225 [I] (proxy) injecting to process 6460 with same bitness
+22:53:22.225 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+22:53:22.225 [I] (proxy) injection to same bitness process 6460 successful
+22:53:22.227 [D] proxy run successful
+22:53:22.237 [I] usvfs dll 0.5.5.0 initialized in process 6460
+22:53:22.237 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:6460 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:53:22.238 [I] access existing config in 6460
+22:53:22.238 [I] 1 processes
+22:53:22.238 [I] mod_organizer_instance_3 opened in process 6460
+22:53:22.241 [I] attached to mod_organizer_instance_3 with 44901 nodes, size 16,777,216 B
+22:53:22.241 [I] inv_mod_organizer_instance_1 opened in process 6460
+22:53:22.241 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:53:22.241 [I] Process registered in shared process list : 6460
+22:53:22.241 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:53:22.241 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:53:22.241 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:53:22.241 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:53:22.241 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:53:22.241 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:53:22.241 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:53:22.241 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:53:22.241 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:53:22.241 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:53:22.241 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:53:22.241 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:53:22.241 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:53:22.241 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:53:22.241 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:53:22.241 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:53:22.241 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:53:22.241 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:53:22.241 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:53:22.241 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:53:22.241 [I] inithooks in process 6460 successful
+22:53:39.361 <6460:10820> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\SSEEdit Cache\103758D4_RFAB_esp_F80612DC_g1252_t65001_l65001_russian.refcache, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\SSEEdit Cache\103758D4_RFAB_esp_F80612DC_g1252_t65001_l65001_russian.refcache
+22:56:48.327 [I] releasing hook context
+22:56:48.327 [I] 3 users left
+22:57:02.995 <6460:8844> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_22_22_57_02, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_22_22_57_02
+22:57:07.820 [I] remove from tree RFAB.esp
+22:57:07.820 <6460:8844> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:57:07.820 <6460:8844> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:57:07.820 [I] remove from tree RFAB.esp.save.2026_02_22_22_57_02
+22:57:07.820 <6460:8844> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+22:57:08.090 [I] releasing hook context
+22:57:08.090 [I] 2 users left
+22:57:11.642 [D] clearing forced libraries
+22:57:11.646 [I] injecting to process 3708 with same bitness
+22:57:11.646 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+22:57:11.646 [I] injection to same bitness process 3708 successful
+22:57:11.692 [I] usvfs dll 0.5.5.0 initialized in process 3708
+22:57:11.692 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\skse64_loader.exe:3708 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:57:11.692 [I] access existing config in 3708
+22:57:11.692 [I] 0 processes
+22:57:11.692 [I] mod_organizer_instance_3 opened in process 3708
+22:57:11.695 [I] attached to mod_organizer_instance_3 with 44903 nodes, size 16,777,216 B
+22:57:11.695 [I] inv_mod_organizer_instance_1 opened in process 3708
+22:57:11.695 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:57:11.695 [I] Process registered in shared process list : 3708
+22:57:11.695 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:57:11.695 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.695 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.695 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.695 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.695 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.695 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.695 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.695 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.696 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.696 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.696 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.696 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.696 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.696 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.696 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.696 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.696 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.696 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:57:11.696 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:57:11.696 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:57:11.696 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:57:11.696 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:57:11.696 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:57:11.696 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:57:11.696 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:57:11.696 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.696 [I] inithooks in process 3708 successful
+22:57:11.700 [I] injecting to process 8776 with same bitness
+22:57:11.700 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+22:57:11.700 [I] injection to same bitness process 8776 successful
+22:57:11.787 [I] releasing hook context
+22:57:11.787 [I] 2 users left
+22:57:11.788 [I] usvfs dll 0.5.5.0 initialized in process 8776
+22:57:11.788 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SkyrimSE.exe:8776 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+22:57:11.788 [I] access existing config in 8776
+22:57:11.788 [I] 0 processes
+22:57:11.788 [I] mod_organizer_instance_3 opened in process 8776
+22:57:11.791 [I] attached to mod_organizer_instance_3 with 44903 nodes, size 16,777,216 B
+22:57:11.791 [I] inv_mod_organizer_instance_1 opened in process 8776
+22:57:11.791 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+22:57:11.791 [I] Process registered in shared process list : 8776
+22:57:11.791 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+22:57:11.791 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.791 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.791 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.791 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.791 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.791 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.792 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.792 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.792 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.792 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.792 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.792 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.792 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.792 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+22:57:11.792 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.792 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.792 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.792 [I] existing hook to 7fffb6c00ed6 in unknown
+22:57:11.792 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:57:11.792 [I] existing hook to 7fffb6c00fd6 in unknown
+22:57:11.792 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:57:11.792 [I] existing hook to 7fffb6c00f16 in unknown
+22:57:11.792 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:57:11.792 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:57:11.792 [I] existing hook to 7fffb6c00f56 in unknown
+22:57:11.792 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:57:11.792 [I] existing hook to 7fffb6c00f96 in unknown
+22:57:11.792 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+22:57:11.792 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:57:11.792 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+22:57:11.792 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.792 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+22:57:11.792 [I] inithooks in process 8776 successful
+22:57:19.024 [W] hook_FindFirstFileExW(): path 'Saves/' ends with slash, always fails
+22:59:13.192 [I] releasing hook context
+22:59:13.192 [I] 2 users left
+00:31:33.862 [D] clearing forced libraries
+00:31:33.868 [I] injecting to process 16360 with different bitness
+00:31:33.868 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+00:31:33.911 [I] (proxy) instance: mod_organizer_instance
+00:31:33.911 [I] (proxy) exe: 
+00:31:33.911 [I] (proxy) pid: 16360
+00:31:33.911 [I] (proxy) size: 65536
+00:31:33.911 [I] (proxy) addr: 0xd10000
+00:31:33.911 [I] (proxy) objs: 1
+00:31:33.911 [I] (proxy) injecting to process 16360 with same bitness
+00:31:33.911 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+00:31:33.911 [I] (proxy) injection to same bitness process 16360 successful
+00:31:33.912 [D] proxy run successful
+00:31:33.925 [I] usvfs dll 0.5.5.0 initialized in process 16360
+00:31:33.925 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:16360 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+00:31:33.925 [I] access existing config in 16360
+00:31:33.925 [I] 0 processes
+00:31:33.925 [I] mod_organizer_instance_3 opened in process 16360
+00:31:33.928 [I] attached to mod_organizer_instance_3 with 44903 nodes, size 16,777,216 B
+00:31:33.928 [I] inv_mod_organizer_instance_1 opened in process 16360
+00:31:33.928 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+00:31:33.928 [I] Process registered in shared process list : 16360
+00:31:33.928 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+00:31:33.928 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+00:31:33.928 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+00:31:33.928 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+00:31:33.928 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+00:31:33.928 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+00:31:33.928 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+00:31:33.928 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+00:31:33.928 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+00:31:33.928 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+00:31:33.928 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+00:31:33.928 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+00:31:33.928 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+00:31:33.928 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+00:31:33.928 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+00:31:33.928 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+00:31:33.928 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+00:31:33.928 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+00:31:33.928 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+00:31:33.928 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+00:31:33.928 [I] inithooks in process 16360 successful
+00:31:50.069 <16360:7272> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\SSEEdit Cache\103758D4_RFAB_esp_90EF394D_g1252_t65001_l65001_russian.refcache, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\SSEEdit Cache\103758D4_RFAB_esp_90EF394D_g1252_t65001_l65001_russian.refcache
+00:54:26.219 <16360:6204> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_23_00_54_26, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_23_00_54_26
+01:00:08.068 <16360:6204> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_23_01_00_08, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_23_01_00_08
+01:00:12.585 [I] remove from tree RFAB.esp
+01:00:12.585 <16360:6204> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:00:12.585 <16360:6204> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:00:12.586 [I] remove from tree RFAB.esp.save.2026_02_23_00_54_26
+01:00:12.586 <16360:6204> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:00:12.588 [I] remove from tree RFAB.esp
+01:00:12.588 <16360:6204> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:00:12.588 <16360:6204> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:00:12.588 [I] remove from tree RFAB.esp.save.2026_02_23_01_00_08
+01:00:12.588 <16360:6204> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:00:12.847 [I] releasing hook context
+01:00:12.847 [I] 2 users left
+01:00:20.988 [D] clearing forced libraries
+01:00:20.993 [I] injecting to process 12696 with same bitness
+01:00:20.993 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+01:00:20.993 [I] injection to same bitness process 12696 successful
+01:00:21.055 [I] usvfs dll 0.5.5.0 initialized in process 12696
+01:00:21.055 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\skse64_loader.exe:12696 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+01:00:21.055 [I] access existing config in 12696
+01:00:21.055 [I] 0 processes
+01:00:21.055 [I] mod_organizer_instance_3 opened in process 12696
+01:00:21.058 [I] attached to mod_organizer_instance_3 with 44905 nodes, size 16,777,216 B
+01:00:21.058 [I] inv_mod_organizer_instance_1 opened in process 12696
+01:00:21.058 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+01:00:21.058 [I] Process registered in shared process list : 12696
+01:00:21.058 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+01:00:21.058 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.058 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.058 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.058 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.058 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.058 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.058 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.058 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.058 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.058 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.058 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:00:21.058 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:00:21.058 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:00:21.058 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:00:21.058 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:00:21.058 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:00:21.058 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:00:21.058 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:00:21.058 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.058 [I] inithooks in process 12696 successful
+01:00:21.062 [I] injecting to process 8780 with same bitness
+01:00:21.062 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+01:00:21.062 [I] injection to same bitness process 8780 successful
+01:00:21.148 [I] releasing hook context
+01:00:21.148 [I] 2 users left
+01:00:21.148 [I] usvfs dll 0.5.5.0 initialized in process 8780
+01:00:21.148 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SkyrimSE.exe:8780 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+01:00:21.148 [I] access existing config in 8780
+01:00:21.148 [I] 0 processes
+01:00:21.149 [I] mod_organizer_instance_3 opened in process 8780
+01:00:21.152 [I] attached to mod_organizer_instance_3 with 44905 nodes, size 16,777,216 B
+01:00:21.152 [I] inv_mod_organizer_instance_1 opened in process 8780
+01:00:21.152 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+01:00:21.152 [I] Process registered in shared process list : 8780
+01:00:21.152 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+01:00:21.152 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.152 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.152 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.152 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.152 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.152 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.152 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.152 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.152 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.152 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:00:21.152 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.152 [I] existing hook to 7fffb6c00ed6 in unknown
+01:00:21.152 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:00:21.152 [I] existing hook to 7fffb6c00fd6 in unknown
+01:00:21.152 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:00:21.152 [I] existing hook to 7fffb6c00f16 in unknown
+01:00:21.152 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:00:21.153 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:00:21.153 [I] existing hook to 7fffb6c00f56 in unknown
+01:00:21.153 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:00:21.153 [I] existing hook to 7fffb6c00f96 in unknown
+01:00:21.153 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:00:21.153 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:00:21.153 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:00:21.153 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.153 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:00:21.153 [I] inithooks in process 8780 successful
+01:00:27.591 [E] thread 16380 never released the mutex
+01:00:28.603 [W] hook_FindFirstFileExW(): path 'Saves/' ends with slash, always fails
+01:05:00.921 [I] releasing hook context
+01:05:00.921 [I] 2 users left
+01:06:00.339 [D] clearing forced libraries
+01:06:00.345 [I] injecting to process 11500 with different bitness
+01:06:00.345 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+01:06:00.388 [I] (proxy) instance: mod_organizer_instance
+01:06:00.388 [I] (proxy) exe: 
+01:06:00.388 [I] (proxy) pid: 11500
+01:06:00.388 [I] (proxy) size: 65536
+01:06:00.388 [I] (proxy) addr: 0x26f0000
+01:06:00.388 [I] (proxy) objs: 1
+01:06:00.388 [I] (proxy) injecting to process 11500 with same bitness
+01:06:00.388 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+01:06:00.389 [I] (proxy) injection to same bitness process 11500 successful
+01:06:00.390 [D] proxy run successful
+01:06:00.399 [I] usvfs dll 0.5.5.0 initialized in process 11500
+01:06:00.399 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:11500 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+01:06:00.399 [I] access existing config in 11500
+01:06:00.399 [I] 0 processes
+01:06:00.400 [I] mod_organizer_instance_3 opened in process 11500
+01:06:00.402 [I] attached to mod_organizer_instance_3 with 44907 nodes, size 16,777,216 B
+01:06:00.402 [I] inv_mod_organizer_instance_1 opened in process 11500
+01:06:00.402 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+01:06:00.402 [I] Process registered in shared process list : 11500
+01:06:00.403 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+01:06:00.403 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:06:00.403 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:06:00.403 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:06:00.403 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:06:00.403 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:06:00.403 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:06:00.403 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:06:00.403 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:06:00.403 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:06:00.403 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:06:00.403 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:06:00.403 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:06:00.403 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:06:00.403 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:06:00.403 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:06:00.403 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:06:00.403 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:06:00.403 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:06:00.403 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:06:00.403 [I] inithooks in process 11500 successful
+01:06:03.966 [E] thread 10556 never released the mutex
+01:06:16.315 <11500:7872> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\SSEEdit Cache\103758D4_RFAB_esp_68E97B13_g1252_t65001_l65001_russian.refcache, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\SSEEdit Cache\103758D4_RFAB_esp_68E97B13_g1252_t65001_l65001_russian.refcache
+01:07:07.259 <11500:7020> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_23_01_07_07, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_23_01_07_07
+01:07:10.861 [I] remove from tree RFAB.esp
+01:07:10.861 <11500:7020> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:07:10.861 <11500:7020> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:07:10.862 [I] remove from tree RFAB.esp.save.2026_02_23_01_07_07
+01:07:10.862 <11500:7020> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:07:11.129 [I] releasing hook context
+01:07:11.129 [I] 2 users left
+01:08:40.697 [D] clearing forced libraries
+01:08:40.703 [I] injecting to process 15608 with different bitness
+01:08:40.703 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+01:08:40.742 [I] (proxy) instance: mod_organizer_instance
+01:08:40.742 [I] (proxy) exe: 
+01:08:40.742 [I] (proxy) pid: 15608
+01:08:40.742 [I] (proxy) size: 65536
+01:08:40.742 [I] (proxy) addr: 0x2b00000
+01:08:40.742 [I] (proxy) objs: 1
+01:08:40.742 [I] (proxy) injecting to process 15608 with same bitness
+01:08:40.742 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+01:08:40.742 [I] (proxy) injection to same bitness process 15608 successful
+01:08:40.744 [D] proxy run successful
+01:08:40.753 [I] usvfs dll 0.5.5.0 initialized in process 15608
+01:08:40.754 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:15608 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+01:08:40.754 [I] access existing config in 15608
+01:08:40.754 [I] 0 processes
+01:08:40.754 [I] mod_organizer_instance_3 opened in process 15608
+01:08:40.757 [I] attached to mod_organizer_instance_3 with 44907 nodes, size 16,777,216 B
+01:08:40.757 [I] inv_mod_organizer_instance_1 opened in process 15608
+01:08:40.757 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+01:08:40.757 [I] Process registered in shared process list : 15608
+01:08:40.757 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+01:08:40.757 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:08:40.757 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:08:40.757 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:08:40.757 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:08:40.757 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:08:40.757 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:08:40.757 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:08:40.757 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:08:40.757 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:08:40.757 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:08:40.757 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:08:40.757 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:08:40.757 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:08:40.757 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:08:40.757 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:08:40.757 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:08:40.757 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:08:40.757 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:08:40.757 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:08:40.757 [I] inithooks in process 15608 successful
+01:08:44.676 [E] thread 12060 never released the mutex
+01:08:58.121 <15608:7276> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\SSEEdit Cache\103758D4_RFAB_esp_CBC673BE_g1252_t65001_l65001_russian.refcache, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\SSEEdit Cache\103758D4_RFAB_esp_CBC673BE_g1252_t65001_l65001_russian.refcache
+01:13:45.691 <15608:15992> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_23_01_13_45, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_23_01_13_45
+01:17:43.675 <15608:15992> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_23_01_17_43, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_23_01_17_43
+01:17:46.924 [I] remove from tree RFAB.esp
+01:17:46.924 <15608:15992> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:17:46.924 <15608:15992> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:17:46.925 [I] remove from tree RFAB.esp.save.2026_02_23_01_13_45
+01:17:46.925 <15608:15992> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:17:46.927 [I] remove from tree RFAB.esp
+01:17:46.927 <15608:15992> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:17:46.927 <15608:15992> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:17:46.927 [I] remove from tree RFAB.esp.save.2026_02_23_01_17_43
+01:17:46.927 <15608:15992> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:17:47.181 [I] releasing hook context
+01:17:47.181 [I] 2 users left
+01:17:49.570 [D] clearing forced libraries
+01:17:49.574 [I] injecting to process 3132 with same bitness
+01:17:49.574 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+01:17:49.574 [I] injection to same bitness process 3132 successful
+01:17:49.618 [I] usvfs dll 0.5.5.0 initialized in process 3132
+01:17:49.618 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\skse64_loader.exe:3132 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+01:17:49.618 [I] access existing config in 3132
+01:17:49.618 [I] 0 processes
+01:17:49.618 [I] mod_organizer_instance_3 opened in process 3132
+01:17:49.621 [I] attached to mod_organizer_instance_3 with 44909 nodes, size 16,777,216 B
+01:17:49.621 [I] inv_mod_organizer_instance_1 opened in process 3132
+01:17:49.622 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+01:17:49.622 [I] Process registered in shared process list : 3132
+01:17:49.622 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+01:17:49.622 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.622 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.622 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.622 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.622 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.622 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.622 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.622 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.622 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.622 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.622 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:17:49.622 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:17:49.622 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:17:49.622 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:17:49.622 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:17:49.622 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:17:49.622 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:17:49.622 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:17:49.622 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.622 [I] inithooks in process 3132 successful
+01:17:49.627 [I] injecting to process 4708 with same bitness
+01:17:49.627 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+01:17:49.627 [I] injection to same bitness process 4708 successful
+01:17:49.710 [I] releasing hook context
+01:17:49.710 [I] 2 users left
+01:17:49.711 [I] usvfs dll 0.5.5.0 initialized in process 4708
+01:17:49.711 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SkyrimSE.exe:4708 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+01:17:49.711 [I] access existing config in 4708
+01:17:49.711 [I] 0 processes
+01:17:49.711 [I] mod_organizer_instance_3 opened in process 4708
+01:17:49.714 [I] attached to mod_organizer_instance_3 with 44909 nodes, size 16,777,216 B
+01:17:49.714 [I] inv_mod_organizer_instance_1 opened in process 4708
+01:17:49.714 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+01:17:49.714 [I] Process registered in shared process list : 4708
+01:17:49.714 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+01:17:49.714 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.714 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.714 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.714 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.714 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.714 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.714 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.714 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.714 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.714 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.714 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:17:49.714 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.715 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.715 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.715 [I] existing hook to 7fffb6c00ed6 in unknown
+01:17:49.715 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:17:49.715 [I] existing hook to 7fffb6c00fd6 in unknown
+01:17:49.715 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:17:49.715 [I] existing hook to 7fffb6c00f16 in unknown
+01:17:49.715 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:17:49.715 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:17:49.715 [I] existing hook to 7fffb6c00f56 in unknown
+01:17:49.715 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:17:49.715 [I] existing hook to 7fffb6c00f96 in unknown
+01:17:49.715 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:17:49.715 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:17:49.715 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:17:49.715 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.715 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:17:49.715 [I] inithooks in process 4708 successful
+01:17:56.501 [E] thread 16472 never released the mutex
+01:17:56.501 [E] thread 12704 never released the mutex
+01:17:57.407 [W] hook_FindFirstFileExW(): path 'Saves/' ends with slash, always fails
+01:19:58.068 [I] releasing hook context
+01:19:58.068 [I] 2 users left
+01:20:13.618 [D] clearing forced libraries
+01:20:13.624 [I] injecting to process 4704 with different bitness
+01:20:13.624 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+01:20:13.665 [I] (proxy) instance: mod_organizer_instance
+01:20:13.666 [I] (proxy) exe: 
+01:20:13.666 [I] (proxy) pid: 4704
+01:20:13.666 [I] (proxy) size: 65536
+01:20:13.666 [I] (proxy) addr: 0x26f0000
+01:20:13.666 [I] (proxy) objs: 1
+01:20:13.666 [I] (proxy) injecting to process 4704 with same bitness
+01:20:13.666 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+01:20:13.666 [I] (proxy) injection to same bitness process 4704 successful
+01:20:13.667 [D] proxy run successful
+01:20:13.677 [I] usvfs dll 0.5.5.0 initialized in process 4704
+01:20:13.677 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:4704 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+01:20:13.677 [I] access existing config in 4704
+01:20:13.677 [I] 0 processes
+01:20:13.677 [I] mod_organizer_instance_3 opened in process 4704
+01:20:13.680 [I] attached to mod_organizer_instance_3 with 44909 nodes, size 16,777,216 B
+01:20:13.680 [I] inv_mod_organizer_instance_1 opened in process 4704
+01:20:13.680 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+01:20:13.680 [I] Process registered in shared process list : 4704
+01:20:13.680 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+01:20:13.680 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.680 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.680 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.680 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.680 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.680 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.680 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.680 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.680 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.680 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.680 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.680 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.681 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:20:13.681 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:20:13.681 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:20:13.681 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.681 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:20:13.681 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.681 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.681 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.681 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:20:13.681 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:20:13.681 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:20:13.681 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:20:13.681 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:20:13.681 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:20:13.681 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.681 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.681 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.681 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:20:13.681 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:20:13.681 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:20:13.681 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:20:13.681 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:20:13.681 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:20:13.681 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:20:13.681 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:20:13.681 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.681 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:20:13.681 [I] inithooks in process 4704 successful
+01:20:17.381 [E] thread 12704 never released the mutex
+01:20:29.833 <4704:13604> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\SSEEdit Cache\103758D4_RFAB_esp_58AC0E93_g1252_t65001_l65001_russian.refcache, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\SSEEdit Cache\103758D4_RFAB_esp_58AC0E93_g1252_t65001_l65001_russian.refcache
+01:26:20.427 <4704:3292> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_23_01_26_20, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_23_01_26_20
+01:26:24.663 [I] remove from tree RFAB.esp
+01:26:24.663 <4704:3292> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:26:24.663 <4704:3292> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:26:24.664 [I] remove from tree RFAB.esp.save.2026_02_23_01_26_20
+01:26:24.664 <4704:3292> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:26:24.926 [I] releasing hook context
+01:26:24.926 [I] 2 users left
+01:26:51.715 [D] clearing forced libraries
+01:26:51.719 [I] injecting to process 13832 with same bitness
+01:26:51.719 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+01:26:51.719 [I] injection to same bitness process 13832 successful
+01:26:51.782 [I] usvfs dll 0.5.5.0 initialized in process 13832
+01:26:51.782 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\skse64_loader.exe:13832 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+01:26:51.782 [I] access existing config in 13832
+01:26:51.782 [I] 0 processes
+01:26:51.782 [I] mod_organizer_instance_3 opened in process 13832
+01:26:51.785 [I] attached to mod_organizer_instance_3 with 44911 nodes, size 16,777,216 B
+01:26:51.785 [I] inv_mod_organizer_instance_1 opened in process 13832
+01:26:51.785 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+01:26:51.785 [I] Process registered in shared process list : 13832
+01:26:51.785 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+01:26:51.785 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.785 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.785 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.785 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.785 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.785 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.785 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.785 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.785 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.785 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.785 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:26:51.785 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:26:51.785 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:26:51.785 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:26:51.785 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:26:51.785 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:26:51.785 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:26:51.785 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:26:51.785 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.785 [I] inithooks in process 13832 successful
+01:26:51.789 [I] injecting to process 16392 with same bitness
+01:26:51.789 [I] dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x64.dll
+01:26:51.789 [I] injection to same bitness process 16392 successful
+01:26:51.873 [I] releasing hook context
+01:26:51.873 [I] 2 users left
+01:26:51.874 [I] usvfs dll 0.5.5.0 initialized in process 16392
+01:26:51.874 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SkyrimSE.exe:16392 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+01:26:51.874 [I] access existing config in 16392
+01:26:51.874 [I] 0 processes
+01:26:51.874 [I] mod_organizer_instance_3 opened in process 16392
+01:26:51.878 [I] attached to mod_organizer_instance_3 with 44911 nodes, size 16,777,216 B
+01:26:51.878 [I] inv_mod_organizer_instance_1 opened in process 16392
+01:26:51.878 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+01:26:51.878 [I] Process registered in shared process list : 16392
+01:26:51.878 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+01:26:51.878 [I] hooked GetFileAttributesExW (0x7fffb495a230) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.878 [I] hooked GetFileAttributesW (0x7fffb4958bc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.878 [I] hooked SetFileAttributesW (0x7fffb49a9250) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.878 [I] hooked CreateDirectoryW (0x7fffb49621b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.878 [I] hooked RemoveDirectoryW (0x7fffb49a8f10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.878 [I] hooked DeleteFileW (0x7fffb49576d0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked GetCurrentDirectoryA (0x7fffb49ae770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked GetCurrentDirectoryW (0x7fffb49aa530) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked SetCurrentDirectoryA (0x7fffb4a5a920) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked SetCurrentDirectoryW (0x7fffb49aa210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked ExitProcess (0x7fffb6c6eed0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked CreateProcessInternalW (0x7fffb4971570) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked MoveFileA (0x7fffb6125070) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.879 [I] hooked MoveFileW (0x7fffb60e2bd0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.879 [I] hooked MoveFileExA (0x7fffb61250a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.879 [I] hooked MoveFileExW (0x7fffb4981ec0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked MoveFileWithProgressA (0x7fffb61251b0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.879 [I] hooked MoveFileWithProgressW (0x7fffb4981e90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked CopyFileExW (0x7fffb4985100) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked CopyFile2 (0x7fffb4982bd0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked GetPrivateProfileStringA (0x7fffb60d55a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.879 [I] hooked GetPrivateProfileStringW (0x7fffb60d2390) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.879 [I] hooked GetPrivateProfileSectionA (0x7fffb60e34c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.879 [I] hooked GetPrivateProfileSectionW (0x7fffb60e1010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.879 [I] hooked WritePrivateProfileStringA (0x7fffb61221a0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.879 [I] hooked WritePrivateProfileStringW (0x7fffb60d7e30) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:26:51.879 [I] hooked GetFullPathNameA (0x7fffb499f5e0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked GetFullPathNameW (0x7fffb49626a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked FindFirstFileExW (0x7fffb4957f30) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] existing hook to 7fffb6c00ed6 in unknown
+01:26:51.879 [I] hooked NtQueryFullAttributesFile (0x7fffb6cafe60) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:26:51.879 [I] existing hook to 7fffb6c00fd6 in unknown
+01:26:51.879 [I] hooked NtQueryAttributesFile (0x7fffb6cadd30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:26:51.879 [I] existing hook to 7fffb6c00f16 in unknown
+01:26:51.879 [I] hooked NtQueryDirectoryFile (0x7fffb6cadc30) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:26:51.879 [I] hooked NtQueryDirectoryFileEx (0x7fffb6cafde0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:26:51.879 [I] existing hook to 7fffb6c00f56 in unknown
+01:26:51.879 [I] hooked NtOpenFile (0x7fffb6cadbf0) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:26:51.879 [I] existing hook to 7fffb6c00f96 in unknown
+01:26:51.879 [I] hooked NtCreateFile (0x7fffb6cae030) in C:\Windows\SYSTEM32\ntdll.dll type chained patch
+01:26:51.879 [I] hooked NtClose (0x7fffb6cad770) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:26:51.879 [I] hooked NtTerminateProcess (0x7fffb6cadb10) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:26:51.879 [I] hooked LoadLibraryExW (0x7fffb495da10) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] hooked GetModuleFileNameW (0x7fffb4993370) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:26:51.879 [I] inithooks in process 16392 successful
+01:26:58.944 [W] hook_FindFirstFileExW(): path 'Saves/' ends with slash, always fails
+01:28:50.711 [I] releasing hook context
+01:28:50.711 [I] 2 users left
+01:28:53.469 [D] clearing forced libraries
+01:28:53.474 [I] injecting to process 1592 with different bitness
+01:28:53.474 [I] using usvfs proxy: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_proxy_x86.exe
+01:28:53.513 [I] (proxy) instance: mod_organizer_instance
+01:28:53.514 [I] (proxy) exe: 
+01:28:53.514 [I] (proxy) pid: 1592
+01:28:53.514 [I] (proxy) size: 65536
+01:28:53.514 [I] (proxy) addr: 0x890000
+01:28:53.514 [I] (proxy) objs: 1
+01:28:53.514 [I] (proxy) injecting to process 1592 with same bitness
+01:28:53.514 [I] (proxy) dll path: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\usvfs_x86.dll
+01:28:53.514 [I] (proxy) injection to same bitness process 1592 successful
+01:28:53.515 [D] proxy run successful
+01:28:53.525 [I] usvfs dll 0.5.5.0 initialized in process 1592
+01:28:53.525 [I] inithooks called mod_organizer_instance in process C:\Games\The Elder Scrolls V Skyrim - Special Edition\SSEEdit 4.0.4\SSEEdit.exe:1592 (log level 1, dump type 1, dump path C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2/crashDumps)
+01:28:53.526 [I] access existing config in 1592
+01:28:53.526 [I] 0 processes
+01:28:53.526 [I] mod_organizer_instance_3 opened in process 1592
+01:28:53.528 [I] attached to mod_organizer_instance_3 with 44911 nodes, size 16,777,216 B
+01:28:53.528 [I] inv_mod_organizer_instance_1 opened in process 1592
+01:28:53.528 [I] attached to inv_mod_organizer_instance_1 with 381 nodes, size 131,072 B
+01:28:53.528 [I] Process registered in shared process list : 1592
+01:28:53.528 [I] Windows version 10.0.19045 sp 0 platform 2 (19041.1.amd64fre.vb_release.191206-1406)
+01:28:53.529 [I] hooked GetFileAttributesExW (0x75cb6af0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked GetFileAttributesW (0x75c8eb40) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked SetFileAttributesW (0x75c86f20) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked CreateDirectoryW (0x75c9d770) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked RemoveDirectoryW (0x75d5bef0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked DeleteFileW (0x75c90240) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked GetCurrentDirectoryA (0x75c8a6b0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked GetCurrentDirectoryW (0x75c882c0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked SetCurrentDirectoryA (0x75d60650) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked SetCurrentDirectoryW (0x75c88cb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked ExitProcess (0x777fdb50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked CreateProcessInternalW (0x75c80210) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked MoveFileA (0x75faf680) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:28:53.529 [I] hooked MoveFileW (0x75fb2350) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:28:53.529 [I] hooked MoveFileExA (0x75fec010) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:28:53.529 [I] hooked MoveFileExW (0x75cbac80) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked MoveFileWithProgressA (0x75fec170) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:28:53.529 [I] hooked MoveFileWithProgressW (0x75cbacb0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked CopyFileExW (0x75cae3a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked CopyFile2 (0x75cfabc0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked GetPrivateProfileStringA (0x75fab7d0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:28:53.529 [I] hooked GetPrivateProfileStringW (0x75fa13c0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:28:53.529 [I] hooked GetPrivateProfileSectionA (0x75fe9870) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:28:53.529 [I] hooked GetPrivateProfileSectionW (0x75fa7d60) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:28:53.529 [I] hooked WritePrivateProfileStringA (0x75fa8da0) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:28:53.529 [I] hooked WritePrivateProfileStringW (0x75fa9620) in C:\Windows\System32\KERNEL32.DLL type overwrite
+01:28:53.529 [I] hooked GetFullPathNameA (0x75c7e290) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked GetFullPathNameW (0x75c8ea50) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked FindFirstFileExW (0x75c8c8a0) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked NtQueryFullAttributesFile (0x77814650) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:28:53.529 [I] hooked NtQueryAttributesFile (0x778135b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:28:53.529 [I] hooked NtQueryDirectoryFile (0x77813530) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:28:53.529 [I] hooked NtQueryDirectoryFileEx (0x77814610) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:28:53.529 [I] hooked NtOpenFile (0x77813510) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:28:53.529 [I] hooked NtCreateFile (0x77813730) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:28:53.529 [I] hooked NtClose (0x778132b0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:28:53.529 [I] hooked NtTerminateProcess (0x778134a0) in C:\Windows\SYSTEM32\ntdll.dll type overwrite
+01:28:53.529 [I] hooked LoadLibraryExW (0x75c91c90) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] hooked GetModuleFileNameW (0x75cac640) in C:\Windows\System32\KERNELBASE.dll type overwrite
+01:28:53.529 [I] inithooks in process 1592 successful
+01:29:09.609 <1592:11404> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\SSEEdit Cache\103758D4_RFAB_esp_0DB42B04_g1252_t65001_l65001_russian.refcache, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\SSEEdit Cache\103758D4_RFAB_esp_0DB42B04_g1252_t65001_l65001_russian.refcache
+01:30:26.057 <1592:14756> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp.save.2026_02_23_01_30_26, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\overwrite\RFAB.esp.save.2026_02_23_01_30_26
+01:30:31.980 [I] remove from tree RFAB.esp
+01:30:31.980 <1592:14756> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:30:31.980 <1592:14756> [I] Rerouting file open to location of deleted file: C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:30:31.980 [I] remove from tree RFAB.esp.save.2026_02_23_01_30_26
+01:30:31.980 <1592:14756> [I] mapping file in vfs: C:\Games\The Elder Scrolls V Skyrim - Special Edition\Data\RFAB.esp, C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\mods\RFAB\RFAB.esp
+01:30:32.274 [I] releasing hook context
+01:30:32.274 [I] 2 users left

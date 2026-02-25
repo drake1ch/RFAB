@@ -1,0 +1,510 @@
+13:45:08.398: Skyrim Special Edition Mod Organizer, according to the INI file, appears to be located in D:\The Elder Scrolls V Skyrim - Special Edition\MO2\
+13:45:08.410: MO Path: D:\The Elder Scrolls V Skyrim - Special Edition\MO2\
+13:45:08.422: Mod Organizer base files for Skyrim Special Edition found at D:\The Elder Scrolls V Skyrim - Special Edition\MO2\
+13:45:08.433: Mod Organizer profiles for Skyrim Special Edition are located at D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles
+13:45:08.446: MO Profiles folder: D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles
+13:45:09.821: Mod Organizer was detected and the user was politely asked to close it.
+13:45:09.849: User failed to close Mod Organizer. Initiating Draugr Apocalypse...
+13:45:09.863: Backing up INIs...
+13:45:09.874: Creating First Time Backup...
+13:45:09.900: Finished backing up any INI files.
+13:45:09.954: Applying mod-suggested INI tweaks.
+13:45:09.966: plugins.txt is located here: D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\plugins.txt
+13:45:09.978: plugins.txt is located here: D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\plugins.txt
+13:45:09.990: plugins.txt is located here: D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\plugins.txt
+13:45:09.002: plugins.txt is located here: D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\plugins.txt
+13:45:10.016: plugins.txt is located here: D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\plugins.txt
+13:45:10.027: plugins.txt is located here: D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\plugins.txt
+13:45:10.038: plugins.txt is located here: D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\plugins.txt
+13:45:10.049: plugins.txt is located here: D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\plugins.txt
+13:45:10.061: plugins.txt is located here: D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\plugins.txt
+13:45:10.072: Finished applying mod-suggested INI tweaks.
+13:45:10.183: INI files shall not be set to read-only.
+13:45:10.271: Framerate is set to 60.
+13:45:10.333: The screenshot index number has been set to 185.
+13:45:10.349: The maximum number of autosaves has been set to 3
+13:45:10.426: 1st Person Arrow Tilt-up Angle set to 0.7
+13:45:10.438: 3rd Person Arrow Tilt-up Angle set to 2.5
+13:45:10.455: 1st Person Bolt Tilt-up Angle set to 0.7
+13:45:10.490: Look sensitivity has been set to 0.0160.
+13:45:10.502: Cursor velocity has been set to 1.00.
+13:45:10.521: Mouse X scale set to 0.0200.
+13:45:10.534: Mouse Y scale set to 0.8500.
+13:45:10.552: Mouse Wheel Zoom Speed has been set to 10.00.
+13:45:10.564: The percentage of the screen that the console can fill has been set to 40%.
+13:45:10.583: The console text size has been set to 20.
+13:45:10.786: The resolution divider for screen space reflections has been set to 1.
+13:45:10.801: The resolution divider for screen space reflections has been set to 2.
+13:45:10.896: All fade distance settings will be multiplied by 1.00 in-game.
+13:45:10.937: The distance that objects can be seen has been set to 30.0.
+13:45:10.993: The distance that items can be seen has been set to 10.0.
+13:45:10.005: The distance that actors can be seen has been set to 15.0.
+13:45:11.075: The grid that will be actively rendered and processed around the PC has been set to 5 by 5.
+13:45:11.085: The distance that light can be seen has been set to 37500.
+13:45:11.097: The distance that grass can be seen has been set to 14500.
+13:45:11.257: Distant Object Detail Level 16 has been set to 250000.
+13:45:11.301: Distant Object Detail Level 8 has been set to 90000.
+13:45:11.340: Distant Object Detail Level 4 has been set to 60000.
+13:45:11.409: Landscape LOD multiplier has been set to 1.500.
+13:45:11.458: Gamma has been set to 1.0000.
+13:45:11.470: The global brightness boost modifier has been set to 0.0000.
+13:45:11.483: The global contrast boost modifier has been set to 0.0000.
+13:45:11.495: The global saturation boost modifier has been set to 0.0000.
+13:45:11.536: Grass density has been set to 40 (higher values produce less grass).
+13:45:11.548: Grass diversity has been set to 3.
+13:45:11.645: Snow sparkle density set to 0.85
+13:45:11.657: Snow sparkle size set to 6.00
+13:45:11.669: Snow rim lighting intensity set to 0.30
+13:45:11.683: Power of glossiness/rim lighting on objects set to 3.00
+13:45:11.720: Power of glossiness/rim lighting on landscape set to 2.00
+13:45:12.069: Contents of BethINI.ini:
+[General]
+sGameName=Skyrim Special Edition
+sRestartedFromSetupTab=0
+bCreationKit=0
+bModifyCustomINIs=1
+[Directories]
+sSkyrim Special EditionGameSettingsPath=D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\
+sSkyrim Special EditionModOrganizerPath=D:\The Elder Scrolls V Skyrim - Special Edition\MO2\
+sFallout 4GameSettingsPath=C:\Users\slegr\Documents\My Games\Fallout4\
+sGamePath=D:\The Elder Scrolls V Skyrim - Special Edition\
+
+13:45:12.092: BethINI startup completed.
+13:45:13.088: No Error.
+13:45:13.092: A new version (4.1) is available!
+13:45:14.821: The game window shall now have borders if running in windowed mode.
+13:45:15.068: The game will now run in fullscreen mode.
+13:45:15.547: Deleting invalid settings...
+13:45:15.628: Invalid settings deleted.
+13:45:15.632: Controversial settings shall be sought out and questioned if found.
+13:45:15.643: Finished handling controversial settings.
+13:45:15.658: Correcting known harmful settings...
+13:45:15.670: Known harmful settings corrected.
+13:45:15.683: Running the Summary() function, which helps remove nonsense from the INI files.
+13:45:15.696: Summary Input INI:
+[Actor]
+bUseNavMeshForMovement=0
+
+[Archive]
+sResourceArchiveList=Skyrim - Misc.bsa, Skyrim - Shaders.bsa, Skyrim - Interface.bsa, Skyrim - Animations.bsa, Skyrim - Meshes0.bsa, Skyrim - Meshes1.bsa, Skyrim - Sounds.bsa
+sResourceArchiveList2=Skyrim - Voices_ru0.bsa, Skyrim - Textures0.bsa, Skyrim - Textures1.bsa, Skyrim - Textures2.bsa, Skyrim - Textures3.bsa, Skyrim - Textures4.bsa, Skyrim - Textures5.bsa, Skyrim - Textures6.bsa, Skyrim - Textures7.bsa, Skyrim - Textures8.bsa, Skyrim - Patch.bsa
+bLoadArchiveInMemory=1
+sArchiveToLoadInMemoryList=Skyrim - Animations.bsa
+
+[Audio]
+fMusicDuckingSeconds=6.0
+fMusicUnDuckingSeconds=8.0
+fMenuModeFadeOutTime=3.0
+fMenuModeFadeInTime=1.0
+
+[Camera]
+fMouseWheelZoomSpeed=10.00
+
+[Combat]
+fMagnetismStrafeHeadingMult=0.0
+fMagnetismLookingMult=0.0
+f1PArrowTiltUpAngle=0.7
+f1PBoltTiltUpAngle=0.7
+f3PArrowTiltUpAngle=2.5
+
+[Controls]
+fMouseHeadingSensitivityMax=0.0660
+fMouseHeadingXScale=0.0200
+fMouseHeadingYScale=0.8500
+
+[Decals]
+uMaxSkinDecalPerActor=40
+
+[Display]
+fLightLODStartFade=3500.0
+fTreesMidLODSwitchDist=9999999.0000
+fFirstSliceDistance=2800
+fDynamicDOFFarBlur=0.4
+fDDOFFocusCenterweightExt=2
+fDOFMaxDepthParticipation=10000
+bEnableSnowMask=0
+bEnableSnowRimLighting=0
+bVolumetricLightingDisableInterior=1
+fDecalLifetime=300
+fDefault1stPersonFOV=110.0
+fDefaultWorldFOV=110.0
+fGlobalBrightnessBoost=0.0000
+fGlobalContrastBoost=0.0000
+fGlobalSaturationBoost=0.0000
+fLightLODRange=31356
+fShadowDirectionalBiasScale=0.15
+fSnowGeometrySpecPower=3.00
+fSnowNormalSpecPower=2.00
+fSnowRimLightIntensity=0.30
+fSparklesDensity=0.85
+fSparklesSize=6.00
+fSunShadowUpdateTime=1
+fSunUpdateThreshold=0.5
+sScreenShotBaseName=C:\Games\The Elder Scrolls V Skyrim - Special Edition\ScreenShot
+iLandscapeMultiNormalTilingFactor=1
+
+[Fonts]
+sFontConfigFile=Interface\FontConfig_ru.txt
+
+[General]
+sLanguage=RUSSIAN
+sTestFile1=Dawnguard.esm
+sTestFile2=HearthFires.esm
+sTestFile3=Dragonborn.esm
+uExterior Cell Buffer=36
+bBackgroundLoadVMData=1
+bModManagerMenuEnabled=0
+fFlickeringLightDistance=8192
+sIntroSequence=
+uGridsToLoad=5
+
+[GeneralWarnings]
+SGeneralMasterMismatchWarning=One or more plugins could not find the correct versions of the master files they depend on. Errors may occur during load or game play. Check the "Warnings.txt" file for more information.
+
+[Grass]
+bAllowCreateGrass=1
+bAllowLoadGrass=0
+fGrassMaxStartFadeDistance=7000.0000
+fGrassMinStartFadeDistance=0.0000
+bDrawShaderGrass=1
+fGrassFadeRange=8356
+fGrassWindMagnitudeMax=125
+fGrassWindMagnitudeMin=5
+iGrassCellRadius=2
+iMaxGrassTypesPerTexure=3
+iMinGrassSize=40
+
+[HAVOK]
+fMaxTime=0.01666667
+
+[Imagespace]
+iRadialBlurLevel=2
+
+[Interface]
+bShowTutorials=0
+
+[Launcher]
+bEnableFileSelection=1
+
+[LightingShader]
+fDecalLODFadeStart=0.5
+fDecalLODFadeEnd=0.6
+fEnvmapLODFadeEnd=0.7
+fEnvmapLODFadeStart=0.6
+
+[LOD]
+fDistanceMultiplier=1.00
+
+[MapMenu]
+fMapWorldMaxPitch=90
+fMapWorldMinPitch=0
+fMapWorldYawRange=400
+
+[Menu]
+iConsoleSizeScreenPercent=40
+iConsoleTextSize=20
+
+[Papyrus]
+fPostLoadUpdateTimeMS=2000
+bEnableLogging=0
+bEnableTrace=0
+bLoadDebugInformation=0
+bEnableProfiling=0
+
+[SaveGame]
+iAutoSaveCount=3
+
+[Trees]
+bEnableTreeAnimations=1
+bEnableTrees=1
+fUpdateBudget=1.5
+
+[Water]
+bReflectLODLand=1
+bReflectLODObjects=1
+bReflectLODTrees=1
+bReflectSky=1
+
+13:45:15.711: Default Preset Location for Invalid Settings Auto-detection: D:\Program\BethINI Standalone\Presets\Skyrim Special Edition\
+13:45:15.759: bAllowScreenshot (Display) was removed due to it being an invalid setting (not recognized by the game).
+13:45:15.795: fLightLODMaxStartFade (Display) was removed due to it being an invalid setting (not recognized by the game).
+13:45:15.810: fShadowLODMaxStartFade (Display) was removed due to it being an invalid setting (not recognized by the game).
+13:45:15.826: fSpecularLODMaxStartFade (Display) was removed due to it being an invalid setting (not recognized by the game).
+13:45:15.844: iShadowMapResolutionPrimary (Display) was removed due to it being an invalid setting (not recognized by the game).
+13:45:15.922: Summary of Changes was refreshed for Skyrim.
+13:45:15.930: Summary Input INI:
+[AudioMenu]
+fAudioMasterVolume=1.0000
+fVal0=1.0000
+fVal1=0.8000
+fVal2=0.5500
+fVal3=0.0000
+fVal4=1.0000
+fVal5=1.0000
+fVal6=1.0000
+fVal7=1.0000
+uID0=94881
+uID1=1007612
+uID2=554685
+uID3=466532
+uID4=0
+uID5=0
+uID6=0
+uID7=0
+
+[Bethesda.net]
+uPersistentUuidData0=1393247115
+uPersistentUuidData1=734020551
+uPersistentUuidData2=2813605561
+uPersistentUuidData3=3162804328
+
+[Clouds]
+fCloudLevel0Distance=16384.0000
+fCloudLevel1Distance=32768.0000
+fCloudLevel2Distance=262144.0000
+fCloudNearFadeDistance=9000.0000
+
+[Controls]
+bAlwaysRunByDefault=1
+bGamePadRumble=0
+bInvertYValues=0
+bUseKinect=0
+fGamepadHeadingSensitivity=0.6667
+fMouseHeadingSensitivity=0.0160
+
+[Decals]
+bDecals=1
+bSkinnedDecals=1
+uMaxDecals=1000
+uMaxSkinDecals=100
+
+[Display]
+bBorderless=0
+bDrawLandShadows=1
+bEnableImprovedSnow=1
+bEnableProjecteUVDiffuseNormals=1
+bForceCreateTarget=0
+bFull Screen=1
+bFXAAEnabled=0
+bIBLFEnable=1
+bIndEnable=0
+bSAO_CS_Enable=0
+bSAOEnable=1
+bScreenSpaceReflectionEnabled=1
+bToggleSparkles=1
+bTreesReceiveShadows=1
+bUse64bitsHDRRenderTarget=1
+bUsePrecipitationOcclusion=1
+bUseTAA=1
+bVolumetricLightingEnable=1
+fdefaultfov=100
+fDynamicDOFBlurMultiplier=0.8000
+ffocusShadowMapDoubleEveryXUnit=450.0000
+fGamma=1.0000
+fInteriorShadowDistance=3000.0000
+fLeafAnimDampenDistEnd=4600.0000
+fLeafAnimDampenDistStart=3600.0000
+fLightLODStartFade=6144
+fMeshLODFadeBoundDefault=256.0000
+fMeshLODFadePercentDefault=1.2000
+fMeshLODLevel1FadeDist=999999.0000
+fMeshLODLevel1FadeTreeDistance=8960.0000
+fMeshLODLevel2FadeDist=999999.0000
+fMeshLODLevel2FadeTreeDistance=5376.0000
+fProjectedUVDiffuseNormalTilingScale=0.2000
+fProjectedUVNormalDetailTilingScale=0.8000
+fShadowDistance=10000.0000
+fTreesMidLODSwitchDist=8960.0000
+iMaxDecalsPerFrame=120
+iMaxSkinDecalsPerFrame=50
+iNumFocusShadow=4
+iNumSplits=2
+iReflectionResolutionDivider=2
+iSaveGameScreenShotHeight=192
+iSaveGameScreenShotHeighWSt=192
+iSaveGameScreenShotWidth=256
+iSaveGameScreenShotWidthWS=320
+iScreenShotIndex=185
+iShadowMapResolution=1024
+iShadowMaskQuarter=4
+iSize H=1080
+iSize W=1920
+iVolumetricLightingQuality=2
+iVSyncPresentInterval=1
+uBookRatio=2
+
+[GamePlay]
+bShowFloatingQuestMarkers=1
+bShowQuestMarkers=1
+iDifficulty=0
+
+[General]
+bEnableStoryManagerLogging=0
+fLightingOutputColourClampPostEnv=1.0000
+fLightingOutputColourClampPostLit=1.0000
+fLightingOutputColourClampPostSpec=1.0000
+iStoryManagerLoggingEvent=-1
+uLargeRefLODGridSize=11
+
+[Grass]
+fGrassMaxStartFadeDistance=6144
+fGrassMinStartFadeDistance=0
+fGrassStartFadeDistance=6144
+
+[Imagespace]
+bDoDepthOfField=1
+bLensFlare=1
+
+[Interface]
+bDialogueSubtitles=1
+bGeneralSubtitles=1
+bShowCompass=1
+fMouseCursorSpeed=1.00
+
+[Launcher]
+sD3DDevice="NVIDIA GeForce RTX 4070 Ti"
+uLastAspectRatio=1
+
+[LOD]
+fLODFadeOutMultActors=15.0
+fLODFadeOutMultItems=10.0
+fLODFadeOutMultObjects=30.0
+fLODFadeOutMultSkyCell=1.0000
+
+[MAIN]
+bCrosshairEnabled=1
+bGamepadEnable=0
+bSaveOnPause=0
+bSaveOnRest=1
+bSaveOnTravel=0
+bSaveOnWait=0
+fHUDOpacity=1.0000
+fSkyCellRefFadeDistance=600000.0000
+
+[NavMesh]
+fCoverSideHighAlpha=0.8000
+fCoverSideLowAlpha=0.6500
+fEdgeDistFromVert=10.0000
+fEdgeFullAlpha=1.0000
+fEdgeHighAlpha=0.7500
+fEdgeLowAlpha=0.5000
+fEdgeThickness=10.0000
+fLedgeBoxHalfHeight=25.0000
+fObstacleAlpha=0.5000
+fPointSize=2.5000
+fTriangleFullAlpha=0.7000
+fTriangleHighAlpha=0.3500
+fTriangleLowAlpha=0.2000
+
+[Particles]
+iMaxDesired=2000
+
+[SaveGame]
+fAutosaveEveryXMins=15.0000
+
+[TerrainManager]
+bShowLODInEditor=1
+fBlockLevel0Distance=60000
+fBlockLevel1Distance=90000
+fBlockMaximumDistance=250000
+fSplitDistanceMult=1.500
+fTreeLoadDistance=75000.0000
+
+[Trees]
+bRenderSkinnedTrees=1
+uiMaxSkinnedTreesToRender=120
+
+[Water]
+bUseWaterDepth=1
+bUseWaterDisplacements=1
+bUseWaterReflections=1
+bUseWaterRefractions=1
+
+13:45:15.945: Default Preset Location for Invalid Settings Auto-detection: D:\Program\BethINI Standalone\Presets\Skyrim Special Edition\
+13:45:15.995: iMaxDecalsPerFrame (Decals) was removed due to it being an invalid setting (not recognized by the game).
+13:45:15.003: iMaxSkinDecalsPerFrame (Decals) was removed due to it being an invalid setting (not recognized by the game).
+13:45:16.149: iAdapter (Display) was removed due to it being an invalid setting (not recognized by the game).
+13:45:16.237: uLastAspectRatio (Launcher) was removed due to it being an invalid setting (not recognized by the game).
+13:45:16.281: Summary of Changes was refreshed for SkyrimPrefs.
+13:45:16.289: Summary of Changes for Base INI is:[Camera]
+fMouseWheelZoomSpeed was changed from 0.8000 to 10.00
+
+[Combat]
+f1PArrowTiltUpAngle was changed from 2.0000 to 0.7
+f1PBoltTiltUpAngle was changed from 1.0000 to 0.7
+
+[Controls]
+fMouseHeadingSensitivityMax was changed from 0.0500 to 0.0660
+
+[Decals]
+uMaxSkinDecalPerActor was changed from 60 to 40
+
+[Display]
+bAllowScreenshot was removed due to it being an invalid setting (not recognized by the game).
+bEnableSnowMask was changed from 1 to 0
+bEnableSnowRimLighting was changed from 1 to 0
+fDecalLifetime was changed from 30.0000 to 300
+fDefault1stPersonFOV was changed from 80.0000 to 110.0
+fDefaultWorldFOV was changed from 80.0000 to 110.0
+fFirstSliceDistance was changed from 2000.0000 to 2800
+fLightLODMaxStartFade was removed due to it being an invalid setting (not recognized by the game).
+fLightLODRange was changed from 500.0000 to 31356
+fShadowDirectionalBiasScale was changed from 0.3000 to 0.15
+fShadowLODMaxStartFade was removed due to it being an invalid setting (not recognized by the game).
+fSpecularLODMaxStartFade was removed due to it being an invalid setting (not recognized by the game).
+iLandscapeMultiNormalTilingFactor was changed from 4 to 1
+iShadowMapResolutionPrimary was removed due to it being an invalid setting (not recognized by the game).
+sScreenShotBaseName was changed from ScreenShot to C:\Games\The Elder Scrolls V Skyrim - Special Edition\ScreenShot
+
+[General]
+bBackgroundLoadVMData was changed from 0 to 1
+bModManagerMenuEnabled was changed from 1 to 0
+fFlickeringLightDistance was changed from 1024.0000 to 8192
+sIntroSequence was changed from BGS_Logo.bik to
+
+[Grass]
+fGrassFadeRange was changed from 1000.0000 to 8356
+iMaxGrassTypesPerTexure was changed from 2 to 3
+iMinGrassSize was changed from 20 to 40
+
+[HAVOK]
+fMaxTime was changed from 0.0167 to 0.01666667
+
+[Interface]
+bShowTutorials was changed from 1 to 0
+
+[LightingShader]
+fDecalLODFadeEnd was changed from 0.5 to 0.6
+fDecalLODFadeStart was changed from 0.45 to 0.5
+fEnvmapLODFadeEnd was changed from 0.1000 to 0.7
+fEnvmapLODFadeStart was changed from 0.0900 to 0.6
+
+[MapMenu]
+fMapWorldMaxPitch was changed from 75.0000 to 90
+fMapWorldMinPitch was changed from 15.0000 to 0
+fMapWorldYawRange was changed from 80.0000 to 400
+
+[Papyrus]
+fPostLoadUpdateTimeMS was changed from 500.0 to 2000
+13:45:16.305: Summary of Changes for Prefs INI is:[Decals]
+iMaxDecalsPerFrame was removed due to it being an invalid setting (not recognized by the game).
+iMaxSkinDecalsPerFrame was removed due to it being an invalid setting (not recognized by the game).
+
+[Display]
+bBorderless was changed from 1 to 0
+bFull Screen was changed from 0 to 1
+fLightLODStartFade was changed from 3750.0000 to 6144
+iAdapter was removed due to it being an invalid setting (not recognized by the game).
+
+[Grass]
+fGrassMaxStartFadeDistance was changed from 6500.0000 to 6144
+fGrassStartFadeDistance was changed from 7000.0000 to 6144
+
+[Launcher]
+uLastAspectRatio was removed due to it being an invalid setting (not recognized by the game).
+13:45:16.318: Sorting INIs...
+13:45:16.332: Sorting D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\Skyrim.ini
+13:45:16.404: Sorting D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\SkyrimPrefs.ini
+13:45:16.608: Sorting D:\The Elder Scrolls V Skyrim - Special Edition\MO2\Profiles\Default\SkyrimCustom.ini
+13:45:16.680: INIs sorted.
+13:45:16.689: Your INI files were successfully saved.

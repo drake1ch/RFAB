@@ -1,0 +1,9 @@
+chardet
+antlr4-python3-runtime==4.9.2
+
+[dev]
+black
+flake8
+flake8-black
+mypy
+pytest
