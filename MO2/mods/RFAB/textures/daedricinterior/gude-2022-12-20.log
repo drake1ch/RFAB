@@ -1,0 +1,20 @@
+21:26:48:878 [ERROR]	Failed to call InternetInitializeAutoProxyDll. Неверный дескриптор.
+, last error code = 6 
+21:26:48:879 [WARN]	proxy setting delay exceeds threshold: 0.842325 secs
+21:26:48:879 [ERROR]	Failed to call InternetInitializeAutoProxyDll. Неверный дескриптор.
+, last error code = 6 
+21:26:48:879 [ERROR]	Failed to call InternetInitializeAutoProxyDll. Неверный дескриптор.
+, last error code = 6 
+21:26:48:879 [WARN]	proxy setting delay exceeds threshold: 0.842505 secs
+21:34:07:613 [ERROR]	Failed to call InternetInitializeAutoProxyDll. Неверный дескриптор.
+, last error code = 6 
+21:34:07:614 [ERROR]	Failed to call InternetInitializeAutoProxyDll. Неверный дескриптор.
+, last error code = 6 
+21:34:07:614 [ERROR]	Failed to call InternetInitializeAutoProxyDll. Неверный дескриптор.
+, last error code = 6 
+23:08:44:785 [ERROR]	Failed to call InternetInitializeAutoProxyDll. Неверный дескриптор.
+, last error code = 6 
+23:08:44:817 [ERROR]	Failed to call InternetInitializeAutoProxyDll. Неверный дескриптор.
+, last error code = 6 
+23:08:44:817 [ERROR]	Failed to call InternetInitializeAutoProxyDll. Неверный дескриптор.
+, last error code = 6 
