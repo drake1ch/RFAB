@@ -18,13 +18,13 @@ if not exist "%CACHE_DIR%" mkdir "%CACHE_DIR%" || goto :fail
 attrib +h "%CACHE_DIR%" >nul 2>nul
 
 if not exist "%CACHE_REPO%\.git" (
-  echo [1/4] Creating local update cache...
+  echo [1/5] Creating local update cache...
   "%GIT_EXE%" -c credential.helper=manager clone --branch "%BRANCH%" "%REPO_URL%" "%CACHE_REPO%" || goto :fail
 ) else (
-  echo [1/4] Update cache found.
+  echo [1/5] Update cache found.
 )
 
-echo [2/4] Fetching latest changes...
+echo [2/5] Fetching latest changes...
 "%GIT_EXE%" -C "%CACHE_REPO%" remote set-url origin "%REPO_URL%" >nul 2>nul
 "%GIT_EXE%" -C "%CACHE_REPO%" config core.longpaths true >nul
 "%GIT_EXE%" -C "%CACHE_REPO%" config credential.helper manager >nul
@@ -35,11 +35,21 @@ if errorlevel 1 (
 )
 "%GIT_EXE%" -c credential.helper=manager -C "%CACHE_REPO%" reset --hard "origin/%BRANCH%" || goto :fail
 
-echo [3/4] Applying update in "%BASE_DIR%"...
-"%GIT_EXE%" --git-dir="%CACHE_REPO%\.git" --work-tree="%BASE_DIR%" -c core.longpaths=true reset --hard "origin/%BRANCH%" || goto :fail
+echo [3/5] Updating Git LFS objects...
+"%GIT_EXE%" -C "%CACHE_REPO%" lfs install --local >nul 2>nul
+"%GIT_EXE%" -c credential.helper=manager -C "%CACHE_REPO%" lfs pull origin "%BRANCH%" || goto :fail
 
-echo [4/4] Done.
+echo [4/5] Checking files and copying only changed ones...
+robocopy "%CACHE_REPO%" "%BASE_DIR%" /E /R:2 /W:1 /COPY:DAT /DCOPY:DAT /XJ /NFL /NDL /NP /XD ".git" ".rfab-updater" /XF "Update-RFAB.bat" >nul
+set "ROBOCODE=%ERRORLEVEL%"
+if %ROBOCODE% GEQ 8 goto :robofail
+
+echo [5/5] Done.
+echo Only changed files were updated.
 echo Non-repository files are left untouched.
+if %ROBOCODE% EQU 0 echo Already up to date.
+if not %ROBOCODE% EQU 0 if not %ROBOCODE% EQU 1 echo Updated files detected.
+echo NOTE: Update-RFAB.bat updates are applied on next run.
 pause
 exit /b 0
 
@@ -72,5 +82,11 @@ exit /b 0
 :fail
 echo.
 echo [ERROR] Update failed.
+pause
+exit /b 1
+
+:robofail
+echo.
+echo [ERROR] File sync failed (robocopy code %ROBOCODE%).
 pause
 exit /b 1
