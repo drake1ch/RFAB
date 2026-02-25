@@ -1,0 +1,91 @@
+<!--HBT-->
+<HBT version="1.0" appversion="2010.2" namespace="_Character_hkc_">
+    <HBT_ITEM type="HavokTools.hkCharacter" name="Character.hkc" priority="1">
+        <hkCharacter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCharacter:Character.hkc:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <NotesPopUpAutomatically>false</NotesPopUpAutomatically>
+            <BehaviorFile>
+                <MangledTargetNames>
+                    <string>_Behavior_hkb_:HavokTools.hkRefFile:Behavior.hkb:IncomingRefs</string>
+                </MangledTargetNames>
+            </BehaviorFile>
+            <StateMachine>
+                <MangledTargetNames>
+                    <string>_Behavior_hkb_:HavokTools.hkStateMachine:Behavior00:IncomingRefs</string>
+                </MangledTargetNames>
+            </StateMachine>
+            <Rig>
+                <MangledTargetNames>
+                    <string>_SingleBoneSkeleton_hkt_:HavokTools.hkCharacterHKX:SingleBoneSkeleton.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </Rig>
+            <Ragdoll>
+                <MangledTargetNames />
+            </Ragdoll>
+            <DeformableSkins>
+                <MangledTargetNames />
+            </DeformableSkins>
+            <RigidSkins>
+                <MangledTargetNames />
+            </RigidSkins>
+            <SkeletonMappers>
+                <MangledTargetNames />
+            </SkeletonMappers>
+            <UseDeformableSkin />
+            <UseRigidSkin />
+            <UseSkeletonMapper />
+            <Sequence>
+                <MangledTargetNames />
+            </Sequence>
+            <UseSequence>false</UseSequence>
+            <Gamepad>
+                <MangledTargetNames />
+            </Gamepad>
+            <UseGamepad>false</UseGamepad>
+            <InitialX>0</InitialX>
+            <InitialY>0</InitialY>
+            <InitialZ>0</InitialZ>
+            <UniformCharacterScale>1</UniformCharacterScale>
+            <InitialRotation>0</InitialRotation>
+            <SavedSettingsNames>
+                <string>Default</string>
+            </SavedSettingsNames>
+            <SavedSettingsValues>
+                <ArrayOfFloat>
+                    <float>0</float>
+                    <float>0</float>
+                    <float>0</float>
+                    <float>0</float>
+                    <float>1</float>
+                </ArrayOfFloat>
+            </SavedSettingsValues>
+            <SavedLODNames />
+            <SavedLODValues />
+            <CurrentLODName>Default (All Bones)</CurrentLODName>
+            <MirrorBonePairMap />
+            <MirrorAxis />
+            <MirroredStringList1 />
+            <MirroredStringList2 />
+            <CharacterPropertyOverrides />
+            <ProxyHeight>1.7</ProxyHeight>
+            <ProxyRadius>0.4</ProxyRadius>
+            <ProxyCollisionFilterInfo>1</ProxyCollisionFilterInfo>
+            <CustomCharacterControllerCinfo>
+                <MangledTargetNames />
+            </CustomCharacterControllerCinfo>
+            <FootIkEnabled>false</FootIkEnabled>
+            <FootIkDriverInfo>
+                <MangledTargetNames />
+            </FootIkDriverInfo>
+            <HandIkEnabled>false</HandIkEnabled>
+            <HandIkDriverInfo>
+                <MangledTargetNames />
+            </HandIkDriverInfo>
+            <NumLODBones>1</NumLODBones>
+        </hkCharacter>
+    </HBT_ITEM>
+</HBT>

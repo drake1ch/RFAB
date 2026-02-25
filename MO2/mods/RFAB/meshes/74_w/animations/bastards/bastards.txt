@@ -1,0 +1,3 @@
+Use these 1-handed animations for the bastard swords' attacks.
+Use 2-handed for every other animation.
+It attacks like a one-handed sword but is wielded and blocks like a two-hander. Can't use a shield, etc.

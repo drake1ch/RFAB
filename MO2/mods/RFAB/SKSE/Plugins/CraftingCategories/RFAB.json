@@ -1,0 +1,269 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Exit-9B/CraftingCategories/main/docs/CraftingCategories.schema.json",
+	"sections": {
+		"$ALL": {
+			"icon": {
+				"source": "craftingcategories/icons.swf",
+				"label": "all"
+			}
+		},
+		"$MISC": {
+			"icon": {
+				"source": "skyui/icons_item_psychosteve.swf",
+				"label": "misc_ingot"
+			}
+		},
+		"$WEAPONS & ARMOR": {
+			"priority": 10,
+			"keywords": [
+				"ArmorHeavy",
+				"ArmorLight",
+				"ArmorShield",
+				"VendorItemArrow",
+				"WeapTypeBattleaxe",
+				"WeapTypeBow",
+				"WeapTypeDagger",
+				"WeapTypeGreatsword",
+				"WeapTypeMace",
+				"WeapTypeStaff",
+				"WeapTypeSword",
+				"WeapTypeWarAxe",
+				"WeapTypeWarhammer",
+				"WeapTypeBattleStaff",
+				"WeapTypeQuarterstaff",
+				"WeapTypeScythe",
+				"WeapTypeSpear"
+			],
+			"icon": {
+				"source": "skyui/icons_item_psychosteve.swf",
+				"label": "armor_head"
+			}
+		},
+		"$CLOTHING": {
+			"priority": 11,
+			"keywords": [ "ArmorClothing" ],
+			"icon": {
+				"source": "skyui/icons_item_psychosteve.swf",
+				"label": "clothing_body"
+			}
+		},
+		"$JEWELRY": {
+			"priority": 12,
+			"keywords": [ "ArmorJewelry" ],
+			"icon": {
+				"source": "skyui/icons_item_psychosteve.swf",
+				"label": "armor_ring"
+			}
+		},
+	"$NOVICE": {
+			"priority": 20,
+			"keywords": [ "RFAB_CraftPotion_Level1", "RFAB_CraftPoison_Level1" ],
+			"icon": {
+				"source": "Icons/Ingredients.swf",
+				"label": "mortar"
+			}
+		},
+		"$APPRENTICE": {
+			"priority": 21,
+			"keywords": [ "RFAB_CraftPotion_Level2", "RFAB_CraftPoison_Level2" ],
+			"icon": {
+				"source": "SkyUI/icons_item_psychosteve.swf",
+				"label": "default_potion"
+			}
+		},
+		"$ADEPT": {
+			"priority": 22,
+			"keywords": [ "RFAB_CraftPotion_Level3", "RFAB_CraftPoison_Level3" ],
+			"icon": {
+				"source": "Icons/Items.swf",
+				"label": "potion_adept"
+			}
+		},
+		"$EXPERT": {
+			"priority": 23,
+			"keywords": [ "RFAB_CraftPotion_Level4", "RFAB_CraftPoison_Level4", "RFAB_CraftPotion_Unique" ],
+			"icon": {
+				"source": "Icons/Items.swf",
+				"label": "potion_expert"
+			}
+		},
+		"$MASTER": {
+			"priority": 24,
+			"keywords": [ "RFAB_CraftPotion_Level5", "RFAB_CraftPoison_Level5" ],
+			"icon": {
+				"source": "Icons/Items.swf",
+				"label": "potion_magicresist"
+			}
+		},
+	"$INGREDIENT": {
+			"priority": 25,
+		"keywords": [ "VendorItemIngredient" ],
+			"icon": {
+				"source": "skyui/icons_item_psychosteve.swf",
+				"label": "default_ingredient"
+			}
+		},
+	"$SCROLL": {
+			"priority": 30,
+		"keywords": [ "VendorItemScroll" ],
+			"icon": {
+				"source": "skyui/icons_item_psychosteve.swf",
+				"label": "default_scroll"
+			}
+		},
+	"$INGOT": {
+			"priority": 40,
+		"keywords": [ "VendorItemOreIngot" ],
+			"icon": {
+				"source": "skyui/icons_item_psychosteve.swf",
+				"label": "misc_ingot"
+			}
+		},
+	"$SOULGEM": {
+			"priority": 41,
+		"keywords": [ "VendorItemSoulGem" ],
+			"icon": {
+				"source": "skyui/icons_item_psychosteve.swf",
+				"label": "soulgem_full"
+			}
+		},
+		"$FOOD": {
+			"priority": 50,
+			"keywords": [ "VendorItemFood" ],
+			"icon": {
+				"source": "skyui/icons_item_psychosteve.swf",
+				"label": "default_food"
+			}
+		},
+	"$SPECIALFOOD": {
+			"priority": 60,
+			"keywords": [ "RFAB_SpecialFood" ],
+			"icon": {
+				"source": "Icons/Foods.swf",
+				"label": "pie"
+			}
+		},
+		"$HOUSE BUILDING": {
+			"priority": 70,
+			"keywords": [ "BYOHHouseCraftingCategoryBuilding", "BYOHHouseCraftingCategoryContainers", "BYOHHouseCraftingCategoryFurniture", "BYOHHouseCraftingCategoryWeaponRacks", "BYOHHouseCraftingCategoryShelf", "BYOHHouseCraftingCategoryExterior", "BYOHHouseCraftingCategorySmithing", "RFAB_KW_Interior",  "RFAB_KW_Exterior", "RFAB_KW_Blueprint" ],
+			"icon": {
+				"source": "Icons/Items.swf",
+				"label": "house"
+			}
+		}
+	},
+	"categories": {
+		"$Wood": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "WeapMaterialWood", "REQ_KW_Staff_Wooden" ]
+		},
+		"$Iron": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "ArmorMaterialIron", "ArmorMaterialIronBanded", "WeapMaterialIron" ]
+		},
+		"$Silver": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "WeapMaterialSilver", "REQ_KW_Staff_Silver" ]
+		},
+		"$Steel": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "ArmorMaterialSteel", "ArmorMaterialSteelPlate", "WeapMaterialSteel", "ArmorMaterialImperialHeavy",  "WeapMaterialImperial", "WeapMaterialDraugr", "WeapMaterialDraugrHoned"  ]
+		},
+		"$LeatherFur": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "ArmorMaterialLeather", "ArmorMaterialScaled", "ArmorMaterialHide", "ArmorMaterialStudded", "ArmorMaterialImperialLight", "ArmorMaterialImperialStudded" ]
+		},
+		"$Dwarven": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "ArmorMaterialDwarven", "WeapMaterialDwarven" ]
+		},
+		"$Elven": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "ArmorMaterialElven", "ArmorMaterialElvenGilded", "WeapMaterialElven" ]
+		},
+		"$Falmer": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "ArmorMaterialFalmer", "WeapMaterialFalmer", "WeapMaterialFalmerHoned", "DLC1ArmorMaterielFalmerHeavy", "DLC1ArmorMaterielFalmerHeavyOriginal" ]
+		},
+		"$Orcish": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "ArmorMaterialOrcish", "WeapMaterialOrcish" ]
+		},
+		"$Bonemold": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "DLC2ArmorMaterialBonemoldHeavy", "DLC2ArmorMaterialBonemoldLight" ]
+		},
+		"$Chitin": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "DLC2ArmorMaterialChitinHeavy", "DLC2ArmorMaterialChitinLight" ]
+		},
+		"$Nordic": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "DLC2ArmorMaterialNordicHeavy", "DLC2ArmorMaterialNordicLight", "DLC2WeaponMaterialNordic" ]
+		},
+		"$NordicHero": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "RFAB_KW_WeaponMaterial_NordicSilver" ]
+		},
+		"$Stalhrim": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "DLC2ArmorMaterialStalhrimHeavy", "DLC2ArmorMaterialStalhrimLight", "DLC2WeaponMaterialStalhrim" ]
+		},
+		"$Ebony": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "ArmorMaterialEbony", "WeapMaterialEbony", "REQ_KW_Staff_Ebony" ]
+		},
+		"$Glass": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "ArmorMaterialGlass", "WeapMaterialGlass", "REQ_KW_Staff_Glass" ]
+		},
+		"$Dragon": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "ArmorMaterialDragonplate", "ArmorMaterialDragonscale", "DLC1WeapMaterialDragonbone" ]
+		},
+		"$Daedric": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "ArmorMaterialDaedric", "WeapMaterialDaedric", "WeapMaterialDraugr", "WeapMaterialDraugrHoned", "REQ_KW_Staff_Daedric" ]
+		},
+	"$Aetherium": {
+			"section": "$WEAPONS & ARMOR",
+			"keywords": [ "DLC1LD_CraftingMaterialAetherium" ]
+		},
+	"$House": {
+		"section": "$HOUSE BUILDING",
+			"keywords": [ "BYOHHouseCraftingCategoryBuilding" ]
+		},
+		"$Containers": {
+		"section": "$HOUSE BUILDING",
+			"keywords": [ "BYOHHouseCraftingCategoryContainers" ]
+		},
+		"$Furniture": {
+		"section": "$HOUSE BUILDING",
+			"keywords": [ "BYOHHouseCraftingCategoryFurniture" ]
+		},
+		"$Weapon Racks": {
+		"section": "$HOUSE BUILDING",
+			"keywords": [ "BYOHHouseCraftingCategoryWeaponRacks" ]
+		},
+		"$Shelves": {
+		"section": "$HOUSE BUILDING",
+			"keywords": [ "BYOHHouseCraftingCategoryShelf" ]
+		},
+		"$Interior": {
+		"section": "$HOUSE BUILDING",
+			"keywords": [ "BYOHHouseCraftingCategoryExterior", "RFAB_KW_Interior" ]
+		},
+		"$Building Materials": {
+		"section": "$HOUSE BUILDING",
+			"keywords": [ "BYOHHouseCraftingCategorySmithing" ]
+		},
+	"$Exterior": {
+		"section": "$HOUSE BUILDING",
+			"keywords": [ "RFAB_KW_Exterior" ]
+		},
+	"$Blueprint": {
+		"section": "$HOUSE BUILDING",
+			"keywords": [ "RFAB_KW_Blueprint" ]
+		}
+	}
+}

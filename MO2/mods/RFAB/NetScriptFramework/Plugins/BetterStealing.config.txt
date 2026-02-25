@@ -1,0 +1,89 @@
+########################################################################################################################
+#   Enabled                                                                                                            #
+#                                                                                                                      #
+# If you set this to false the whole stealing behavior of the mod is disabled. FixBadStolenItemCount is still applied  #
+# if it is set to be enabled.                                                                                          #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+Enabled = True
+
+########################################################################################################################
+#   Fix bad stolen item count                                                                                          #
+#                                                                                                                      #
+# There is a bug in the game if you steal a stack of items from a container but the items don't have any other special #
+# properties it will not set the count correctly and treat as if you had only stolen one item. If you drop one item    #
+# the rest of the stack will not be marked as stolen anymore. This fixes that issue. It is also very much needed for   #
+# the mod to work correctly. Highly recommended to keep this enabled. This setting is still applied even if the        #
+# Enabled setting is set to false.                                                                                     #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+FixBadStolenItemCount = True
+
+########################################################################################################################
+#   Ignore keywords                                                                                                    #
+#                                                                                                                      #
+# Ignore objects with these keywords. If the stolen object has the keyword we will never remove the stolen state.      #
+# Separate multiple keywords with ; symbol.                                                                            #
+#                                                                                                                      #
+#    Type: (string)                                                                                                    #
+########################################################################################################################
+
+IgnoreKeywords = ""
+
+########################################################################################################################
+#   Always keywords                                                                                                    #
+#                                                                                                                      #
+# Objects with these keywords are always considered when deciding whether to remove stolen state (as long as you       #
+# didn't get caught). Objects with these keywords ignore the MaxPrice setting. Separate multiple keywords with ;       #
+# symbol.                                                                                                              #
+#                                                                                                                      #
+#    Type: (string)                                                                                                    #
+########################################################################################################################
+
+AlwaysKeywords = ""
+
+########################################################################################################################
+#   Require keywords                                                                                                   #
+#                                                                                                                      #
+# If this setting is not empty then ONLY objects that have one of these keywords will be considered for stolen state   #
+# removal. MaxPrice setting will still be considered as well. Separate multiple keywords with the ; symbol.            #
+#                                                                                                                      #
+#    Type: (string)                                                                                                    #
+########################################################################################################################
+
+RequireKeywords = ""
+
+########################################################################################################################
+#   Max price                                                                                                          #
+#                                                                                                                      #
+# Objects that cost more than this amount will never remove stolen state.                                              #
+#                                                                                                                      #
+#    Type: (int32)                                                                                                     #
+########################################################################################################################
+
+MaxPrice = 1
+
+########################################################################################################################
+#   Exclude enchanted items                                                                                            #
+#                                                                                                                      #
+# Enchanted items will never become unstolen.                                                                          #
+#                                                                                                                      #
+#    Type: (boolean)                                                                                                   #
+########################################################################################################################
+
+ExcludeEnchantedItems = False
+
+########################################################################################################################
+#   Exclude form IDs                                                                                                   #
+#                                                                                                                      #
+# Exclude the following form IDs from this mod. These items are needed here or the thieves guild questline will not    #
+# work properly.                                                                                                       #
+#                                                                                                                      #
+#    Type: (string)                                                                                                    #
+########################################################################################################################
+
+ExcludeFormIds = "44E63:Skyrim.esm;44E6A:Skyrim.esm;44E67:Skyrim.esm;44E6C:Skyrim.esm;44E6E:Skyrim.esm;44E65:Skyrim.esm;19958:Skyrim.esm;19952:Skyrim.esm;60CC2:Skyrim.esm;6F266:Skyrim.esm;5598C:Skyrim.esm;19954:Skyrim.esm;1994F:Skyrim.esm"

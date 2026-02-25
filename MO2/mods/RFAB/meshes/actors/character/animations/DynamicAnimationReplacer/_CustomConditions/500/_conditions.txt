@@ -1,0 +1,4 @@
+HasPerk("Skyrim.esm" | 0x106258) AND
+NOT IsEquippedRight("RFAB.esp" | 0x006526) AND
+NOT IsEquippedRightHasKeyword("RFAB.esp" | 0x004CA4) OR
+NOT IsEquippedLeftHasKeyword("RFAB.esp" | 0x004CA4)

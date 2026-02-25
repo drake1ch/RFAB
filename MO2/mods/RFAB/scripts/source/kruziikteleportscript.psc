@@ -1,0 +1,1 @@
+Scriptname KruziikTeleportScript extends activemagiceffect  

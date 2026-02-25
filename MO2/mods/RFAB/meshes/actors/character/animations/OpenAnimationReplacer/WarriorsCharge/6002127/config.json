@@ -1,0 +1,23 @@
+{
+    "name": "Player",
+    "priority": 60012800,
+    "conditions": [
+        {
+            "condition": "IsActorBase",
+            "requiredVersion": "1.0.0.0",
+            "Actor base": {
+                "pluginName": "Skyrim.esm",
+                "formID": "7"
+            }
+        },
+        {
+            "condition": "IsEquippedShout",
+            "requiredVersion": "1.0.0.0",
+            "negated": true,
+            "Shout": {
+                "pluginName": "Skyrim.esm",
+                "formID": "2F7BA"
+            }
+        }
+    ]
+}

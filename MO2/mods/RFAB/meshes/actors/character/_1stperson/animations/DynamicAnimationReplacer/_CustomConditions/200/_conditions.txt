@@ -1,0 +1,2 @@
+IsEquippedRightHasKeyword("RFAB.esp" | 0x004CA4) AND
+IsEquippedLeftType(0)

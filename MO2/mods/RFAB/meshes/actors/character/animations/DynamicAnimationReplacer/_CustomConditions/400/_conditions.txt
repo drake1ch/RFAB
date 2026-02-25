@@ -1,0 +1,2 @@
+HasPerk("RFAB.esp" | 0x005B41) AND
+IsEquippedRightHasKeyword("RFAB.esp" | 0x004CA4)

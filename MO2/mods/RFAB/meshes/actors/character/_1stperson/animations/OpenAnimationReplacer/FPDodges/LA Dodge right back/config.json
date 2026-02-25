@@ -1,0 +1,34 @@
+{
+    "name": "LA Dodge with PD Resist Only right back",
+    "description": "A description",
+    "priority": 33004,
+    "replaceOnEcho": true,
+    "conditions": [
+        {
+            "condition": "HasMagicEffect",
+            "requiredVersion": "1.0.0.0",
+            "Magic effect": {
+                "pluginName": "RFAB.esp",
+                "formID": "0CF190"
+            },
+            "Active effects only": true
+        },
+        {
+            "condition": "IsWornHasKeyword",
+            "requiredVersion": "1.0.0.0",
+            "negated": true,
+            "Keyword": {
+                "editorID": "ArmorHeavy"
+            }
+        },
+        {
+            "condition": "HasMagicEffect",
+            "requiredVersion": "1.0.0.0",
+            "Magic effect": {
+                "pluginName": "RFAB.esp",
+                "formID": "0CF191"
+            },
+            "Active effects only": true
+        }
+    ]
+}

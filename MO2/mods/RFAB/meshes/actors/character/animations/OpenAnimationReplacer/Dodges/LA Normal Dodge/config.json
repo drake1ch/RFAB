@@ -1,0 +1,16 @@
+{
+    "name": "LA Normal DodgePD Resist Only",
+    "description": "A description",
+    "priority": 20203,
+    "replaceOnEcho": true,
+    "conditions": [
+        {
+            "condition": "IsWornHasKeyword",
+            "requiredVersion": "1.0.0.0",
+            "negated": true,
+            "Keyword": {
+                "editorID": "ArmorHeavy"
+            }
+        }
+    ]
+}

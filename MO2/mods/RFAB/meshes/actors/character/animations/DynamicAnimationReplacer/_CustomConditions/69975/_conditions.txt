@@ -1,0 +1,1 @@
+IsEquippedRightType(10) AND

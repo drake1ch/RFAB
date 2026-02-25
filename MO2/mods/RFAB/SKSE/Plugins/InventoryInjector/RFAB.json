@@ -1,0 +1,3925 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+  "rules": [
+	//копья
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": "WeapTypeSpear"
+		},
+		"assign": {
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "weapon_spear"
+      }
+    },
+	//лёгкие луки
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": "REQ_KW_WeaponType_BowLight"
+		},
+		"assign": {
+			"subTypeDisplay": "$Light_Bow",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "weapon_bow"
+		}
+	  },
+	//тяжёлые луки
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": "REQ_KW_WeaponType_BowHeavy"
+		},
+		"assign": {
+			"subTypeDisplay": "$Heavy_Bow",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "weapon_bow"
+		}
+	  },
+	//лёгкие арбалеты
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": "REQ_KW_WeaponType_CrossbowLight"
+		},
+		"assign": {
+			"subTypeDisplay": "$Light_Crossbow",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "weapon_crossbow"
+		}
+	  },
+	//тяжёлые арбалеты
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": "REQ_KW_WeaponType_CrossbowHeavy"
+		},
+		"assign": {
+			"subTypeDisplay": "$Heavy_Crossbow",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "weapon_crossbow"
+		}
+	  },
+	//боевые посохи
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": ["WeapTypeQuarterstaff", "WeapTypeBattleStaff"]}
+		},
+		"assign": {
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "weapon_quarterstaff"
+		}
+    },
+	//дай-катаны и нодати
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": "WeapTypeNodachi",
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "nodachi"
+		}
+    },
+	//катаны
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": "WeapTypeKatana"
+		},
+		"assign": {
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "weapon_katana"
+		}
+    },
+	//вакидзаси и танто
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": { 
+				"anyOf": [
+					"RFAB.esp|6AEDB",
+					"RFAB.esp|6B46B",
+					"RFAB.esp|AD390B",
+					"RFAB.esp|64E5",
+					"RFAB.esp|64E8",
+					"RFAB.esp|64E9",
+					"RFAB.esp|64ED",
+					"RFAB.esp|64EC",
+					"RFAB.esp|64F1",
+					"RFAB.esp|64F2",
+					"RFAB.esp|64F4",
+					"RFAB.esp|64F6",
+					"RFAB.esp|64F9",
+					"RFAB.esp|64FA",
+					"RFAB.esp|64FC",
+					"RFAB.esp|64FE",
+					"RFAB.esp|6500",
+					"RFAB.esp|6501",
+					"RFAB.esp|6504",
+					"RFAB.esp|6505",
+					"RFAB.esp|6508",
+					"RFAB.esp|6509",
+					"RFAB.esp|65A7",
+					"RFAB.esp|CD804",
+					"RFAB.esp|FC84"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "tanto"
+		}
+    },
+	//цвета заклинаний
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Alteration"
+		},
+		"assign": {
+			"iconColor": "#8F6B46"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Illusion"
+		},
+		"assign": {
+			"iconColor": "#4C9EA4"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Destruction"
+		},
+		"assign": {
+			"iconColor": "#C73636"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Conjuration"
+		},
+		"assign": {
+			"iconColor": "#993899"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"school": "Restoration"
+		},
+		"assign": {
+			"iconColor": "#00AC00"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"resistance": "FireResist"
+		},
+		"assign": {
+			"iconLabel": "magic_fire",
+			"iconColor": "#C73636"
+		}
+    },
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"resistance": "ElectricResist"
+		},
+		"assign": {
+			"iconLabel": "magic_shock",
+			"iconColor": "#EAAB00"
+		}
+    },
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"resistance": "FrostResist"
+		},
+		"assign": {
+			"iconLabel": "magic_frost",
+			"iconColor": "#1FFBFF"
+		}
+    },
+	//иконки томов заклинаний
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": "RFAB_TomeAlteration"
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "alteration",
+			"iconColor": "#8F6B46"
+		}
+    },
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": "RFAB_TomeIllusion"
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "illusion",
+			"iconColor": "#4C9EA4"
+		}
+    },
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": "RFAB_TomeDestruction"
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "destruction",
+			"iconColor": "#C73636"
+		}
+    },
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": "RFAB_TomeConjuration"
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "conjuration",
+			"iconColor": "#993899"
+		}
+    },
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": "RFAB_TomeRestoration"
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "restoration",
+			"iconColor": "#00AC00"
+		}
+    },
+	//экипировка
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "ArmorClothing", "ArmorJewelry" ] }
+		},
+		"assign": {
+			"iconColor": "#EDDA87"
+		}
+    },
+    {
+		"match": {
+			"formType": "Armor",
+			"weightClass": "Light"
+		},
+		"assign": {
+			"iconColor": "#756000"
+		}
+    },
+    {
+		"match": {
+			"formType": "Armor",
+			"weightClass": "Heavy"
+		},
+		"assign": {
+			"iconColor": "#6B7585"
+		}
+    },
+    {
+		"match": {
+			"formType": "Weapon"
+		},
+		"assign": {
+			"iconColor": "#A4A5BF"
+		}
+    },
+    {
+		"match": {
+			"formType": "Ammo"
+		},
+		"assign": {
+			"iconColor": "#A89E8C"
+		}
+    },
+	//цвета зелий
+    {
+		"match": {
+			"formType": "Potion",
+			"subType": "Poison"
+		},
+		"assign": {
+			"iconColor": "#AD00B3"
+		}
+    },
+    {
+		"match": {
+			"formType": "Potion",
+			"subType": "Health"
+		},
+		"assign": {
+			"iconColor": "#DB2E73"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "HealRateMult"
+		},
+		"assign": {
+			"iconColor": "#C24074"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|39BE5",
+					"RFAB.esp|CF6A8"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Health",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "potion_health",
+			"iconColor": "#C24074"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|2BE1",
+					"RFAB.esp|CF35C",
+					"RFAB.esp|CF35D"
+				]
+			}
+		},
+		"assign": {
+			"iconColor": "#910C41"
+		}
+    },
+    {
+		"match": {
+			"formType": "Potion",
+			"subType": "Magicka"
+		},
+		"assign": {
+			"iconColor": "#2E9FDB"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "MagickaRateMult"
+		},
+		"assign": {
+			"iconColor": "#4099C2"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|39BE7",
+					"RFAB.esp|CF6A9"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Magicka",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "potion_magic",
+			"iconColor": "#4099C2"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|2BE6",
+					"RFAB.esp|CF360",
+					"RFAB.esp|CF361"
+				]
+			}
+		},
+		"assign": {
+			"iconColor": "#0C6E91"
+		}
+    },
+    {
+		"match": {
+			"formType": "Potion",
+			"subType": "Stamina"
+		},
+		"assign": {
+			"iconColor": "#51DB2E"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "StaminaRateMult"
+		},
+		"assign": {
+			"iconColor": "#5CC240"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|39CF3",
+					"RFAB.esp|CF6AA"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Stamina",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "potion_stam",
+			"iconColor": "#5CC240"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|2BEB",
+					"RFAB.esp|CF362",
+					"RFAB.esp|CF363"
+				]
+			}
+		},
+		"assign": {
+			"iconColor": "#22910C"
+		}
+    },
+    {
+		"match": {
+			"formType": "Potion",
+			"subType": "FireResist"
+		},
+		"assign": {
+			"iconColor": "#C73636"
+		}
+    },
+    {
+		"match": {
+			"formType": "Potion",
+			"subType": "ElectricResist"
+		},
+		"assign": {
+			"iconColor": "#EAAB00"
+		}
+    },
+    {
+		"match": {
+			"formType": "Potion",
+			"subType": "FrostResist"
+		},
+		"assign": {
+			"iconColor": "#1FFBFF"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|39E52",
+					"Skyrim.esm|39E53",
+					"Skyrim.esm|39E54",
+					"Skyrim.esm|39E55",
+					"RFAB.esp|2C0A",
+					"RFAB.esp|2C0B",
+					"RFAB.esp|2C0C"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "potion_magicresist",
+			"iconColor": "#1565FF"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|65A64",
+					"RFAB.esp|2E51"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "potion_poisonresist",
+			"iconColor": "#62A636"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|2F45",
+					"RFAB.esp|2F47",
+					"RFAB.esp|3168",
+					"RFAB.esp|3177"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "potion_all",
+			"iconColor": "#923AB0"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|CF35E",
+					"RFAB.esp|CF35F",
+					"RFAB.esp|2F44"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "potion_all",
+			"iconColor": "#A440C2"
+		}
+    },
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|3EB02",
+					"Skyrim.esm|3EB03",
+					"Skyrim.esm|3EB04",
+					"Skyrim.esm|3EB05",
+					"Skyrim.esm|FF9FE",
+					"RFAB.esp|1661F",
+					"RFAB.esp|2BFA"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "potion_carryweight",
+			"iconColor": "#998D3D"
+		}
+    },
+	//драг. камни
+	{
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|1994F",
+					"Skyrim.esm|59654",
+					"Skyrim.esm|9DFBB",
+					"Skyrim.esm|9F7A6"
+				]
+			}
+		},
+		"assign": {
+			"subType": "Gem"
+      }
+    },
+	//драконьи когти
+	{
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Dragonborn.esm|1CAC0",
+					"Dragonborn.esm|1CAC1"
+				]
+			}
+		},
+		"assign": {
+			"subType": "dragonclaw"
+		}
+    },
+	//кирки
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": {
+				"anyOf": [
+					"Dragonborn.esm|179C9",
+					"Dragonborn.esm|206F2",
+					"Dragonborn.esm|398E6"
+				]
+			}
+		},
+		"assign": {
+			"subType": "pickaxe"
+		}
+    },
+	//артефакты
+	{
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Dragonborn.esm|2145A",
+					"Dragonborn.esm|3166F",
+					"Dragonborn.esm|31670",
+					"Dragonborn.esm|31671",
+					"Dragonborn.esm|31672",
+					"Dawnguard.esm|12F97",
+					"Dawnguard.esm|12FC3",
+					"Dawnguard.esm|19ABB",
+					"Dawnguard.esm|19ABC",
+					"Dawnguard.esm|19ABD",
+					"Skyrim.esm|240D6",
+					"Skyrim.esm|240D5",
+					"Skyrim.esm|DB351",
+					"Skyrim.esm|64283",
+					"Skyrim.esm|64285",
+					"Skyrim.esm|64287",
+					"Skyrim.esm|64289",
+					"Skyrim.esm|6428B",
+					"Skyrim.esm|6428E",
+					"Skyrim.esm|64290",
+					"Skyrim.esm|64292",
+					"Skyrim.esm|64294",
+					"Skyrim.esm|64296",
+					"Skyrim.esm|64298",
+					"Skyrim.esm|6E806",
+					"Skyrim.esm|240D3",
+					"Skyrim.esm|240D4"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Artefact"
+		}
+    },
+	{
+		"match": {
+			"formType": "MiscItem",
+			"formId": "Skyrim.esm|28AD7"
+		},
+		"assign": {
+			"subTypeDisplay": "$Artefact",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "soulgem_azura"
+		}
+    },
+	//останки
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|75868",
+					"Skyrim.esm|F6767",
+					"Skyrim.esm|AADB6",
+					"Skyrim.esm|AADB7",
+					"Skyrim.esm|4286C",
+					"Dawnguard.esm|2993",
+					"Dawnguard.esm|2994",
+					"Dawnguard.esm|11CF7",
+					"Dawnguard.esm|5704",
+					"Dawnguard.esm|5705",
+					"Dawnguard.esm|5706",
+					"Dawnguard.esm|5707",
+					"Dragonborn.esm|247F9"
+				]
+			}
+		},
+		"assign": {
+			"subType": "Remains"
+		}
+    },
+	//заклинания
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "Apocalypse - The Spell Package.esp|23316"
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "apocalypse",
+			"iconColor": "#FFFFFF"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "RFAB.esp|60B6"
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "great_cloak",
+			"iconColor": "#FFFFFF"
+      }
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "RFAB.esp|6055"
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "triumvirate",
+			"iconColor": "#FFFFFF"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"formId": "RFAB.esp|604C"
+		},
+		"assign": {
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "default_alteration",
+			"iconColor": "#8F6B46"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|5E03",
+					"RFAB.esp|621E",
+					"RFAB.esp|CDB00"
+				] 
+			}
+		},
+		"assign": {
+			"iconLabel": "magic_fire",
+			"iconColor": "#C73636"
+		}
+    },
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|26499",
+					"RFAB.esp|5E04",
+					"RFAB.esp|6220",
+					"RFAB.esp|CDB01"
+				] 
+			}
+		},
+		"assign": {
+			"iconLabel": "magic_shock",
+			"iconColor": "#EAAB00"
+		}
+    },
+    {
+		"match": {
+			"formType": "Spell",
+			"spellType": "Spell",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|7E8E4",
+					"RFAB.esp|5DF6",
+					"RFAB.esp|621F",
+					"RFAB.esp|CDAFF",
+					"RFAB.esp|6056"
+				] 
+			}
+		},
+		"assign": {
+			"iconLabel": "magic_frost",
+			"iconColor": "#1FFBFF"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": {
+				"anyOf": [
+					"Dragonborn.esm|1D74B",
+					"RFAB.esp|11D594",
+					"RFAB.esp|29AF4",
+					"RFAB.esp|28529",
+					"RFAB.esp|25F22",
+					"RFAB.esp|25F29",
+					"RFAB.esp|5DC4",
+					"RFAB.esp|5DD4",
+					"RFAB.esp|5C5F",
+					"RFAB.esp|5C5E",
+					"RFAB.esp|5C6D",
+					"RFAB.esp|621D",
+					"RFAB.esp|5C6E",
+                    "RFAB.esp|5C6C"
+				] 
+			}
+        },
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "poison",
+			"iconColor": "#62A636"
+        }
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": {
+				"anyOf": [
+					"Dawnguard.esm|38B6",
+					"Dawnguard.esm|3F52",
+					"RFAB.esp|61A4",
+					"RFAB.esp|617B",
+					"RFAB.esp|6189",
+					"RFAB.esp|CDB02"
+				] 
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "sun",
+			"iconColor": "#FF9E00"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "RFAB.esp|5EB8"
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "cloak",
+			"iconColor": "#8E2129"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|3AEA2",
+					"Skyrim.esm|3AEA3",
+					"Skyrim.esm|3AE9F"
+				] 
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "cloak"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "Dragonborn.esm|1772D"
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "cloak",
+			"iconColor": "#CDCBC4"
+		}
+    },
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "Dawnguard.esm|38B5"
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "cloak",
+			"iconColor": "#FF9E00"
+		}
+    },
+	//таланты
+	{
+		"match": {
+			"formId": "RFAB.esp|61DF"
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "animal_subjugation"
+		}
+    },
+	{
+		"match": {
+			"formId": "Skyrim.esm|17122"
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "shadow"
+		}
+    },
+	{
+		"match": {
+			"formId": "Skyrim.esm|F1987"
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "doppelganger"
+		}
+    },
+	{
+		"match": {
+			"formId": "Skyrim.esm|F1986"
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "deception"
+		}
+    },
+	{
+		"match": {
+			"formId":{
+				"anyOf": [
+					"Dragonborn.esm|31842",
+					"Dragonborn.esm|31844",
+					"Dragonborn.esm|1E7F7",
+					"Dragonborn.esm|1E7FA",	
+					"RFAB.esp|6A3D",
+					"RFAB.esp|6A48",
+					"Dragonborn.esm|1E7FC",
+					"Dragonborn.esm|1E7FD",
+					"RFAB.esp|51C0",
+					"RFAB.esp|6A3F",
+					"Dragonborn.esm|1E800",
+					"RFAB.esp|6A41",
+					"RFAB.esp|6A44",
+					"Dragonborn.esm|34835",
+					"RFAB.esp|CD70C",
+					"RFAB.esp|6A43",
+					"Dragonborn.esm|1E7EE",
+					"RFAB.esp|CD70F",
+					"Dragonborn.esm|1E7F4",
+					"RFAB.esp|CD710",
+					"Dragonborn.esm|1E7F2",
+					"Dragonborn.esm|1EEC6",
+					"Dragonborn.esm|1EEC3",
+					"Dragonborn.esm|1FF21",
+					"Dragonborn.esm|1FF22",
+					"RFAB.esp|6A53",
+					"Dragonborn.esm|2647C",
+					"Dragonborn.esm|2647F",
+					"Dragonborn.esm|26480"
+				]
+			} 
+		},
+		"assign": {
+			"iconSource": "Icons/Spells.swf",
+			"iconLabel": "mora"
+		}
+    },
+	//формы
+	{
+		"match": {
+			"formId":{
+				"anyOf": [
+					"Skyrim.esm|8C1AB",
+					"RFAB.esp|CD6F0",
+					"RFAB.esp|6222",
+					"RFAB.esp|6223",
+					"RFAB.esp|CD6F1",
+					"RFAB.esp|6224",
+					"RFAB.esp|CD700",
+					"RFAB.esp|6225",
+					"RFAB.esp|CD6F4",
+					"RFAB.esp|CD6F3",
+					"RFAB.esp|CD6F2",
+					"RFAB.esp|CD6F5",
+					"RFAB.esp|CD6F6",
+					"RFAB.esp|CD6F7",
+					"RFAB.esp|CD6FE",
+					"RFAB.esp|5703",
+					"RFAB.esp|574E",
+					"RFAB.esp|56FD",
+					"RFAB.esp|56FE",
+					"RFAB.esp|5700",
+					"RFAB.esp|5701",
+					"RFAB.esp|56FF",
+					"RFAB.esp|CD6FF",
+					"RFAB.esp|584E",
+					"RFAB.esp|19E2E"
+				]
+			} 
+		},
+		"assign": {
+			"iconSource": "Icons/Forms.swf",
+			"iconLabel": "paladin"
+		}
+    },
+	{
+		"match": {
+			"formId":{
+				"anyOf": [
+					"Skyrim.esm|92C48",
+					"RFAB.esp|CD6AE",
+					"RFAB.esp|CD6AF",
+					"RFAB.esp|CD6B1",
+					"RFAB.esp|CD6B2",
+					"RFAB.esp|CD6B3",
+					"RFAB.esp|CD6B4",
+					"RFAB.esp|CD6B5",
+					"RFAB.esp|CD6B6",
+					"RFAB.esp|CD6BB",
+					"RFAB.esp|CD6BD"
+				] 
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Forms.swf",
+			"iconLabel": "werewolf"
+		}
+    },
+	{
+		"match": {
+			"formId":{
+				"anyOf": [
+					"Skyrim.esm|8D5C2",
+					"RFAB.esp|5DD5",
+					"RFAB.esp|CD6A3",
+					"RFAB.esp|CD6A4",
+					"RFAB.esp|CE00A",
+					"RFAB.esp|CE00B",
+					"RFAB.esp|CE009"
+				] 
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Forms.swf",
+			"iconLabel": "vampire",
+			"iconColor": "#8E2129"
+		}
+    },
+	{
+		"match": {
+			"formId":{
+				"anyOf": [
+					"Skyrim.esm|88821",
+					"Skyrim.esm|C4DE1",
+					"Skyrim.esm|B8778",
+					"Dragonborn.esm|17731",
+					"RFAB.esp|331E46",
+					"RFAB.esp|54EA",
+					"RFAB.esp|54EB",
+					"RFAB.esp|54ED",
+					"RFAB.esp|54EE",
+					"RFAB.esp|CD6A0",
+					"RFAB.esp|CD6A1",
+					"RFAB.esp|CD6A2",
+					"RFAB.esp|5EB7",
+					"RFAB.esp|CE015",
+					"RFAB.esp|CE016",
+					"RFAB.esp|CE017",
+					"RFAB.esp|CE024",
+					"RFAB.esp|CE025"
+				] 
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Forms.swf",
+			"iconLabel": "vampire"
+		}
+    },
+	{
+		"match": {
+			"formId":{
+				"anyOf": [
+					"Skyrim.esm|C4DE2",
+					"Skyrim.esm|ED0A7",
+					"Skyrim.esm|10F1E6",
+					"Dawnguard.esm|283B",
+					"Dawnguard.esm|38B7",
+					"Dawnguard.esm|38B8",
+					"Dawnguard.esm|38B9",
+					"Dawnguard.esm|38BA",
+					"Dawnguard.esm|38BC",
+					"Dawnguard.esm|8A6F",
+					"Dawnguard.esm|BA54",
+					"Dawnguard.esm|16909",
+					"Dawnguard.esm|19324",
+					"RFAB.esp|CD6A5",
+					"RFAB.esp|CD6A6",
+					"RFAB.esp|CD6A7",
+					"RFAB.esp|CD6A8",
+					"RFAB.esp|CD6AA",
+					"RFAB.esp|CD6AB",
+					"RFAB.esp|CD6AC",
+					"RFAB.esp|CD6AD"
+				] 
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Forms.swf",
+			"iconLabel": "lord"
+		}
+    },
+	{
+		"match": {
+			"formId":{
+				"anyOf": [
+					"RFAB.esp|624D",
+					"RFAB.esp|6250",
+					"RFAB.esp|6254",
+					"RFAB.esp|6255",
+					"RFAB.esp|625D",
+					"RFAB.esp|16514",
+					"RFAB.esp|5FFD",
+					"RFAB.esp|6001",
+					"RFAB.esp|19E2F"
+				]
+			} 
+		},
+		"assign": {
+			"iconSource": "Icons/Forms.swf",
+			"iconLabel": "lich"
+		}
+    },
+	//расы
+	{
+		"match": {
+			"formId": "RFAB.esp|CD876"
+		},
+		"assign": {
+			"iconSource": "Icons/Races.swf",
+			"iconLabel": "race_argonian"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|CD868"
+		},
+		"assign": {
+			"iconSource": "Icons/Races.swf",
+			"iconLabel": "race_breton"
+		}
+    },
+    {
+		"match": {
+			"formId": "RFAB.esp|BBE4"
+		},
+		"assign": {
+			"iconSource": "Icons/Races.swf",
+			"iconLabel": "race_altmer"
+		}
+    },
+    {
+		"match": {
+			"formId": "RFAB.esp|54CB"
+		},
+		"assign": {
+			"iconSource": "Icons/Races.swf",
+			"iconLabel": "race_imperial"
+		}
+    },
+    {
+		"match": {
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|54CC",
+					"RFAB.esp|CD69E"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Races.swf",
+			"iconLabel": "race_khajiit"
+		}
+    },
+    {
+		"match": {
+			"formId": "Skyrim.esm|E40D0"
+		},
+		"assign": {
+			"iconSource": "Icons/Races.swf",
+			"iconLabel": "race_bosmer"
+		}
+    },
+    {
+		"match": {
+			"formId": "RFAB.esp|CD691"
+		},
+		"assign": {
+			"iconSource": "Icons/Races.swf",
+			"iconLabel": "race_nord"
+		}
+    },
+    {
+		"match": {
+			"formId": "Skyrim.esm|E40BF"
+    },
+		"assign": {
+			"iconSource": "Icons/Races.swf",
+			"iconLabel": "race_orsimer"
+		}
+	},
+    {
+		"match": {
+			"formId": "RFAB.esp|CDA06"
+		},
+		"assign": {
+			"iconSource": "Icons/Races.swf",
+			"iconLabel": "race_redguard"
+		}
+    },
+    {
+		"match": {
+			"formId": "RFAB.esp|CD86E"
+		},
+		"assign": {
+			"iconSource": "Icons/Races.swf",
+			"iconLabel": "race_dunmer"
+		}
+    },
+	//маг. эффекты
+	{
+		"match": {
+			"formId":{
+				"anyOf": [
+					"RFAB.esp|57C1",
+					"RFAB.esp|CD6B7",
+					"RFAB.esp|CD6B8",
+					"RFAB.esp|CD6B9",
+					"RFAB.esp|CD6BA",
+					"RFAB.esp|CD6BE",
+					"RFAB.esp|CD6BF",
+					"RFAB.esp|CD6C0"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "totem"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5525"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "sovngarde"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5528"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "apocrypha"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5522"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "dawnguard"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5529"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "volkihar"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5544"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "companions"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5542"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "mages"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5538"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "thieves"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5527"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "sithis"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5539"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "end_sithis"
+		}
+    },
+	{
+		"match": {
+			"formId": "Unofficial Skyrim Special Edition Patch.esp|28c6"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "bards_college"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5550"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "for_legion"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5551"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "for_brothers"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5534"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "servant"
+		}
+    },
+	{
+		"match": {
+			"formId": "RFAB.esp|5533"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "fanatic"
+		}
+    },
+	{
+		"match": {
+			"formId": "Skyrim.esm|e76e0"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "wall"
+		}
+    },
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+				"Skyrim.esm|10D96C",
+				"HearthFires.esm|4294",
+				"HearthFires.esm|590B"
+			]
+        } 
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "love"
+		}
+    },
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|E827E",
+					"Skyrim.esm|E827F",
+					"Skyrim.esm|E8280"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "paarthurnax"
+		}
+    },
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|102019",
+					"Skyrim.esm|10201A",
+					"Skyrim.esm|10201B",
+					"Skyrim.esm|10201C",
+					"Skyrim.esm|10201D",
+					"Skyrim.esm|10201E",
+					"Skyrim.esm|2C259",
+					"Skyrim.esm|2C25A",
+					"RFAB.esp|CD6C2",
+					"RFAB.esp|CD6C4",
+					"RFAB.esp|CD6C5",
+					"RFAB.esp|CD6C6",
+					"RFAB.esp|CD6C9",
+					"RFAB.esp|CD6CC"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Artefact",
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "white_phial",
+			"iconColor": "#FFFFFF"
+		}
+    },
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|61EE",
+					"RFAB.esp|CD7AA",
+					"RFAB.esp|CD7AB",
+					"RFAB.esp|CD7AC",
+					"RFAB.esp|CD7AD",
+					"RFAB.esp|CD7AE",
+					"RFAB.esp|CD7AF",
+					"RFAB.esp|CD7B0",
+					"RFAB.esp|CD7B1",
+					"RFAB.esp|CD7B2",
+					"RFAB.esp|CD7B3",
+					"RFAB.esp|CD7B4",
+					"RFAB.esp|CD7B5",
+					"RFAB.esp|CD7B6"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "mundus_stone"
+		}
+    },
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|5755",
+					"RFAB.esp|5756",
+					"RFAB.esp|5757",
+					"RFAB.esp|575A",
+					"RFAB.esp|576F",
+					"RFAB.esp|5770",
+					"RFAB.esp|5771",
+					"RFAB.esp|5772",
+					"RFAB.esp|5773",
+					"RFAB.esp|5774"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "solstheim_stone"
+		}
+    },
+	{
+		"match": {
+			"formId": "Unofficial Skyrim Special Edition Patch.esp|28bb5"
+		},
+		"assign": {
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "mercy"
+		}
+    },
+	//классы
+	{
+		"match": {
+			"formId": "RFAB.esp|19E31"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "barbarian"
+		}
+	},
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|6062",
+					"RFAB.esp|19E3F"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "assasin"
+		}
+	},
+	{
+		"match": {
+			"formId": "RFAB.esp|19E2D"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "cleric"
+		}
+	},
+	{
+		"match": {
+			"formId": "RFAB.esp|19E44"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "warrior_mage"
+		}
+	},
+	{
+		"match": {
+			"formId": "RFAB.esp|19E35"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "monk"
+		}
+	},
+	{
+		"match": {
+			"formId": "RFAB.esp|19E3B"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "skirmisher"
+		}
+	},
+	{
+		"match": {
+			"formId": "RFAB.esp|19E43"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "battle_mage"
+		}
+	},
+	{
+		"match": {
+			"formId":  {
+				"anyOf": [
+					"RFAB.esp|19E40",
+					"RFAB.esp|3344F",
+					"RFAB.esp|33450",
+					"RFAB.esp|33454"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "thief"
+		}
+	},
+	{
+		"match": {
+			"formId": "RFAB.esp|19E3E"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "mystical_archer"
+		}
+	},
+	{
+		"match": {
+			"formId": "RFAB.esp|240B6"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "poisoner"
+		}
+	},
+	{
+		"match": {
+			"formId": "RFAB.esp|19E3A"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "shooter"
+		}
+	},
+	{
+		"match": {
+			"formId": "RFAB.esp|19E30"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "champion"
+		}
+	},
+	{
+		"match": {
+			"formId": "RFAB.esp|19E3D"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "elementalist"
+		}
+	},
+	{
+		"match": {
+			"formId": "RFAB.esp|240B3"
+		},
+		"assign": {
+			"iconSource": "Icons/Classes.swf",
+			"iconLabel": "reborn"
+		}
+	},
+	//предметы
+	//артефакты
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": { 
+				"anyOf": [
+					"Skyrim.esm|4A38F", //эбонитовый клинок
+					"Skyrim.esm|EA29C",  //эбонитовый клинок
+					"Dawnguard.esm|188CD"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "nodachi"
+		}
+    },
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Skyrim.esm|1C4E6"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "rueful_axe"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Skyrim.esm|233E3"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "mace"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Skyrim.esm|4E4EE"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "dawnbreaker"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Skyrim.esm|2ACD2"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "volendrung"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "tbmchrysamere.esp|D62"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "chrysamere"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Skyrim.esm|956B5"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "wuuthrad"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Dragonborn.esm|1AEA4"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "bloodskal"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Skyrim.esm|240D2"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "razor"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Skyrim.esm|35369"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "magnus_staff"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Skyrim.esm|2AC6F"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "wabbajack"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"formId": "Skyrim.esm|45F96"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "spellbreaker"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Skyrim.esm|35066"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "corruption_skull"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Dawnguard.esm|800"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "auriel_bow"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"formId": "Dawnguard.esm|284D"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "auriel_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "Skyrim.esm|1CB36"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "sanguine_rose"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|61CCA",
+					"Skyrim.esm|61CAB",
+					"Skyrim.esm|61C8B",
+					"Skyrim.esm|61CC9",
+					"Skyrim.esm|61CB9",
+					"Skyrim.esm|61CC2",
+					"Skyrim.esm|61CC1",
+					"Skyrim.esm|61CC0",
+					"Skyrim.esm|61CA5",
+					"Skyrim.esm|61CD6",
+					"Dragonborn.esm|39D2F",
+					"Dragonborn.esm|24037",
+					"Dragonborn.esm|240FF",
+					"Dragonborn.esm|240FE",
+					"RFAB.esp|346D"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Mask",
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "mask"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"formId": "RFAB.esp|65F2"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "scythe"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"formId": "Skyrim.esm|3A070"
+		},
+		"assign": {
+			"subTypeDisplay": "$Artefact",
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "skeleton_key"
+		}
+	},
+	{
+      "match": {
+        "formType": "Book",
+        "formId": {
+          "anyOf": [
+				"Skyrim.esm|2D513",
+				"Skyrim.esm|48782",
+				"Dawnguard.esm|126DC",
+				"Dawnguard.esm|11A13",
+				"Dawnguard.esm|118F9"
+			]
+        }
+      },
+      "assign": {
+			"subTypeDisplay": "$ElderScroll",
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "elderscroll",
+			"iconColor": "#f7EBC5"
+		}
+    },
+	{
+		"match": {
+			"formType": "Armor",
+			"formId": "Skyrim.esm|D2846"
+		},
+		"assign": {
+			"iconSource": "Icons/Artefacts.swf",
+			"iconLabel": "clavicus"
+		}
+	},
+	//еда
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|6BC00",
+					"HearthFires.esm|3540"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "crab",
+			"iconColor": "#8FA0A5"
+		}
+	},
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|B08C5",
+					"Skyrim.esm|10394D"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "honey",
+			"iconColor": "#EBAF4C"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|106E1B",
+					"Skyrim.esm|106E1A",
+					"Skyrim.esm|106E19",
+					"Skyrim.esm|106E1C",
+					"Skyrim.esm|106E18"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "fish",
+			"iconColor": "#8FA0A5"
+		}
+	},
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|64B30",
+					"HearthFires.esm|9DB",
+					"HearthFires.esm|353A",
+					"HearthFires.esm|3539",
+					"HearthFires.esm|117FF",
+					"HearthFires.esm|11801",
+					"HearthFires.esm|3533",
+					"HearthFires.esm|353B"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "bakery",
+			"iconColor": "#E4AC4F"
+		}
+	},
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|7224E",
+					"Skyrim.esm|CADFB",
+					"Skyrim.esm|722C2",
+					"Skyrim.esm|E8947",
+					"Skyrim.esm|64B3C",
+					"Skyrim.esm|E8448",
+					"Skyrim.esm|7224C",
+					"Skyrim.esm|64B3B",
+					"Skyrim.esm|722BD",
+					"Skyrim.esm|721E8",
+					"Skyrim.esm|722BB",
+					"Skyrim.esm|722B0",
+					"Skyrim.esm|722C7",
+					"Skyrim.esm|52695",
+					"HearthFires.esm|3541",
+					"HearthFires.esm|353f",
+					"Dragonborn.esm|3CF72"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "meat",
+			"iconColor": "#AA3C3B"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|65C99",
+					"Skyrim.esm|65C9A",
+					"Skyrim.esm|65c9E",
+					"Skyrim.esm|F2011",
+					"Skyrim.esm|65C9F",
+					"Skyrim.esm|65C9C",
+					"Skyrim.esm|EBA03",
+					"Skyrim.esm|65C9B",
+					"Skyrim.esm|EDB2E",
+					"Skyrim.esm|65C9D",
+					"Skyrim.esm|669A2",
+					"Skyrim.esm|669A4",
+					"Skyrim.esm|10211A",
+					"Dragonborn.esm|3BD14",
+					"Dragonborn.esm|3BD15",
+					"Dragonborn.esm|3D125",
+					"RFAB.esp|284894",
+					"RFAB.esp|30D05",
+					"RFAB.esp|18D3D9",
+					"RFAB.esp|1B0C50"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "meat",
+			"iconColor": "#E8B3B9"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|64B33",
+					"Skyrim.esm|64B34"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "cheese",
+			"iconColor": "#FFA600"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|64B35",
+					"Skyrim.esm|64B36"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "cheese_slice",
+			"iconColor": "#FFA600"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|64B31",
+					"Skyrim.esm|64B32"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "cheese_piece",
+			"iconColor": "#FFA600"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|F4314",
+					"Skyrim.esm|EBA01",
+					"Skyrim.esm|EBA02",
+					"Skyrim.esm|F431B",
+					"Skyrim.esm|F431E",
+					"Skyrim.esm|F431D",
+					"Skyrim.esm|F4315",
+					"Skyrim.esm|F431C",
+					"Skyrim.esm|F4320",
+					"Dragonborn.esm|3CD5B",
+					"HearthFires.esm|353D",
+					"HearthFires.esm|353E",
+					"RFAB.esp|2897D4",
+					"RFAB.esp|18B969",
+					"RFAB.esp|18B96A",
+					"RFAB.esp|18B96B"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "soup",
+			"iconColor": "#864807"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|CD614",
+					"Skyrim.esm|64B43",
+					"Unofficial Skyrim Special Edition Patch.esp|801"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "pie",
+			"iconColor": "#EEC07B"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|65C97",
+					"Skyrim.esm|65C98",
+					"HearthFires.esm|9DC",
+					"HearthFires.esm|3537"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "bread",
+			"iconColor": "#EEC07B"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|CD5E3",
+					"RFAB.esp|CD5E7",
+					"RFAB.esp|CD5E8",
+					"RFAB.esp|CD628",
+					"RFAB.esp|CD62F",
+					"RFAB.esp|CD629",
+					"RFAB.esp|CD630",
+					"RFAB.esp|CD616",
+					"RFAB.esp|CD62A"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "food_bundle",
+			"iconColor": "#696969"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|9380D",
+					"Skyrim.esm|508CA",
+					"Skyrim.esm|107A8A",
+					"Skyrim.esm|34C5D",
+					"Skyrim.esm|555E8",
+					"Skyrim.esm|2C35A",
+					"Skyrim.esm|F693F",
+					"Skyrim.esm|34C5E",
+					"Dragonborn.esm|3572F"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "beer",
+			"iconColor": "#D27615"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|65C37",
+					"Skyrim.esm|65C38",
+					"Skyrim.esm|65C39",
+					"Skyrim.esm|C5349",
+					"Skyrim.esm|3133B",
+					"Skyrim.esm|3133C",
+					"Skyrim.esm|C5348",
+					"Skyrim.esm|F257E",
+					"Skyrim.esm|36D53",
+					"Skyrim.esm|1895F",
+					"Skyrim.esm|85368",
+					"Skyrim.esm|B91d7",
+					"Skyrim.esm|D055E",
+					"HearthFires.esm|3535",
+					"HearthFires.esm|3536",
+					"Dragonborn.esm|248CE",
+					"Dragonborn.esm|207E6",
+					"Dragonborn.esm|24E0B",
+					"Dragonborn.esm|320DF",
+					"Dragonborn.esm|207E5",
+					"Dragonborn.esm|248CC",
+					"RFAB.esp|3DFE8"
+				]
+			}
+		},
+		"assign": {
+			"iconColor": "#315022"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|57A7A",
+					"Skyrim.esm|DC172"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "skooma",
+			"iconColor": "#741B47"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|10D666"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "pumpkin",
+			"iconColor": "#FF7518"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "HearthFires.esm|3538"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "flour_sack"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|64B3D"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "sweetroll",
+			"iconColor": "#E4AC4F"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|64B39"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "long_taffy",
+			"iconColor": "#F63B27"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|64B40"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "carrot",
+			"iconColor": "#FD7949"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|64B42"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "tomato",
+			"iconColor": "#B21807"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|64B38"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "nuts",
+			"iconColor": "#C08768"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "HearthFires.esm|3534"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "milk",
+			"iconColor": "#C9B4B0"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|64B3F"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "cabbage",
+			"iconColor": "#357A38"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Dragonborn.esm|206E7"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "potato",
+			"iconColor": "#C27BA0"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|64B41"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "potato",
+			"iconColor": "#B79268"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|64B3A"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "potato",
+			"iconColor": "#EFEAB5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|64B2F"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "apple",
+			"iconColor": "#98D98E"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|64B2E"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "apple",
+			"iconColor": "#900D09"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|64B3E"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "leek",
+			"iconColor": "#B7A069"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"formId": "Skyrim.esm|669A5"
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "leek",
+			"iconColor": "#478007"
+		}
+	},
+	//ингредиенты
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|34D31",
+					"Skyrim.esm|34D32",
+					"Skyrim.esm|7E8C1",
+					"Skyrim.esm|83E64",
+					"Skyrim.esm|57F91",
+					"Skyrim.esm|6AC4A",
+					"Skyrim.esm|1B3BD",			
+					"Skyrim.esm|7E8B7",
+					"Skyrim.esm|4B0BA",
+					"Skyrim.esm|134AA",
+					"Skyrim.esm|5076E",
+					"Skyrim.esm|3f6F8",
+					"Skyrim.esm|516C8",
+					"Dragonborn.esm|16E26",
+					"Dragonborn.esm|17E97",
+					"Dragonborn.esm|1FF75"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "herbs",
+			"iconColor": "#216E23"
+		}
+	},
+	{
+      "match": {
+        "formType": "MiscItem",
+        "formId": "Dragonborn.esm|1AAD6"
+      },
+      "assign": {
+        "subTypeDisplay": "$Ingredient",
+		"iconSource": "Icons/Ingredients.swf",
+		"iconLabel": "herbs",
+		"iconColor": "#8e6f56"
+      }
+    },
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|B70A1",
+					"Skyrim.esm|59B86",
+					"Skyrim.esm|1BCBC",
+					"Skyrim.esm|B2183",
+					"Skyrim.esm|6ABCB",
+					"Skyrim.esm|3AD71",
+					"Dragonborn.esm|17008",
+					"Dragonborn.esm|1CD74",
+					"Dawnguard.esm|14DC4"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "root",
+			"iconColor": "#8e6f56"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|4DA20",
+					"Skyrim.esm|4DA25",
+					"Skyrim.esm|4DA00",
+					"Skyrim.esm|7EE01",
+					"Skyrim.esm|4DA23",
+					"Skyrim.esm|EC870",
+					"Skyrim.esm|4DA24",
+					"Skyrim.esm|6F950",
+					"Skyrim.esm|4DA22"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "mushroom",
+			"iconColor": "#634538"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|BB956"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "dragonfly",
+			"iconColor": "#E1B13C"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|E4F0C"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "dragonfly",
+			"iconColor": "#74D1E5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|4DA73"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "dragonfly",
+			"iconColor": "#9EF735"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|A9195",
+					"Skyrim.esm|A9191"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "bee",
+			"iconColor": "#EBAF4C"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|727DE"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "butterfly",
+			"iconColor": "#3C9AE1"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|727E0"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "butterfly",
+			"iconColor": "#FCAB27"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|727DF"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "butterfly",
+			"iconColor": "#B6D7A8"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Dawnguard.esm|59BA"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "butterfly",
+			"iconColor": "#CDCBC4"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|7E8C5"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "egg",
+			"iconColor": "#CBDAC5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "HearthFires.esm|3545"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "egg",
+			"iconColor": "#EF9501"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|9151B"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "egg",
+			"iconColor": "#194900"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3AD56"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "egg",
+			"iconColor": "#C2D7EA"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|7E8C8"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "egg",
+			"iconColor": "#3E8170"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|23D6F"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "egg",
+			"iconColor": "#C59950"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "HearthFires.esm|F1CC"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "egg",
+			"iconColor": "#EDCE70"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|23D77"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "egg"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|6BC0E"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "wrapping",
+			"iconColor": "#BADDFC"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "RFAB.esp|44C4A8"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "poison_saliva",
+			"iconColor": "#113101"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|3AD66",
+					"Skyrim.esm|E7ED0",
+					"Dragonborn.esm|3CD8E"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "feather"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|6BC07"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "eyeball"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "RFAB.esp|5915"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "eyeball"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|B18CD",
+					"RFAB.esp|4365E",
+					"RFAB.esp|43661",
+					"RFAB.esp|43665",
+					"RFAB.esp|4365F",
+					"RFAB.esp|5913",
+					"RFAB.esp|5914"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "heart",
+			"iconColor": "#7B2424"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3AD5B"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "heart",
+			"iconColor": "#A14040"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3AD70"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "chitin",
+			"iconColor": "#8FA0A5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|6BC0B",
+					"Skyrim.esm|6BC0A",
+					"RFAB.esp|CE3BD",
+					"RFAB.esp|CE3BE"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "antlers",
+			"iconColor": "#634538"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|E7EBC"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "birdclaw",
+			"iconColor": "#634538"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|6B689",
+					"Skyrim.esm|6BC02"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "claws"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|6BC04",
+					"RFAB.esp|CE3BF"
+				]
+			}	
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "fangs"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3AD6A"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "fangs",
+			"iconColor": "#1FFBFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|854FE",
+					"Skyrim.esm|85500",
+					"Skyrim.esm|7EDF5"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "seashell",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formId": { 
+			  "anyOf": [
+					"Skyrim.esm|3AD6C",
+					"Skyrim.esm|3AD68",
+					"Dragonborn.esm|1CD6F",
+					"RFAB.esp|4FEC0",
+					"RFAB.esp|CE3C0"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "tusk"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|34CDD",
+					"Skyrim.esm|6BC10"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "mortar",
+			"iconColor": "#864807"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|F11C0"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "stew",
+			"iconColor": "#705F32"
+		}
+	},
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|3AD73",
+					"Skyrim.esm|705B7",
+					"Skyrim.esm|3AD63",
+					"Skyrim.esm|34CDF",
+					"Skyrim.esm|74A19",
+					"Skyrim.esm|3AD76",
+					"Skyrim.esm|3AD72",
+					"Skyrim.esm|63B5F",
+					"Skyrim.esm|D8E3F",
+					"HearthFires.esm|353C",
+					"RFAB.esp|34E09",
+					"RFAB.esp|5910",
+					"RFAB.esp|5911",
+					"RFAB.esp|5912"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "stew",
+			"iconColor": "#864807"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3AD5E"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "stew",
+			"iconColor": "#C73636"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3AD5F"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "stew",
+			"iconColor": "#1FFBFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3AD60"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "stew",
+			"iconColor": "#EAAB00"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|77E1C"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "flower",
+			"iconColor": "#5973D2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Dawnguard.esm|2A78"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "flower",
+			"iconColor": "#FFD966"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|77E1D"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "flower",
+			"iconColor": "#E54B40"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|45C28"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "flower",
+			"iconColor": "#674EA7"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|77E1E"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "flower",
+			"iconColor": "#C27BA0"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Dawnguard.esm|B097"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "flower",
+			"iconColor": "#3D85C6"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|889A2"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "flower",
+			"iconColor": "#F1C232"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|2F44C"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "flower",
+			"iconColor": "#892399"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3F7F8"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "flower"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|34D22"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "garlic"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3AD61"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "briar_heart",
+			"iconColor": "#BDC541"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3AD6F"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "rat_tail",
+			"iconColor": "#BCBCBC"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3AD64"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "giant_finger",
+			"iconColor": "#E8B3B9"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"formId": "Skyrim.esm|3AD5D"
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "falmer_ear",
+			"iconColor": "#ECE2E3"
+		}
+	},
+	{
+		"match": {
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|669A3",
+					"Dragonborn.esm|1CD71",
+					"Dragonborn.esm|1CD72",
+					"Dragonborn.esm|1CD6D"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "bowl",
+			"iconColor": "#C9B4B0"
+		}
+	},
+	{
+      "match": {
+			"formId": "Dragonborn.esm|1CD6E"
+      },
+      "assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "firewood",
+			"iconColor": "#A89E8C"
+		}
+    },
+	//остальное
+	{
+		"match": {
+			"formType": "MiscItem",
+			"subType": "Gold"
+		},
+		"assign": {
+			"iconColor": "#CCCC33"
+		}
+    },
+	{
+		"match": {
+			"formType": "MiscItem",
+			"subType": "Gem"
+		},
+		"assign": {
+			"iconColor": "#FFB0D1"
+		}
+    },
+	    {
+		"match": {
+			"formType": "SoulGem",
+			"subType": "Petty"
+		},
+		"assign": {
+			"iconColor": "#D7D4FF"
+		}
+    },
+    {
+		"match": {
+			"formType": "SoulGem",
+			"subType": "Lesser"
+		},
+		"assign": {
+			"iconColor": "#C0BAFF"
+		}
+    },
+    {
+		"match": {
+			"formType": "SoulGem",
+			"subType": "Common"
+		},
+		"assign": {
+			"iconColor": "#ABA3FF"
+		}
+    },
+    {
+		"match": {
+			"formType": "SoulGem",
+			"subType": "Greater"
+		},
+		"assign": {
+			"iconColor": "#948BFC"
+		}
+    },
+    {
+		"match": {
+			"formType": "SoulGem",
+			"subType": { "anyOf": [ "Grand", "Azura" ] }
+		},
+		"assign": {
+			"iconColor": "#7569FF"
+		}
+    },
+	{
+		"match": {
+			"formType": "MiscItem",
+			"subType": "Hide"
+		},
+		"assign": {
+			"iconColor": "#DBB36E"
+		}
+    },
+	{
+		"match": {
+			"formType": "MiscItem",
+			"subType": "Ingot"
+		},
+		"assign": {
+			"iconColor": "#828282"
+		}
+    },
+	{
+		"match": {
+			"formType": "MiscItem",
+			"subType": "Leather"
+		},
+		"assign": {
+			"iconColor": "#BA8D23"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"subType": "LeatherStrips"
+		},
+		"assign": {
+			"iconColor": "#BA8D23"
+		}
+    },
+	{
+		"match": {
+			"formType": "Book",
+			"formId":{
+				"anyOf": [
+					"Dragonborn.esm|16E22",
+					"Dragonborn.esm|16E2C",
+					"Dragonborn.esm|16E2D",
+					"Dragonborn.esm|1E99C",
+					"Dragonborn.esm|1E99D",
+					"Dragonborn.esm|1E99E",
+					"Dragonborn.esm|1E99F"
+				] 
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "mora_book",
+			"iconColor": "#1B4E02"
+		}
+    },
+	{
+		"match": {
+			"formType": "MiscItem",
+			"formId": "Skyrim.esm|3EC95"
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "crate"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|4278E",
+					"RFAB.esp|4CA02",
+					"RFAB.esp|4CA03",
+					"RFAB.esp|4CA04",
+					"RFAB.esp|4CA05",
+					"RFAB.esp|4CA06",
+					"RFAB.esp|4CA07",
+					"RFAB.esp|4CA08",
+					"RFAB.esp|4CA09",
+					"RFAB.esp|6605B",
+					"RFAB.esp|6605C",
+					"RFAB.esp|6605D",
+					"RFAB.esp|6605E",
+					"RFAB.esp|6605F",
+					"RFAB.esp|66060",
+					"RFAB.esp|66061",
+					"RFAB.esp|66062",
+					"RFAB.esp|66063",
+					"RFAB.esp|66064",
+					"RFAB.esp|66065",
+					"RFAB.esp|6B197",
+					"RFAB.esp|6B198",
+					"RFAB.esp|6B199",
+					"RFAB.esp|6B19A",
+					"RFAB.esp|6B19B",
+					"RFAB.esp|8479F",
+					"RFAB.esp|847A0"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "bounty_list"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|CE3B8",
+					"RFAB.esp|CE3B9",
+					"RFAB.esp|CE3BA",
+					"RFAB.esp|CE3BB",
+					"RFAB.esp|CE3BC",
+					"RFAB.esp|CF370",
+					"RFAB.esp|CF371",
+					"RFAB.esp|CF372",
+					"RFAB.esp|CF373",
+					"RFAB.esp|CF374"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "ing_bundle",
+			"iconColor": "#A9763D"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|5BDC1",
+					"RFAB.esp|51B3D",
+					"RFAB.esp|42790",
+					"RFAB.esp|5BDDA",
+					"RFAB.esp|51B3C",
+					"RFAB.esp|51B3B",
+					"RFAB.esp|5BDDC",
+					"RFAB.esp|5BDE2",
+					"RFAB.esp|5BDDB",
+					"RFAB.esp|42791",
+					"RFAB.esp|8479D",
+					"RFAB.esp|5BDDD",
+					"RFAB.esp|5BDBC",
+					"RFAB.esp|5BDBA",
+					"RFAB.esp|5BDC9",
+					"RFAB.esp|4278F",
+					"RFAB.esp|5BDDF",
+					"RFAB.esp|51B3A",
+					"RFAB.esp|AD481F",
+					"RFAB.esp|8479E",
+					"RFAB.esp|5BDB4",
+					"RFAB.esp|5BDD4",
+					"RFAB.esp|5BDBB",
+					"RFAB.esp|AD481D",
+					"RFAB.esp|5BDB9",
+					"RFAB.esp|5BDDE",
+					"RFAB.esp|AD481E",
+					"RFAB.esp|AD4820"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Head",
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "sack"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|DDEFB",
+					"Skyrim.esm|EF07A",
+					"Skyrim.esm|F33CD",
+					"Skyrim.esm|F33CE",
+					"Skyrim.esm|F33CF",
+					"Skyrim.esm|F33D0",
+					"Skyrim.esm|F33D1",
+					"Skyrim.esm|F33D2",
+					"Skyrim.esm|F33D3",
+					"Skyrim.esm|F33D4",
+					"Skyrim.esm|F33D5",
+					"Skyrim.esm|F33E0",
+					"Dragonborn.esm|1CAF2",
+					"RFAB.esp|3544",
+					"RFAB.esp|353F",
+					"RFAB.esp|3545",
+					"RFAB.esp|3542",
+					"RFAB.esp|3547",
+					"RFAB.esp|3541",
+					"RFAB.esp|3543",
+					"RFAB.esp|34B2",
+					"RFAB.esp|3540",
+					"RFAB.esp|3548",
+					"RFAB.esp|3546",
+					"RFAB.esp|9593A"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Map",
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "map"
+		}
+    },
+	{
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|12FDF",
+					"Skyrim.esm|747FB",
+					"Skyrim.esm|747FE"
+				]
+        }
+		},
+		  "assign": {
+				"iconSource": "Icons/Items.swf",
+				"iconLabel": "bucket",
+				"iconColor": "#B79977"
+		  }
+    },
+	{
+		"match": {
+			"formType": "Armor",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|5B69F",
+					"Skyrim.esm|6FF37"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "apron",
+			"iconColor": "#696969"
+		}
+    },
+	{
+		"match": {
+			"formType": "SoulGem",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|AD3876",
+					"RFAB.esp|34F9AA",
+					"RFAB.esp|AD3878",
+					"RFAB.esp|AD3877",
+					"RFAB.esp|AD3875",
+					"RFAB.esp|34F9A5"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "empty_tomato"
+		}
+    },
+	{
+		"match": {
+			"formType": "SoulGem",
+			"formId": {
+				"anyOf": [
+					"RFAB.esp|AD386F",
+					"RFAB.esp|AD3874",
+					"RFAB.esp|AD3873",
+					"RFAB.esp|AD3872",
+					"RFAB.esp|AD3871",
+					"RFAB.esp|AD3870"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Foods.swf",
+			"iconLabel": "tomato"
+		}
+    },
+	{
+      "match": {
+        "formType": "MiscItem",
+        "formId": {
+			"anyOf": [
+				"Skyrim.esm|5ACDB",
+				"Skyrim.esm|5ACDC",
+				"Skyrim.esm|5ACDE",
+				"Skyrim.esm|71CF3",
+				"Skyrim.esm|5ACE1",
+				"Skyrim.esm|5ACE0",
+				"Skyrim.esm|5ACDD",
+				"Skyrim.esm|5ACE2",
+				"Skyrim.esm|5B2DF",
+				"Skyrim.esm|5ACDF"
+			]
+        }
+		},
+		"assign": {
+			"subTypeDisplay": "$Ore",
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "ore",
+			"iconColor": "#828282"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|60CC2",
+					"Skyrim.esm|BBCD5",
+					"Dragonborn.esm|2BAAE"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Map",
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "map"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": "Dragonborn.esm|1CD7C"
+		},
+		"assign": {
+			"subTypeDisplay": "$Leather",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "misc_leather",
+			"iconColor": "#78558E"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|3AD57",
+					"Dawnguard.esm|195AA",
+					"Dragonborn.esm|2B04E"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Chitin",
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "chitin",
+			"iconColor": "#8B7C5A"
+		}
+    },
+    {
+		"match": {
+			"formType": "Armor",
+			"formId": "RFAB.esp|CD955"
+		},
+		"assign": {
+			"subTypeDisplay": "$Backpack",
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "backpack"
+		}
+    },
+    {
+		"match": {
+			"formType": "Scroll",
+			"formId": {
+				"anyOf": [
+					"Dragonborn.esm|1445E",
+					"Dragonborn.esm|14480",
+					"Dragonborn.esm|16E1C",
+					"Dragonborn.esm|1707B",
+					"Dragonborn.esm|1952C",
+					"Dragonborn.esm|19534",
+					"Dragonborn.esm|1CAB0",
+					"Dragonborn.esm|1DA03",
+					"Dragonborn.esm|206D3",
+					"Dragonborn.esm|206D9",
+					"Dragonborn.esm|206DB",
+					"Dragonborn.esm|2095F",
+					"Dragonborn.esm|20960",
+					"Dragonborn.esm|20961",
+					"Dragonborn.esm|27490",
+					"Dragonborn.esm|2749D",
+					"Dragonborn.esm|274A5",
+					"Dragonborn.esm|3319E",
+					"Dragonborn.esm|3319F",
+					"Dragonborn.esm|331A0",
+					"Dragonborn.esm|331A1"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "spider_scroll"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Dragonborn.esm|17719",
+					"Dragonborn.esm|1771F"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "spider_scroll"
+		}
+    },
+    {
+		"match": {
+        "formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"HearthFires.esm|3043",
+					"HearthFires.esm|3035",
+					"HearthFires.esm|5A69",
+					"HearthFires.esm|3011",
+					"HearthFires.esm|303F",
+					"HearthFires.esm|3012",
+					"HearthFires.esm|300E",
+					"HearthFires.esm|300F",
+					"HearthFires.esm|306C",
+					"HearthFires.esm|5A68"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$BuildingMaterial",
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "house",
+			"iconColor": "#FFFFFF"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"subType": "Toy"
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "toy"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|C886C",
+					"Skyrim.esm|C8878",
+					"Skyrim.esm|C8864",
+					"Skyrim.esm|C8872",
+					"Skyrim.esm|C8866",
+					"Skyrim.esm|C8864",
+					"Skyrim.esm|C8874",
+					"Skyrim.esm|C886A",
+					"Skyrim.esm|AEBF1",
+					"Skyrim.esm|C8861",
+					"Skyrim.esm|C8868",
+					"Skyrim.esm|C886E",
+					"Skyrim.esm|C8870"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$DwarvenScrap",
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "scrap",
+			"iconColor": "#705F32"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": "Skyrim.esm|C4F2E"
+		},
+		"assign": {
+			"subTypeDisplay": "$Potion",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "default_potion"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": "Skyrim.esm|2BAAB"
+		},
+		"assign": {
+			"subTypeDisplay": "$Poison",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "potion_poison"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|457AB",
+					"Skyrim.esm|DC530",
+					"Skyrim.esm|DC52E",
+					"RFAB.esp|5916"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Scroll",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "default_scroll"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|f1491",
+					"Skyrim.esm|ce70b",
+					"Skyrim.esm|e4897"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Book",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "default_book"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|1CB34",
+					"Skyrim.esm|DA732",
+					"Skyrim.esm|DA733",
+					"Skyrim.esm|DA734",
+					"Skyrim.esm|DA735"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Ring",
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "armor_ring"
+		}
+    },
+    {
+		"match": {
+			"formType": "MiscItem",
+			"formId": {
+				"anyOf": [
+					"Skyrim.esm|B08C7",
+					"Skyrim.esm|FBC3A",
+					"Skyrim.esm|FBC3B",
+					"Skyrim.esm|FBC3C",
+					"Skyrim.esm|FBC3D"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Jar",
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "jar",
+			"iconColor": "#FFFFFF"
+		}
+    },
+	{
+		"match": {
+			"formId": {
+			  "anyOf": [
+					"Skyrim.esm|6f993",
+					"Dragonborn.esm|3cf16",
+					"Dragonborn.esm|1cf6e"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "firewood",
+			"subTypeDisplay": "$Firewood",
+			"iconColor": "#A89E8C"
+		}
+    },
+	{
+		"match": {
+			"formId": "Dawnguard.esm|2993"
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "bird_skull"
+		}
+    },
+	{
+		"match": {
+			"formId": "Skyrim.esm|319E4"
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "troll_skull"
+		}
+    },
+	{
+		"match": {
+			"formId": "Skyrim.esm|4286C"
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "pelvis"
+		}
+    },
+	{
+		"match": {
+			"formId": {
+			"anyOf": [
+				"Skyrim.esm|12FE6",
+				"RFAB.esp|5817BA"
+			]
+        }
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "kettle",
+			"iconColor": "#6B7585"
+		}
+    },
+	{
+		"match": {
+			"formId": "Dragonborn.esm|247F9"
+		},
+		"assign": {
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "karstaag_skull"
+		}
+    },
+	{
+		"match": {
+			"formId":{
+			"anyOf": [
+				"Skyrim.esm|E3146",
+				"Skyrim.esm|E3147",
+				"Skyrim.esm|E3148"
+			]
+        }
+		},
+		"assign": {
+			"subTypeDisplay": "$Totem",
+			"iconSource": "Icons/MagEffects.swf",
+			"iconLabel": "totem"
+		}
+	},
+	{
+		"match": {
+		"formId":{
+			"anyOf": [
+				"Skyrim.esm|34CD6",
+				"RFAB.esp|CF133"
+			]
+		}
+		},
+		"assign": {
+			"subTypeDisplay": "Бинт",
+			"iconSource": "Icons/Ingredients.swf",
+			"iconLabel": "wrapping"
+		}
+    },
+	{
+		"match": {
+		"formId": "RFAB.esp|AD4A8A"
+		},
+		"assign": {
+			"subTypeDisplay": "Фонарь",
+			"iconSource": "Icons/Items.swf",
+			"iconLabel": "lantern"
+		}
+    }
+	]
+}

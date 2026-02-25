@@ -1,0 +1,43 @@
+[  
+    {
+        "projectPath": "Actors",
+        "type": "kEvent",
+        "name": "Collision_AttackStart"
+    },
+
+    {
+        "projectPath": "Actors",
+        "type": "kEvent",
+        "name": "Collision_Start"
+    },
+
+    {
+        "projectPath": "Actors",
+        "type": "kEvent",
+        "name": "Collision_Add"
+    },
+
+    {
+        "projectPath": "Actors",
+        "type": "kEvent",
+        "name": "Collision_Remove"
+    },
+
+    {
+        "projectPath": "Actors",
+        "type": "kEvent",
+        "name": "PhResistEnd"
+    },
+
+    {
+        "projectPath": "Actors",
+        "type": "kEvent",
+        "name": "Collision_AttackEnd"
+    },
+
+    {
+        "projectPath": "Actors",
+        "type": "kEvent",
+        "name": "Collision_Cancel"
+    }
+]

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="description.xsd">
+
+
+	
+    <bone name="NPC L Breast01"/>
+    <bone name="NPC R Breast01"/>
+    <bone name="NPC L Calf01"/>
+    <bone name="NPC R Calf01"/>
+    <bone name="NPC L Thigh01"/>
+    <bone name="NPC R Thigh01"/>
+    <bone name="NPC L Breast"/>
+    <bone name="NPC R Breast"/>
+    <bone name="NPC R Calf [RClf]"/>
+    <bone name="NPC L Calf [LClf]"/>
+    <bone name="NPC Spine [Spn0]"/>
+    <bone name="NPC Spine1 [Spn1]"/>
+    <bone name="NPC Spine2 [Spn2]"/>
+    <bone name="NPC Pelvis [Pelv]"/>
+    <bone name="NPC R Thigh [RThg]"/>
+    <bone name="NPC L Thigh [LThg]"/>
+    <bone name="NPC R Butt"/>
+    <bone name="NPC L Butt"/>
+    <bone name="NPC Belly"/>
+    <bone name="NPC Neck [Neck]"/>
+    <bone name="NPC Head [Head]"/>
+    <bone name="NPC R Clavicle [RClv]"/>
+    <bone name="NPC R UpperArm [RUar]"/>
+    <bone name="NPC R Forearm [RLar]"/>
+    <bone name="NPC R Hand [RHnd]"/>
+    <bone name="NPC R ForearmTwist1 [RLt1]"/>
+    <bone name="NPC R ForearmTwist2 [RLt2]"/>
+    <bone name="NPC R UpperarmTwist1 [RUt1]"/>
+    <bone name="NPC R UpperarmTwist2 [RUt2]"/>
+    <bone name="NPC L Clavicle [LClv]"/>
+    <bone name="NPC L UpperArm [LUar]"/>
+    <bone name="NPC L Forearm [LLar]"/>
+    <bone name="NPC L Hand [LHnd]"/>
+    <bone name="NPC L ForearmTwist1 [LLt1]"/>
+    <bone name="NPC L ForearmTwist2 [LLt2]"/>
+    <bone name="NPC L UpperarmTwist1 [LUt1]"/>
+    <bone name="NPC L UpperarmTwist2 [LUt2]"/>
+    <bone name="NPC L Pauldron"/>
+    <bone name="NPC R Pauldron"/>
+	<bone name="SkirtFBone01"/>
+	<bone name="SkirtBBone01"/>
+	<bone name="SkirtLBone01"/>
+	<bone name="SkirtRBone01"/>
+	<bone name="cloack_hdt_A 1"/>
+	<bone name="cloack_hdt_B 1"/>
+	<bone name="cloack_hdt_C 1"/>
+	<bone name="cloack_hdt_D 1"/>
+	<bone name="cloack_hdt_E 1"/>
+	<bone name="cloack_hdt_F 1"/>
+	
+	
+	
+	<bone-default>
+    <mass>2</mass>
+    <inertia x="25" y="25" z="25"/>
+    <centerOfMassTransform>
+      <basis x="0" y="0" z="0" w="1"/>
+      <origin x="0" y="0" z="0"/>
+    </centerOfMassTransform>
+    <linearDamping>0.9</linearDamping>
+    <angularDamping>0.9</angularDamping>
+    <friction>0.1</friction>
+    <rollingFriction>0.5</rollingFriction>
+    <restitution>0.5</restitution>
+  </bone-default>
+  
+  
+  
+    <bone-default>
+        <margin-multiplier>1</margin-multiplier>
+    </bone-default>
+    <bone name="cloack_hdt_A 2"/>
+	<bone name="cloack_hdt_A 3"/>
+	<bone name="cloack_hdt_A 4"/>
+	<bone name="cloack_hdt_A 5"/>
+	<bone name="cloack_hdt_A 6"/>
+	<bone name="cloack_hdt_A 7"/>
+	<bone name="cloack_hdt_A 8"/>
+	<bone name="cloack_hdt_A 9"/>
+	<bone name="cloack_hdt_A 10"/>
+	
+	
+	<bone-default>
+        <margin-multiplier>1</margin-multiplier>
+    </bone-default>
+    <bone name="cloack_hdt_B 2"/>
+	<bone name="cloack_hdt_B 3"/>
+	<bone name="cloack_hdt_B 4"/>
+	<bone name="cloack_hdt_B 5"/>
+	<bone name="cloack_hdt_B 6"/>
+	<bone name="cloack_hdt_B 7"/>
+	<bone name="cloack_hdt_B 8"/>
+	<bone name="cloack_hdt_B 9"/>
+	<bone name="cloack_hdt_B 10"/>
+	
+	
+	<bone-default>
+        <margin-multiplier>1</margin-multiplier>
+    </bone-default>
+    <bone name="cloack_hdt_C 2"/>
+	<bone name="cloack_hdt_C 3"/>
+	<bone name="cloack_hdt_C 4"/>
+	<bone name="cloack_hdt_C 5"/>
+	<bone name="cloack_hdt_C 6"/>
+	<bone name="cloack_hdt_C 7"/>
+	<bone name="cloack_hdt_C 8"/>
+	<bone name="cloack_hdt_C 9"/>
+	<bone name="cloack_hdt_C 10"/>
+	
+	
+	<bone-default>
+        <margin-multiplier>1</margin-multiplier>
+    </bone-default>
+    <bone name="cloack_hdt_D 2"/>
+	<bone name="cloack_hdt_D 3"/>
+	<bone name="cloack_hdt_D 4"/>
+	<bone name="cloack_hdt_D 5"/>
+	<bone name="cloack_hdt_D 6"/>
+	<bone name="cloack_hdt_D 7"/>
+	<bone name="cloack_hdt_D 8"/>
+	<bone name="cloack_hdt_D 9"/>
+	<bone name="cloack_hdt_D 10"/>
+	
+	
+	<bone-default>
+        <margin-multiplier>1</margin-multiplier>
+    </bone-default>
+    <bone name="cloack_hdt_E 2"/>
+	<bone name="cloack_hdt_E 3"/>
+	<bone name="cloack_hdt_E 4"/>
+	<bone name="cloack_hdt_E 5"/>
+	<bone name="cloack_hdt_E 6"/>
+	<bone name="cloack_hdt_E 7"/>
+	<bone name="cloack_hdt_E 8"/>
+	<bone name="cloack_hdt_E 9"/>
+	<bone name="cloack_hdt_E 10"/>
+	
+	
+	<bone-default>
+        <margin-multiplier>1</margin-multiplier>
+    </bone-default>
+    <bone name="cloack_hdt_F 2"/>
+	<bone name="cloack_hdt_F 3"/>
+	<bone name="cloack_hdt_F 4"/>
+	<bone name="cloack_hdt_F 5"/>
+	<bone name="cloack_hdt_F 6"/>
+	<bone name="cloack_hdt_F 7"/>
+	<bone name="cloack_hdt_F 8"/>
+	<bone name="cloack_hdt_F 9"/>
+	<bone name="cloack_hdt_F 10"/>
+	
+	
+ 	<!-- COLLISIONS -->
+<per-triangle-shape name="draugr cloack">
+<margin>0.15</margin>
+<penetration>0</penetration>
+<shared>private</shared>
+<tag>cloack</tag>
+<no-collide-with-tag>cloack</no-collide-with-tag>
+</per-triangle-shape>
+
+	
+	
+<per-triangle-shape name="low_poly_skirt_collision">
+<margin>0.25</margin>
+<penetration>1</penetration>
+<shared>private</shared>
+<tag>body</tag>
+<no-collide-with-tag>ground</no-collide-with-tag>
+<no-collide-with-tag>body</no-collide-with-tag>
+</per-triangle-shape>   
+	
+	
+<per-triangle-shape name="VirtualGround">
+<margin>4</margin>
+<penetration>10</penetration>
+<shared>private</shared>
+<tag>ground</tag>
+<no-collide-with-tag>ground</no-collide-with-tag>
+</per-triangle-shape>
+	
+	
+	
+	<generic-constraint-default>
+        <frameInB>
+            <basis x="0" y="0" z="0" w="1" />
+            <origin x="0" y="0" z="0" />
+        </frameInB>
+        <useLinearReferenceFrameA>false</useLinearReferenceFrameA>
+        <linearLowerLimit x="0" y="0" z="0" />
+        <linearUpperLimit x="0" y="0" z="0" />
+        <angularLowerLimit x="-0.4" y="-0.4" z="-0.10" />
+        <angularUpperLimit x="0.4" y="0.10" z="0.10" />
+        <linearStiffness x="0" y="0" z="0" />
+        <angularStiffness x="0" y="0" z="0" />
+        <linearDamping x="0" y="0" z="0" />
+        <angularDamping x="0" y="0" z="0" />
+        <linearEquilibrium x="0" y="0" z="0" />
+        <angularEquilibrium x="0" y="0" z="0" />
+    </generic-constraint-default>
+	
+	
+	
+	
+	<constraint-group>
+        <generic-constraint bodyA="cloack_hdt_A 2" bodyB="cloack_hdt_A 1"/>
+        <generic-constraint bodyA="cloack_hdt_A 3" bodyB="cloack_hdt_A 2"/>
+        <generic-constraint bodyA="cloack_hdt_A 4" bodyB="cloack_hdt_A 3"/>
+		<generic-constraint bodyA="cloack_hdt_A 5" bodyB="cloack_hdt_A 4"/>
+		<generic-constraint bodyA="cloack_hdt_A 6" bodyB="cloack_hdt_A 5"/>
+		<generic-constraint bodyA="cloack_hdt_A 7" bodyB="cloack_hdt_A 6"/>
+		<generic-constraint bodyA="cloack_hdt_A 8" bodyB="cloack_hdt_A 7"/>
+		<generic-constraint bodyA="cloack_hdt_A 9" bodyB="cloack_hdt_A 8"/>
+		<generic-constraint bodyA="cloack_hdt_A 10" bodyB="cloack_hdt_A 9"/>
+    </constraint-group>
+	
+	
+	
+	<constraint-group>
+        <generic-constraint bodyA="cloack_hdt_B 2" bodyB="cloack_hdt_B 1"/>
+        <generic-constraint bodyA="cloack_hdt_B 3" bodyB="cloack_hdt_B 2"/>
+        <generic-constraint bodyA="cloack_hdt_B 4" bodyB="cloack_hdt_B 3"/>
+		<generic-constraint bodyA="cloack_hdt_B 5" bodyB="cloack_hdt_B 4"/>
+		<generic-constraint bodyA="cloack_hdt_B 6" bodyB="cloack_hdt_B 5"/>
+		<generic-constraint bodyA="cloack_hdt_B 7" bodyB="cloack_hdt_B 6"/>
+		<generic-constraint bodyA="cloack_hdt_B 8" bodyB="cloack_hdt_B 7"/>
+		<generic-constraint bodyA="cloack_hdt_B 9" bodyB="cloack_hdt_B 8"/>
+		<generic-constraint bodyA="cloack_hdt_B 10" bodyB="cloack_hdt_B 9"/>
+    </constraint-group>
+	
+	
+	
+	
+	<constraint-group>
+        <generic-constraint bodyA="cloack_hdt_C 2" bodyB="cloack_hdt_C 1"/>
+        <generic-constraint bodyA="cloack_hdt_C 3" bodyB="cloack_hdt_C 2"/>
+        <generic-constraint bodyA="cloack_hdt_C 4" bodyB="cloack_hdt_C 3"/>
+		<generic-constraint bodyA="cloack_hdt_C 5" bodyB="cloack_hdt_C 4"/>
+		<generic-constraint bodyA="cloack_hdt_C 6" bodyB="cloack_hdt_C 5"/>
+		<generic-constraint bodyA="cloack_hdt_C 7" bodyB="cloack_hdt_C 6"/>
+		<generic-constraint bodyA="cloack_hdt_C 8" bodyB="cloack_hdt_C 7"/>
+		<generic-constraint bodyA="cloack_hdt_C 9" bodyB="cloack_hdt_C 8"/>
+		<generic-constraint bodyA="cloack_hdt_C 10" bodyB="cloack_hdt_C 9"/>
+    </constraint-group>
+		
+		
+	<constraint-group>
+        <generic-constraint bodyA="cloack_hdt_D 2" bodyB="cloack_hdt_D 1"/>
+        <generic-constraint bodyA="cloack_hdt_D 3" bodyB="cloack_hdt_D 2"/>
+        <generic-constraint bodyA="cloack_hdt_D 4" bodyB="cloack_hdt_D 3"/>
+		<generic-constraint bodyA="cloack_hdt_D 5" bodyB="cloack_hdt_D 4"/>
+		<generic-constraint bodyA="cloack_hdt_D 6" bodyB="cloack_hdt_D 5"/>
+		<generic-constraint bodyA="cloack_hdt_D 7" bodyB="cloack_hdt_D 6"/>
+		<generic-constraint bodyA="cloack_hdt_D 8" bodyB="cloack_hdt_D 7"/>
+		<generic-constraint bodyA="cloack_hdt_D 9" bodyB="cloack_hdt_D 8"/>
+		<generic-constraint bodyA="cloack_hdt_D 10" bodyB="cloack_hdt_D 9"/>
+    </constraint-group>
+	
+	
+	<constraint-group>
+        <generic-constraint bodyA="cloack_hdt_E 2" bodyB="cloack_hdt_E 1"/>
+        <generic-constraint bodyA="cloack_hdt_E 3" bodyB="cloack_hdt_E 2"/>
+        <generic-constraint bodyA="cloack_hdt_E 4" bodyB="cloack_hdt_E 3"/>
+		<generic-constraint bodyA="cloack_hdt_E 5" bodyB="cloack_hdt_E 4"/>
+		<generic-constraint bodyA="cloack_hdt_E 6" bodyB="cloack_hdt_E 5"/>
+		<generic-constraint bodyA="cloack_hdt_E 7" bodyB="cloack_hdt_E 6"/>
+		<generic-constraint bodyA="cloack_hdt_E 8" bodyB="cloack_hdt_E 7"/>
+		<generic-constraint bodyA="cloack_hdt_E 9" bodyB="cloack_hdt_E 8"/>
+		<generic-constraint bodyA="cloack_hdt_E 10" bodyB="cloack_hdt_E 9"/>
+    </constraint-group>
+	
+	
+	<constraint-group>
+        <generic-constraint bodyA="cloack_hdt_F 2" bodyB="cloack_hdt_F 1"/>
+        <generic-constraint bodyA="cloack_hdt_F 3" bodyB="cloack_hdt_F 2"/>
+        <generic-constraint bodyA="cloack_hdt_F 4" bodyB="cloack_hdt_F 3"/>
+		<generic-constraint bodyA="cloack_hdt_F 5" bodyB="cloack_hdt_F 4"/>
+		<generic-constraint bodyA="cloack_hdt_F 6" bodyB="cloack_hdt_F 5"/>
+		<generic-constraint bodyA="cloack_hdt_F 7" bodyB="cloack_hdt_F 6"/>
+		<generic-constraint bodyA="cloack_hdt_F 8" bodyB="cloack_hdt_F 7"/>
+		<generic-constraint bodyA="cloack_hdt_F 9" bodyB="cloack_hdt_F 8"/>
+		<generic-constraint bodyA="cloack_hdt_F 10" bodyB="cloack_hdt_F 9"/>
+    </constraint-group>
+	
+	
+			<!-- CONSTRAINTS B -->
+<generic-constraint-default>
+	<frameInLerp>
+		<translationLerp>0.2</translationLerp>
+		<rotationLerp>0.2</rotationLerp>
+	</frameInLerp>
+	<linearLowerLimit x="-10" y="-10" z="-1"/>
+	<linearUpperLimit x="10" y="10" z="1"/>
+	<angularLowerLimit x="-15" y="-15" z="-5"/>
+	<angularUpperLimit x="15" y="15" z="5"/>
+	<linearStiffness x="0" y="0" z="0"/>
+	<angularStiffness x="0" y="0" z="0"/>
+</generic-constraint-default>
+
+	<generic-constraint bodyA="cloack_hdt_A 1" bodyB ="cloack_hdt_B 1"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_A 2" bodyB ="cloack_hdt_B 2"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_A 3" bodyB ="cloack_hdt_B 3"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_A 4" bodyB ="cloack_hdt_B 4"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_A 5" bodyB ="cloack_hdt_B 5"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_A 6" bodyB ="cloack_hdt_B 6"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_A 7" bodyB ="cloack_hdt_B 7"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_A 8" bodyB ="cloack_hdt_B 8"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_A 9" bodyB ="cloack_hdt_B 9"></generic-constraint>
+
+
+	<generic-constraint bodyA="cloack_hdt_B 1" bodyB ="cloack_hdt_C 1"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_B 2" bodyB ="cloack_hdt_C 2"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_B 3" bodyB ="cloack_hdt_C 3"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_B 4" bodyB ="cloack_hdt_C 4"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_B 5" bodyB ="cloack_hdt_C 5"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_B 6" bodyB ="cloack_hdt_C 6"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_B 7" bodyB ="cloack_hdt_C 7"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_B 8" bodyB ="cloack_hdt_C 8"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_B 9" bodyB ="cloack_hdt_C 9"></generic-constraint>
+
+
+	<generic-constraint bodyA="cloack_hdt_C 1" bodyB ="cloack_hdt_D 1"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_C 2" bodyB ="cloack_hdt_D 2"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_C 3" bodyB ="cloack_hdt_D 3"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_C 4" bodyB ="cloack_hdt_D 4"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_C 5" bodyB ="cloack_hdt_D 5"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_C 6" bodyB ="cloack_hdt_D 6"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_C 7" bodyB ="cloack_hdt_D 7"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_C 8" bodyB ="cloack_hdt_D 8"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_C 9" bodyB ="cloack_hdt_D 9"></generic-constraint>
+	
+
+	<generic-constraint bodyA="cloack_hdt_D 1" bodyB ="cloack_hdt_E 1"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_D 2" bodyB ="cloack_hdt_E 2"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_D 3" bodyB ="cloack_hdt_E 3"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_D 4" bodyB ="cloack_hdt_E 4"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_D 5" bodyB ="cloack_hdt_E 5"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_D 6" bodyB ="cloack_hdt_E 6"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_D 7" bodyB ="cloack_hdt_E 7"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_D 8" bodyB ="cloack_hdt_E 8"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_D 9" bodyB ="cloack_hdt_E 9"></generic-constraint>
+	
+	
+	<generic-constraint bodyA="cloack_hdt_E 1" bodyB ="cloack_hdt_F 1"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_E 2" bodyB ="cloack_hdt_F 2"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_E 3" bodyB ="cloack_hdt_F 3"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_E 4" bodyB ="cloack_hdt_F 4"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_E 5" bodyB ="cloack_hdt_F 5"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_E 6" bodyB ="cloack_hdt_F 6"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_E 7" bodyB ="cloack_hdt_F 7"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_E 8" bodyB ="cloack_hdt_F 8"></generic-constraint>
+	<generic-constraint bodyA="cloack_hdt_E 9" bodyB ="cloack_hdt_F 9"></generic-constraint>
+	
+	
+	</system>

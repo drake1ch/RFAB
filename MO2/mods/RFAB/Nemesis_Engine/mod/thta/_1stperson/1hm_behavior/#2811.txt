@@ -1,0 +1,160 @@
+		<hkobject name="#2811" class="hkbClipTriggerArray" signature="0x59c23a0f">
+			<hkparam name="triggers" numelements="10">
+				<hkobject>
+					<hkparam name="localTime">0.000000</hkparam>
+					<hkparam name="event">
+						<hkobject>
+							<hkparam name="id">122</hkparam>
+							<hkparam name="payload">null</hkparam>
+						</hkobject>
+					</hkparam>
+					<hkparam name="relativeToEndOfClip">true</hkparam>
+					<hkparam name="acyclic">false</hkparam>
+					<hkparam name="isAnnotation">false</hkparam>
+				</hkobject>
+				<hkobject>
+<!-- MOD_CODE ~thta~ OPEN -->
+					<hkparam name="localTime">0.633333</hkparam>
+<!-- ORIGINAL -->
+					<hkparam name="localTime">0.357000</hkparam>
+<!-- CLOSE -->
+					<hkparam name="event">
+						<hkobject>
+							<hkparam name="id">37</hkparam>
+							<hkparam name="payload">null</hkparam>
+						</hkobject>
+					</hkparam>
+					<hkparam name="relativeToEndOfClip">false</hkparam>
+					<hkparam name="acyclic">false</hkparam>
+					<hkparam name="isAnnotation">false</hkparam>
+				</hkobject>
+				<hkobject>
+<!-- MOD_CODE ~thta~ OPEN -->
+					<hkparam name="localTime">0.666667</hkparam>
+<!-- ORIGINAL -->
+					<hkparam name="localTime">0.468000</hkparam>
+<!-- CLOSE -->
+					<hkparam name="event">
+						<hkobject>
+							<hkparam name="id">35</hkparam>
+							<hkparam name="payload">null</hkparam>
+						</hkobject>
+					</hkparam>
+					<hkparam name="relativeToEndOfClip">false</hkparam>
+					<hkparam name="acyclic">false</hkparam>
+					<hkparam name="isAnnotation">false</hkparam>
+				</hkobject>
+				<hkobject>
+<!-- MOD_CODE ~thta~ OPEN -->
+					<hkparam name="localTime">0.700000</hkparam>
+<!-- ORIGINAL -->
+					<hkparam name="localTime">0.556000</hkparam>
+<!-- CLOSE -->
+					<hkparam name="event">
+						<hkobject>
+							<hkparam name="id">36</hkparam>
+							<hkparam name="payload">null</hkparam>
+						</hkobject>
+					</hkparam>
+					<hkparam name="relativeToEndOfClip">false</hkparam>
+					<hkparam name="acyclic">false</hkparam>
+					<hkparam name="isAnnotation">false</hkparam>
+				</hkobject>
+				<hkobject>
+<!-- MOD_CODE ~thta~ OPEN -->
+					<hkparam name="localTime">1.500000</hkparam>
+<!-- ORIGINAL -->
+					<hkparam name="localTime">0.996000</hkparam>
+<!-- CLOSE -->
+					<hkparam name="event">
+						<hkobject>
+							<hkparam name="id">35</hkparam>
+							<hkparam name="payload">null</hkparam>
+						</hkobject>
+					</hkparam>
+					<hkparam name="relativeToEndOfClip">false</hkparam>
+					<hkparam name="acyclic">false</hkparam>
+					<hkparam name="isAnnotation">false</hkparam>
+				</hkobject>
+				<hkobject>
+<!-- MOD_CODE ~thta~ OPEN -->
+					<hkparam name="localTime">1.533333</hkparam>
+<!-- ORIGINAL -->
+					<hkparam name="localTime">1.112000</hkparam>
+<!-- CLOSE -->
+					<hkparam name="event">
+						<hkobject>
+							<hkparam name="id">36</hkparam>
+							<hkparam name="payload">null</hkparam>
+						</hkobject>
+					</hkparam>
+					<hkparam name="relativeToEndOfClip">false</hkparam>
+					<hkparam name="acyclic">false</hkparam>
+					<hkparam name="isAnnotation">false</hkparam>
+				</hkobject>
+				<hkobject>
+<!-- MOD_CODE ~thta~ OPEN -->
+					<hkparam name="localTime">2.300000</hkparam>
+<!-- ORIGINAL -->
+					<hkparam name="localTime">1.595000</hkparam>
+<!-- CLOSE -->
+					<hkparam name="event">
+						<hkobject>
+							<hkparam name="id">35</hkparam>
+							<hkparam name="payload">null</hkparam>
+						</hkobject>
+					</hkparam>
+					<hkparam name="relativeToEndOfClip">false</hkparam>
+					<hkparam name="acyclic">false</hkparam>
+					<hkparam name="isAnnotation">false</hkparam>
+				</hkobject>
+				<hkobject>
+<!-- MOD_CODE ~thta~ OPEN -->
+					<hkparam name="localTime">2.333333</hkparam>
+<!-- ORIGINAL -->
+					<hkparam name="localTime">1.693000</hkparam>
+<!-- CLOSE -->
+					<hkparam name="event">
+						<hkobject>
+							<hkparam name="id">36</hkparam>
+							<hkparam name="payload">null</hkparam>
+						</hkobject>
+					</hkparam>
+					<hkparam name="relativeToEndOfClip">false</hkparam>
+					<hkparam name="acyclic">false</hkparam>
+					<hkparam name="isAnnotation">false</hkparam>
+				</hkobject>
+				<hkobject>
+<!-- MOD_CODE ~thta~ OPEN -->
+					<hkparam name="localTime">2.833333</hkparam>
+<!-- ORIGINAL -->
+					<hkparam name="localTime">2.010000</hkparam>
+<!-- CLOSE -->
+					<hkparam name="event">
+						<hkobject>
+							<hkparam name="id">30</hkparam>
+							<hkparam name="payload">null</hkparam>
+						</hkobject>
+					</hkparam>
+					<hkparam name="relativeToEndOfClip">false</hkparam>
+					<hkparam name="acyclic">false</hkparam>
+					<hkparam name="isAnnotation">false</hkparam>
+				</hkobject>
+				<hkobject>
+<!-- MOD_CODE ~thta~ OPEN -->
+					<hkparam name="localTime">3.000000</hkparam>
+<!-- ORIGINAL -->
+					<hkparam name="localTime">2.500000</hkparam>
+<!-- CLOSE -->
+					<hkparam name="event">
+						<hkobject>
+							<hkparam name="id">31</hkparam>
+							<hkparam name="payload">null</hkparam>
+						</hkobject>
+					</hkparam>
+					<hkparam name="relativeToEndOfClip">false</hkparam>
+					<hkparam name="acyclic">false</hkparam>
+					<hkparam name="isAnnotation">false</hkparam>
+				</hkobject>
+			</hkparam>
+		</hkobject>

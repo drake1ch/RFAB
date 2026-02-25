@@ -1,0 +1,8 @@
+IsWeaponDrawn() AND
+IsEquippedRightHasKeyword("RFAB.esp" | 0x004CA4) AND
+IsEquippedLeftType(0) OR
+IsEquippedLeftType(12) OR
+IsEquippedLeftType(13) OR
+IsEquippedLeftType(14) OR
+IsEquippedLeftType(15) OR
+IsEquippedLeftType(16)

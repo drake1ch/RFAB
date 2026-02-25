@@ -1,0 +1,28 @@
+[   
+    {
+        "projectPath": "Actors",
+        "type": "kInt",
+        "name": "MaxsuTestInt",
+        "value": 123
+    },
+    
+    {
+        "projectPath": "actors\\Character",
+        "type": "kBool",
+        "name": "MaxsuTestBool",
+        "value": true
+    },
+
+    {
+        "projectPath": "Actors\\Horse",
+        "type": "kFloat",
+        "name": "MaxsuTestFloat",
+        "value": 123.12
+    },
+
+    {
+        "projectPath": "Actors",
+        "type": "kEvent",
+        "name": "MaxsuTestEvent"     
+    }
+]

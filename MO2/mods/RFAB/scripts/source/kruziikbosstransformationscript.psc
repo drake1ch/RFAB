@@ -1,0 +1,1 @@
+Scriptname KruziikBossTransformationScript extends activemagiceffect  

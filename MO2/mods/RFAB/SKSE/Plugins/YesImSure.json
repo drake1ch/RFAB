@@ -1,0 +1,9 @@
+{
+	"constructibleObjectMenuPatch": true,
+	"alchemyMenuPatch": true,
+	"smithingMenuPatch": false,
+	"enchantmentLearnedPatch": false,
+	"enchantmentCraftedPatch": false,
+	"enchantingMenuExitPatch": false,
+	"poisonPatch": true
+}
