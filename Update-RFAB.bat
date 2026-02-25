@@ -11,6 +11,8 @@ set "SCRIPT_DIR=%~dp0"
 for %%I in ("%SCRIPT_DIR%.") do set "BASE_DIR=%%~fI"
 set "CACHE_DIR=%BASE_DIR%\%CACHE_FOLDER%"
 set "CACHE_GIT=%CACHE_DIR%\repo.git"
+set "CHANGED_LIST=%CACHE_DIR%\changed-files.txt"
+set "FILTERED_LIST=%CACHE_DIR%\changed-files.filtered.txt"
 
 call :locate_portable_git || goto :fail
 
@@ -18,16 +20,18 @@ if not exist "%CACHE_DIR%" mkdir "%CACHE_DIR%" || goto :fail
 attrib +h "%CACHE_DIR%" >nul 2>nul
 
 if not exist "%CACHE_GIT%\HEAD" (
-  echo [1/5] Creating local git metadata...
+  echo [1/6] Initializing local git metadata...
   "%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" init || goto :fail
 ) else (
-  echo [1/5] Local git metadata found.
+  echo [1/6] Local git metadata found.
 )
 
-echo [2/5] Fetching latest changes...
+echo [2/6] Configuring repository...
 "%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" config core.longpaths true >nul
 "%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" config credential.helper manager >nul
-"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" config core.autocrlf false >nul
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" config core.autocrlf true >nul
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" config remote.origin.promisor true >nul
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" config remote.origin.partialclonefilter blob:none >nul
 
 "%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" remote get-url origin >nul 2>nul
 if errorlevel 1 (
@@ -36,19 +40,44 @@ if errorlevel 1 (
   "%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" remote set-url origin "%REPO_URL%" || goto :fail
 )
 
-"%GIT_EXE%" -c credential.helper=manager --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" fetch --prune origin "%BRANCH%" || goto :fail
+echo [3/6] Fetching latest changes...
+"%GIT_EXE%" -c credential.helper=manager --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" fetch --prune --filter=blob:none --depth=1 origin "%BRANCH%" || goto :fail
 
-echo [3/5] Applying fetched revision...
-"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" checkout -q -B "%BRANCH%" "origin/%BRANCH%" || goto :fail
-"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" reset --hard "origin/%BRANCH%" || goto :fail
+echo [4/6] Preparing target tree...
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" update-ref "refs/heads/%BRANCH%" "refs/remotes/origin/%BRANCH%" || goto :fail
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" symbolic-ref HEAD "refs/heads/%BRANCH%" || goto :fail
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" read-tree "refs/heads/%BRANCH%" || goto :fail
 
-echo [4/5] Updating Git LFS objects...
+echo [5/6] Detecting changed tracked files...
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" diff --name-only > "%CHANGED_LIST%" || goto :fail
+
+> "%FILTERED_LIST%" (
+  for /f "usebackq delims=" %%F in ("%CHANGED_LIST%") do (
+    if /I not "%%F"=="Update-RFAB.bat" echo %%F
+  )
+)
+move /y "%FILTERED_LIST%" "%CHANGED_LIST%" >nul
+
+set /a CHANGED_COUNT=0
+for /f "usebackq delims=" %%F in ("%CHANGED_LIST%") do set /a CHANGED_COUNT+=1
+
+if %CHANGED_COUNT% EQU 0 (
+  echo [6/6] Already up to date.
+  del /f /q "%CHANGED_LIST%" >nul 2>nul
+  echo Non-repository files are left untouched.
+  pause
+  exit /b 0
+)
+
+echo [6/6] Updating %CHANGED_COUNT% file^(s^) from repository...
 "%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" lfs install --local >nul 2>nul
-"%GIT_EXE%" -c credential.helper=manager --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" lfs pull origin "%BRANCH%" || goto :fail
+"%GIT_EXE%" -c credential.helper=manager --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" restore --source="refs/heads/%BRANCH%" --worktree --pathspec-from-file="%CHANGED_LIST%" || goto :fail
 
-echo [5/5] Done.
-echo Updated using git fetch/reset (changed files only).
+del /f /q "%CHANGED_LIST%" >nul 2>nul
+echo Done.
+echo Updated only files that differ from repository.
 echo Non-repository files are left untouched.
+echo NOTE: If Update-RFAB.bat itself changed in repo, it is applied on next run.
 pause
 exit /b 0
 
