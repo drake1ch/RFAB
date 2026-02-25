@@ -10,46 +10,45 @@ if /I "%~1"=="--help" goto :help
 set "SCRIPT_DIR=%~dp0"
 for %%I in ("%SCRIPT_DIR%.") do set "BASE_DIR=%%~fI"
 set "CACHE_DIR=%BASE_DIR%\%CACHE_FOLDER%"
-set "CACHE_REPO=%CACHE_DIR%\repo"
+set "CACHE_GIT=%CACHE_DIR%\repo.git"
 
 call :locate_portable_git || goto :fail
 
 if not exist "%CACHE_DIR%" mkdir "%CACHE_DIR%" || goto :fail
 attrib +h "%CACHE_DIR%" >nul 2>nul
 
-if not exist "%CACHE_REPO%\.git" (
-  echo [1/5] Creating local update cache...
-  "%GIT_EXE%" -c credential.helper=manager clone --branch "%BRANCH%" "%REPO_URL%" "%CACHE_REPO%" || goto :fail
+if not exist "%CACHE_GIT%\HEAD" (
+  echo [1/5] Creating local git metadata...
+  "%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" init || goto :fail
 ) else (
-  echo [1/5] Update cache found.
+  echo [1/5] Local git metadata found.
 )
 
 echo [2/5] Fetching latest changes...
-"%GIT_EXE%" -C "%CACHE_REPO%" remote set-url origin "%REPO_URL%" >nul 2>nul
-"%GIT_EXE%" -C "%CACHE_REPO%" config core.longpaths true >nul
-"%GIT_EXE%" -C "%CACHE_REPO%" config credential.helper manager >nul
-"%GIT_EXE%" -c credential.helper=manager -C "%CACHE_REPO%" fetch --prune origin "%BRANCH%" || goto :fail
-"%GIT_EXE%" -c credential.helper=manager -C "%CACHE_REPO%" checkout -q "%BRANCH%" >nul 2>nul
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" config core.longpaths true >nul
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" config credential.helper manager >nul
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" config core.autocrlf false >nul
+
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" remote get-url origin >nul 2>nul
 if errorlevel 1 (
-  "%GIT_EXE%" -c credential.helper=manager -C "%CACHE_REPO%" checkout -q -B "%BRANCH%" "origin/%BRANCH%" || goto :fail
+  "%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" remote add origin "%REPO_URL%" || goto :fail
+) else (
+  "%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" remote set-url origin "%REPO_URL%" || goto :fail
 )
-"%GIT_EXE%" -c credential.helper=manager -C "%CACHE_REPO%" reset --hard "origin/%BRANCH%" || goto :fail
 
-echo [3/5] Updating Git LFS objects...
-"%GIT_EXE%" -C "%CACHE_REPO%" lfs install --local >nul 2>nul
-"%GIT_EXE%" -c credential.helper=manager -C "%CACHE_REPO%" lfs pull origin "%BRANCH%" || goto :fail
+"%GIT_EXE%" -c credential.helper=manager --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" fetch --prune origin "%BRANCH%" || goto :fail
 
-echo [4/5] Checking files and copying only changed ones...
-robocopy "%CACHE_REPO%" "%BASE_DIR%" /E /R:2 /W:1 /COPY:DAT /DCOPY:DAT /XJ /NFL /NDL /NP /XD ".git" ".rfab-updater" /XF "Update-RFAB.bat" >nul
-set "ROBOCODE=%ERRORLEVEL%"
-if %ROBOCODE% GEQ 8 goto :robofail
+echo [3/5] Applying fetched revision...
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" checkout -q -B "%BRANCH%" "origin/%BRANCH%" || goto :fail
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" reset --hard "origin/%BRANCH%" || goto :fail
+
+echo [4/5] Updating Git LFS objects...
+"%GIT_EXE%" --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" lfs install --local >nul 2>nul
+"%GIT_EXE%" -c credential.helper=manager --git-dir="%CACHE_GIT%" --work-tree="%BASE_DIR%" lfs pull origin "%BRANCH%" || goto :fail
 
 echo [5/5] Done.
-echo Only changed files were updated.
+echo Updated using git fetch/reset (changed files only).
 echo Non-repository files are left untouched.
-if %ROBOCODE% EQU 0 echo Already up to date.
-if not %ROBOCODE% EQU 0 if not %ROBOCODE% EQU 1 echo Updated files detected.
-echo NOTE: Update-RFAB.bat updates are applied on next run.
 pause
 exit /b 0
 
@@ -82,11 +81,5 @@ exit /b 0
 :fail
 echo.
 echo [ERROR] Update failed.
-pause
-exit /b 1
-
-:robofail
-echo.
-echo [ERROR] File sync failed (robocopy code %ROBOCODE%).
 pause
 exit /b 1
