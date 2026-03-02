@@ -1,19 +1,7 @@
-[2026-02-24 21:12:22.889 D] command line: '"C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\ModOrganizer.exe" '
-[2026-02-24 21:12:22.889 I] starting Mod Organizer version 2.4.2 revision 2a5dd6c7 in C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2, usvfs: 0.5.5.0
-[2026-02-24 21:12:22.889 I] data path: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
-[2026-02-24 21:12:22.889 I] working directory: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
-[2026-02-24 21:12:22.889 D] timing: MOApplication setup() 0 ms
-[2026-02-24 21:12:23.233 I] using game plugin 'Skyrim Special Edition' ('SkyrimSE', variant (none), steam id '489830') at C:/Games/The Elder Scrolls V Skyrim - Special Edition
-[2026-02-24 21:12:24.306 I] update available: 2.4.2 -> 2.5.2
-[2026-02-24 21:27:37.807 W] Plugin not found: RFAB PotemasCatacombs Vampire Fix.esp
-[2026-02-24 21:29:59.674 W] Plugin not found: RFAB PotemasCatacombs Vampire Fix.esp
-[2026-02-24 21:34:58.804 W] Plugin not found: RFAB Falmer Weapon.esp
-[2026-02-24 21:38:10.825 W] Plugin not found: RFAB Falmer Weapon.esp
-[2026-02-24 21:38:59.634 W] Plugin not found: RFAB Thunderball.esp
-[2026-02-24 21:41:09.685 W] Plugin not found: RFAB Thunderball.esp
-[2026-02-24 21:42:06.129 W] Plugin not found: RFAB Poisin and Disease Damage.esp
-[2026-02-24 21:42:30.708 W] Plugin not found: AddItemMenuSE.esp
-[2026-02-24 21:42:31.084 W] Plugin not found: RFAB_PerksMenu.esp
-[2026-02-24 21:42:32.479 W] Plugin not found: icepenguinworldmapclassic.esp
-[2026-02-24 21:42:34.719 W] Plugin not found: icepenguinworldmapclassic.esp
-[2026-02-24 21:42:51.785 W] Plugin not found: icepenguinworldmapclassic.esp
+[2026-03-02 17:48:16.914 D] command line: '"C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\ModOrganizer.exe" '
+[2026-03-02 17:48:16.914 I] starting Mod Organizer version 2.4.2 revision 2a5dd6c7 in C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2, usvfs: 0.5.5.0
+[2026-03-02 17:48:16.914 I] data path: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
+[2026-03-02 17:48:16.914 I] working directory: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
+[2026-03-02 17:48:16.914 D] timing: MOApplication setup() 0 ms
+[2026-03-02 17:48:17.264 I] using game plugin 'Skyrim Special Edition' ('SkyrimSE', variant (none), steam id '489830') at C:/Games/The Elder Scrolls V Skyrim - Special Edition
+[2026-03-02 17:48:18.055 I] update available: 2.4.2 -> 2.5.2

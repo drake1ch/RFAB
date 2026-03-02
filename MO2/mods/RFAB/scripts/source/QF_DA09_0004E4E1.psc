@@ -2,9 +2,19 @@
 ;NEXT FRAGMENT INDEX 20
 Scriptname QF_DA09_0004E4E1 Extends Quest Hidden
 
-;BEGIN ALIAS PROPERTY dragonPriest
+;BEGIN ALIAS PROPERTY GemStatic
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_dragonPriest Auto
+ReferenceAlias Property Alias_GemStatic Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY GemMapMarker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_GemMapMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY SkySceneStartMarker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_SkySceneStartMarker Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY xMarkerVoice
@@ -17,69 +27,9 @@ ReferenceAlias Property Alias_xMarkerVoice Auto
 ReferenceAlias Property Alias_Meridia Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY Gem
+;BEGIN ALIAS PROPERTY dragonPriest
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Gem Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY FrontDoor
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_FrontDoor Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY SkySceneStartMarker
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_SkySceneStartMarker Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY BeamSky
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_BeamSky Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY Statue
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Statue Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY QuestTargetHelperTrigger
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_QuestTargetHelperTrigger Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY Pedestal
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Pedestal Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY GemMapMarker
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_GemMapMarker Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY TempleExteriorTrigger
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_TempleExteriorTrigger Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY GemContainerLocation
-;ALIAS PROPERTY TYPE LocationAlias
-LocationAlias Property Alias_GemContainerLocation Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY GemStatic
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_GemStatic Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY FalkreathMapMarker
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_FalkreathMapMarker Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY StatueTrigger
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_StatueTrigger Auto
+ReferenceAlias Property Alias_dragonPriest Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY GemContainer
@@ -87,9 +37,34 @@ ReferenceAlias Property Alias_StatueTrigger Auto
 ReferenceAlias Property Alias_GemContainer Auto
 ;END ALIAS PROPERTY
 
+;BEGIN ALIAS PROPERTY StatueTrigger
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_StatueTrigger Auto
+;END ALIAS PROPERTY
+
 ;BEGIN ALIAS PROPERTY Dawnsbreaker
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_Dawnsbreaker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY Statue
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Statue Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY Gem
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Gem Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY GemContainerLocation
+;ALIAS PROPERTY TYPE LocationAlias
+LocationAlias Property Alias_GemContainerLocation Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY BeamSky
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_BeamSky Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY Cell1Exit
@@ -101,6 +76,53 @@ ReferenceAlias Property Alias_Cell1Exit Auto
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_BossTrigger Auto
 ;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY TempleExteriorTrigger
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_TempleExteriorTrigger Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY FrontDoor
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_FrontDoor Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY Pedestal
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Pedestal Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY FalkreathMapMarker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_FalkreathMapMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY QuestTargetHelperTrigger
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_QuestTargetHelperTrigger Auto
+;END ALIAS PROPERTY
+
+;BEGIN FRAGMENT Fragment_2
+Function Fragment_2()
+;BEGIN AUTOCAST TYPE DA09Script
+Quest __temp = self as Quest
+DA09Script kmyQuest = __temp as DA09Script
+;END AUTOCAST
+;BEGIN CODE
+kmyquest.movePlayerToEarth()   ;enables player controls and fast travel
+
+
+setObjectiveCompleted(15)
+setObjectiveDisplayed(20)
+
+kmyquest.DA09SkyPlaneCollision.enable()
+
+Utility.Wait(5.0)
+Debug.SetGodMode(False) 
+;Debug.Notification("Деактивирован GodMode")
+;END CODE
+EndFunction
+;END FRAGMENT
 
 ;BEGIN FRAGMENT Fragment_13
 Function Fragment_13()
@@ -115,52 +137,25 @@ Game.GetPlayer().moveto(Alias_Gem.GetReference())
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_2
-Function Fragment_2()
+;BEGIN FRAGMENT Fragment_17
+Function Fragment_17()
 ;BEGIN AUTOCAST TYPE DA09Script
 Quest __temp = self as Quest
 DA09Script kmyQuest = __temp as DA09Script
 ;END AUTOCAST
 ;BEGIN CODE
-kmyquest.movePlayerToEarth()   ;enables player controls and fast travel
-
-setObjectiveCompleted(15)
-setObjectiveDisplayed(20)
-
-kmyquest.DA09SkyPlaneCollision.enable()
+;player should get Dawnstar
+setobjectiveDisplayed(40)
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_1
-Function Fragment_1()
-;BEGIN AUTOCAST TYPE DA09Script
-Quest __temp = self as Quest
-DA09Script kmyQuest = __temp as DA09Script
-;END AUTOCAST
+;BEGIN FRAGMENT Fragment_19
+Function Fragment_19()
 ;BEGIN CODE
-;player placed gem in statue's hand, teleports to sky
-
-; Debug.Trace("DA09 stage 200, removing gem, and moving player to sky)")
-Alias_Gem.UnregisterForUpdateGameTime()
-Game.GetPlayer().RemoveItem(Alias_Gem.GetReference())
-
-kmyquest.movePlayerToSky()
-
-kmyquest.DungeonBlockerToggle.Disable()
-kmyquest.DA09SkyScene.Start()
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_5
-Function Fragment_5()
-;BEGIN AUTOCAST TYPE DA09Script
-Quest __temp = self as Quest
-DA09Script kmyQuest = __temp as DA09Script
-;END AUTOCAST
-;BEGIN CODE
-Alias_Meridia.GetReference().disable()
+;player has walked into the boss section of the dungeon (see DA09BossTriggerScript)
+setObjectiveCompleted(20)
+setObjectiveDisplayed(30)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -181,36 +176,11 @@ kmyquest.DA09SkyPlaneCollision.disable()
 
 kmyquest.movePlayerToEarth()   ;enables player controls and fast travel
 
+Utility.Wait(5.0)
+Debug.SetGodMode(False) 
+;Debug.Notification("Деактивирован GodMode")
+
 stop()
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_15
-Function Fragment_15()
-;BEGIN AUTOCAST TYPE DA09Script
-Quest __temp = self as Quest
-DA09Script kmyQuest = __temp as DA09Script
-;END AUTOCAST
-;BEGIN CODE
-kmyquest.DA09PedestalEmptyRef.enable()
-kmyquest.DA09PedestalRef.disable()
-
-
-Game.GetPlayer().AddItem(kmyquest.DA09DawnbreakerList)
-setobjectiveCompleted(40)
-AchievementsQuest.IncDaedricArtifacts()
-kmyquest.TeleportPlayerToSky()
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_19
-Function Fragment_19()
-;BEGIN CODE
-;player has walked into the boss section of the dungeon (see DA09BossTriggerScript)
-setObjectiveCompleted(20)
-setObjectiveDisplayed(30)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -240,6 +210,66 @@ DA09Script kmyQuest = __temp as DA09Script
 setobjectiveDisplayed(5)
 kmyquest.DA09ChangeLocChance.setValue(0)    ;prevent the DA09ChangeLocation quest from starting
 Alias_GemMapMarker.GetReference().AddToMap()
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_5
+Function Fragment_5()
+;BEGIN AUTOCAST TYPE DA09Script
+Quest __temp = self as Quest
+DA09Script kmyQuest = __temp as DA09Script
+;END AUTOCAST
+;BEGIN CODE
+Alias_Meridia.GetReference().disable()
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_1
+Function Fragment_1()
+;BEGIN AUTOCAST TYPE DA09Script
+Quest __temp = self as Quest
+DA09Script kmyQuest = __temp as DA09Script
+;END AUTOCAST
+;BEGIN CODE
+;player placed gem in statue's hand, teleports to sky
+
+; Debug.Trace("DA09 stage 200, removing gem, and moving player to sky)")
+Alias_Gem.UnregisterForUpdateGameTime()
+Game.GetPlayer().RemoveItem(Alias_Gem.GetReference())
+
+kmyquest.movePlayerToSky()
+
+kmyquest.DungeonBlockerToggle.Disable()
+
+Debug.SetGodMode(true) 
+;Debug.Notification("Активирован GodMode")
+
+
+kmyquest.DA09SkyScene.Start()
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_15
+Function Fragment_15()
+;BEGIN AUTOCAST TYPE DA09Script
+Quest __temp = self as Quest
+DA09Script kmyQuest = __temp as DA09Script
+;END AUTOCAST
+;BEGIN CODE
+kmyquest.DA09PedestalEmptyRef.enable()
+kmyquest.DA09PedestalRef.disable()
+
+
+Game.GetPlayer().AddItem(kmyquest.DA09DawnbreakerList)
+setobjectiveCompleted(40)
+AchievementsQuest.IncDaedricArtifacts()
+kmyquest.TeleportPlayerToSky()
+
+Debug.SetGodMode(True) 
+;Debug.Notification("Активирован GodMode")
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -278,19 +308,6 @@ setObjectiveCompleted(30)
 
 ;Cave in aspect doesn't happen anymore
 kmyquest.startCaveIn()   ;this also starts the DA09CaveInScene
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_17
-Function Fragment_17()
-;BEGIN AUTOCAST TYPE DA09Script
-Quest __temp = self as Quest
-DA09Script kmyQuest = __temp as DA09Script
-;END AUTOCAST
-;BEGIN CODE
-;player should get Dawnstar
-setobjectiveDisplayed(40)
 ;END CODE
 EndFunction
 ;END FRAGMENT

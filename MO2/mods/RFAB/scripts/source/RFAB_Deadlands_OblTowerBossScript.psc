@@ -100,7 +100,7 @@ function phase3()
 	BossVoicePhase3.play(Boss as ObjectReference)
 	Portals = new ObjectReference[10]
 	Int i = 0
-	while !Boss.IsDead()
+	while (i < Portals.Length && !Boss.IsDead())
 		newfire[i].disablenowait(true)
 		portals[i] = fires[i].placeatme(portal as form, 1, false, false)
 		Int k = 0
