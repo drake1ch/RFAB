@@ -53,6 +53,7 @@ rem Do not touch PortableGit while this updater is running from it.
   . ^
   ":(exclude)PortableGit/**" ^
   ":(exclude)Update-RFAB.bat" ^
+  ":(exclude,literal)MO2/ModOrganizer.exe" ^
   ":(exclude)MO2/overwrite/**" ^
   ":(exclude)MO2/profiles/**" ^
   ":(exclude,literal)MO2/mods/RFAB/SKSE/Plugins/dtryKeyUtil/config/settings.ini" ^
@@ -71,6 +72,7 @@ if not exist "MO2\profiles" (
 )
 
 echo [7/8] Seeding mod settings templates...
+call :seed_file "MO2\program-template\ModOrganizer.exe" "MO2\ModOrganizer.exe" "Mod Organizer" || goto :fail
 call :seed_file "MO2\settings-template\RFAB\settings.ini" "MO2\mods\RFAB\SKSE\Plugins\dtryKeyUtil\config\settings.ini" "RFAB settings" || goto :fail
 call :seed_file "MO2\settings-template\SkyUI_SE\settings.ini" "MO2\mods\[RFAB] Interface\MCM\Config\SkyUI_SE\settings.ini" "SkyUI settings" || goto :fail
 
