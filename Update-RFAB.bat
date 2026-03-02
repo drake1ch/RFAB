@@ -21,7 +21,7 @@ pushd "%BASE_DIR%" >nul || (
   exit /b 1
 )
 
-echo [1/6] Checking git metadata...
+echo [1/7] Checking git metadata...
 if not exist ".git\HEAD" (
   echo Initializing repository...
   "%GIT_EXE%" init -b %BRANCH% || goto :fail
@@ -29,7 +29,7 @@ if not exist ".git\HEAD" (
   echo Repository metadata found.
 )
 
-echo [2/6] Configuring origin...
+echo [2/7] Configuring origin...
 "%GIT_EXE%" config core.longpaths true >nul
 "%GIT_EXE%" config credential.helper "" >nul 2>nul
 "%GIT_EXE%" remote get-url origin >nul 2>nul
@@ -39,19 +39,35 @@ if errorlevel 1 (
   "%GIT_EXE%" remote set-url origin "%REPO_URL%" || goto :fail
 )
 
-echo [3/6] Fetching latest branch metadata...
+echo [3/7] Fetching latest branch metadata...
 "%GIT_EXE%" -c credential.helper= fetch --prune origin "%BRANCH%" || goto :fail
 
-echo [4/6] Preparing local branch...
+echo [4/7] Preparing local branch...
 "%GIT_EXE%" update-ref "refs/heads/%BRANCH%" "refs/remotes/origin/%BRANCH%" || goto :fail
 "%GIT_EXE%" symbolic-ref HEAD "refs/heads/%BRANCH%" || goto :fail
 "%GIT_EXE%" branch --set-upstream-to="origin/%BRANCH%" "%BRANCH%" >nul 2>nul
 
-echo [5/6] Applying repository files...
+echo [5/7] Applying repository files...
 rem Do not touch PortableGit while this updater is running from it.
-"%GIT_EXE%" restore --source="refs/heads/%BRANCH%" --staged --worktree -- . ":(exclude)PortableGit/**" || goto :fail
+"%GIT_EXE%" restore --source="refs/heads/%BRANCH%" --staged --worktree -- ^
+  . ^
+  ":(exclude)PortableGit/**" ^
+  ":(exclude)MO2/overwrite/**" ^
+  ":(exclude)MO2/profiles/**" || goto :fail
 
-echo [6/6] Pulling LFS content...
+echo [6/7] Seeding MO2 profile template...
+if not exist "MO2\profiles" (
+  if exist "MO2\profile-template\*" (
+    xcopy "MO2\profile-template\*" "MO2\profiles\" /E /I /Q /Y >nul || goto :fail
+    echo Default MO2 profile created.
+  ) else (
+    echo No profile template found. Skipping.
+  )
+) else (
+  echo Existing MO2 profiles found. Leaving them untouched.
+)
+
+echo [7/7] Pulling LFS content...
 "%GIT_EXE%" lfs install --local >nul 2>nul
 "%GIT_EXE%" -c credential.helper= lfs pull origin %BRANCH% || goto :fail
 
