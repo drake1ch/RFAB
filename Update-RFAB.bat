@@ -57,24 +57,19 @@ rem Do not touch PortableGit while this updater is running from it.
   ":(exclude)MO2/overwrite/**" ^
   ":(exclude)MO2/profiles/**" ^
   ":(exclude,literal)MO2/mods/RFAB/SKSE/Plugins/dtryKeyUtil/config/settings.ini" ^
-  ":(exclude,literal)MO2/mods/[RFAB] Interface/MCM/Config/SkyUI_SE/settings.ini" || goto :fail
+  ":(exclude,literal)MO2/mods/[RFAB] Interface/MCM/Config/SkyUI_SE/settings.ini" ^
+  ":(exclude,literal)MO2/mods/RFAB/SKSE/Plugins/StorageUtilData/RFAB_MCM_Settings.json" ^
+  ":(exclude,literal)MO2/mods/[RFAB] Interface/MCM/Settings/SkyUI_SE.ini" || goto :fail
 
-echo [6/8] Seeding MO2 profile template...
-if not exist "MO2\profiles" (
-  if exist "MO2\profile-template\*" (
-    xcopy "MO2\profile-template\*" "MO2\profiles\" /E /I /Q /Y >nul || goto :fail
-    echo Default MO2 profile created.
-  ) else (
-    echo No profile template found. Skipping.
-  )
-) else (
-  echo Existing MO2 profiles found. Leaving them untouched.
-)
+echo [6/8] Seeding missing MO2 profile files...
+call :seed_tree "MO2\profile-template" "MO2\profiles" "MO2 profile" || goto :fail
 
 echo [7/8] Seeding mod settings templates...
 call :seed_file "MO2\program-template\ModOrganizer.exe" "MO2\ModOrganizer.exe" "Mod Organizer" || goto :fail
 call :seed_file "MO2\settings-template\RFAB\settings.ini" "MO2\mods\RFAB\SKSE\Plugins\dtryKeyUtil\config\settings.ini" "RFAB settings" || goto :fail
 call :seed_file "MO2\settings-template\SkyUI_SE\settings.ini" "MO2\mods\[RFAB] Interface\MCM\Config\SkyUI_SE\settings.ini" "SkyUI settings" || goto :fail
+call :seed_file "MO2\settings-template\RFAB\RFAB_MCM_Settings.json" "MO2\mods\RFAB\SKSE\Plugins\StorageUtilData\RFAB_MCM_Settings.json" "RFAB MCM settings" || goto :fail
+call :seed_file "MO2\settings-template\SkyUI_SE\SkyUI_SE.ini" "MO2\mods\[RFAB] Interface\MCM\Settings\SkyUI_SE.ini" "SkyUI MCM settings" || goto :fail
 
 echo [8/8] Pulling LFS content...
 "%GIT_EXE%" lfs install --local >nul 2>nul
@@ -94,6 +89,44 @@ if not "%EXIT_CODE%"=="0" (
 echo.
 echo Done.
 pause
+exit /b 0
+
+:seed_tree
+setlocal EnableDelayedExpansion
+set "SOURCE_ROOT=%~1"
+set "TARGET_ROOT=%~2"
+set "LABEL=%~3"
+
+if not exist "%SOURCE_ROOT%\*" (
+  echo %LABEL% template not found. Skipping.
+  exit /b 0
+)
+
+if not exist "%TARGET_ROOT%" mkdir "%TARGET_ROOT%" || exit /b 1
+
+set /a COPIED_COUNT=0
+
+for %%I in ("%SOURCE_ROOT%") do set "SOURCE_ROOT=%%~fI"
+for %%I in ("%TARGET_ROOT%") do set "TARGET_ROOT=%%~fI"
+
+for /r "%SOURCE_ROOT%" %%F in (*) do (
+  set "SOURCE_FILE=%%~fF"
+  set "REL_PATH=!SOURCE_FILE:%SOURCE_ROOT%\=!"
+  set "TARGET_FILE=%TARGET_ROOT%\!REL_PATH!"
+
+  if not exist "!TARGET_FILE!" (
+    for %%D in ("!TARGET_FILE!") do if not exist "%%~dpD" mkdir "%%~dpD" || exit /b 1
+    copy /Y "!SOURCE_FILE!" "!TARGET_FILE!" >nul || exit /b 1
+    set /a COPIED_COUNT+=1
+  )
+)
+
+if !COPIED_COUNT! gtr 0 (
+  echo Seeded !COPIED_COUNT! missing %LABEL% file^(s^).
+) else (
+  echo No missing %LABEL% files.
+)
+
 exit /b 0
 
 :seed_file
