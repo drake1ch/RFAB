@@ -52,6 +52,7 @@ rem Do not touch PortableGit while this updater is running from it.
 "%GIT_EXE%" restore --source="refs/heads/%BRANCH%" --staged --worktree -- ^
   . ^
   ":(exclude)PortableGit/**" ^
+  ":(exclude)Update-RFAB.bat" ^
   ":(exclude)MO2/overwrite/**" ^
   ":(exclude)MO2/profiles/**" || goto :fail
 
