@@ -7,6 +7,18 @@ set "SCRIPT_DIR=%~dp0"
 for %%I in ("%SCRIPT_DIR%.") do set "BASE_DIR=%%~fI"
 set "GIT_EXE=%BASE_DIR%\PortableGit\cmd\git.exe"
 set "STATE_BACKUP_DIR=%TEMP%\rfab-updater-state-%RANDOM%-%RANDOM%"
+set "GIT_DIR="
+set "GIT_WORK_TREE="
+set "REPO_KEY=%BASE_DIR%"
+set "REPO_KEY=%REPO_KEY::=%"
+set "REPO_KEY=%REPO_KEY:\=_%"
+set "REPO_KEY=%REPO_KEY:/=_%"
+set "REPO_KEY=%REPO_KEY: =_%"
+set "REPO_KEY=%REPO_KEY:(=_%"
+set "REPO_KEY=%REPO_KEY:)=_%"
+set "REPO_KEY=%REPO_KEY:&=_%"
+set "REPO_KEY=%REPO_KEY:;=_%"
+set "FALLBACK_GIT_DIR=%LOCALAPPDATA%\RFAB\git\%REPO_KEY%"
 
 if not exist "%GIT_EXE%" (
   echo [ERROR] Portable Git was not found:
@@ -26,12 +38,7 @@ echo [1/9] Preserving local user settings...
 call :backup_state || goto :fail
 
 echo [2/9] Checking git metadata...
-if not exist ".git\HEAD" (
-  echo Initializing repository...
-  "%GIT_EXE%" init -b %BRANCH% || goto :fail
-) else (
-  echo Repository metadata found.
-)
+call :ensure_git_metadata || goto :fail
 
 echo [3/9] Configuring origin...
 "%GIT_EXE%" config core.longpaths true >nul
@@ -117,6 +124,44 @@ echo.
 echo Done.
 pause
 exit /b 0
+
+:ensure_git_metadata
+if exist ".git\HEAD" (
+  set "GIT_DIR="
+  set "GIT_WORK_TREE="
+  echo Repository metadata found.
+  goto :eof
+)
+
+if exist "%FALLBACK_GIT_DIR%\HEAD" (
+  set "GIT_DIR=%FALLBACK_GIT_DIR%"
+  set "GIT_WORK_TREE=%BASE_DIR%"
+  echo Per-user git metadata found.
+  goto :eof
+)
+
+echo Initializing repository...
+"%GIT_EXE%" init -b %BRANCH% >nul 2>nul
+if not errorlevel 1 (
+  set "GIT_DIR="
+  set "GIT_WORK_TREE="
+  echo Local git metadata initialized.
+  goto :eof
+)
+
+echo Local .git metadata is not writable. Falling back to per-user metadata.
+if not exist "%FALLBACK_GIT_DIR%" mkdir "%FALLBACK_GIT_DIR%" || exit /b 1
+
+set "GIT_DIR=%FALLBACK_GIT_DIR%"
+set "GIT_WORK_TREE=%BASE_DIR%"
+
+if not exist "%GIT_DIR%\HEAD" (
+  "%GIT_EXE%" init -b %BRANCH% || exit /b 1
+  echo Per-user git metadata initialized.
+) else (
+  echo Per-user git metadata found.
+)
+goto :eof
 
 :backup_state
 setlocal
