@@ -69,7 +69,6 @@ rem Do not touch PortableGit while this updater is running from it.
   ":(exclude)MO2/overwrite/**" ^
   ":(exclude)MO2/profiles/**" ^
   ":(exclude,literal)MO2/logs/mo_interface.log" ^
-  ":(exclude,literal)RFAB Launcher/RFAB Launcher Updater.exe" ^
   ":(exclude,literal)MO2/mods/RFAB/SKSE/Plugins/dtryKeyUtil/config/settings.ini" ^
   ":(exclude,literal)MO2/mods/[RFAB] Interface/MCM/Config/SkyUI_SE/settings.ini" ^
   ":(exclude,literal)MO2/mods/RFAB/SKSE/Plugins/StorageUtilData/RFAB_MCM_Settings.json" ^
