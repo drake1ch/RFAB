@@ -1,4 +1,4 @@
-[2026-03-02 20:42:10] [Information] ScrambledBugs.cpp(49,28): Initializing...
+[2026-03-05 00:58:57] [Information] ScrambledBugs.cpp(49,28): Initializing...
 {
 	"fixes": {
 		"activateFurniture": true,
@@ -42,7 +42,7 @@
 		"underfilledSoulGems": true
 	}
 }
-[2026-03-02 20:42:10] [Information] ScrambledBugs.cpp(217,28): Initialized.
+[2026-03-05 00:58:57] [Information] ScrambledBugs.cpp(217,28): Initialized.
 {
 	"fixes": {
 		"activateFurniture": true,
@@ -86,13 +86,5 @@
 		"underfilledSoulGems": true
 	}
 }
-[2026-03-02 20:42:23] [Information] Serialization.cpp(81,29): Loading...
-[2026-03-02 20:42:23] [Error] Serialization.cpp(119,26): Type mismatch, 1162756936.
-[2026-03-02 20:42:23] [Error] Serialization.cpp(119,26): Type mismatch, 1162756936.
-[2026-03-02 20:42:23] [Error] Serialization.cpp(119,26): Type mismatch, 1162756936.
-[2026-03-02 20:42:23] [Error] Serialization.cpp(119,26): Type mismatch, 1162756936.
-[2026-03-02 20:42:23] [Error] Serialization.cpp(119,26): Type mismatch, 1162756936.
-[2026-03-02 20:42:23] [Error] Serialization.cpp(119,26): Type mismatch, 1162756936.
-[2026-03-02 20:42:23] [Error] Serialization.cpp(119,26): Type mismatch, 1162756936.
-[2026-03-02 20:42:23] [Error] Serialization.cpp(119,26): Type mismatch, 1162756936.
-[2026-03-02 20:42:23] [Information] Serialization.cpp(124,29): Loaded.
+[2026-03-05 01:00:31] [Information] Serialization.cpp(129,29): Saving...
+[2026-03-05 01:00:31] [Information] Serialization.cpp(149,29): Saved.

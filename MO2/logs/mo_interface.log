@@ -1,7 +1,15 @@
-[2026-03-02 17:48:16.914 D] command line: '"C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\ModOrganizer.exe" '
-[2026-03-02 17:48:16.914 I] starting Mod Organizer version 2.4.2 revision 2a5dd6c7 in C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2, usvfs: 0.5.5.0
-[2026-03-02 17:48:16.914 I] data path: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
-[2026-03-02 17:48:16.914 I] working directory: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
-[2026-03-02 17:48:16.914 D] timing: MOApplication setup() 0 ms
-[2026-03-02 17:48:17.264 I] using game plugin 'Skyrim Special Edition' ('SkyrimSE', variant (none), steam id '489830') at C:/Games/The Elder Scrolls V Skyrim - Special Edition
-[2026-03-02 17:48:18.055 I] update available: 2.4.2 -> 2.5.2
+[2026-03-04 20:38:37.098 D] command line: '"C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\ModOrganizer.exe" '
+[2026-03-04 20:38:37.098 I] starting Mod Organizer version 2.4.2 revision 2a5dd6c7 in C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2, usvfs: 0.5.5.0
+[2026-03-04 20:38:37.098 I] data path: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
+[2026-03-04 20:38:37.098 I] working directory: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
+[2026-03-04 20:38:37.098 D] timing: MOApplication setup() 0 ms
+[2026-03-04 20:38:37.438 I] using game plugin 'Skyrim Special Edition' ('SkyrimSE', variant (none), steam id '489830') at C:/Games/The Elder Scrolls V Skyrim - Special Edition
+[2026-03-04 20:38:39.225 I] update available: 2.4.2 -> 2.5.2
+[2026-03-04 22:06:06.967 W] Plugin not found: DF - Official Creature Pack.esp
+[2026-03-04 22:06:06.967 W] Plugin not found: DF - Official Humanoid Pack.esp
+[2026-03-04 22:06:06.967 W] Plugin not found: Dismembering Framework.esm
+[2026-03-04 22:06:07.412 W] Plugin not found: icepenguinworldmapclassic.esp
+[2026-03-04 22:06:09.788 W] Plugin not found: RFAB_PerksMenu.esp
+[2026-03-04 22:06:10.300 W] Plugin not found: AddItemMenuSE.esp
+[2026-03-04 22:06:19.908 W] Plugin not found: AddItemMenuSE.esp
+[2026-03-04 22:06:43.438 W] Plugin not found: AddItemMenuSE.esp
