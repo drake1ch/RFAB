@@ -29,26 +29,38 @@ float CostModificator
 float DamageWaveModificator
 float CostWaveModificator
 
-Event OnEffectStart(Actor akTarget, Actor akCaster)
-    Caster = akTarget
+Function RefreshModifiers()
     int Index = GetModifierIndex()
     if (Index != -1)
         DamageModificator = ModificatorDamage[Index]
         CostModificator = ModificatorCost[Index]
-        CostWaveModificator = ModificatorCostWave[Index]
         DamageWaveModificator = ModificatorDamageWave[Index]
+        CostWaveModificator = ModificatorCostWave[Index]
     else
         DamageModificator = ModificatorDamageDefault
-        CostModificator = ModificatorCostDefault 
-        CostWaveModificator = ModificatorCostWaveDefault
+        CostModificator = ModificatorCostDefault
         DamageWaveModificator = ModificatorDamageWaveDefault
+        CostWaveModificator = ModificatorCostWaveDefault
     endif
+EndFunction
+
+Event OnEffectStart(Actor akTarget, Actor akCaster)
+    Caster = akTarget
+    RefreshModifiers()
     RegisterAnimations()
     RegisterForWeaponHit(self)
+    RegisterForMenu("StatsMenu")
 EndEvent
 
 Event OnEffectFinish(Actor akTarget, Actor akCaster)
     UnregisterForWeaponHit(self)
+    UnregisterForMenu("StatsMenu")
+EndEvent
+
+Event OnMenuClose(String MenuName)
+    if MenuName == "StatsMenu"
+        RefreshModifiers()
+    endif
 EndEvent
 
 Event OnAnimationEvent(ObjectReference akSource, string asEventName)

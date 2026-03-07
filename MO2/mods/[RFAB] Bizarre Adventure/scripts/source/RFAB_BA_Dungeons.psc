@@ -38,24 +38,22 @@ Event OnInit()
 EndEvent
 
 Function GoToNewDungeon()
-	int iRoll = Utility.RandomInt(0, 9)
-	
-	int iDungeonsCount = 1
-	if iRoll > 7
-		iDungeonsCount = 3
-	elseif iRoll > 1
-		iDungeonsCount = 2
+	int iDungeonCount = GetDungeonCount()
+
+	if (iDungeonCount == 1)
+		StartDungeon(GetRandomDungeonID())
+		return
 	endif
-	
-	int[] iDungeonIDs = Utility.CreateIntArray(iDungeonsCount, -1)
-	string[] sDungeonsNames = Utility.CreateStringArray(iDungeonsCount)
-	
+
+	int[] iDungeonIDs = Utility.CreateIntArray(iDungeonCount, -1)
+	string[] sDungeonsNames = Utility.CreateStringArray(iDungeonCount)
+
 	int i = 0
-	while (i < iDungeonsCount)
+	while (i < iDungeonCount)
 		int iDungeonID = GetRandomDungeonID()
 		if (iDungeonID != -1 && iDungeonIDs.Find(iDungeonID) == -1)
 			iDungeonIDs[i] = iDungeonID
-			if Utility.RandomInt(0, 100) < 25
+			if (Utility.RandomInt(0, 100) < 25)
 				sDungeonsNames[i] = "Неразведанная дорога"
 			else
 				sDungeonsNames[i] = Dungeons[iDungeonID]
@@ -66,11 +64,36 @@ Function GoToNewDungeon()
 		i += 1
 	endwhile
 
+
 	int iChoiceID = 0
-	if PapyrusUtil.CountInt(iDungeonIDs, iDungeonIDs[iChoiceID]) != iDungeonsCount
+	if PapyrusUtil.CountInt(iDungeonIDs, iDungeonIDs[iChoiceID]) != iDungeonCount
 		iChoiceID = SkyMessage.ShowArray("И снова ты на перепутье...", sDungeonsNames, getIndex = true) as int
 	endif
 	StartDungeon(iDungeonIDs[iChoiceID])
+EndFunction
+
+int Function GetDungeonCount()
+	int iAvailableDungeonCount = GetAvailableDungeonCount()
+	int iDungeonCount = RollDungeonCount()
+
+	if (iDungeonCount > iAvailableDungeonCount)
+		iDungeonCount = iAvailableDungeonCount
+	endif
+
+	return iDungeonCount
+EndFunction
+
+int Function RollDungeonCount()
+	int iRoll = Utility.RandomInt(0, 9)
+	
+	int iDungeonCount = 1
+	if iRoll > 7
+		iDungeonCount = 3
+	elseif iRoll > 1
+		iDungeonCount = 2
+	endif
+
+	return iDungeonCount
 EndFunction
 
 ; Dungeons functions
@@ -143,6 +166,18 @@ int Function GetRandomDungeonID()
 	return -1
 EndFunction
 
+int Function GetAvailableDungeonCount()
+	int iCount = 0
+	int i = 0
+	while (i < Dungeons.Length)
+		if !IsCleared(i) && IsInRange(i)
+			iCount += 1
+		endif
+		i += 1
+	endwhile
+	return iCount
+EndFunction
+
 ; Data functions
 
 string Function GetStringDungeonData(string asStage, string asDungeon, string asKey)
@@ -162,12 +197,23 @@ EndFunction
 ; Misc functions
 
 int[] Function CreateShuffledIntArray(int aiSize)
+	int[] iArray = CreateFilledArray(aiSize)
+	int i = aiSize
+	while (i > 1)
+		i -= 1
+		int iRandomIndex = PO3_SKSEFunctions.GenerateRandomInt(0, i)
+		int iTemp = iArray[i]
+		iArray[i] = iArray[iRandomIndex]
+		iArray[iRandomIndex] = iTemp
+	endwhile
+	return iArray
+EndFunction
+
+int[] Function CreateFilledArray(int aiSize)
 	int[] iArray = Utility.CreateIntArray(aiSize)
 	int i = 0
-	while i < aiSize
-		int iRandomIndex = PO3_SKSEFunctions.GenerateRandomInt(0, i + 1)
-		iArray[i] = iArray[iRandomIndex]
-		iArray[iRandomIndex] = i
+	while (i < aiSize)
+		iArray[i] = i
 		i += 1
 	endwhile
 	return iArray
