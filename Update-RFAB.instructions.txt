@@ -80,9 +80,13 @@ rem Do not touch PortableGit while this updater is running from it.
   ":(exclude,literal)MO2/mods/RFAB/SKSE/Plugins/StorageUtilData/RFAB_XP_Settings.json" ^
   ":(exclude,literal)MO2/mods/RFAB/SKSE/Plugins/[RFAB] Dodge.ini" ^
   ":(exclude,literal)MO2/mods/RFAB/SKSE/Plugins/[RFAB] Extended Hotkeys.ini" ^
+  ":(exclude,literal)MO2/mods/Unofficial Skyrim Special Edition Patch/Unofficial Skyrim Special Edition Patch.bsa" ^
   ":(exclude)MO2/profiles/**/SkyrimCustom.ini" ^
   ":(exclude)MO2/profiles/**/SkyrimPrefs.ini" ^
   ":(exclude,literal)MO2/mods/[RFAB] Interface/MCM/Settings/SkyUI_SE.ini" || goto :fail
+
+rem This archive is distributed separately and should remain as a local ignored file.
+"%GIT_EXE%" rm --cached --ignore-unmatch --quiet -- "MO2/mods/Unofficial Skyrim Special Edition Patch/Unofficial Skyrim Special Edition Patch.bsa" >nul 2>nul
 
 echo [7/9] Merging MO2 profile lists...
 call :merge_profile_lists || goto :fail
@@ -107,9 +111,7 @@ call :seed_file "MO2\profile-template\Default\Skyrim.ini" "MO2\profiles\Default\
 call :seed_file "MO2\profile-template\Default\SkyrimCustom.ini" "MO2\profiles\Default\SkyrimCustom.ini" "SkyrimCustom profile settings" || goto :fail
 call :seed_file "MO2\profile-template\Default\SkyrimPrefs.ini" "MO2\profiles\Default\SkyrimPrefs.ini" "SkyrimPrefs profile settings" || goto :fail
 
-echo [9/9] Pulling LFS content...
-"%GIT_EXE%" lfs install --local >nul 2>nul
-"%GIT_EXE%" -c credential.helper= lfs pull origin %BRANCH% || goto :fail
+echo [9/9] Finalizing update...
 
 set "EXIT_CODE=0"
 goto :done
