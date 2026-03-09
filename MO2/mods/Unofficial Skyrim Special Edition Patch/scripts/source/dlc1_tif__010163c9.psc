@@ -1,0 +1,22 @@
+;BEGIN FRAGMENT CODE - Do not edit anything between this and the end comment
+;NEXT FRAGMENT INDEX 1
+Scriptname DLC1_TIF__010163C9 Extends TopicInfo Hidden
+
+;BEGIN FRAGMENT Fragment_0
+Function Fragment_0(ObjectReference akSpeakerRef)
+Actor akSpeaker = akSpeakerRef as Actor
+;BEGIN CODE
+;if (((self as Form) as DLC1DoOnce).DoOnce())
+;    (GetOwningQuest() as DLC1_QF_DLC1VQ03Hunter_010098CB).MM.IncreaseGuarded()
+;    (GetOwningQuest() as DLC1_QF_DLC1VQ03Hunter_010098CB).MM.IncreaseSerious(2)
+;endif
+if( (GetOwningQuest() as DLC1_QF_DLC1VQ03Hunter_010098CB).MM.VQ03GuardedSerious == False )
+    (GetOwningQuest() as DLC1_QF_DLC1VQ03Hunter_010098CB).MM.IncreaseGuarded()
+    (GetOwningQuest() as DLC1_QF_DLC1VQ03Hunter_010098CB).MM.IncreaseSerious(2)
+	(GetOwningQuest() as DLC1_QF_DLC1VQ03Hunter_010098CB).MM.SetVQ03GuardedSerious()
+EndIf
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;END FRAGMENT CODE - Do not edit anything between this and the begin comment

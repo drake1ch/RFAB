@@ -1,0 +1,20 @@
+;BEGIN FRAGMENT CODE - Do not edit anything between this and the end comment
+;NEXT FRAGMENT INDEX 1
+Scriptname USKP_TIF_MS11AmuletFix_00025E61 Extends TopicInfo Hidden
+
+;BEGIN FRAGMENT Fragment_0
+Function Fragment_0(ObjectReference akSpeakerRef)
+Actor akSpeaker = akSpeakerRef as Actor
+;BEGIN CODE
+if( Game.GetPlayer().GetItemCount(StrangeAmulet) > 0 )
+ Game.GetPlayer().RemoveItem(StrangeAmulet, 1, abSilent = true)
+ Game.GetPlayer().AddItem(NecroAmulet, 1, abSilent = true)
+endif
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;END FRAGMENT CODE - Do not edit anything between this and the begin comment
+
+Armor Property StrangeAmulet Auto
+Armor Property NecroAmulet Auto

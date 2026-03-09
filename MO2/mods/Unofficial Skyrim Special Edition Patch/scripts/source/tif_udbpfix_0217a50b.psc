@@ -1,0 +1,24 @@
+;BEGIN FRAGMENT CODE - Do not edit anything between this and the end comment
+;NEXT FRAGMENT INDEX 2
+Scriptname TIF_UDBPFix_0217A50B Extends TopicInfo Hidden
+
+;BEGIN FRAGMENT Fragment_1
+Function Fragment_1(ObjectReference akSpeakerRef)
+Actor akSpeaker = akSpeakerRef as Actor
+;BEGIN CODE
+; don't dismiss the follower again if I've already dismissed them
+If !(akspeaker.IsInFaction(DismissedFollowerFaction))
+  (pDialogueFollower as DialogueFollowerScript).DismissFollower(0, 0)
+EndIf
+akSpeaker.AddToFaction(JobMerchantFaction)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;END FRAGMENT CODE - Do not edit anything between this and the begin comment
+
+quest Property pDialogueFollower  Auto  
+
+Faction Property DismissedFollowerFaction  Auto  
+
+Faction Property JobMerchantFaction  Auto  
