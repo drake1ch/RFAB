@@ -71,7 +71,6 @@ rem Do not touch PortableGit while this updater is running from it.
   ":(exclude)Update-RFAB.bat" ^
   ":(exclude,literal)MO2/ModOrganizer.exe" ^
   ":(exclude,literal)MO2/ModOrganizer.ini" ^
-  ":(exclude)MO2/overwrite/**" ^
   ":(exclude,literal)MO2/logs/mo_interface.log" ^
   ":(exclude,literal)RFAB Launcher/RFAB Launcher Updater.exe" ^
   ":(exclude,literal)MO2/mods/RFAB/SKSE/Plugins/dtryKeyUtil/config/settings.ini" ^
