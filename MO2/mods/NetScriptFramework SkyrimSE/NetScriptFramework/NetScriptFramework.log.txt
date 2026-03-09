@@ -1,18 +1,18 @@
-[07 Mar 2026 00:54:35.113] Initializing framework version 15.
-[07 Mar 2026 00:54:35.114] Loaded configuration file.
-[07 Mar 2026 00:54:35.115] Preparing .NET code hooking.
-[07 Mar 2026 00:54:35.118] Loading game library.
-[07 Mar 2026 00:54:35.645] Loaded game library for `The Elder Scrolls V: Skyrim Special Edition` (18).
-[07 Mar 2026 00:54:35.645] Running game version is 1.5.97.0
-[07 Mar 2026 00:54:37.433] Loading plugins.
-[07 Mar 2026 00:54:37.433] Path to plugins: "Data\NetScriptFramework\Plugins".
-[07 Mar 2026 00:54:37.435] Checking file "ActorLimitPlugin.dll"...
-[07 Mar 2026 00:54:37.438] Plugin found and loaded.
-[07 Mar 2026 00:54:37.438] Checking file "BetterStealing.dll"...
-[07 Mar 2026 00:54:37.441] Plugin found and loaded.
-[07 Mar 2026 00:54:37.441] Checking file "BugFixesSSE.dll"...
-[07 Mar 2026 00:54:37.443] Plugin found and loaded.
-[07 Mar 2026 00:54:37.443] Checking file "GamePlayTweaks.dll"...
-[07 Mar 2026 00:54:37.446] Plugin found and loaded.
-[07 Mar 2026 00:54:37.476] Finished loading 4 plugins.
-[07 Mar 2026 00:54:37.476] Finished framework initialization.
+[08 Mar 2026 13:51:41.723] Initializing framework version 15.
+[08 Mar 2026 13:51:41.724] Loaded configuration file.
+[08 Mar 2026 13:51:41.725] Preparing .NET code hooking.
+[08 Mar 2026 13:51:41.728] Loading game library.
+[08 Mar 2026 13:51:42.287] Loaded game library for `The Elder Scrolls V: Skyrim Special Edition` (18).
+[08 Mar 2026 13:51:42.287] Running game version is 1.5.97.0
+[08 Mar 2026 13:51:44.103] Loading plugins.
+[08 Mar 2026 13:51:44.103] Path to plugins: "Data\NetScriptFramework\Plugins".
+[08 Mar 2026 13:51:44.105] Checking file "ActorLimitPlugin.dll"...
+[08 Mar 2026 13:51:44.108] Plugin found and loaded.
+[08 Mar 2026 13:51:44.108] Checking file "BetterStealing.dll"...
+[08 Mar 2026 13:51:44.111] Plugin found and loaded.
+[08 Mar 2026 13:51:44.111] Checking file "BugFixesSSE.dll"...
+[08 Mar 2026 13:51:44.113] Plugin found and loaded.
+[08 Mar 2026 13:51:44.113] Checking file "GamePlayTweaks.dll"...
+[08 Mar 2026 13:51:44.116] Plugin found and loaded.
+[08 Mar 2026 13:51:44.149] Finished loading 4 plugins.
+[08 Mar 2026 13:51:44.149] Finished framework initialization.

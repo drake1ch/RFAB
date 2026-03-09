@@ -1,17 +1,15 @@
-[2026-03-07 10:21:51.406 D] command line: '"C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\ModOrganizer.exe" '
-[2026-03-07 10:21:51.406 I] starting Mod Organizer version 2.4.2 revision 2a5dd6c7 in C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2, usvfs: 0.5.5.0
-[2026-03-07 10:21:51.406 I] data path: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
-[2026-03-07 10:21:51.406 I] working directory: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
-[2026-03-07 10:21:51.406 D] timing: MOApplication setup() 0 ms
-[2026-03-07 10:21:52.590 I] using game plugin 'Skyrim Special Edition' ('SkyrimSE', variant (none), steam id '489830') at C:/Games/The Elder Scrolls V Skyrim - Special Edition
-[2026-03-07 10:21:55.208 I] update available: 2.4.2 -> 2.5.2
-[2026-03-07 10:25:36.934 W] Plugin not found: RFAB Backpack and Lampa.esp
-[2026-03-07 11:05:28.881 W] Plugin not found: ElectroSetsBuff.esp
-[2026-03-07 11:16:38.735 W] Plugin not found: ElectroSetsBuff.esp
-[2026-03-07 11:17:47.111 W] Plugin not found: aaaaa.esp
-[2026-03-07 11:18:11.205 W] Plugin not found: AddItemMenuSE.esp
-[2026-03-07 11:18:11.662 W] Plugin not found: RFAB_PerksMenu.esp
-[2026-03-07 11:18:13.542 W] Plugin not found: DF - Official Creature Pack.esp
-[2026-03-07 11:18:13.542 W] Plugin not found: DF - Official Humanoid Pack.esp
-[2026-03-07 11:18:13.542 W] Plugin not found: Dismembering Framework.esm
-[2026-03-07 11:18:14.038 W] Plugin not found: icepenguinworldmapclassic.esp
+[2026-03-09 11:46:08.518 D] command line: '"C:\Games\The Elder Scrolls V Skyrim - Special Edition\MO2\ModOrganizer.exe" '
+[2026-03-09 11:46:08.518 I] starting Mod Organizer version 2.4.2 revision 2a5dd6c7 in C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2, usvfs: 0.5.5.0
+[2026-03-09 11:46:08.518 I] data path: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
+[2026-03-09 11:46:08.518 I] working directory: C:/Games/The Elder Scrolls V Skyrim - Special Edition/MO2
+[2026-03-09 11:46:08.518 D] timing: MOApplication setup() 0 ms
+[2026-03-09 11:46:09.825 I] using game plugin 'Skyrim Special Edition' ('SkyrimSE', variant (none), steam id '489830') at C:/Games/The Elder Scrolls V Skyrim - Special Edition
+[2026-03-09 11:46:12.708 I] update available: 2.4.2 -> 2.5.2
+[2026-03-09 15:03:11.376 W] Plugin not found: DF - Official Creature Pack.esp
+[2026-03-09 15:03:11.376 W] Plugin not found: DF - Official Humanoid Pack.esp
+[2026-03-09 15:03:11.376 W] Plugin not found: Dismembering Framework.esm
+[2026-03-09 15:03:11.841 W] Plugin not found: icepenguinworldmapclassic.esp
+[2026-03-09 15:03:12.848 W] Plugin not found: RFAB_PerksMenu.esp
+[2026-03-09 15:03:13.289 W] Plugin not found: AddItemMenuSE.esp
+[2026-03-09 15:03:14.145 W] Plugin not found: RFAB_BizarreAdventure.esp
+[2026-03-09 15:03:31.282 W] Plugin not found: RFAB_BizarreAdventure.esp
