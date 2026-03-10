@@ -56,7 +56,7 @@ if errorlevel 1 (
 )
 
 echo [4/9] Fetching latest branch metadata...
-"%GIT_EXE%" -c credential.helper= fetch --prune origin "%BRANCH%" || goto :fail
+"%GIT_EXE%" -c credential.helper= fetch --progress --prune origin "%BRANCH%" || goto :fail
 
 echo [5/9] Preparing local branch...
 "%GIT_EXE%" update-ref "refs/heads/%BRANCH%" "refs/remotes/origin/%BRANCH%" || goto :fail
