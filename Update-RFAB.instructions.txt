@@ -1,11 +1,12 @@
 @echo off
 setlocal EnableExtensions DisableDelayedExpansion
+chcp 1251 >nul
 
 if "%REPO_URL%"=="" set "REPO_URL=https://github.com/drake1ch/RFAB.git"
 if "%BRANCH%"=="" set "BRANCH=main"
 
 if "%BASE_DIR%"=="" (
-  echo [ERROR] BASE_DIR is not set.
+  echo [ОШИБКА] Не задан BASE_DIR.
   exit /b 1
 )
 
@@ -28,24 +29,24 @@ set "REPO_KEY=%REPO_KEY:;=_%"
 set "FALLBACK_GIT_DIR=%LOCALAPPDATA%\RFAB\git\%REPO_KEY%"
 
 if not exist "%GIT_EXE%" (
-  echo [ERROR] Portable Git was not found:
+  echo [ОШИБКА] Portable Git не найден:
   echo   "%GIT_EXE%"
   exit /b 1
 )
 
 pushd "%BASE_DIR%" >nul || (
-  echo [ERROR] Failed to switch to folder:
+  echo [ОШИБКА] Не удалось перейти в папку:
   echo   "%BASE_DIR%"
   exit /b 1
 )
 
-echo [1/9] Capturing local MO2 profile lists...
+echo [1/9] Сохраняем настройки пользователя...
 call :snapshot_profile_lists || goto :fail
 
-echo [2/9] Checking git metadata...
+echo [2/9] Проверяем наличие RFAB...
 call :ensure_git_metadata || goto :fail
 
-echo [3/9] Configuring origin...
+echo [3/9] Настраиваем конфигурацию...
 "%GIT_EXE%" config core.longpaths true >nul
 "%GIT_EXE%" config credential.helper "" >nul 2>nul
 "%GIT_EXE%" remote get-url origin >nul 2>nul
@@ -55,15 +56,15 @@ if errorlevel 1 (
   "%GIT_EXE%" remote set-url origin "%REPO_URL%" || goto :fail
 )
 
-echo [4/9] Fetching latest branch metadata...
+echo [4/9] Скачиваем файлы...
 "%GIT_EXE%" -c credential.helper= fetch --progress --prune origin "%BRANCH%" || goto :fail
 
-echo [5/9] Preparing local branch...
+echo [5/9] Подготавливаем установку...
 "%GIT_EXE%" update-ref "refs/heads/%BRANCH%" "refs/remotes/origin/%BRANCH%" || goto :fail
 "%GIT_EXE%" symbolic-ref HEAD "refs/heads/%BRANCH%" || goto :fail
 "%GIT_EXE%" branch --set-upstream-to="origin/%BRANCH%" "%BRANCH%" >nul 2>nul
 
-echo [6/9] Applying repository files...
+echo [6/9] Применяем изменения...
 rem Do not touch PortableGit while this updater is running from it.
 "%GIT_EXE%" restore --source="refs/heads/%BRANCH%" --staged --worktree -- ^
   . ^
@@ -87,30 +88,30 @@ rem Do not touch PortableGit while this updater is running from it.
 rem This archive is distributed separately and should remain as a local ignored file.
 "%GIT_EXE%" rm --cached --ignore-unmatch --quiet -- "MO2/mods/Unofficial Skyrim Special Edition Patch/Unofficial Skyrim Special Edition Patch.bsa" >nul 2>nul
 
-echo [7/9] Merging MO2 profile lists...
+echo [7/9] Настраиваем профиль MO2...
 call :merge_profile_lists || goto :fail
 
-echo Restoring profile ini files...
+echo Восстанавливаем настройки профиля...
 call :restore_profile_inis || goto :fail
 
-echo Ensuring default MO2 profile...
+echo Проверяем профиль Default...
 call :ensure_default_profile || goto :fail
 
-echo [8/9] Seeding mod settings templates...
+echo [8/9] Копируем файлы...
 call :seed_file "MO2\program-template\ModOrganizer.exe" "MO2\ModOrganizer.exe" "Mod Organizer" || goto :fail
-call :seed_file "MO2\config-template\ModOrganizer.ini" "MO2\ModOrganizer.ini" "Mod Organizer config" || goto :fail
-call :seed_file "MO2\settings-template\RFAB\settings.ini" "MO2\mods\RFAB\SKSE\Plugins\dtryKeyUtil\config\settings.ini" "RFAB settings" || goto :fail
-call :seed_file "MO2\settings-template\SkyUI_SE\settings.ini" "MO2\mods\[RFAB] Interface\MCM\Config\SkyUI_SE\settings.ini" "SkyUI settings" || goto :fail
-call :seed_file "MO2\settings-template\RFAB\RFAB_MCM_Settings.json" "MO2\mods\RFAB\SKSE\Plugins\StorageUtilData\RFAB_MCM_Settings.json" "RFAB MCM settings" || goto :fail
-call :seed_file "MO2\settings-template\RFAB\RFAB_XP_Settings.json" "MO2\mods\RFAB\SKSE\Plugins\StorageUtilData\RFAB_XP_Settings.json" "RFAB XP settings" || goto :fail
-call :seed_file "MO2\settings-template\RFAB\[RFAB] Dodge.ini" "MO2\mods\RFAB\SKSE\Plugins\[RFAB] Dodge.ini" "RFAB Dodge settings" || goto :fail
-call :seed_file "MO2\settings-template\RFAB\[RFAB] Extended Hotkeys.ini" "MO2\mods\RFAB\SKSE\Plugins\[RFAB] Extended Hotkeys.ini" "RFAB hotkeys settings" || goto :fail
-call :seed_file "MO2\settings-template\SkyUI_SE\SkyUI_SE.ini" "MO2\mods\[RFAB] Interface\MCM\Settings\SkyUI_SE.ini" "SkyUI MCM settings" || goto :fail
-call :seed_file "MO2\profile-template\Default\Skyrim.ini" "MO2\profiles\Default\Skyrim.ini" "Skyrim profile settings" || goto :fail
-call :seed_file "MO2\profile-template\Default\SkyrimCustom.ini" "MO2\profiles\Default\SkyrimCustom.ini" "SkyrimCustom profile settings" || goto :fail
-call :seed_file "MO2\profile-template\Default\SkyrimPrefs.ini" "MO2\profiles\Default\SkyrimPrefs.ini" "SkyrimPrefs profile settings" || goto :fail
+call :seed_file "MO2\config-template\ModOrganizer.ini" "MO2\ModOrganizer.ini" "конфигурация Mod Organizer" || goto :fail
+call :seed_file "MO2\settings-template\RFAB\settings.ini" "MO2\mods\RFAB\SKSE\Plugins\dtryKeyUtil\config\settings.ini" "настройки RFAB" || goto :fail
+call :seed_file "MO2\settings-template\SkyUI_SE\settings.ini" "MO2\mods\[RFAB] Interface\MCM\Config\SkyUI_SE\settings.ini" "настройки SkyUI" || goto :fail
+call :seed_file "MO2\settings-template\RFAB\RFAB_MCM_Settings.json" "MO2\mods\RFAB\SKSE\Plugins\StorageUtilData\RFAB_MCM_Settings.json" "настройки MCM RFAB" || goto :fail
+call :seed_file "MO2\settings-template\RFAB\RFAB_XP_Settings.json" "MO2\mods\RFAB\SKSE\Plugins\StorageUtilData\RFAB_XP_Settings.json" "настройки опыта RFAB" || goto :fail
+call :seed_file "MO2\settings-template\RFAB\[RFAB] Dodge.ini" "MO2\mods\RFAB\SKSE\Plugins\[RFAB] Dodge.ini" "настройки уклонения RFAB" || goto :fail
+call :seed_file "MO2\settings-template\RFAB\[RFAB] Extended Hotkeys.ini" "MO2\mods\RFAB\SKSE\Plugins\[RFAB] Extended Hotkeys.ini" "горячие клавиши RFAB" || goto :fail
+call :seed_file "MO2\settings-template\SkyUI_SE\SkyUI_SE.ini" "MO2\mods\[RFAB] Interface\MCM\Settings\SkyUI_SE.ini" "настройки MCM SkyUI" || goto :fail
+call :seed_file "MO2\profile-template\Default\Skyrim.ini" "MO2\profiles\Default\Skyrim.ini" "настройки профиля Skyrim" || goto :fail
+call :seed_file "MO2\profile-template\Default\SkyrimCustom.ini" "MO2\profiles\Default\SkyrimCustom.ini" "настройки профиля SkyrimCustom" || goto :fail
+call :seed_file "MO2\profile-template\Default\SkyrimPrefs.ini" "MO2\profiles\Default\SkyrimPrefs.ini" "настройки профиля SkyrimPrefs" || goto :fail
 
-echo [9/9] Finalizing update...
+echo [9/9] Готово.
 
 set "EXIT_CODE=0"
 goto :done
@@ -119,27 +120,27 @@ goto :done
 if exist ".git\HEAD" (
   set "GIT_DIR="
   set "GIT_WORK_TREE="
-  echo Repository metadata found.
+  echo Метаданные репозитория найдены.
   goto :eof
 )
 
 if exist "%FALLBACK_GIT_DIR%\HEAD" (
   set "GIT_DIR=%FALLBACK_GIT_DIR%"
   set "GIT_WORK_TREE=%BASE_DIR%"
-  echo Per-user git metadata found.
+  echo Найдены пользовательские метаданные репозитория.
   goto :eof
 )
 
-echo Initializing repository...
+echo Инициализируем репозиторий...
 "%GIT_EXE%" init -b %BRANCH% >nul 2>nul
 if not errorlevel 1 (
   set "GIT_DIR="
   set "GIT_WORK_TREE="
-  echo Local git metadata initialized.
+  echo Локальные git-метаданные инициализированы.
   goto :eof
 )
 
-echo Local .git metadata is not writable. Falling back to per-user metadata.
+echo Локальная папка .git недоступна для записи. Используем пользовательские метаданные.
 if not exist "%FALLBACK_GIT_DIR%" mkdir "%FALLBACK_GIT_DIR%" || exit /b 1
 
 set "GIT_DIR=%FALLBACK_GIT_DIR%"
@@ -147,15 +148,15 @@ set "GIT_WORK_TREE=%BASE_DIR%"
 
 if not exist "%GIT_DIR%\HEAD" (
   "%GIT_EXE%" init -b %BRANCH% || exit /b 1
-  echo Per-user git metadata initialized.
+  echo Пользовательские git-метаданные инициализированы.
 ) else (
-  echo Per-user git metadata found.
+  echo Найдены пользовательские git-метаданные.
 )
 goto :eof
 
 :snapshot_profile_lists
 if not exist "MO2\profiles\*" (
-  echo No existing MO2 profiles found.
+  echo Существующие профили MO2 не найдены.
   exit /b 0
 )
 
@@ -184,15 +185,15 @@ for /d %%P in ("MO2\profiles\*") do (
 )
 
 if defined COPIED_ANY (
-  echo Existing MO2 profile lists captured.
+  echo Списки профилей MO2 сохранены.
 ) else (
-  echo No local modlist/loadorder files found.
+  echo Локальные modlist/loadorder не найдены.
 )
 exit /b 0
 
 :merge_profile_lists
 if not exist "%PROFILE_SNAPSHOT_DIR%\*" (
-  echo No previous MO2 profile lists to merge.
+  echo Нет сохранённых списков MO2 для объединения.
   exit /b 0
 )
 
@@ -207,12 +208,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
   "function ML([string]$c, [string]$u){ $cl = RL $c; $ul = RL $u; $seen = New-Object 'System.Collections.Generic.HashSet[string]' ([System.StringComparer]::OrdinalIgnoreCase); $out = New-Object 'System.Collections.Generic.List[string]'; foreach ($line in $cl) { $e = $line.Trim(); if ($e -and $seen.Add($e)) { $out.Add($e) | Out-Null } }; foreach ($line in $ul) { $e = $line.Trim(); if ($e -and $seen.Add($e)) { $out.Add($e) | Out-Null } }; WL $c $out.ToArray() };" ^
   "Get-ChildItem -Path $snapshot -Recurse -File | Where-Object { $_.Name -ieq 'modlist.txt' -or $_.Name -ieq 'loadorder.txt' } | ForEach-Object { $rel = $_.FullName.Substring($snapshot.Length).TrimStart('\'); $target = Join-Path $profiles $rel; $name = [System.IO.Path]::GetFileName($target); if (-not (Test-Path -LiteralPath $target)) { $dir = Split-Path -Path $target -Parent; if ($dir -and -not (Test-Path -LiteralPath $dir)) { New-Item -ItemType Directory -Path $dir -Force | Out-Null }; Copy-Item -LiteralPath $_.FullName -Destination $target -Force; return }; if ($name -ieq 'modlist.txt') { MM $target $_.FullName; return }; if ($name -ieq 'loadorder.txt') { ML $target $_.FullName } }" || exit /b 1
 
-echo MO2 profile lists merged.
+echo Списки MO2 успешно объединены.
 exit /b 0
 
 :restore_profile_inis
 if not exist "%PROFILE_SNAPSHOT_DIR%\*" (
-  echo No saved profile ini files to restore.
+  echo Нет сохранённых ini-файлов профиля для восстановления.
   exit /b 0
 )
 
@@ -226,23 +227,23 @@ for /d %%P in ("%PROFILE_SNAPSHOT_DIR%\*") do (
     copy /Y "%%~fP\SkyrimCustom.ini" "MO2\profiles\%%~nxP\SkyrimCustom.ini" >nul || exit /b 1
   )
 )
-echo Profile ini files restored.
+echo Настройки профиля восстановлены.
 exit /b 0
 
 :ensure_default_profile
 if exist "MO2\profiles\Default\*" (
-  echo Default MO2 profile found.
+  echo Профиль MO2 Default найден.
   exit /b 0
 )
 
 if not exist "MO2\profile-template\Default\*" (
-  echo Default MO2 profile template not found. Skipping.
+  echo Шаблон профиля MO2 Default не найден. Пропускаем.
   exit /b 0
 )
 
 if not exist "MO2\profiles\Default" mkdir "MO2\profiles\Default" || exit /b 1
 xcopy "MO2\profile-template\Default\*" "MO2\profiles\Default\" /E /I /Q /Y >nul || exit /b 1
-echo Default MO2 profile created from template.
+echo Профиль MO2 Default создан из шаблона.
 exit /b 0
 
 :seed_file
@@ -251,12 +252,12 @@ set "TARGET_FILE=%~2"
 set "LABEL=%~3"
 
 if exist "%TARGET_FILE%" (
-  echo %LABEL% found. Leaving untouched.
+  echo %LABEL% уже существует. Оставляем без изменений.
   exit /b 0
 )
 
 if not exist "%SOURCE_FILE%" (
-  echo %LABEL% template not found. Skipping.
+  echo Шаблон для %LABEL% не найден. Пропускаем.
   exit /b 0
 )
 
@@ -264,7 +265,7 @@ for %%I in ("%TARGET_FILE%") do set "TARGET_DIR=%%~dpI"
 if not exist "%TARGET_DIR%" mkdir "%TARGET_DIR%" || exit /b 1
 
 copy /Y "%SOURCE_FILE%" "%TARGET_FILE%" >nul || exit /b 1
-echo %LABEL% created.
+echo %LABEL% создан.
 exit /b 0
 
 :fail
@@ -273,4 +274,5 @@ set "EXIT_CODE=%ERRORLEVEL%"
 :done
 popd >nul 2>nul
 if exist "%PROFILE_SNAPSHOT_DIR%" rmdir /s /q "%PROFILE_SNAPSHOT_DIR%" >nul 2>nul
+if not "%EXIT_CODE%"=="0" echo [ОШИБКА] Обновление завершилось с кодом %EXIT_CODE%.
 exit /b %EXIT_CODE%
