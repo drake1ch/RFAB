@@ -1,9 +1,9 @@
 Scriptname RFAB_ResetPerks extends ActiveMagicEffect  
 
-Formlist Property Perks Auto
+FormList Property Perks Auto
+FormList Property ToggledSpells Auto
 
 REQ_MassEffect_PC Property MassEffectGM Auto
-RFAB_CastSpeed Property CastSpeedGM Auto
 
 Event OnEffectStart(Actor akTarget, Actor akCaster)
 	int iCount = 0
@@ -11,17 +11,26 @@ Event OnEffectStart(Actor akTarget, Actor akCaster)
 	while (i > 0)
 		i -= 1
 		Perk kPerk = Perks.GetAt(i) as Perk
-		if (akTarget.HasPerk(kPerk))
+		if kPerk && akTarget.HasPerk(kPerk)
 			iCount += 1
 			akTarget.RemovePerk(kPerk)
 		endif
 	endwhile
 
-	Game.ModPerkPoints(iCount)
-	; если кол-во перков будет > 127 - в меню будет отображаться слишком огромное число
+	i = ToggledSpells.GetSize()
+	while (i > 0)
+		i -= 1
+		Spell kSpell = ToggledSpells.GetAt(i) as Spell
+		if kSpell
+			akTarget.RemoveSpell(kSpell)
+		endif
+	endwhile
 
-	MassEffectGM.Update_Ratios()
+	akTarget.DispelAllSpells()
+
+	Game.ModPerkPoints(iCount)
+	; РµСЃР»Рё РєРѕРіРґР°-С‚Рѕ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ 127 - Сѓ РёРіСЂС‹ РјРѕР¶РµС‚ РЅР°С‡Р°С‚СЊСЃСЏ СЃС‚СЂР°РЅРЅРѕРµ РїРѕРІРµРґРµРЅРёРµ
+
+	MassEffectGM.UpdateRatios()
 	MassEffectGM.FullEvaluate()
-	CastSpeedGM.UpdateRatios()
-	CastSpeedGM.Evaluate()
 EndEvent
