@@ -113,5 +113,28 @@ MO2/mods/*
 !MO2/mods/\[RFAB\] Perks Menu SE/**
 
 # Local MO2 machine-specific config
-MO2/ModOrganizer.ini
 MO2/mods/Nemesis Unlimited Behavior Engine SE/Nemesis_Engine/nemesis.ini
+
+# Track only selected overwrite content.
+MO2/overwrite/*
+!MO2/overwrite/meshes/
+!MO2/overwrite/meshes/actors/
+!MO2/overwrite/meshes/actors/character/
+!MO2/overwrite/meshes/actors/character/behaviors/
+!MO2/overwrite/meshes/actors/character/behaviors/**
+!MO2/overwrite/meshes/actors/character/characters/
+!MO2/overwrite/meshes/actors/character/characters/**
+!MO2/overwrite/meshes/actors/character/characters female/
+!MO2/overwrite/meshes/actors/character/characters female/**
+!MO2/overwrite/meshes/actors/character/_1stperson/
+!MO2/overwrite/meshes/actors/character/_1stperson/behaviors/
+!MO2/overwrite/meshes/actors/character/_1stperson/behaviors/**
+!MO2/overwrite/Nemesis_Engine/
+!MO2/overwrite/Nemesis_Engine/**
+!MO2/overwrite/scripts/
+!MO2/overwrite/scripts/Nemesis_AA_Core.pex
+!MO2/overwrite/NetScriptFramework/
+!MO2/overwrite/NetScriptFramework/Plugins/
+!MO2/overwrite/NetScriptFramework/Plugins/CraftingSkill.config.txt
+!MO2/overwrite/ShaderCache/
+!MO2/overwrite/ShaderCache/**
