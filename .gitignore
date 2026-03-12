@@ -2,3 +2,116 @@
 *
 !*/
 !.gitignore
+
+# Allow new files only inside repository-backed MO2 mods.
+MO2/mods/*
+!MO2/mods/- ВАШИ МОДИФИКАЦИИ -_separator/
+!MO2/mods/- ВАШИ МОДИФИКАЦИИ -_separator/**
+!MO2/mods/- ОПЦИОНАЛЬНЫЕ МОДИФИКАЦИИ -_separator/
+!MO2/mods/- ОПЦИОНАЛЬНЫЕ МОДИФИКАЦИИ -_separator/**
+!MO2/mods/- ОТДЕЛЬНЫЙ ИГРОВОЙ РЕЖИМ -_separator/
+!MO2/mods/- ОТДЕЛЬНЫЙ ИГРОВОЙ РЕЖИМ -_separator/**
+!MO2/mods/- ЯДРО -_separator/
+!MO2/mods/- ЯДРО -_separator/**
+!MO2/mods/- ЯДРО RFAB -_separator/
+!MO2/mods/- ЯДРО RFAB -_separator/**
+!MO2/mods/A Quality World Map/
+!MO2/mods/A Quality World Map/**
+!MO2/mods/Actor Limit Fix/
+!MO2/mods/Actor Limit Fix/**
+!MO2/mods/Address Library for SKSE Plugins/
+!MO2/mods/Address Library for SKSE Plugins/**
+!MO2/mods/Alternate Conversation Camera/
+!MO2/mods/Alternate Conversation Camera/**
+!MO2/mods/Animation Motion Revolution/
+!MO2/mods/Animation Motion Revolution/**
+!MO2/mods/Better Container Controls/
+!MO2/mods/Better Container Controls/**
+!MO2/mods/Better Dialogue Controls/
+!MO2/mods/Better Dialogue Controls/**
+!MO2/mods/Better Jumping SE/
+!MO2/mods/Better Jumping SE/**
+!MO2/mods/Better Message Box/
+!MO2/mods/Better Message Box/**
+!MO2/mods/Bug Fixes SSE/
+!MO2/mods/Bug Fixes SSE/**
+!MO2/mods/Classic Sprinting/
+!MO2/mods/Classic Sprinting/**
+!MO2/mods/Difficulty Balance/
+!MO2/mods/Difficulty Balance/**
+!MO2/mods/Disable Quick Saves/
+!MO2/mods/Disable Quick Saves/**
+!MO2/mods/DisableFollowerCollision/
+!MO2/mods/DisableFollowerCollision/**
+!MO2/mods/Dismembering Framework/
+!MO2/mods/Dismembering Framework/**
+!MO2/mods/Extended UI SE RUS/
+!MO2/mods/Extended UI SE RUS/**
+!MO2/mods/Face Discoloration Fix SE/
+!MO2/mods/Face Discoloration Fix SE/**
+!MO2/mods/GameplayTweaks/
+!MO2/mods/GameplayTweaks/**
+!MO2/mods/Instantly Skip Dialogue NG/
+!MO2/mods/Instantly Skip Dialogue NG/**
+!MO2/mods/Keyboard Shortcuts Fix/
+!MO2/mods/Keyboard Shortcuts Fix/**
+!MO2/mods/More Hud Inventory/
+!MO2/mods/More Hud Inventory/**
+!MO2/mods/Nemesis Unlimited Behavior Engine SE/
+!MO2/mods/Nemesis Unlimited Behavior Engine SE/**
+!MO2/mods/NetScriptFramework SkyrimSE/
+!MO2/mods/NetScriptFramework SkyrimSE/**
+!MO2/mods/RaceMenu Special Edition/
+!MO2/mods/RaceMenu Special Edition/**
+!MO2/mods/RFAB/
+!MO2/mods/RFAB/**
+!MO2/mods/Scrambled Bugs/
+!MO2/mods/Scrambled Bugs/**
+!MO2/mods/SkyHUD/
+!MO2/mods/SkyHUD/**
+!MO2/mods/Skyrim Mixed Enhanced Physics/
+!MO2/mods/Skyrim Mixed Enhanced Physics/**
+!MO2/mods/Skyrim Outfit System RU/
+!MO2/mods/Skyrim Outfit System RU/**
+!MO2/mods/Skyrim SE - Project Optimization/
+!MO2/mods/Skyrim SE - Project Optimization/**
+!MO2/mods/Skyrim Souls/
+!MO2/mods/Skyrim Souls/**
+!MO2/mods/SkyUI_5_2_SE/
+!MO2/mods/SkyUI_5_2_SE/**
+!MO2/mods/SSE Display Tweaks/
+!MO2/mods/SSE Display Tweaks/**
+!MO2/mods/SSE Engine Fixes/
+!MO2/mods/SSE Engine Fixes/**
+!MO2/mods/SSE Russian Fix/
+!MO2/mods/SSE Russian Fix/**
+!MO2/mods/Stay At System Page/
+!MO2/mods/Stay At System Page/**
+!MO2/mods/UIExtensions/
+!MO2/mods/UIExtensions/**
+!MO2/mods/Unofficial Skyrim Special Edition Patch/
+!MO2/mods/Unofficial Skyrim Special Edition Patch/**
+!MO2/mods/\[RFAB\] Add Item Menu/
+!MO2/mods/\[RFAB\] Add Item Menu/**
+!MO2/mods/\[RFAB\] Autosell/
+!MO2/mods/\[RFAB\] Autosell/**
+!MO2/mods/\[RFAB\] Bizarre Adventure/
+!MO2/mods/\[RFAB\] Bizarre Adventure/**
+!MO2/mods/\[RFAB\] Combat Dummies/
+!MO2/mods/\[RFAB\] Combat Dummies/**
+!MO2/mods/\[RFAB\] Disenchant/
+!MO2/mods/\[RFAB\] Disenchant/**
+!MO2/mods/\[RFAB\] Hearthfire Gold/
+!MO2/mods/\[RFAB\] Hearthfire Gold/**
+!MO2/mods/\[RFAB\] Interface/
+!MO2/mods/\[RFAB\] Interface/**
+!MO2/mods/\[RFAB\] Load Screens/
+!MO2/mods/\[RFAB\] Load Screens/**
+!MO2/mods/\[RFAB\] Papyrus Extenders/
+!MO2/mods/\[RFAB\] Papyrus Extenders/**
+!MO2/mods/\[RFAB\] Perks Menu SE/
+!MO2/mods/\[RFAB\] Perks Menu SE/**
+
+# Local MO2 machine-specific config
+MO2/ModOrganizer.ini
+MO2/mods/Nemesis Unlimited Behavior Engine SE/Nemesis_Engine/nemesis.ini
