@@ -1,0 +1,370 @@
+########################################################################################################################
+#   Temper formula                                                                                                     #
+#                                                                                                                      #
+# This says which formula to use for tempering.                                                                        #
+# 0 = disabled, don't overwrite temper XP gain at all.                                                                 #
+# 1 = vanilla "TemperXPMult * ItemAddedGoldValue ^ TemperXPExp + TemperXPFlat"                                         #
+# 2 = reworked "(TemperXPMult * UsedMaterialsGoldValue ^ TemperXPExp + TemperXPFlat) / ((SkillLevel +                  #
+# TemperXPSkillExtra) * TemperXPSkillMult + 1)                                                                         #
+# 3 = same as reworked but instead of only UsedMaterialsGoldValue we average that with ItemAddedGoldValue.             #
+#                                                                                                                      #
+#    Type: (int32)                                                                                                     #
+########################################################################################################################
+
+TemperFormula = 2
+
+########################################################################################################################
+#   Temper XP multiplier                                                                                               #
+#                                                                                                                      #
+# This is the multiplier component of the temper formula chosen above.                                                 #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+TemperXPMult = 2
+
+########################################################################################################################
+#   Temper XP exponent                                                                                                 #
+#                                                                                                                      #
+# This is the exponent component of the temper formula chosen above.                                                   #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+TemperXPExp = 1.1
+
+########################################################################################################################
+#   Temper XP flat                                                                                                     #
+#                                                                                                                      #
+# This is the flat amount component of the temper formula chosen above.                                                #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+TemperXPFlat = 0
+
+########################################################################################################################
+#   Temper XP skill extra                                                                                              #
+#                                                                                                                      #
+# This is the extra skill component of the temper formula chosen above. What it does is pretend our smithing skill is  #
+# this much higher than it really is. The purpose of this is to make sure we don't get massive amount of experience on #
+# level 5 and then suddenly half experience at level 10.                                                               #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+TemperXPSkillExtra = 10
+
+########################################################################################################################
+#   Temper XP skill multiplier                                                                                         #
+#                                                                                                                      #
+# This is the skill multiplier component of the temper formula chosen above.                                           #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+TemperXPSkillMult = 0.05
+
+########################################################################################################################
+#   Smith formula                                                                                                      #
+#                                                                                                                      #
+# This says which formula to use for smithing (crafting objects).                                                      #
+# 0 = disabled, don't overwrite smithing XP gain at all.                                                               #
+# 1 = vanilla "SmithXPMult * CreatedItemGoldValue ^ SmithXPExp + SmithXPFlat"                                          #
+# 2 = reworked "(SmithXPMult * UsedMaterialsGoldValue ^ SmithXPExp + SmithXPFlat) / ((SkillLevel + SmithXPSkillExtra)  #
+# * SmithXPSkillMult + 1)                                                                                              #
+# 3 = same as reworked but instead of only UsedMaterialsGoldValue we average that with CreatedItemGoldValue.           #
+#                                                                                                                      #
+#    Type: (int32)                                                                                                     #
+########################################################################################################################
+
+SmithFormula = 2
+
+########################################################################################################################
+#   Smith XP multiplier                                                                                                #
+#                                                                                                                      #
+# This is the multiplier component of the smithing formula chosen above.                                               #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+SmithXPMult = 3
+
+########################################################################################################################
+#   Smith XP exponent                                                                                                  #
+#                                                                                                                      #
+# This is the exponent component of the smithing formula chosen above.                                                 #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+SmithXPExp = 1.1
+
+########################################################################################################################
+#   Smith XP flat                                                                                                      #
+#                                                                                                                      #
+# This is the flat amount component of the smithing formula chosen above.                                              #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+SmithXPFlat = 0
+
+########################################################################################################################
+#   Smith XP skill extra                                                                                               #
+#                                                                                                                      #
+# This is the extra skill component of the smithing formula chosen above. What it does is pretend our smithing skill   #
+# is this much higher than it really is. The purpose of this is to make sure we don't get massive amount of experience #
+# on level 5 and then suddenly half experience at level 10.                                                            #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+SmithXPSkillExtra = 10
+
+########################################################################################################################
+#   Smith XP skill multiplier                                                                                          #
+#                                                                                                                      #
+# This is the skill multiplier component of the smithing formula chosen above.                                         #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+SmithXPSkillMult = 0.05
+
+########################################################################################################################
+#   Enchant formula                                                                                                    #
+#                                                                                                                      #
+# This says which formula to use for enchanting (creating enchantment).                                                #
+# 0 = disabled, don't overwrite enchanting XP gain at all.                                                             #
+# 1 = vanilla, you get 1 XP for every enchant, this is same as disabled                                                #
+# 2 = reworked "[((ItemBaseCost + EnchantItemExtraCost) / EnchantItemAverageCost) * ((SoulBaseCost +                   #
+# EnchantSoulExtraCost) / EnchantSoulAverageCost) + EnchantXPFlat] / ((SkillLevel + EnchantXPSkillExtra) *             #
+# EnchantXPSkillMult + 1)"                                                                                             #
+# 3 = same as reworked.                                                                                                #
+#                                                                                                                      #
+#    Type: (int32)                                                                                                     #
+########################################################################################################################
+
+EnchantFormula = 2
+
+########################################################################################################################
+#   Enchant item extra cost                                                                                            #
+#                                                                                                                      #
+# Add this amount to enchant item base cost for calculating XP. This is used to reduce the importance of item cost     #
+# when enchanting.                                                                                                     #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+EnchantItemExtraCost = 100
+
+########################################################################################################################
+#   Enchant item average cost                                                                                          #
+#                                                                                                                      #
+# Divide the enchanted item base cost by this amount to get the XP multiplier.                                         #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+EnchantItemAverageCost = 300
+
+########################################################################################################################
+#   Enchant soul extra cost                                                                                            #
+#                                                                                                                      #
+# The extra cost to add to all soul gems when calculating XP.                                                          #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+EnchantSoulExtraCost = 0
+
+########################################################################################################################
+#   Enchant soul average cost                                                                                          #
+#                                                                                                                      #
+# The average cost of soul gem when calculating XP multiplier.                                                         #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+EnchantSoulAverageCost = 200
+
+########################################################################################################################
+#   Enchant XP flat                                                                                                    #
+#                                                                                                                      #
+# This is the flat amount component of the enchanting formula.                                                         #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+EnchantXPFlat = 0
+
+########################################################################################################################
+#   Enchant XP skill extra                                                                                             #
+#                                                                                                                      #
+# This is the extra skill component of the enchanting formula chosen above. What it does is pretend our enchanting     #
+# skill is this much higher than it really is. The purpose of this is to make sure we don't get massive amount of      #
+# experience on level 5 and then suddenly half experience at level 10.                                                 #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+EnchantXPSkillExtra = 10
+
+########################################################################################################################
+#   Enchant XP skill multiplier                                                                                        #
+#                                                                                                                      #
+# This is the skill multiplier component of the enchanting formula chosen above.                                       #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+EnchantXPSkillMult = 0.05
+
+########################################################################################################################
+#   Disenchant formula                                                                                                 #
+#                                                                                                                      #
+# This says which formula to use for disenchanting (leaning enchantment from destroyed item).                          #
+# 0 = disabled, don't overwrite disenchanting XP gain at all.                                                          #
+# 1 = vanilla, "DisenchantXPMult * EnchantmentValue"                                                                   #
+# 2 = reworked "[DisenchantXPMult * EnchantmentValue * [(BaseItemGoldValue + DisenchantXPItemExtra) /                  #
+# DisenchantXPItemAverage]] / [(SkillLevel + DisenchantXPSkillExtra) * DisenchantXPSkillMult + 1]". The                #
+# BaseItemGoldValue is without the enchantment! This is not what you see in-game.                                      #
+# 3 = same as reworked.                                                                                                #
+#                                                                                                                      #
+#    Type: (int32)                                                                                                     #
+########################################################################################################################
+
+DisenchantFormula = 2
+
+########################################################################################################################
+#   Disenchant multiplier                                                                                              #
+#                                                                                                                      #
+# The multiplier in the chosen formula above.                                                                          #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+DisenchantXPMult = 0.0025
+
+########################################################################################################################
+#   Disenchant item extra cost                                                                                         #
+#                                                                                                                      #
+# Add this amount to disenchant item base cost for calculating XP. This is used to reduce the importance of item cost  #
+# when enchanting.                                                                                                     #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+DisenchantXPItemExtra = 50
+
+########################################################################################################################
+#   Disenchant item average cost                                                                                       #
+#                                                                                                                      #
+# Divide the disenchanted item base cost by this amount to get the XP multiplier.                                      #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+DisenchantXPItemAverage = 300
+
+########################################################################################################################
+#   Disenchant XP skill extra                                                                                          #
+#                                                                                                                      #
+# This is the extra skill component of the disenchanting formula chosen above. What it does is pretend our enchanting  #
+# skill is this much higher than it really is. The purpose of this is to make sure we don't get massive amount of      #
+# experience on level 5 and then suddenly half experience at level 10.                                                 #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+DisenchantXPSkillExtra = 10
+
+########################################################################################################################
+#   Disenchant XP skill multiplier                                                                                     #
+#                                                                                                                      #
+# This is the skill multiplier component of the disenchanting formula chosen above.                                    #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+DisenchantXPSkillMult = 0.05
+
+########################################################################################################################
+#   Alchemy formula                                                                                                    #
+#                                                                                                                      #
+# This says which formula to use for alchemy (creating potion or poison).                                              #
+# 0 = disabled, don't overwrite alchemy XP gain at all.                                                                #
+# 1 = also disabled, same as 0                                                                                         #
+# 2 = reworked "[AlchemyXPMult * (SumOfIngredientCost ^ AlchemyXPCostExp) * (IngredientCount ^ AlchemyXPExp)] /        #
+# [(SkillLevel + AlchemyXPSkillExtra) * AlchemyXPSkillMult + 1]"                                                       #
+# 3 = same as reworked.                                                                                                #
+#                                                                                                                      #
+#    Type: (int32)                                                                                                     #
+########################################################################################################################
+
+AlchemyFormula = 2
+
+########################################################################################################################
+#   Alchemy XP multiplier                                                                                              #
+#                                                                                                                      #
+# This is the multiplier component of the alchemy formula chosen above.                                                #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+AlchemyXPMult = 2
+
+########################################################################################################################
+#   Alchemy XP cost exponent                                                                                           #
+#                                                                                                                      #
+# This is the cost exponent component of the alchemy formula chosen above.                                             #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+AlchemyXPCostExp = 1.2
+
+########################################################################################################################
+#   Alchemy XP exponent                                                                                                #
+#                                                                                                                      #
+# This is the exponent component of the alchemy formula chosen above.                                                  #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+AlchemyXPExp = 2
+
+########################################################################################################################
+#   Alchemy XP skill extra                                                                                             #
+#                                                                                                                      #
+# This is the extra skill component of the alchemy formula chosen above. What it does is pretend our alchemy skill is  #
+# this much higher than it really is. The purpose of this is to make sure we don't get massive amount of experience on #
+# level 5 and then suddenly half experience at level 10.                                                               #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+AlchemyXPSkillExtra = 10
+
+########################################################################################################################
+#   Alchemy XP skill multiplier                                                                                        #
+#                                                                                                                      #
+# This is the skill multiplier component of the alchemy formula chosen above.                                          #
+#                                                                                                                      #
+#    Type: (float)                                                                                                     #
+########################################################################################################################
+
+AlchemyXPSkillMult = 0.05
+
+########################################################################################################################
+#   Debug mode                                                                                                         #
+#                                                                                                                      #
+# Is debug mode enabled? If 1 then whenever any hooks are enabled and we replace the XP gained, it will write out to   #
+# file /Data/NetScriptFramework/Plugins/CraftingSkill.debug.txt the old (original) XP and newly replaced XP. If 2 then #
+# it will show the message in HUD instead.                                                                             #
+#                                                                                                                      #
+#    Type: (int32)                                                                                                     #
+########################################################################################################################
+
+DebugMode = 0
