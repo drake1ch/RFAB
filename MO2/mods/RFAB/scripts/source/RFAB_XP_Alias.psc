@@ -66,11 +66,29 @@ Event OnMenuClose(string asMenuName)
 EndEvent
 
 Event OnActorKilled(Actor akVictim, Actor akKiller)
-	if (IsFrenzyEffect(akVictim, akKiller) || akKiller.IsInFaction(PlayerFaction)) && !akVictim.HasKeyword(NoXPKeyword) && !IsSummonedActor(akVictim) && akVictim.GetActorValue("Infamy") != -1
+	if IsValidXPKill(akVictim, akKiller)
 		XPHandler.OnKill(akVictim)
 		akVictim.ForceActorValue("Infamy", -1)
 	endIf
 EndEvent
+
+bool Function IsValidXPKill(Actor akVictim, Actor akKiller)
+	if !akVictim || !akKiller
+		return false
+	endif
+
+	if akVictim.HasKeyword(NoXPKeyword) || IsSummonedActor(akVictim) || akVictim.GetActorValue("Infamy") == -1
+		return false
+	endif
+
+	return IsFrenzyEffect(akVictim, akKiller) || IsPlayerOwnedKiller(akKiller)
+EndFunction
+
+bool Function IsPlayerOwnedKiller(Actor akKiller)
+	return akKiller.IsInFaction(PlayerFaction) \
+		|| akKiller.IsPlayerTeammate() \
+		|| ((akKiller.IsCommandedActor() || IsSummonedActor(akKiller)) && !akKiller.IsHostileToActor(Player))
+EndFunction
 
 bool Function IsFrenzyEffect(Actor akVictim, Actor akKiller)
 	return akVictim.HasMagicEffectWithKeyword(IllusionFrenzy) || akKiller.HasMagicEffectWithKeyword(IllusionFrenzy)
