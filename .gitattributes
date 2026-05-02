@@ -1,0 +1,68 @@
+* text=auto eol=crlf
+
+# Keep obviously textual project files on CRLF in Windows checkouts.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.ini text eol=crlf
+*.cfg text eol=crlf
+*.conf text eol=crlf
+*.json text eol=crlf
+*.toml text eol=crlf
+*.xml text eol=crlf
+*.md text eol=crlf
+*.yml text eol=crlf
+*.yaml text eol=crlf
+*.csv text eol=crlf
+*.py text eol=crlf
+*.psc text eol=crlf
+*.cpp text eol=crlf
+*.c text eol=crlf
+*.h text eol=crlf
+*.hpp text eol=crlf
+*.cs text eol=crlf
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.filters text eol=crlf
+
+# Binary/game assets that must never be line-normalized
+*.7z -text
+*.zip -text
+*.rar -text
+*.exe -text
+*.dll -text
+*.lib -text
+*.pdb -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.bmp -text
+*.dds -text
+*.tga -text
+*.swf -text
+*.nif -text
+*.hkx -text
+*.esm -text
+*.esp -text
+*.esl -text
+*.bsa -text
+*.ba2 -text
+*.pex -text
+*.fuz -text
+*.xwm -text
+*.wav -text
+*.bik -text
+*.seq -text
+*.tri -text
+*.bto -text
+*.btr -text
+*.strings -text
+*.ilstrings -text
+*.dlstrings -text
+*.qm -text
+*.pyc -text
+*.pyo -text
+*.ttf -text
+*.otf -text
+*.woff -text
+*.woff2 -text

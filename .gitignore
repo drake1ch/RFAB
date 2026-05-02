@@ -2,6 +2,7 @@
 *
 !*/
 !.gitignore
+!.gitattributes
 
 # Allow new files only inside repository-backed MO2 mods.
 MO2/mods/*
