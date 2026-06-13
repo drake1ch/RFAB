@@ -110,4 +110,5 @@ EndFunction
 
 Function ModBaseActorValue(string asActorValue, int aiValue)
 	Player.SetActorValue(asActorValue, Player.GetBaseActorValue(asActorValue) + aiValue)
+	SendModEvent("RFAB_BaseAttributesChanged")
 EndFunction

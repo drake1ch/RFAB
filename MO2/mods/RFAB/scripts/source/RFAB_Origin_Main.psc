@@ -1,8 +1,6 @@
 Scriptname RFAB_Origin_Main extends Quest  
 
-RFAB_DifficultyMenu Property DifficultyMenu Auto
-RFAB_DoomStoneMenu Property DoomStoneMenu Auto
-RFAB_OriginsMenu Property OriginsMenu Auto
+RFAB_StartMenu Property StartMenu Auto
 
 ImageSpaceModifier property Fadeout auto
 
@@ -30,12 +28,10 @@ Event OnMenuClose(String MenuName)
 
 	Fadeout.ApplyCrossFade(1.0)
 
-	DifficultyMenu.Open()
-	DoomStoneMenu.Open()
 	ImageSpaceModifier.RemoveCrossFade(1.00000)
-	int iResult = OriginsMenu.Open()
+	string iResult = StartMenu.Open()
 
-	if (iResult == -1)
+	if (iResult == "")
 		Game.ForceFirstPerson()
 		kPlayer.RemoveAllItems(abRemoveQuestItems = true)
 		kPlayer.EquipItem(Game.GetForm(0x0003C9FE), 1, true)

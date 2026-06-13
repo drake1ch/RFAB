@@ -3,7 +3,11 @@ Scriptname RFAB_Menu extends Quest
 RFAB_XP_Handler Property XPHandler Auto
 RFAB_XP_Alias Property Updater Auto
 Actor Property Player Auto
+Perk Property OneHandedPerk Auto
+Perk Property TwoHandedPerk Auto
+Perk Property PickpocketPerk Auto
 Perk Property MarksmanPerk Auto
+Perk Property BlockPerk Auto
 GlobalVariable Property BlockingEfficiency_Light auto
 GlobalVariable Property BlockingEfficiency_Heavy auto
 GlobalVariable Property BlockingEfficiency_NoShield auto
@@ -451,43 +455,27 @@ function SetupWeaponMenu()
 	Page3Texts[2] = (Player.GetActorValue("OneHandedSkillAdvance") + 100) as int + "%"
 	Page3Texts[3] = (Player.GetActorValue("TwoHandedSkillAdvance") + 100) as int + "%"
 	Page3Texts[4] = (Player.GetActorValue("PickpocketSkillAdvance") + 100) as int + "%"
-	Page3Texts[5] = Player.GetActorValue("OneHandedMod") as int
-	Page3Texts[6] = Player.GetActorValue("TwoHandedMod") as int
-	Page3Texts[7] = Player.GetActorValue("PickpocketMod") as int
-	Page3Texts[8] = Player.GetActorValue("MarksmanMod") as int
-	
-	ammo current_ammo = PO3_SKSEFunctions.GetEquippedAmmo(Player)
-	
-	if current_ammo != none
-		
-		int ammo_penetration
-		if current_ammo.HasKeywordString("REQ_KW_ArmorPiercingArrow_Tier5")
-			ammo_penetration = 250
-		elseif current_ammo.HasKeywordString("REQ_KW_ArmorPiercingArrow_Tier4")
-			ammo_penetration = 200
-		elseif current_ammo.HasKeywordString("REQ_KW_ArmorPiercingArrow_Tier3")
-			ammo_penetration = 150
-		elseif current_ammo.HasKeywordString("REQ_KW_ArmorPiercingArrow_Tier2")
-			ammo_penetration = 100
-		elseif current_ammo.HasKeywordString("REQ_KW_ArmorPiercingArrow_Tier1")
-			ammo_penetration = 50
-	
-		elseif current_ammo.HasKeywordString("REQ_KW_ArmorPiercingBolt_Tier5")
-			ammo_penetration = 300
-		elseif current_ammo.HasKeywordString("REQ_KW_ArmorPiercingBolt_Tier4")
-			ammo_penetration = 250
-		elseif current_ammo.HasKeywordString("REQ_KW_ArmorPiercingBolt_Tier3")
-			ammo_penetration = 200
-		elseif current_ammo.HasKeywordString("REQ_KW_ArmorPiercingBolt_Tier2")
-			ammo_penetration = 150
-		elseif current_ammo.HasKeywordString("REQ_KW_ArmorPiercingBolt_Tier1")
-			ammo_penetration = 100
-		endif
-		if Player.HasPerk(MarksmanPerk)
-			Page3Texts[8] = Player.GetActorValue("MarksmanMod") as int - ammo_penetration
-		endif
-		Page3Texts[9] = ammo_penetration
+	if Player.HasPerk(OneHandedPerk)
+		Page3Texts[5] = (Player.GetActorValue("OneHanded") * 5) as int
 	endif
+	if Player.HasPerk(TwoHandedPerk)
+		Page3Texts[6] = (Player.GetActorValue("TwoHanded") * 5) as int
+	endif
+	if Player.HasPerk(PickpocketPerk)
+		Page3Texts[7] = (Player.GetActorValue("Pickpocket") * 5) as int
+	endif
+	if Player.HasPerk(MarksmanPerk)
+		Page3Texts[8] = (Player.GetActorValue("Marksman") * 5) as int
+	endif
+	if Player.HasPerk(BlockPerk)
+		Page3Texts[9] = (Player.GetActorValue("Block") * 5) as int
+	endif
+	int AllPenetration = (RFAB_PapyrusFunctions.GetCustomActorValue(player, "RFAB_KW_Penetration")) as int
+	Page3Texts[5] = (Page3Texts[5]) as int + AllPenetration
+	Page3Texts[6] = (Page3Texts[6]) as int + AllPenetration
+	Page3Texts[7] = (Page3Texts[7]) as int + AllPenetration
+	Page3Texts[8] = (Page3Texts[8]) as int + AllPenetration
+	Page3Texts[9] = (Page3Texts[9]) as int + AllPenetration
 	
 	Weapon RightHandWeapon = Player.GetEquippedWeapon(false)
 	

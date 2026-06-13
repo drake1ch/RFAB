@@ -81,12 +81,16 @@ Event OnKeyUp(Int keyCode, Float HoldTime)
 EndEvent
 
 Event OnKeyDown(Int keyCode)
+
 	BlockKeyPressed = true
 	if keyCode == _KeyBlock
 		while Input.IsKeyPressed(_KeyBlock) && !Player.PlayIdle(BlockingStart)
 			
 		endWhile
 	endIf
+	if RFAB_PapyrusFunctions.GetCustomActorValue(Player, "RFAB_KW_CurrentBashCharges") < 1 
+		return; 
+	endif
 	if keyCode == _KeyBash && !utility.IsInMenuMode()
 		Player.PlayIdle(BlockingStart)
 		Player.PlayIdle(bashStart)

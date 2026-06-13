@@ -1,0 +1,1 @@
+[21-05-2026 13:31:12] Global reset all: TRUE

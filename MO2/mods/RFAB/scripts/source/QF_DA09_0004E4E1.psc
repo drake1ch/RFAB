@@ -118,7 +118,7 @@ setObjectiveDisplayed(20)
 kmyquest.DA09SkyPlaneCollision.enable()
 
 Utility.Wait(5.0)
-Debug.SetGodMode(False) 
+Game.GetPlayer().SetGhost(False) 
 ;Debug.Notification("Деактивирован GodMode")
 ;END CODE
 EndFunction
@@ -177,7 +177,7 @@ kmyquest.DA09SkyPlaneCollision.disable()
 kmyquest.movePlayerToEarth()   ;enables player controls and fast travel
 
 Utility.Wait(5.0)
-Debug.SetGodMode(False) 
+Game.GetPlayer().SetGhost(False) 
 ;Debug.Notification("Деактивирован GodMode")
 
 stop()
@@ -243,7 +243,7 @@ kmyquest.movePlayerToSky()
 
 kmyquest.DungeonBlockerToggle.Disable()
 
-Debug.SetGodMode(true) 
+Game.GetPlayer().SetGhost(True) 
 ;Debug.Notification("Активирован GodMode")
 
 
@@ -268,7 +268,7 @@ setobjectiveCompleted(40)
 AchievementsQuest.IncDaedricArtifacts()
 kmyquest.TeleportPlayerToSky()
 
-Debug.SetGodMode(True) 
+Game.GetPlayer().SetGhost(True)
 ;Debug.Notification("Активирован GodMode")
 ;END CODE
 EndFunction

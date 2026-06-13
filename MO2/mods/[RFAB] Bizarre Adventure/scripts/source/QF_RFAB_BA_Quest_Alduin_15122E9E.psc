@@ -2,16 +2,6 @@
 ;NEXT FRAGMENT INDEX 6
 Scriptname QF_RFAB_BA_Quest_Alduin_15122E9E Extends Quest Hidden
 
-;BEGIN FRAGMENT Fragment_2
-Function Fragment_2()
-;BEGIN CODE
-GameHour.SetValue(16)
-Utility.Wait(3.5)
-ScriptRadiant.MoveToHub()
-;END CODE
-EndFunction
-;END FRAGMENT
-
 ;BEGIN FRAGMENT Fragment_0
 Function Fragment_0()
 ;BEGIN CODE
@@ -33,6 +23,35 @@ MQ305.SetStage(100)
 
 BizarreCampMarker.Disable()
 BizarreSheoMarker.Enable()
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_2
+Function Fragment_2()
+;BEGIN CODE
+GameHour.SetValue(16)
+Utility.Wait(1.0)
+
+Actor playerRef = Game.GetPlayer()
+
+Race werewolfRace = Game.GetFormFromFile(0xCDD84, "Skyrim.esm") as Race
+Race vampireLordRace = Game.GetFormFromFile(0x0200283A, "Dawnguard.esm") as Race
+
+Spell werewolfSpell = Game.GetFormFromFile(0x00092C48, "Skyrim.esm") as Spell ; WerewolfChange
+Spell vampireSpell = Game.GetFormFromFile(0x0200283B, "Dawnguard.esm") as Spell ; VampireLordChange
+
+Utility.Wait(2.0)
+
+If playerRef.GetRace() == werewolfRace
+    playerRef.DispelSpell(werewolfSpell)
+
+ElseIf playerRef.GetRace() == vampireLordRace
+    playerRef.DispelSpell(vampireSpell)
+EndIf
+
+Utility.Wait(3.5)
+ScriptRadiant.MoveToHub()
 ;END CODE
 EndFunction
 ;END FRAGMENT

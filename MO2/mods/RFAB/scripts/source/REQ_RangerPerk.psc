@@ -6,10 +6,10 @@ Keyword Property HeavyBow Auto
 Keyword Property LightXBow Auto
 Keyword Property HeavyXBow Auto
 
-Armor Property ArcherHelmet Auto
+;/ Armor Property ArcherHelmet Auto
 Armor Property ArcherArmor Auto
 Armor Property ArcherGloves Auto
-Armor Property ArcherBoots Auto
+Armor Property ArcherBoots Auto /;
 
 Perk Property ranger2 Auto
 
@@ -29,7 +29,7 @@ Event OnEffectFinish(Actor akTarget, Actor akCaster)
 EndEvent
 
 Event OnObjectEquipped(Form akObject, ObjectReference akReference)
-	if (akObject as Armor) || (akObject as Weapon)	
+	if akObject as Weapon
 		Evaluate()
 	endif
 EndEvent
@@ -41,16 +41,16 @@ EndEvent
 Function Evaluate()
 	bool bIsQuickShot = Owner.WornHasKeyword(LightBow) || Owner.WornHasKeyword(LightXBow)
 
-	if Owner.HasPerk(ranger2) || HasSkirmishSet()
+	if Owner.HasPerk(ranger2)
 		bIsQuickShot = bIsQuickShot || Owner.WornHasKeyword(HeavyBow) || Owner.WornHasKeyword(HeavyXBow)
 	endif
 	
 	Owner.SetAnimationVariableBool(QuickShot, bIsQuickShot)
 EndFunction
 
-bool Function HasSkirmishSet()
+;/ bool Function HasSkirmishSet()
 	return Owner.IsEquipped(ArcherHelmet) \
 		&& Owner.IsEquipped(ArcherArmor) \
 		&& Owner.IsEquipped(ArcherGloves) \
 		&& Owner.IsEquipped(ArcherBoots)
-EndFunction
+EndFunction /;

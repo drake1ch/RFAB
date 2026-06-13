@@ -4,13 +4,8 @@ Actor Property Player Auto
 
 RFAB_Unlock Property Unlock Auto
 
-Projectile Property DefaultProjectile Auto
-Projectile Property DualCastProjectile Auto
-
 Spell Property KnockSpell Auto
 Scroll Property KnockScroll Auto
-
-bool _isRegistered = false
 
 Event OnObjectEquipped(Form akObject, ObjectReference akReference)
 	if (akObject == KnockSpell || akObject == KnockScroll)
@@ -29,37 +24,31 @@ Event OnUpdate()
 EndEvent
 
 Function Evaluate()
-	if (IsHasKnockEquipped())
-		if (!_isRegistered)
-			_isRegistered = true
-			PO3_Events_Alias.RegisterForProjectileHit(self)
-		endif
-	elseif (_isRegistered)
-		_isRegistered = false
+	if (IsKnockEquipped())
+		PO3_Events_Alias.RegisterForProjectileHit(self)
+	else
 		PO3_Events_Alias.UnregisterForProjectileHit(self)
 	endif
 EndFunction
 
 Event OnProjectileHit(ObjectReference akTarget, Form akSource, Projectile akProjectile)
-	if (akProjectile == DefaultProjectile)
+	if (akSource == KnockSpell)
 		Process(akTarget)
-	elseif (akProjectile == DualCastProjectile)
-		Process(akTarget, abDualCast = true)
 	elseif (akSource == KnockScroll)
 		Process(akTarget, abMasterScroll = true)
 	endif
 EndEvent
 
-Function Process(ObjectReference akObject, bool abDualCast = false, bool abMasterScroll = false)
+Function Process(ObjectReference akObject, bool abMasterScroll = false)
 	if (akObject.IsLocked())
-		Unlock.TryMagicUnlock(Player, akObject, abDualCast, abMasterScroll)
+		Unlock.TryMagicUnlock(Player, akObject, abMasterScroll)
 	endif
 EndFunction
 
-bool Function IsHasKnockEquipped()
-	Form[] kHands = new Form[2]
-	kHands[0] = Player.GetEquippedObject(0)
-	kHands[1] = Player.GetEquippedObject(1)
+bool Function IsKnockEquipped()
+	Form kLeft = Player.GetEquippedObject(0)
+	Form kRight = Player.GetEquippedObject(1)
 
-	return kHands.Find(KnockSpell) != -1 || kHands.Find(KnockScroll) != -1
+	return kLeft == KnockSpell || kLeft == KnockScroll \
+		|| kRight == KnockSpell || kRight == KnockScroll
 EndFunction

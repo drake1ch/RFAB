@@ -1,14 +1,10 @@
 Scriptname RFAB_Unlock extends Quest
 
-Perk Property PerkUnlockNovice Auto
-Perk Property PerkUnlockAdept Auto
-Perk Property PerkUnlockMaster Auto
-
-Perk Property PerkAlterationApprentice Auto
-Perk Property PerkAlterationAdept Auto
+Perk Property PerkUnlock Auto
+Perk[] Property AlterationPerks Auto
 
 RFAB_XP_Handler Property XPHandler Auto
-UILIB_1 HUD
+UILIB_1 Property HUD Auto
 
 MiscObject Property SKey Auto
 MiscObject Property Lockpick Auto
@@ -38,10 +34,6 @@ int Property ICON_SKEY = 19 AutoReadOnly
 string Property PATH_ICONS = "skyui/icons_item_psychosteve.swf" AutoReadOnly
 string Property PATH_ARTIFACTS = "icons/artefacts.swf" AutoReadOnly
 
-Event OnInit()
-	HUD = (self as Form) as UILIB_1
-EndEvent
-
 Function TryLockpickUnlock(Actor akActor, ObjectReference akObject)
 	Key kKey = akObject.GetKey()
 
@@ -54,7 +46,7 @@ Function TryLockpickUnlock(Actor akActor, ObjectReference akObject)
 		else
 			ShowKeyMessage("У меня есть " + GetKeyName(kKey) + "!", true)
 		endif
-	elseif (akActor.GetItemCount(SKey) > 0)
+	elseif (akActor.GetItemCount(SKey) > 0 && IsSkillSufficient(akActor, akObject))
 		Open(akActor, akObject)
 		SKeySound.Play(akActor)
 
@@ -63,21 +55,19 @@ Function TryLockpickUnlock(Actor akActor, ObjectReference akObject)
 		else
 			ShowSKeyMessage("У меня есть Скелетный Ключ!", true)
 		endif
+	elseif (akActor.HasPerk(PerkUnlock) && IsSkillSufficient(akActor, akObject))
+		LockPickUnlock(akActor, akObject)
 	else
-		if (IsCanLockpickUnlock(akActor, akObject))
-			LockPickUnlock(akActor, akObject)
+		if (IsBeast(akActor))
+			ShowLockpickMessage(akActor.GetDisplayName() + " не может взломать этот замок.")
 		else
-			if (IsBeast(akActor))
-				ShowLockpickMessage(akActor.GetDisplayName() + " не может взломать этот замок.")
-			else
-				ShowLockpickMessage("Я не могу взломать этот замок.")
-			endif
+			ShowLockpickMessage("Я не могу взломать этот замок.")
 		endif
 	endif
 EndFunction
 
-Function TryMagicUnlock(Actor akActor, ObjectReference akObject, bool abDualCast, bool abMasterScroll)
-	if (IsCanMagicUnlock(akActor, akObject, abDualCast, abMasterScroll))
+Function TryMagicUnlock(Actor akActor, ObjectReference akObject, bool abMasterScroll)
+	if (IsCanMagicUnlock(akActor, akObject, abMasterScroll))
 		MagicUnlock(akActor, akObject)
 	else
 		if (IsBeast(akActor))
@@ -159,38 +149,36 @@ Function GiveUnlockXP(int aiLockLevel, string asIconPath, int aiIconID)
 	HUD.ShowNotificationIcon("Замок взломан: " + iGainedXP + " XP", asIconPath, aiIconID, XPHandler.GetXPColor())
 EndFunction
 
-bool Function IsCanLockpickUnlock(Actor akActor, ObjectReference akObject)
+bool Function IsSkillSufficient(Actor akActor, ObjectReference akObject)
 	int iLockLevel = akObject.GetLockLevel()
+	int iSkill = akActor.GetActorValue("Lockpicking") as int
+
 	if (iLockLevel <= LOCK_NOVICE)
-		return akActor.HasPerk(PerkUnlockNovice)
+		return iSkill >= 5
 	elseif (iLockLevel <= LOCK_APPRENTICE)
-		return akActor.HasPerk(PerkUnlockNovice) && akActor.GetBaseActorValue("Lockpicking") >= 25
+		return iSkill >= 25
 	elseif (iLockLevel <= LOCK_ADEPT)
-		return akActor.HasPerk(PerkUnlockAdept)
+		return iSkill >= 50
 	elseif (iLockLevel <= LOCK_EXPERT)
-		return akActor.HasPerk(PerkUnlockAdept) && akActor.GetBaseActorValue("Lockpicking") >= 75
+		return iSkill >= 75
 	else
-		return akActor.HasPerk(PerkUnlockMaster)
+		return iSkill >= 100
 	endif
 EndFunction
 
-bool Function IsCanMagicUnlock(Actor akActor, ObjectReference akObject, bool abDualCast, bool abMasterScroll)
+bool Function IsCanMagicUnlock(Actor akActor, ObjectReference akObject, bool abMasterScroll)
 	if (abMasterScroll)
 		return true
 	endif
 
-	int iLockLevel = akObject.GetLockLevel()
-	if (iLockLevel <= LOCK_NOVICE)
-		return true
-	elseif (iLockLevel <= LOCK_APPRENTICE)
-		return akActor.HasPerk(PerkAlterationApprentice)
-	elseif (iLockLevel <= LOCK_ADEPT)
-		return akActor.HasPerk(PerkAlterationAdept) || (akActor.HasPerk(PerkAlterationApprentice) && abDualCast)
-	elseif (iLockLevel <= LOCK_EXPERT)
-		return akActor.HasPerk(PerkAlterationAdept) && abDualCast
-	else
+	int iIndex = GetLockIndex(akObject.GetLockLevel())
+
+	; Master
+	if (iIndex == 4)
 		return false
 	endif
+
+	return akActor.HasPerk(AlterationPerks[iIndex])
 EndFunction
 
 int Function GetLockIndex(int aiLockLevel)

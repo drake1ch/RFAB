@@ -1,5 +1,5 @@
 Scriptname RFAB_MCM extends SKI_ConfigBase
-{Настройки RFAB MCM, в основном меняет значения, если кто-то будет тут делать длинную логику какой-то механики я ему руки переломаю}
+{В основном меняет значения, если кто-то будет тут делать длинную логику какой-то механики я ему руки переломаю}
 
 import PO3_SKSEFunctions
 import PapyrusIniManipulator
@@ -9,33 +9,22 @@ Actor Property Player Auto
 RFAB_MCM_Alias Property Data Auto
 {Хранилище обновляемых переменных}
 
-; Менюшки
-RFAB_DoomStoneMenu Property DoomStoneMenu Auto
-{Меню Камней Хранителей}
-RFAB_DifficultyMenu Property DifficultyMenu Auto
-{Меню сложности}
+; Меню
+RFAB_StartMenu Property StartMenu Auto
 RFAB_Menu Property Menu Auto
-{Главное меню RFaB}
 
 ; Интерфейс
 RFAB_ResistWidget Property ResistWidget Auto
-{Виджет сопротивлений и скорости}
 RFAB_PlayerInfoWidget Property PlayerInfoWidget Auto
-{Виджет боя, веса, времени, кол-ва золота и т.д.}
 RFAB_WeaponMagicEquip Property WeaponMagicEquip Auto
-{Виджет экипированного оружия, магии, криков}
 
 ; Прочие приколы
 RFAB_DualWielding Property DualWielding Auto
-{Блокирование и парирование на хот кеи}
 RFAB_GlowingBooks Property GlowingBooks Auto
-{Подсветка книг}
 RFAB_Mounts Property Mounts Auto
-{Ездовые животные}
 RFAB_ExtendedHotkeys Property ExtendedHotkeys Auto
-{Горячие клавиши}
 RFAB_AutoLoot Property AutoLoot Auto
-{Автолут}
+RFAB_AutoSaveData Property AutoSaveData Auto
 
 GlobalVariable Property FollowerTeleportKey Auto
 GlobalVariable Property JumpNPC Auto
@@ -60,15 +49,16 @@ int PlayerDoomStoneID
 
 Event OnConfigInit()	
 	ModName = " RFAB"
-	Pages = new string[8]
+	Pages = new string[9]
 	Pages[0] = "Настройки"
-	Pages[1] = "Ездовые животные"
-	Pages[2] = "Светящиеся книги"
-	Pages[3] = "Опыт"
-	Pages[4] = "Интерфейс"
-	Pages[5] = "Горячие клавиши"
-	Pages[6] = "Автолут"
-	Pages[7] = "Дебаг"
+	Pages[1] = "Автосохранения"
+	Pages[2] = "Ездовые животные"
+	Pages[3] = "Светящиеся книги"
+	Pages[4] = "Опыт"
+	Pages[5] = "Интерфейс"
+	Pages[6] = "Горячие клавиши"
+	Pages[7] = "Автолут"
+	Pages[8] = "Дебаг"
 	if IsPluginFound("RFAB_BizarreAdventure.esp")
 		IsBizarreActived = True
 	endif
@@ -84,6 +74,8 @@ Event OnPageReset(string page)
 	SetCursorFillMode(TOP_TO_BOTTOM)
 	if page == "Настройки"
 		ShowSettings()
+	elseif page == "Автосохранения"
+		ShowAutoSaves()
 	elseif page == "Светящиеся книги"
 		ShowGlowingBooks()
 	elseif page == "Ездовые животные"
@@ -105,7 +97,104 @@ Event OnConfigOpen()
 	IsGodModeActive = GetGodMode()
 EndEvent
 
-; Автолут ================================================================================================================================
+; Автосейвы
+Function ShowAutoSaves()
+	SetCursorFillMode(LEFT_TO_RIGHT)
+	AddHeaderOption("Автоматические сохранения")
+	AddHeaderOption("")
+	AddToggleOptionST("AutoSaveData_EnableAutoSave", "Включить автосохранение", AutoSaveData.EnableAutoSave)
+	AddEmptyOption()
+	AddToggleOptionST("AutoSaveData_SaveInCombat", "Сохранение в бою", AutoSaveData.SaveInCombat, EnableIf(AutoSaveData.EnableAutoSave))
+	AddToggleOptionST("AutoSaveData_SaveAfterCombat", "Сохранение после боя", AutoSaveData.SaveAfterCombat, EnableIf(AutoSaveData.EnableAutoSave))
+	AddSliderOptionST("AutoSaveData_MaxAutoSaveCount", "Максимальное кол-во автосохранений", AutoSaveData.MaxAutoSaveCount, "{0}", EnableIf(AutoSaveData.EnableAutoSave))
+	AddSliderOptionST("AutoSaveData_AutoSavePeriod", "Период автосохранений", AutoSaveData.AutoSavePeriod, "{0} сек.", EnableIf(AutoSaveData.EnableAutoSave))
+EndFunction
+
+State AutoSaveData_AutoSavePeriod
+	Event OnSliderAcceptST(float afValue)
+		AutoSaveData.AutoSavePeriod = afValue as int
+		SetSliderOptionValueST(AutoSaveData.AutoSavePeriod, "{0} сек.")
+	EndEvent
+	Event OnSliderOpenST()
+		SetSliderDialogStartValue(AutoSaveData.AutoSavePeriod)
+		SetSliderDialogDefaultValue(AutoSaveData.AutoSavePeriod_Default)
+		SetSliderDialogRange(60, 3600)
+		SetSliderDialogInterval(60)
+	EndEvent
+	Event OnDefaultST()
+		AutoSaveData.AutoSavePeriod = AutoSaveData.AutoSavePeriod_Default
+		SetSliderOptionValueST(AutoSaveData.AutoSavePeriod, "{0} сек.")
+	EndEvent
+	Event OnHighlightST()
+		SetInfoText("Интервал между автосохранениями в секундах.")
+	EndEvent
+EndState
+
+State AutoSaveData_MaxAutoSaveCount
+	Event OnSliderAcceptST(float afValue)
+		AutoSaveData.MaxAutoSaveCount = afValue as int
+		SetSliderOptionValueST(AutoSaveData.MaxAutoSaveCount)
+	EndEvent
+	Event OnSliderOpenST()
+		SetSliderDialogStartValue(AutoSaveData.MaxAutoSaveCount)
+		SetSliderDialogDefaultValue(AutoSaveData.MaxAutoSaveCount_Default)
+		SetSliderDialogRange(1, 10)
+		SetSliderDialogInterval(1)
+	EndEvent
+	Event OnDefaultST()
+		AutoSaveData.MaxAutoSaveCount = AutoSaveData.MaxAutoSaveCount_Default
+		SetSliderOptionValueST(AutoSaveData.MaxAutoSaveCount)
+	EndEvent
+	Event OnHighlightST()
+		SetInfoText("Максимальное количество слотов автосохранения. При превышении старые слоты перезаписываются.")
+	EndEvent
+EndState
+
+State AutoSaveData_SaveAfterCombat
+	Event OnSelectST()
+		AutoSaveData.SaveAfterCombat = !AutoSaveData.SaveAfterCombat
+		SetToggleOptionValueST(AutoSaveData.SaveAfterCombat)
+	EndEvent
+	Event OnHighlightST()
+		SetInfoText("Сохранить сразу после окончания боя.")
+	EndEvent
+	Event OnDefaultST()
+		AutoSaveData.SaveAfterCombat = AutoSaveData.SaveAfterCombat_Default
+		SetToggleOptionValueST(AutoSaveData.SaveAfterCombat)
+	EndEvent
+EndState
+
+State AutoSaveData_SaveInCombat
+	Event OnSelectST()
+		AutoSaveData.SaveInCombat = !AutoSaveData.SaveInCombat
+		SetToggleOptionValueST(AutoSaveData.SaveInCombat)
+	EndEvent
+	Event OnHighlightST()
+		SetInfoText("Разрешить автосохранение во время боя.")
+	EndEvent
+	Event OnDefaultST()
+		AutoSaveData.SaveInCombat = AutoSaveData.SaveInCombat_Default
+		SetToggleOptionValueST(AutoSaveData.SaveInCombat)
+	EndEvent
+EndState
+
+State AutoSaveData_EnableAutoSave
+	Event OnSelectST()
+		AutoSaveData.EnableAutoSave = !AutoSaveData.EnableAutoSave
+		SetToggleOptionValueST(AutoSaveData.EnableAutoSave)
+		ForcePageReset()
+	EndEvent
+	Event OnHighlightST()
+		SetInfoText("Включает или отключает автосохранения.")
+	EndEvent
+	Event OnDefaultST()
+		AutoSaveData.EnableAutoSave = AutoSaveData.EnableAutoSave_Default
+		SetToggleOptionValueST(AutoSaveData.EnableAutoSave)
+		ForcePageReset()
+	EndEvent
+EndState
+
+; Автолут
 Function ShowAutoLoot()
 	SetCursorFillMode(LEFT_TO_RIGHT)
 	AddHeaderOption("Автоматический сбор")
@@ -150,7 +239,7 @@ State AutoLoot_Method
 	EndEvent
 	Event OnHighlightST()
 		SetInfoText("По каким параметрам будет сбор предметов.")
-	EndEvent	
+	EndEvent
 EndState
 
 State AutoLoot_Value
@@ -246,7 +335,7 @@ State AutoLoot_HotKey
 	EndEvent
 EndState
 
-; Опыт ==================================================================================================================================
+; Опыт
 Function ShowExperience()
 	SetCursorFillMode(LEFT_TO_RIGHT)
 	AddHeaderOption("Настройки меню RFAB")
@@ -325,7 +414,7 @@ State Menu_Scale
 	EndEvent	
 EndState
 
-; Интерфейс =============================================================================================================================
+; Интерфейс
 Function ShowInterface()
 	SetCursorFillMode(LEFT_TO_RIGHT)
 	AddHeaderOption("Виджет сопротивлений")
@@ -593,7 +682,7 @@ State RW_PositionX
 	EndEvent	
 EndState
 
-; Extended Hotkeys =============================================================================================================================
+; Extended Hotkeys
 Function ShowHotkeys()
 	SetCursorFillMode(LEFT_TO_RIGHT)
 	AddHeaderOption("Extended Hotkeys")
@@ -701,7 +790,7 @@ State EHK_SpellPriorities
 	EndEvent	
 EndState
 
-; Ездовые Животные ====================================================================================================================
+; Ездовые Животные
 Function ShowMounts()
 	SetCursorFillMode(LEFT_TO_RIGHT)
 	AddHeaderOption("Настройки")
@@ -769,7 +858,7 @@ State MountsHotKey
 	EndEvent
 EndState
 
-; Настройки =============================================================================================================================
+; Настройки
 Function ShowSettings()
 	SetCursorFillMode(LEFT_TO_RIGHT)
 	AddHeaderOption("Опциональные настройки")
@@ -789,34 +878,34 @@ Function ShowSettings()
 	
 	AddHeaderOption("Сложность игры")
 	AddHeaderOption("")
-	AddMenuOptionST("Difficulty", "Уровень сложности", DifficultyMenu.DifficultyNames[DifficultyMenu.DifficultyIndex], 0)
-	AddToggleOptionST("Curse", "Проклятие", DifficultyMenu.Cursed)
+	AddMenuOptionST("Difficulty", "Уровень сложности", StartMenu.GetDifficultyNameById(StartMenu.DifficultyIndex), 0)
+	AddToggleOptionST("Curse", "Проклятие", StartMenu.Cursed)
 EndFunction
 
 State Difficulty
 	Event OnMenuOpenST()
-		SetMenuDialogStartIndex(DifficultyMenu.DifficultyIndex)
-		SetMenuDialogOptions(DifficultyMenu.DifficultyNames)
+		SetMenuDialogStartIndex(StartMenu.DifficultyIndex)
+		SetMenuDialogOptions(StartMenu.GetDifficultyNames())
 	EndEvent
 	Event OnMenuAcceptST(int aiIndex)
-		DifficultyMenu.SetDifficulty(aiIndex)
-		SetMenuOptionValueST(DifficultyMenu.DifficultyNames[aiIndex])
+		StartMenu.SetDifficulty(aiIndex)
+		SetMenuOptionValueST(StartMenu.GetDifficultyNameById(aiIndex))
 		ForcePageReset()
 	EndEvent
 	Event OnDefaultST()
-		DifficultyMenu.SetDifficulty(0)
-		SetMenuOptionValueST(DifficultyMenu.DifficultyNames[0])
+		StartMenu.SetDifficulty(0)
+		SetMenuOptionValueST(StartMenu.GetDifficultyNameById(0))
 		ForcePageReset()
 	EndEvent
 	Event OnHighlightST()
-		SetInfoText(DifficultyMenu.DifficultyInfo[DifficultyMenu.DifficultyIndex])
+		SetInfoText(StartMenu.GetDifficultyInfo(StartMenu.DifficultyIndex))
 	EndEvent
 EndState
 
 State Curse
 	Event OnSelectST()
-		DifficultyMenu.SetCurse(!DifficultyMenu.Cursed)
-		SetToggleOptionValueST(DifficultyMenu.Cursed)
+		StartMenu.SetCurse(!StartMenu.Cursed)
+		SetToggleOptionValueST(StartMenu.Cursed)
 	EndEvent
 	Event OnHighlightST()
 		SetInfoText("С самого вашего рождения вас прокляли таинственными чарами.\nВы наносите половину базового урона.")
@@ -933,7 +1022,7 @@ State FastTravel
 	EndEvent
 EndState
 
-; Светящиеся книги =============================================================================================================================
+; Светящиеся книги
 Function ShowGlowingBooks()
 	SetCursorFillMode(LEFT_TO_RIGHT)
 	AddHeaderOption("Подсветка книг")
@@ -1055,11 +1144,11 @@ State BooksGlowingDefault
 	EndEvent
 EndState
 
-;Дебаг======================================================================================
+;Дебаг
 Function ShowDebug()
 	AddHeaderOption("Камни Хранители")
-	PlayerDoomStoneID = DoomStoneMenu.GetDoomStoneID()
-	AddMenuOptionST("DoomStones", "Камень Хранитель", DoomStoneMenu.DoomStoneNames[PlayerDoomStoneID], 0)
+	PlayerDoomStoneID = StartMenu.GetDoomStoneID()
+	AddMenuOptionST("DoomStones", "Камень Хранитель", StartMenu.GetDoomStoneNameById(PlayerDoomStoneID), 0)
 	if IsBizarreActived
 		AddHeaderOption("Bizarre Adventure")
 		Spell BizarreDebugSpell = Game.GetFormFromFile(0x161EDD28, "RFAB_BizarreAdventure.esp") as Spell
@@ -1070,11 +1159,11 @@ EndFunction
 State DoomStones
 	Event OnMenuOpenST()
 		SetMenuDialogStartIndex(PlayerDoomStoneID)
-		SetMenuDialogOptions(DoomStoneMenu.DoomStoneNames)
+		SetMenuDialogOptions(StartMenu.GetDoomStoneNames())
 	EndEvent
 	Event OnMenuAcceptST(int aiIndex)
-		DoomStoneMenu.SetDoomStoneByID(aiIndex)
-		SetMenuOptionValueST(DoomStoneMenu.DoomStoneNames[aiIndex])
+		StartMenu.SetDoomStoneByID(aiIndex)
+		SetMenuOptionValueST(StartMenu.GetDoomStoneNameById(aiIndex))
 		ForcePageReset()
 	EndEvent
 	Event OnHighlightST()
@@ -1098,7 +1187,7 @@ State BizarreDebug
 	EndEvent
 EndState
 
-; =========================================================================
+;
 
 ; Отключает редактирование опции, если условие ложно
 int Function DisableIf(bool abValue)

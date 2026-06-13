@@ -52,6 +52,7 @@ function ReadOghmaInfinium(Bool fromWorld)
 		(game.GetFormFromFile(16779742, "Update.esm") as globalvariable).SetValue(1 as Float)
 		utility.Wait(0.100000)
 		AttributeSystem.UpdateAttributeBonuses()
+		SendModEvent("RFAB_BaseAttributesChanged")
 		Int OghmasInfinium = game.GetPlayer().GetItemCount(MySelf as form)
 		game.GetPlayer().RemoveItem(MySelf as form, OghmasInfinium, false, none)
 		if fromWorld && OghmasInfinium == 0

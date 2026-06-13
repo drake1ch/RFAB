@@ -1,46 +1,25 @@
 Scriptname RFAB_ObjectUnpacker extends ReferenceAlias  
 
-Keyword Property PackedObject Auto
+MiscObject[] Property PackedObjects Auto
+int[] Property Counts Auto
+Form[] Property Items Auto
 
-Actor Player
-int kMisc = 32 
+Actor Property PlayerRef Auto
 
 Event OnInit()
-	Player = Game.GetPlayer()
-	AddObjectsToFilter()
+	RegisterForMenu("BarterMenu")
 EndEvent
 
-Event OnItemAdded(Form akItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akSourceContainer)
-	if (!akItem.HasKeyword(PackedObject))
-		return
-	endif
-	int count = aiItemCount
-	while count
-		count -=1
-		Unpack(akItem)
+Event OnMenuClose(string asMenuName)
+	int i = PackedObjects.Length
+	while (i > 0)
+		i -= 1
+		MiscObject kPack = PackedObjects[i]
+		int iPackCount = PlayerRef.GetItemCount(kPack)
+
+		if (iPackCount > 0)
+			PlayerRef.AddItem(Items[i], Counts[i] * iPackCount)
+			PlayerRef.RemoveItem(kPack, iPackCount, abSilent = true)
+		endif
 	endwhile
 EndEvent
-
-Event OnObjectEquipped(Form akObject, ObjectReference akReference)
-    if (akObject.HasKeyword(PackedObject))
-		Unpack(akObject)
-    endif
-EndEvent
-
-Function Unpack(Form akObject)
-    Player.AddItem((akObject as RFAB_PackedObject).Items)
-    Player.RemoveItem(akObject)
-EndFunction
-
-Function AddObjectsToFilter()
-	Keyword[] objectKeyword = new Keyword[1]
-	objectKeyword[0] = PackedObject
-
-	Form[] PackedObjects = PO3_SKSEFunctions.GetAllForms(kMisc, objectKeyword)
-
-	int count = PackedObjects.Length
-	while count
-		count -= 1
-    	AddInventoryEventFilter(PackedObjects[count])
-    endwhile
-EndFunction

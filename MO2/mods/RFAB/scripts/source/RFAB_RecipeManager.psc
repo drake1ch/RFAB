@@ -4,11 +4,6 @@ Actor Property Player Auto
 
 Sound Property UISound Auto
 
-string PATH_ICONS = "skyui/icons_category_psychosteve.swf"
-
-int ID_ALCHEMY = 16
-int ID_ENCHANTMENT = 16
-
 bool Function LearnRecipe(GlobalVariable akGlobal, string asName)
 	if (akGlobal.GetValue() == 0.0)
 		akGlobal.SetValue(1.0)
@@ -29,16 +24,16 @@ EndFunction
 
 bool Function LearnRecipes(GlobalVariable[] akGlobals)
 	int i = 0
-	int j = 0
+	int iCount = 0
 	while (i < akGlobals.Length)
 		if (akGlobals[i].GetValue() == 0.0)
 			akGlobals[i].SetValue(1.0)
-			j += 1
+			iCount += 1
 		endif
 		i += 1
 	endwhile
-	if (j > 0)
-		ShowNotification("Выучено рецептов: " + j)
+	if (iCount > 0)
+		ShowNotification("Выучено рецептов: " + iCount)
 		return true
 	endif
 	return false
@@ -46,19 +41,37 @@ EndFunction
 
 bool Function LearnEnchantments(Enchantment[] akEnchs)
 	int i = 0
-	int j = 0
+	int iCount = 0
 	while (i < akEnchs.Length)
 		Enchantment kEnch = akEnchs[i]
 		if (!kEnch.PlayerKnows())
 			RFAB_PapyrusFunctions.SetPlayerKnowsEnch(kEnch, true)
-			j += 1
+			iCount += 1
 		endif
 		i += 1
 	endwhile
-	if (j > 0)
-		ShowNotification("Выучено зачарований: " + j)
+	if (iCount > 0)
+		ShowNotification("Выучено зачарований: " + iCount)
 		return true
-	endif	
+	endif
+	return false
+EndFunction
+
+bool Function LearnEnchantmentsList(Formlist akList)
+	int i = akList.GetSize()
+	int iCount = 0
+	while (i > 0)
+		i -= 1
+		Enchantment kEnch = akList.GetAt(i) as Enchantment
+		if (kEnch && !kEnch.PlayerKnows())
+			RFAB_PapyrusFunctions.SetPlayerKnowsEnch(kEnch, true)
+			iCount += 1
+		endif
+	endwhile
+	if (iCount > 0)
+		ShowNotification("Выучено зачарований: " + iCount)
+		return true
+	endif
 	return false
 EndFunction
 

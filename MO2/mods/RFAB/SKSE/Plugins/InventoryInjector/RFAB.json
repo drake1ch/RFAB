@@ -775,7 +775,8 @@
 				"anyOf": [
 					"RFAB.esp|5E03",
 					"RFAB.esp|621E",
-					"RFAB.esp|CDB00"
+					"RFAB.esp|CDB00",
+					"RFAB.esp|CDB61"
 				] 
 			}
 		},
@@ -793,7 +794,8 @@
 					"RFAB.esp|26499",
 					"RFAB.esp|5E04",
 					"RFAB.esp|6220",
-					"RFAB.esp|CDB01"
+					"RFAB.esp|CDB01",
+					"RFAB.esp|CDB63"
 				] 
 			}
 		},
@@ -812,7 +814,10 @@
 					"RFAB.esp|5DF6",
 					"RFAB.esp|621F",
 					"RFAB.esp|CDAFF",
-					"RFAB.esp|6056"
+					"RFAB.esp|6056",
+					"RFAB.esp|108627",
+					"RFAB.esp|AD4C50",
+					"RFAB.esp|CDB62"
 				] 
 			}
 		},
@@ -859,6 +864,7 @@
 					"RFAB.esp|61A4",
 					"RFAB.esp|617B",
 					"RFAB.esp|6189",
+                                        "RFAB.esp|362C7",
 					"RFAB.esp|CDB02"
 				] 
 			}

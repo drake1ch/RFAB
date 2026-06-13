@@ -1,16 +1,21 @@
 Scriptname RFAB_AttributeBonuses extends ReferenceAlias
-{Бафы за белые характеристики}
+{Buffs for white attributes}
 
 int[] Property ThresholdHealth Auto
 int[] Property ThresholdMagicka Auto
 int[] Property ThresholdStamina Auto
 
+int Property ThresholdHealthTop Auto
+int Property ThresholdMagickaTop Auto
+int Property ThresholdStaminaTop Auto
+
 Spell[] Property _BonusHealth Auto
 Spell[] Property _BonusMagicka Auto
 Spell[] Property _BonusStamina Auto
 
-Spell[] Property BonusHealthMagicka Auto
-Spell[] Property BonusHealthStamina Auto
+Spell Property BonusHealthTop Auto
+Spell Property BonusMagickaTop Auto
+Spell Property BonusStaminaTop Auto
 
 Actor Player
 
@@ -20,6 +25,7 @@ Event OnInit()
 EndEvent
 
 Event OnPlayerLoadGame()
+	Player = Game.GetPlayer()
 	RegisterForMenu("StatsMenu")
 EndEvent
 
@@ -36,6 +42,7 @@ Function ModBaseActorValue(string asActorValue, float afValue)
 	Player.SetActorValue(asActorValue, Player.GetBaseActorValue(asActorValue) + afValue)
 	GoToState("")
 	RegisterForSingleUpdate(0.5)
+	SendModEvent("RFAB_BaseAttributesChanged")
 EndFunction
 
 State Busy
@@ -48,33 +55,31 @@ State Busy
 EndState
 
 Function UpdateAttributeBonuses()
-	int healthIndex = GetValueIndex(Player.GetBaseActorValue("Health"), ThresholdHealth)
-	int magickaIndex = GetValueIndex(Player.GetBaseActorValue("Magicka"), ThresholdMagicka)
-	int staminaIndex = GetValueIndex(Player.GetBaseActorValue("Stamina"), ThresholdStamina)
+	float health = Player.GetBaseActorValue("Health")
+	float magicka = Player.GetBaseActorValue("Magicka")
+	float stamina = Player.GetBaseActorValue("Stamina")
 
-	if (healthIndex != -1 && !Player.HasSpell(_BonusHealth[healthIndex]))
-		RemoveSpells(_BonusHealth)
-		Player.AddSpell(_BonusHealth[healthIndex])
+	UpdateSpellSet(_BonusHealth, GetValueIndex(health, ThresholdHealth))
+	UpdateSpellSet(_BonusMagicka, GetValueIndex(magicka, ThresholdMagicka))
+	UpdateSpellSet(_BonusStamina, GetValueIndex(stamina, ThresholdStamina))
+
+	UpdateTopSpell(BonusHealthTop, health, ThresholdHealthTop)
+	UpdateTopSpell(BonusMagickaTop, magicka, ThresholdMagickaTop)
+	UpdateTopSpell(BonusStaminaTop, stamina, ThresholdStaminaTop)
+EndFunction
+
+Function UpdateSpellSet(Spell[] akSpells, int aiIndex)
+	if (aiIndex != -1 && !Player.HasSpell(akSpells[aiIndex]))
+		RemoveSpells(akSpells)
+		Player.AddSpell(akSpells[aiIndex])
 	endif
+EndFunction
 
-	if (magickaIndex != -1 && !Player.HasSpell(_BonusMagicka[magickaIndex]))
-		RemoveSpells(_BonusMagicka)
-		Player.AddSpell(_BonusMagicka[magickaIndex])
-	endif
-
-	if (staminaIndex != -1 && !Player.HasSpell(_BonusStamina[staminaIndex]))
-		RemoveSpells(_BonusStamina)
-		Player.AddSpell(_BonusStamina[staminaIndex])
-	endif
-
-	if (healthIndex != -1 && magickaIndex != -1 && !Player.HasSpell(BonusHealthMagicka[Min(healthIndex, magickaIndex)]))
-		RemoveSpells(BonusHealthMagicka)
-		Player.AddSpell(BonusHealthMagicka[Min(healthIndex, magickaIndex)])
-	endif
-
-	if (healthIndex != -1 && staminaIndex != -1 && !Player.HasSpell(BonusHealthStamina[Min(healthIndex, staminaIndex)]))
-		RemoveSpells(BonusHealthStamina)
-		Player.AddSpell(BonusHealthStamina[Min(healthIndex, staminaIndex)])
+Function UpdateTopSpell(Spell akSpell, float afValue, int aiThreshold)
+	if (afValue >= aiThreshold && !Player.HasSpell(akSpell))
+		Player.AddSpell(akSpell)
+	elseif (afValue < aiThreshold && Player.HasSpell(akSpell))
+		Player.RemoveSpell(akSpell)
 	endif
 EndFunction
 
@@ -95,11 +100,4 @@ Function RemoveSpells(Spell[] akSpells)
 		i -= 1
 		Player.RemoveSpell(akSpells[i])
 	endWhile
-EndFunction
-
-int Function Min(int a, int b)
-	if (a < b)
-		return a
-	endif
-	return b
 EndFunction
