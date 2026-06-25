@@ -873,7 +873,7 @@ Function ShowSettings()
 	AddHeaderOption("")
 	AddKeyMapOptionST("BlockKey", "Клавиша блокирования", DualWielding.KeyBlock)
 	AddKeyMapOptionST("FollowerTeleport", "Клавиша телепорта союзников", Key_FollowerTeleport)
-	AddKeyMapOptionST("ParryingKey", "Клавиша парирования", DualWielding.KeyBash)
+	AddKeyMapOptionST("BashKey", "Клавиша удара плашмя", DualWielding.KeyBash)
 	AddKeyMapOptionST("DodgeKey", "Клавиша уворота", DodgeKey)
 	
 	AddHeaderOption("Сложность игры")
@@ -933,13 +933,13 @@ State BlockKey
 	EndEvent
 EndState
 
-State ParryingKey
+State BashKey
 	Event OnKeyMapChangeST(int keyCode, string conflictControl, string conflictName)
 		DualWielding.SetBashKey(keyCode)
 		SetKeyMapOptionValueST(keyCode)
 	EndEvent
 	Event OnHighlightST()
-		SetInfoText("Клавиша, на которую игровой персонаж сможет быстро парировать, в том числе парным оружием и руками.")
+		SetInfoText("Клавиша, на которую игровой персонаж сможет быстро совершить удар плашмя, в том числе парным оружием и руками.")
 	EndEvent
 EndState
 
