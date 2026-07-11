@@ -3343,7 +3343,7 @@
 					"RFAB.esp|6B19B",
 					"RFAB.esp|8479F",
 					"RFAB.esp|847A0",
-                                        "RFAB Sild Head.esp|00801"
+                    "RFAB.esp|AD4BB5"
 				]
 			}
 		},
@@ -3409,7 +3409,7 @@
 					"RFAB.esp|5BDDE",
 					"RFAB.esp|AD481E",
 					"RFAB.esp|AD4820",
-                                        "RFAB Sild Head.esp|00800"
+                    "RFAB.esp|AD4BB6"
 				]
 			}
 		},
@@ -3927,6 +3927,16 @@
 			"subTypeDisplay": "Фонарь",
 			"iconSource": "Icons/Items.swf",
 			"iconLabel": "lantern"
+		}
+    },
+	{
+		"match": {
+			"formType": "Book",
+			"subType": "Note"
+		},
+		"assign": {
+			"iconSource": "skyui/icons_item_psychosteve.swf",
+			"iconLabel": "book_note"
 		}
     }
 	]

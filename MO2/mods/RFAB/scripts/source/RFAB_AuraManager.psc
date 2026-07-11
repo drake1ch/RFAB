@@ -5,27 +5,46 @@ Armor Property NecroRing Auto
 Spell FirstAura
 Spell SecondAura
 
-Function ToggleAura(Actor akTarget, Spell NewAura)
+Actor lockedActor = None
+Bool isProcessing = False
+
+
+Function RequestToggle(Actor akTarget, Spell NewAura)
+
+    if akTarget == None || NewAura == None
+        return
+    endif
+
+    if isProcessing && lockedActor == akTarget
+        return
+    endif
+
+    isProcessing = True
+    lockedActor = akTarget
+
+    ToggleAuraInternal(akTarget, NewAura)
+
+    lockedActor = None
+    isProcessing = False
+
+EndFunction
+
+
+Function ToggleAuraInternal(Actor akTarget, Spell NewAura)
 
     if FirstAura == NewAura
-
         akTarget.RemoveSpell(NewAura)
 
         FirstAura = SecondAura
         SecondAura = None
 
         return
-
     endif
 
     if SecondAura == NewAura
-
         akTarget.RemoveSpell(NewAura)
-
         SecondAura = None
-
         return
-
     endif
 
     if !akTarget.IsEquipped(NecroRing)
@@ -40,31 +59,21 @@ Function ToggleAura(Actor akTarget, Spell NewAura)
         endif
 
         akTarget.AddSpell(NewAura, False)
-
         FirstAura = NewAura
 
         return
-
     endif
 
     if FirstAura == None
-
         akTarget.AddSpell(NewAura, False)
-
         FirstAura = NewAura
-
         return
-
     endif
 
     if SecondAura == None
-
         akTarget.AddSpell(NewAura, False)
-
         SecondAura = NewAura
-
         return
-
     endif
 
     akTarget.RemoveSpell(FirstAura)
@@ -76,18 +85,20 @@ Function ToggleAura(Actor akTarget, Spell NewAura)
 
 EndFunction
 
+
+Function OnRingEquipped(Actor akTarget)
+EndFunction
+
+
 Function OnRingRemoved(Actor akTarget)
 
-    if SecondAura == None
+    if akTarget == None
         return
     endif
 
-    if FirstAura
-        akTarget.RemoveSpell(FirstAura)
+    if SecondAura != None
+        akTarget.RemoveSpell(SecondAura)
+        SecondAura = None
     endif
-
-
-    FirstAura = SecondAura
-    SecondAura = None
 
 EndFunction

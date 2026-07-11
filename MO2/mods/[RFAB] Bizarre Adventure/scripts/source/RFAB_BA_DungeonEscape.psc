@@ -1,32 +1,52 @@
-Scriptname RFAB_BA_DungeonEscape extends ActiveMagicEffect  
+;/ Decompiled by Champollion V1.0.1
+Source   : RFAB_BA_DungeonEscape.psc
+Modified : 2026-07-01 01:26:24
+Compiled : 2026-07-01 01:26:25
+User     : Kravc
+Computer : DESKTOP-UQJG7B4
+/;
+scriptName RFAB_BA_DungeonEscape extends ActiveMagicEffect
 
-Location Property HubLocation Auto
+;-- Properties --------------------------------------
+rfab_ba_quests property ScriptQuests auto
+location property HubLocation auto
+quest property SewerQuest auto
+rfab_ba_radiant property ScriptRadiant auto
 
-RFAB_BA_Quests Property ScriptQuests Auto
-RFAB_BA_Radiant Property ScriptRadiant Auto
+;-- Variables ---------------------------------------
 
-Event OnEffectStart(Actor akTarget, Actor akCaster)
-	if (akTarget.GetCurrentLocation() == HubLocation)
-		return
-	endif
+;-- Functions ---------------------------------------
 
-	if (akTarget.IsInCombat())
-		Debug.Notification("Сначала мне надо разобраться с врагами")
-		return
-	endif
+; Skipped compiler generated GetState
 
-	if (ScriptQuests.ActiveQuest.IsInQuestLocation())
-		if (ScriptQuests.ActiveQuest.IsAllowedToEspace())
-			ScriptRadiant.ShowExit()
-		else
-			Debug.Notification("Мне надо выполнить задание")
-		endif
-		return
-	endif
+; Skipped compiler generated GotoState
 
-	if (ScriptRadiant.IsRadiantCompleted())
-		ScriptRadiant.ShowExit()
-	else
-		Debug.Notification("Мне надо изучить локацию")
-	endif
-EndEvent
+function OnEffectStart(Actor akTarget, Actor akCaster)
+
+    if akTarget.GetCurrentLocation() == HubLocation
+        return 
+    endIf
+   if (akTarget == Game.GetPlayer())
+      if SewerQuest.GetStage() == 10 || SewerQuest.GetStage() == 20 
+        debug.Notification("Я не могу отсюда выбраться!") 
+        return 
+      endif
+     endif
+    if akTarget.IsInCombat()
+        debug.Notification("Сначала мне надо разобраться с врагами")
+        return 
+    endIf
+    if ScriptQuests.ActiveQuest.IsInQuestLocation()
+        if ScriptQuests.ActiveQuest.IsAllowedToEspace()
+            ScriptRadiant.ShowExit(false, true)
+        else
+            debug.Notification("Мне надо выполнить задание")
+        endIf
+        return 
+    endIf
+    if ScriptRadiant.IsRadiantCompleted()
+        ScriptRadiant.ShowExit(false, true)
+    else
+        debug.Notification("Мне надо изучить локацию")
+    endIf
+endFunction

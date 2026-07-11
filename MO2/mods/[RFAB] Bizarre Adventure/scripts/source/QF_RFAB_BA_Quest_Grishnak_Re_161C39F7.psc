@@ -1,15 +1,15 @@
 ;BEGIN FRAGMENT CODE - Do not edit anything between this and the end comment
-;NEXT FRAGMENT INDEX 22
+;NEXT FRAGMENT INDEX 26
 Scriptname QF_RFAB_BA_Quest_Grishnak_Re_161C39F7 Extends Quest Hidden
 
-;BEGIN ALIAS PROPERTY QuestGiver
+;BEGIN ALIAS PROPERTY LocationMarker
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_QuestGiver Auto
+ReferenceAlias Property Alias_LocationMarker Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY ChampionTombBoss
+;BEGIN ALIAS PROPERTY YsgramorsTombBoss
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_ChampionTombBoss Auto
+ReferenceAlias Property Alias_YsgramorsTombBoss Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY LastVigilBoss
@@ -17,19 +17,14 @@ ReferenceAlias Property Alias_ChampionTombBoss Auto
 ReferenceAlias Property Alias_LastVigilBoss Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY LocationMarker
+;BEGIN ALIAS PROPERTY Note
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_LocationMarker Auto
+ReferenceAlias Property Alias_Note Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY JolgierrBarrowBoss
+;BEGIN ALIAS PROPERTY ChampionTombBoss
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_JolgierrBarrowBoss Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY OblivionBoss
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_OblivionBoss Auto
+ReferenceAlias Property Alias_ChampionTombBoss Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY SoulCairnBoss
@@ -37,21 +32,64 @@ ReferenceAlias Property Alias_OblivionBoss Auto
 ReferenceAlias Property Alias_SoulCairnBoss Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY Note
+;BEGIN ALIAS PROPERTY JolgierrBarrowBoss
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Note Auto
+ReferenceAlias Property Alias_JolgierrBarrowBoss Auto
 ;END ALIAS PROPERTY
 
-;BEGIN FRAGMENT Fragment_10
-Function Fragment_10()
+;BEGIN ALIAS PROPERTY QuestGiver
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_QuestGiver Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY CorpseAlias
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_CorpseAlias Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY OblivionBoss
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_OblivionBoss Auto
+;END ALIAS PROPERTY
+
+;BEGIN FRAGMENT Fragment_7
+Function Fragment_7()
+;BEGIN AUTOCAST TYPE RFAB_BA_Quest
+Quest __temp = self as Quest
+RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
+;END AUTOCAST
+;BEGIN CODE
+Alias_LocationMarker.ForceRefTo(JolgierrBarrowMarker)
+kmyQuest.QuestTravelStage = 32
+SetObjectiveDisplayed(30)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_25
+Function Fragment_25()
 ;BEGIN AUTOCAST TYPE RFAB_BA_Quest
 Quest __temp = self as Quest
 RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
 ;END AUTOCAST
 ;BEGIN CODE
 kmyQuest.SetAllowToEspace()
-SetObjectiveCompleted(32)
+SetObjectiveCompleted(38)
 SetStage(40)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_15
+Function Fragment_15()
+;BEGIN AUTOCAST TYPE RFAB_BA_Quest
+Quest __temp = self as Quest
+RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
+;END AUTOCAST
+;BEGIN CODE
+Alias_LocationMarker.ForceRefTo(OblivionStart)
+kmyQuest.QuestTravelStage = 52
+SetObjectiveDisplayed(50)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -72,33 +110,16 @@ Stop()
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_14
-Function Fragment_14()
+;BEGIN FRAGMENT Fragment_13
+Function Fragment_13()
 ;BEGIN AUTOCAST TYPE RFAB_BA_Quest
 Quest __temp = self as Quest
 RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
 ;END AUTOCAST
 ;BEGIN CODE
-kmyQuest.SetAllowToEspace()
-SetObjectiveCompleted(42)
-SetObjectiveDisplayed(45)
-SetStage(50)
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_0
-Function Fragment_0()
-;BEGIN AUTOCAST TYPE RFAB_BA_Quest
-Quest __temp = self as Quest
-RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
-;END AUTOCAST
-;BEGIN CODE
-kmyQuest.RegisterQuest()
-Alias_LocationMarker.ForceRefTo(LastVigilMarker)
-kmyQuest.QuestTravelStage = 12
-Alias_QuestGiver.GetActorRef().RemoveItem(Alias_Note.GetReference().GetBaseObject(),  akOtherContainer = Game.GetPlayer())
-SetObjectiveDisplayed(10)
+kmyQuest.SetAllowToEspace(false)
+SetObjectiveCompleted(40)
+SetObjectiveDisplayed(42)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -117,108 +138,40 @@ SetObjectiveDisplayed(20)
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_20
-Function Fragment_20()
-;BEGIN CODE
-Game.GetPlayer().MoveTo(BizarreAdventure.GetDungeonScript().GetCurrentHubMarker())
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_5
-Function Fragment_5()
+;BEGIN FRAGMENT Fragment_23
+Function Fragment_23()
 ;BEGIN AUTOCAST TYPE RFAB_BA_Quest
 Quest __temp = self as Quest
 RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
 ;END AUTOCAST
 ;BEGIN CODE
 kmyQuest.SetAllowToEspace(false)
-SetObjectiveCompleted(20)
-SetObjectiveDisplayed(22)
+SetObjectiveCompleted(36)
+SetObjectiveDisplayed(37)
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_13
-Function Fragment_13()
+;BEGIN FRAGMENT Fragment_24
+Function Fragment_24()
+;BEGIN CODE
+SetObjectiveCompleted(37)
+SetObjectiveDisplayed(38)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_14
+Function Fragment_14()
 ;BEGIN AUTOCAST TYPE RFAB_BA_Quest
 Quest __temp = self as Quest
 RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
 ;END AUTOCAST
 ;BEGIN CODE
-kmyQuest.SetAllowToEspace(false)
-SetObjectiveCompleted(40)
-SetObjectiveDisplayed(42)
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_11
-Function Fragment_11()
-;BEGIN AUTOCAST TYPE RFAB_BA_Quest
-Quest __temp = self as Quest
-RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
-;END AUTOCAST
-;BEGIN CODE
-Alias_LocationMarker.ForceRefTo(ChampionTombMarker)
-kmyQuest.QuestTravelStage = 42
-SetObjectiveDisplayed(40)
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_1
-Function Fragment_1()
-;BEGIN AUTOCAST TYPE RFAB_BA_Quest
-Quest __temp = self as Quest
-RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
-;END AUTOCAST
-;BEGIN CODE
-kmyQuest.SetAllowToEspace(false)
-SetObjectiveCompleted(10)
-SetObjectiveDisplayed(12)
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_7
-Function Fragment_7()
-;BEGIN AUTOCAST TYPE RFAB_BA_Quest
-Quest __temp = self as Quest
-RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
-;END AUTOCAST
-;BEGIN CODE
-Alias_LocationMarker.ForceRefTo(JolgierrBarrowMarker)
-kmyQuest.QuestTravelStage = 32
-SetObjectiveDisplayed(30)
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_8
-Function Fragment_8()
-;BEGIN AUTOCAST TYPE RFAB_BA_Quest
-Quest __temp = self as Quest
-RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
-;END AUTOCAST
-;BEGIN CODE
-kmyQuest.SetAllowToEspace(false)
-SetObjectiveCompleted(30)
-SetObjectiveDisplayed(32)
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_16
-Function Fragment_16()
-;BEGIN AUTOCAST TYPE RFAB_BA_Quest
-Quest __temp = self as Quest
-RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
-;END AUTOCAST
-;BEGIN CODE
-kmyQuest.SetAllowToEspace(false)
-SetObjectiveCompleted(50)
-SetObjectiveDisplayed(52)
+kmyQuest.SetAllowToEspace()
+SetObjectiveCompleted(42)
+SetObjectiveDisplayed(45)
+SetStage(50)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -251,6 +204,78 @@ SetStage(20)
 EndFunction
 ;END FRAGMENT
 
+;BEGIN FRAGMENT Fragment_16
+Function Fragment_16()
+;BEGIN AUTOCAST TYPE RFAB_BA_Quest
+Quest __temp = self as Quest
+RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
+;END AUTOCAST
+;BEGIN CODE
+kmyQuest.SetAllowToEspace(false)
+SetObjectiveCompleted(50)
+SetObjectiveDisplayed(52)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_0
+Function Fragment_0()
+;BEGIN AUTOCAST TYPE RFAB_BA_Quest
+Quest __temp = self as Quest
+RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
+;END AUTOCAST
+;BEGIN CODE
+kmyQuest.RegisterQuest()
+Alias_LocationMarker.ForceRefTo(LastVigilMarker)
+kmyQuest.QuestTravelStage = 12
+Alias_QuestGiver.GetActorRef().RemoveItem(Alias_Note.GetReference().GetBaseObject(),  akOtherContainer = Game.GetPlayer())
+SetObjectiveDisplayed(10)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_8
+Function Fragment_8()
+;BEGIN AUTOCAST TYPE RFAB_BA_Quest
+Quest __temp = self as Quest
+RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
+;END AUTOCAST
+;BEGIN CODE
+kmyQuest.SetAllowToEspace(false)
+SetObjectiveCompleted(30)
+SetObjectiveDisplayed(32)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_1
+Function Fragment_1()
+;BEGIN AUTOCAST TYPE RFAB_BA_Quest
+Quest __temp = self as Quest
+RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
+;END AUTOCAST
+;BEGIN CODE
+kmyQuest.SetAllowToEspace(false)
+SetObjectiveCompleted(10)
+SetObjectiveDisplayed(12)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_5
+Function Fragment_5()
+;BEGIN AUTOCAST TYPE RFAB_BA_Quest
+Quest __temp = self as Quest
+RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
+;END AUTOCAST
+;BEGIN CODE
+kmyQuest.SetAllowToEspace(false)
+SetObjectiveCompleted(20)
+SetObjectiveDisplayed(22)
+;END CODE
+EndFunction
+;END FRAGMENT
+
 ;BEGIN FRAGMENT Fragment_6
 Function Fragment_6()
 ;BEGIN AUTOCAST TYPE RFAB_BA_Quest
@@ -265,16 +290,52 @@ SetStage(30)
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_15
-Function Fragment_15()
+;BEGIN FRAGMENT Fragment_20
+Function Fragment_20()
+;BEGIN CODE
+Game.GetPlayer().MoveTo(BizarreAdventure.GetRadiantScript().HubMarker)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_11
+Function Fragment_11()
 ;BEGIN AUTOCAST TYPE RFAB_BA_Quest
 Quest __temp = self as Quest
 RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
 ;END AUTOCAST
 ;BEGIN CODE
-Alias_LocationMarker.ForceRefTo(OblivionStart)
-kmyQuest.QuestTravelStage = 52
-SetObjectiveDisplayed(50)
+Alias_LocationMarker.ForceRefTo(ChampionTombMarker)
+kmyQuest.QuestTravelStage = 42
+SetObjectiveDisplayed(40)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_10
+Function Fragment_10()
+;BEGIN AUTOCAST TYPE RFAB_BA_Quest
+Quest __temp = self as Quest
+RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
+;END AUTOCAST
+;BEGIN CODE
+kmyQuest.SetAllowToEspace()
+SetObjectiveCompleted(32)
+SetStage(36)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_22
+Function Fragment_22()
+;BEGIN AUTOCAST TYPE RFAB_BA_Quest
+Quest __temp = self as Quest
+RFAB_BA_Quest kmyQuest = __temp as RFAB_BA_Quest
+;END AUTOCAST
+;BEGIN CODE
+Alias_LocationMarker.ForceRefTo(YsgramorsTombMarker)
+kmyQuest.QuestTravelStage = 37
+SetObjectiveDisplayed(36)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -284,6 +345,6 @@ EndFunction
 ObjectReference Property LastVigilMarker Auto
 ObjectReference Property SoulCairnMarker Auto
 ObjectReference Property JolgierrBarrowMarker Auto
+ObjectReference Property YsgramorsTombMarker Auto
 ObjectReference Property ChampionTombMarker Auto
 ObjectReference Property OblivionStart Auto
-
